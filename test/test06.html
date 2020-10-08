@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap {}
+        #header {height: 100px; background: #000;}
+        #banner {height: 300px; background: #111;}
+        #contents {}
+        #footer {height: 200px; background: #333;}
+        #cont1 {height: 200px; background: #444;}
+        #cont2 {height: 200px; background: #555;}
+        #cont3 {height: 200px; background: #666;}
+        #cont4 {height: 200px; background: #777;}
+        #cont5 {height: 200px; background: #888;}
+        #cont6 {background: #999;}
+
+        .container {width: 1200px; margin: 0 auto; height: inherit; background: rgba(255, 255, 255, 0.3);}
+        .cont6 {overflow: hidden;}
+        .cont6 .cont_left {width: 560px; padding: 20px; background: #fff; float: left;  position: relative;}
+        .cont6 .cont_right {width: 560px; padding: 20px; background: #fff; float: left;  position: relative;}
+        .cont6 .cont_left a.more {position: absolute; right: 50px; top: 30px;}
+        .cont6 .cont_right a.more {position: absolute; right: 50px; top: 30px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">header</div>
+        </div>
+        <div id="banner">
+            <div class="container">banner</div>
+        </div>
+        <div id="contents">
+            <div id="cont1">
+                <div class="container">cont1</div>
+            </div>
+            <div id="cont2">
+                <div class="container">cont2</div>
+            </div>
+            <div id="cont3">
+                <div class="container">cont3</div>
+            </div>
+            <div id="cont4">
+                <div class="container">cont4</div>
+            </div>
+            <div id="cont5">
+                <div class="container">cont5</div>
+            </div>
+            <div id="cont6">
+                <div class="container">
+                    <div class="cont6">
+                        <div class="cont_left">
+                            <h4>공지사항</h4>
+                            <p>3차시험입니다.</p>
+                            <span>2020.10.08</span>
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                        <div class="cont_right">
+                            <h4>공지사항</h4>
+                            <p>3차시험입니다.</p>
+                            <span>2020.10.08</span>
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">footer</div>
+        </div>
+    </div>
+</body>
+</html>
