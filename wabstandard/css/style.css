@@ -184,8 +184,7 @@
 .notice {position: relative;}
 .notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
 .notice ul li {
-    padding-left: 8px;
-    background: url(../img/dot.gif) no-repeat 0 8px; /*repeat를 하지 않으면 글씨 전체를 감싼다.*/
+    padding-left: 8px; background: url(../img/dot.gif) no-repeat 0 8px; /*repeat를 하지 않으면 글씨 전체를 감싼다.*/
     overflow: hidden; white-space: nowrap; text-overflow: ellipsis;/* 한 줄 효과 */
 }
 .notice ul li a {font-size: 12px;}
@@ -193,4 +192,29 @@
     position: absolute; right: 0; top: 0;
     width: 17px; height: 17px; display: block;
     background: url(../img/icon.png) -150px -90px;
-}     
+}
+
+/* 게시판2 */
+.notice2 {position: relative; margin-top: 15px;}
+.notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.notice2 li {
+    overflow: hidden;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    padding-left: 8px; 
+    font-size: 12px;
+}
+.notice2 li a {
+    float: left; width: 66%;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+
+}
+.notice2 li span {
+    float: right; 
+    width: 30%; 
+    text-align: right;
+}
+.notice2 a.more {
+    position: absolute; right: 0; top: 0;
+    width: 17px; height: 17px; display: block;
+    background: url(../img/icon.png) -150px -90px;
+}
