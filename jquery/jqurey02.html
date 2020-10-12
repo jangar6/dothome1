@@ -114,10 +114,10 @@
     
         // 계층 선택자
         // 하위 선택자
-        $(".list li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); 
-        $(".list > li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); 
-        $(".list5 + li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); 
-        $(".list5 ~ li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); 
+        $(".list li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); // 하위 선택자
+        $(".list > li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); // 자식 선택자
+        $(".list5 + li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); // (바로 다음) 형제 선택자
+        $(".list5 ~ li").css({backgroundColor:"#BBDEFB", border:"1px dashed #303F9F"}); // (바로 다음) 형제들 선택자
     </script>
 </body>
 </html>
