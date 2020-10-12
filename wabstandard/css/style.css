@@ -232,13 +232,12 @@
     font-weight: bold;
 }
 .notice3 li {padding: 8px 0 14px 60px; position: relative;}
+.notice3 li a {}
 .notice3 li a img {
-    width: 50px; 
-    position: absolute; left: 0; top: 0; 
-    border: 1px solid #0093bd;
+    width: 50px;
     position: absolute; left: 0; top: 0;
+    border: 1px solid #0093bd
 }
-.notice3 li a strong {display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .notice3 li a strong {display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .notice3 li a span {display: block;  white-space: nowrap; text-overflow: ellipsis; overflow: hidden;} /* overfl */
 .notice3 a.more {
