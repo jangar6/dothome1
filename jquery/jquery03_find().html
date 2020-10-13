@@ -9,22 +9,6 @@
     <script src="jquery.min_1.12.4.js"></script>
     <script>
         $(function(){
-            // 내용1을 선택해서 백그라운드를 빨간색으로 변경(선택자)
-            // $(".txt1").css("backgroundColor","red");
-            // $("p:contains('내용1')").css("backgroundColor","red");
-            // $("#inner_1 p:eq(0)").css("backgroundColor","red");
-            // $("#inner_1 p:first").css("backgroundColor","red");
-            // $("p[class='txt1']").css("backgroundColor","red");
-            // $("p[class^='txt1']").css("backgroundColor","red");
-            // $("p[class*='txt1']").css("backgroundColor","red");
-            // $("p[class~='txt1']").css("backgroundColor","red");
-            // $("p[class='txt1']").css("backgroundColor","red");
-            // $("#inner_1 p:nth-child(2)").css("backgroundColor","red");
-            // $("#inner_1 p:nth-of-type(1)").css("backgroundColor","red"); // 형제 요소중 첫번째
-            // $("#inner_1 p:first-of-type").css("backgroundColor","red");
-            // $("#inner_1 .txt1").css("backgroundColor","red");
-            // $("#inner_1 p:lt(1)").css("backgroundColor","red");
-
             $("#inner_1").find(".txt1").css("backgroundColor","red");
             $("#inner_1 p").filter(".txt2").css("backgroundColor","blue");
         });
