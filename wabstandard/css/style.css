@@ -310,9 +310,8 @@
 .notice4 h4 em {color: #cf3292;}
 .notice4 ul {padding: 10px;}
 .notice4 li {
-    overflow: hidden; 
+    overflow: hidden; padding-left: 8px;
     background: url(../img/dot.gif) no-repeat 0 8px; 
-    padding-left: 8px;
 }
 .notice4 li a {
     float: left; 
