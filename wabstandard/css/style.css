@@ -307,22 +307,9 @@
 /* 게시판4 */
 .notice4 {position: relative; border: 1px solid #ccc; margin-top: 15px;}
 .notice4 h4 {border-bottom: 1px solid #ccc; padding: 8px 10px;}
-.notice4 h4 em {color: #cf3292;}
+.notice4 h4 em {color: #CF3292;}
 .notice4 ul {padding: 10px;}
-.notice4 li {
-    overflow: hidden; padding-left: 8px;
-    background: url(../img/dot.gif) no-repeat 0 8px; 
-}
-.notice4 li a {
-    float: left; 
-    overflow: hidden; 
-    width: 65%; 
-    text-overflow: ellipsis; 
-    white-space: nowrap;
-}
-.notice4 li span {
-    float: right; 
-    width: 30%; 
-    text-align: right;
-}
+.notice4 li {overflow: hidden; padding-left: 8px; background: url(../img/dot.gif) no-repeat 0 8px;}
+.notice4 li a {float: left; width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
 .notice4 a.more {position: absolute; right: 9px; top: 9px;}
