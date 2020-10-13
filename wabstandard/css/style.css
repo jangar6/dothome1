@@ -208,7 +208,7 @@
     padding-bottom: 3px; 
     font-weight: bold;
 }
-.notice2 li {overflow: hidden; background: url(../img/dot.gif) no-repeat p 8px; padding-left: 8px;}
+.notice2 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
 .notice2 a {
     float: left;
     width: 66%;
@@ -232,7 +232,6 @@
     font-weight: bold;
 }
 .notice3 li {padding: 8px 0 14px 60px; position: relative;}
-.notice3 li a {}
 .notice3 li a img {
     width: 50px;
     position: absolute; left: 0; top: 0;
@@ -248,7 +247,6 @@
 
 
 /* 마우스 오버 효과1 */
-.notice_hover {}
 .notice_hover h4 {
     font-size: 14px; 
     color: #0093bd; 
