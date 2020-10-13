@@ -239,7 +239,7 @@
     border: 1px solid #0093bd
 }
 .notice3 li a strong {display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
-.notice3 li a span {display: block;  white-space: nowrap; text-overflow: ellipsis; overflow: hidden;} /* overfl */
+.notice3 li a span {display: block;  white-space: nowrap; text-overflow: ellipsis; overflow: hidden;} /* overflow 구분 */ 
 .notice3 a.more {
     position: absolute; right: 0; top: 0;
     width: 17px; height: 17px; display: block;
