@@ -356,6 +356,6 @@
     font-weight: bold;
 }
 .popup ul {overflow: hidden;}
-.popup li {float: left; display: block; width: 93px; height: 93px; margin-right: 5px;}
+.popup li {float: left; width: 93px; height: 93px; margin-right: 5px;}
 .popup li:last-child {margin-right: 0;}
-.popup a img {width: 100%;}
+.popup img {width: 100%;} 

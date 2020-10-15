@@ -35,6 +35,20 @@
     <!-- script -->
     <script src="jquery.min_1.12.4.js"></script>
     <script>
+        // 세 번째 li를 선택해서 글씨 색을 빨간색으로 변경
+        // $("li:eq(2)").css({color:"red"});
+        // $("li:gt(1)").css({color:"red"});
+        // $("li:last").css({color:"red"});
+        // $("li:contains('hasClass()')").css({color:"red"});
+        // $("li:last-child").css({color:"red"});
+        // $("li:last-of-type").css({color:"red"});
+        // $("li:nth-child(3)").css({color:"red"});
+        // $("li:nth-child(3n)").css({color:"red"});
+        // $("li:nth-last-child(1)").css({color:"red"});
+        // $("li:nth-last-of-type(1)").css({color:"red"});
+        // $("li:nth-of-type(3)").css({color:"red"});
+        // $("li:nth-child(2)~li").css({color:"red"});
+
         //버튼을 클릭하면 첫 번째 li의 글씨를 경고창으로 표시
         $(".btn1").click(function(){
            let text = $("li:eq(0)").text();
