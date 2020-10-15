@@ -28,7 +28,7 @@
     background: url(../img/header_bg.jpg) repeat-x center top;
 }
 #contents {}
-#footer {height: 200px; background: #333;}
+#footer {border-top: 1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {background: #f6fdff;}
@@ -329,3 +329,33 @@
 .gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px;}
 
 .gallery .gallery_btn li.gallery_img img {width: 100%;}
+
+/* 푸터 */
+.footer {text-align: center; padding: 25px 0;}
+.footer ul {}
+.footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+.footer li::before {
+    content: '';
+    width: 1px; height: 12px; background: #ccc;
+    position: absolute; left: 0; top: 2px;
+}
+/* .footer li::after {
+    content: '--뒤에';
+} */
+.footer li:first-child::before {width: 0; height: 0;}
+.footer address {margin-top: 20px;} 
+
+/* 로그인 */
+
+/* 팝업 */
+.popup {}
+.popup h4 {
+    font-size: 14px; 
+    color: #0093bd; 
+    padding-bottom: 3px; 
+    font-weight: bold;
+}
+.popup ul {overflow: hidden;}
+.popup li {float: left; display: block; width: 93px; height: 93px; margin-right: 5px;}
+.popup li:last-child {margin-right: 0;}
+.popup a img {width: 100%;}
