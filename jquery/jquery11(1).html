@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("내 이름은 장아름이며 웹 퍼블리셔입니다. <br>")
+        document.write("내 이름은 장아름이며 수업중입니다. <br>")
+        document.write("<br>");
+        
+        // 매개변수가 있는 함수로 출력
+        function fun1(name, job){
+            document.write("내 이름은 " + name + "이며 " + job + "입니다. <br>");
+        }
+        fun1("장아름","웹 퍼블리셔");
+        fun1("장아름","수업중");
+        document.write("<br>");
+        
+        // 변수를 선언하고 함수로 출력
+        function fun2(name, job){
+            document.write("내 이름은 " + name + "이며 " + job + "입니다. <br>");
+        }
+        let youName1 = "1. 장아름";
+        let youJob1 = "웹 퍼블리셔";
+        let youName2 = "2. 장아름";
+        let youJob2 = "수업중";
+
+        fun2(youName1, youJob1);
+        fun2(youName2, youJob2);
+        document.write("<br>");
+        // 객체로 선언을 하고 함수로 출력
+        function fun3(name, job){
+            document.write("내 이름은 " + name + "이며 " + job + "입니다. <br>");
+        }
+        const you = [
+            {
+                name: "3. 장아름",
+                job: "웹 퍼블리셔"
+            },
+            {
+                name: "4. 장아름",
+                job: "수업중"
+            }
+        ];
+        fun3(you[0].name, you[0].job);
+        fun3(you[1].name, you[1].job);
+        document.write("<br>");
+
+        // 객체 + 메서드
+        const you2 = {
+            name1: "5. 장아름",
+            job1: "웹 퍼블리셔",
+            name2: "6. 장아름",
+            job2: "수업중",
+            study1 : function(){
+                document.write("내 이름은 " + this.name1 + "이며 " + this.job1 + "입니다. <br>");
+            },
+            study2 : function(){
+                document.write("내 이름은 " + this.name2 + "이며 " + this.job2 + "입니다. <br>");
+            }
+        }
+        you2.study1();
+        you2.study2();
+        document.write("<br>");
+
+        // 객체 생성자 함수 (함수 + 인스턴스 객체(= 매개변수))
+        function You3(name, job){
+            this.name = name;
+            this.job = job;
+            this.study = function(){
+                document.write("내 이름은 " + this.name + "이며 " + this.job + "입니다. <br>");
+            }
+        }
+        let char1 = new You3("7. 장아름", "웹 퍼블리셔");
+        let char2 = new You3("8. 장아름", "수업중");
+
+        char1.study();
+        char2.study();
+        document.write("<br>");
+        
+        // 프로토타입 메서드
+        function You4(name, job){
+            this.name = name;
+            this.job = job;
+        }
+        You4.prototype.study = function(){
+            document.write("내 이름은 " + this.name + "이며 " + this.job + "입니다. <br>");
+        }
+        let char3 = new You4("9. 장아름", "웹 퍼블리셔");
+        let char4 = new You4("10. 장아름", "수업중");
+
+        char3.study();
+        char4.study();
+        document.write("<br>");
+        
+        // 객체 리터럴
+        function You5(name, job){
+            this.name = name;
+            this.job = job;
+        }
+        You5.prototype = {
+            study1 : function(){
+                document.write("내 이름은 " + this.name + "이며 " + this.job + "입니다. <br>");
+            },
+            study2 : function(){
+                document.write("내 이름은 " + this.name + "이며 " + this.job + "입니다. <br>");
+            }
+        }
+        let char5 = new You5("11. 장아름", "웹 퍼블리셔");
+        let char6 = new You5("12. 장아름", "수업중");
+
+        char5.study1();
+        char6.study2();
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
