@@ -3,43 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test08</title>
+    <title>Document</title>
     <style>
-        *{margin: 0; padding: 0;}
-        a {color: #222; text-decoration: none;}
+        * {padding: 0; margin: 0;}
         ul {list-style: none;}
-        .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
-        
+        a {text-decoration: none; color: #222;}
         #wrap {}
-        #header {width: 100%; height: 72px;}
+        #header {width: 100%; height: 72px; }
         #banner {width: 100%; height: 403px; background: url(img/banner.jpg);}
-        #contents {}
-        #footer {height: 311px; background: #333;}
-
-        .container {width: 1140px; height: inherit; margin: 0 auto;}
-        
+        #contents {width: 100%;}
+        #footer {width: 100%; height: 311px; background: #333;}
+        #cont1 {width: 100%; }
+        #cont2 {width: 100%;}
+        #cont3 {width: 100%;}
+        .container {width: 1140px; margin: 0 auto; height: inherit; }
         .header {overflow: hidden;}
-        .header img {padding: 20px;}
-        .header ul {float: right;}
-        .header li {float: left; padding: 20px;}
-
-        .banner {position: relative;}
-        .banner h2 {position: absolute; left: 0; top: 330px; color: #fff; font-size: 40px;}
-    
-        .cont1 {margin-top: 20px; overflow: hidden;}
-        .cont1 h3 {padding-bottom: 50px; font-size: 30px;}
-        .cont1 p {width: 50%; float: left; }
-        .cont1 img {width: 20%; padding: 5%; line-height: 1.2px; float: right;}
-
-        .cont2 {overflow: hidden;}
+        .header h1 {float: left; padding-top: 20px;}
+        .header ul {float: right; padding-top: 30px;}
+        .header li {display: inline-block; padding-left: 20px;}
+        .banner h2 {padding-top: 350px; font-size: 30px; color: #fff;}
+        .cont1 {padding: 80px 0; position: relative;}
+        .cont1 h3 {font-size: 50px; padding-bottom: 40px;}
+        .cont1 p {width: 50%; font-size: 26px; line-height: 1.2;}
+        .cont1 img {position: absolute; right: 20px; bottom: 50px;}
+        .cont2 {overflow: hidden; padding: 80px 0;}
         .cont2 .left {width: 50%; float: left;}
         .cont2 .left img {width: 100%;}
-        .cont2 .right {padding: 20px; width: 40%; float: right;}
-        .cont2 .right h3 {margin: 0 0 15px 0;}
-
-        .cont3 {overflow: hidden;}
-        .cont3 .left {}
-        .cont2 .right h3 {margin: 0 0 15px 0;}
+        .cont2 .right {width: 40%; padding: 5%; float: left; }
+        .cont2 h3 {font-size: 50px; padding-bottom: 40px;}
+        .cont2 p {font-size: 26px; line-height: 1.2;}
+        .cont3 {overflow: hidden; padding: 80px 0;}
+        .cont3 .left {width: 40%; padding: 5%; float: left;}
+        .cont3 .right {width: 50%; float: left; }
+        .cont3 h3 {font-size: 50px; padding-bottom: 40px;}
+        .cont3 p {font-size: 26px; line-height: 1.2;}
     </style>
 </head>
 <body>
@@ -47,8 +44,7 @@
         <div id="header">
             <div class="container">
                 <div class="header">
-                    <h2 class="ir_so">로고</h2>
-                    <img src="img/header.png" alt="dd">
+                    <h1><img src="img/bi.png" alt="카카로로고"></h1>
                     <ul>
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">비즈니스</a></li>
@@ -59,6 +55,7 @@
                 </div>
             </div>
         </div>
+        <!-- //header -->
         <div id="banner">
             <div class="container">
                 <div class="banner">
@@ -66,46 +63,56 @@
                 </div>
             </div>
         </div>
+        <!-- //banner -->
         <div id="contents">
-            <div class="container">
-                <div class="cont1">
-                    <h3>카카오 플랫폼을 활용한 생활금융 투자 서비스</h3>
-                    <p>오직 카카오 플랫폼을 통해서만 투자서비스를 제공합니다.<br>
-                        사용자의 생활에 필요한 모든 금융 영역을 하나로 연결하고 라이프스타일<br>
-                        특성을 반영해 가장 적합한 맞춤형 종합자산관리를 추구합니다.
-                    </p>
-                    <img src="img/contents1.png" alt="fg">
-                </div>
-                <div class="cont2">
-                    <div class="left">
-                        <img src="img/contents2.jpg" alt="vb">
+            <div id="cont1">
+                <div class="container">
+                    <div class="cont1">
+                        <h3>카카오 플랫폼을 활용한 생활금융 투자 서비스</h3>
+                        <p>오직 카카오 플랫폼을 통해서만 투자서비스를 제공합니다.
+                        사용자의 생활에 필요한 모든 금융 영역을 하나로 연결하고 라이프스타일
+                        특성을 반영해 가장 적합한 맞춤형 종합자산관리를 추구합니다.</p>
+                        <img class="img" src="img/kakao-bi-black.png" alt="">
                     </div>
-                    <div class="right">
-                        <h3>쉽고 재미있는 투자</h3>
-                        <p>소비 생활속에서도 다양한 투자 기회를 발굴합니다.<br>
-                        복잡한 가입과정이나 큰돈 없이도 투자할 수 있습니다.<br>
-                        상품선택의 수고로움을 덜기 위해 소수의 좋은 상품만을 제안합니다.<br>
-                        카카오톡만 있다면 투자실행부터 투자상품 관리까지 한번에 해결됩니다.
-                        </p>
-                    </div> 
                 </div>
-                <div class="cont3">
-                    <div class="left">
-                        <h3>믿을 수 있는 상품</h3>
-                        <p>어떤 시장 환경에서도, 언제든지, 얼마의 금액을 투자하더라도
-                            많은 곳에 나눠져 안정적이고 전문가에 의해 운용되어 오랫동안
-                            믿고 맡길 수 있는 상품만을 엄선해 제공합니다.
-                        </p>
+            </div>
+            <div id="cont2">
+                <div class="container">
+                    <div class="cont2">
+                        <div class="left">
+                            <img src="img/pic-retailfinance1.jpg" alt="ddd">
+                        </div>
+                        <div class="right">
+                            <h3>믿을 수 있는 상품</h3>
+                            <p>어떤 시장 환경에서도, 언제든지, 얼마의 금액을 투자하더라도
+                                많은 곳에 나눠져 안정적이고 전문가에 의해 운용되어 오랫동안
+                                믿고 맡길 수 있는 상품만을 엄선해 제공합니다.</p>
+                        </div>
                     </div>
-                    <div class="right">
-                        <img src="img/contents3.png" alt="bn">
+                </div>
+            </div>
+            <div id="cont3">
+                <div class="container">
+                    <div class="cont3">
+                        <div class="left">
+                            <h3>믿을 수 있는 상품</h3>
+                            <p>어떤 시장 환경에서도, 언제든지, 얼마의 금액을 투자하더라도
+                                많은 곳에 나눠져 안정적이고 전문가에 의해 운용되어 오랫동안
+                                믿고 맡길 수 있는 상품만을 엄선해 제공합니다.</p>
+                        </div>
+                        <div class="right">
+                            <img src="img/pic-retailfinance2.png" alt="ddd">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- //contents -->
         <div id="footer">
             <div class="container"></div>
         </div>
+        <!-- //footer -->
     </div>
+    <!-- //wrap -->
 </body>
 </html>

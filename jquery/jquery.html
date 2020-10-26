@@ -1,44 +1,110 @@
-<h2>디자인 및 시각적 요소 도출</h2>
-<div class="well">
-    <ul>
-        <li>사용자 리서치에서 도출된 페르소나 정의에 따라서 사용자의 라이프스타일이 반영된
-            비주얼 무드보드(Visual Moodboard)를 작업할 수 있다. </li>
-        <li>도출된 비주얼 무드보드(Visual Moodboard)에 의하여 GUI 상세 디자인을 하기 위한 콘
-            셉트 기획서를 작성할 수 있다.</li>
-    </ul>
-</div>
-<h3>1. UI/UX 콘셉트 기획안에 따른 디자인 및 시각적 요소 도출 </h3>
-<h4>디자인 요소 도출</h4>
-<p>UX는 멋지고 Fancy한 디자인을 만드는 것이 목표가 아니라, 탁월한 사용자 경험을 제공
-    하는 게 목표이다. 탁월한 사용자 경험을 제공하기 위해서는 사용자를 깊이 있게 이해하
-    는 것이 필요하다. 비즈니스 목표와 도전과제가 정해졌다면 사용자에서 출발한다. 사용자
-    를 깊이 있게 이해하는 것은 특정한 컨텍스트에서 사용자들이 보이는 인지적/감성적/행위
-    적 특성을 발견하는 일이다. 인지적/감성적/행위적 특성은 니즈, 동기, 태도, 이용행태로
-    나누어서 분석될 수 있는데, 여기에서 가장 중요한 것이 사용자의 니즈이다.
-    GUI 디자인을 위하여 비즈니스의 목표, 디자인의 원칙, 사용자에 대한 공감이라는 생각으
-    로 다음과 같이 디자인 요소를 구분할 수 있다.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 선언적 함수
+        function func1() {
+            document.write("function1이 실행되었습니다.<br>");
+        }
+        func1();
 
-    <ul>
-        <li>누가 사용할 것인가?</li>
-        <p>그들을 하나로 묶어서 ‘우리 소비자들은 말이야..’하고 얘기할 수도 있겠지만, 알다
-            시피 그들은 물건을 쓰는 목적과 쓰는 방법에 따라 몇 가지 유형으로 분류할 수 있다.
-            통틀어 ‘우리 소비자 어쩌고’ 하는 이야기는 사실을 왜곡할 수 있다. 그가 얘기하는
-            ‘우리 소비자’는 그만이 아는 사람들일 수 있다. 자기가 아는 사실들을 전체의 일인
-            양 확대해석하는 아전인수(我田引水) 식의 잘못이 벌어질 수 있는 것이다.</p>
-        <li>그들이 무엇을 원하는가?</li>
-        <p>소비자들이 뭘 원하는지를 아는 것에는 쉬운 것부터 복잡한 것까지 여러 가지 것들이
-            숨어 있다. 우리는 다른 사람들이 뭘 원하는지에 대해 상식적으로 알고 있다. 설문조
-            사를 하거나 인터넷을 통해 Word of Mouth를 수집하면 좀 더 많은 ‘니즈’를 찾아
-            볼 수 있다. 그러나 이 정도는 우리 말고 경쟁사들도 늘 하는 일이다. 그들과 차별화
-            된 ‘색다른 뭔가’를 만들어 내려면 좀 더 많은 노력이 필요하다. 상식, 설문조사,
-            Word of Mouth를 넘어서는 뭔가를… 우리는 이것을 ‘숨겨진 니즈’라고 부른다. 어
-            떻게 소비자들이 원하는 바를 그들보다 잘 알아낼 수 있을까? </p>
-        <li>그들은 (물건을) 어떻게 쓰는가?</li>
-        <p>사람들은 물건을 어떻게 쓸까? 우리가 상식적으로 알고 있는 뻔한 대답은 사실 우리
-            자신의 경험을 반추한 것일 확률이 높다. 소비자들을 많이 접한 사람일수록 이런 질문
-            에 명확한 대답을 내리기를 꺼려한다. 워낙 다양한 사람들의 다양한 이용 행태를 접해
-            봤기 때문이다. 그것을 한마디로 정의하기란 매우 어려운 일이다. 그럼에도 사람들을
-            지속적으로 관찰하면 그들이 물건을 이용할 때 보이는 일관된 패턴을 알아낼 수 있다.</p>
-        <li></li>
-        <li></li>
-    </ul>
+        // 익명함수
+        const func2 = function(){
+            document.write("function2이 실행되었습니다.<br>");
+        }
+        func2();
+
+        // 매개변수가 있는 함수
+        const func3 = function(name){
+            document.write(name + "이 실행되었습니다.<br>");
+        }
+        func3("function3");
+
+        // 리턴값(종료)이 있는 함수
+        function func4(){
+            const str = "function4이 실행되었습니다.<br>";
+            return str;
+        }
+        document.write(func4());
+
+        // 즉시 실행 함수(괄호)
+        (function (){
+            document.write("function5이 실행되었습니다.<br>");
+        }());
+
+        // 화살표 함수(선언적 함수를 화살표함수로 바꿈)
+        func6 = () => {
+            document.write("function6이 실행되었습니다.<br>");
+        }
+        func6();
+
+        // 화살표 함수(익명함수)
+        const func7 = () => {
+            document.write("function7이 실행되었습니다.<br>");
+        }
+        func7();
+        
+        // 화살표 함수(매개변수가 있는 함수)
+        const func8 = (str) => {
+            document.write(str + "이 실행되었습니다. <br>");
+        }
+        func8("function8");
+
+        // 화살표 함수(리턴값이 있는 함수)
+        const func9 = () => {
+            const str = "function9이 실행되었습니다.<br>";
+            return str;
+        }
+        document.write(func9());
+        
+        // 객체 생성자 함수
+        function Func10(name, action){
+            this.name = name;
+            this.action = action;
+            this.study = function(){
+                document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+            }
+        }
+        const obj1 = new Func10("function10","실행");
+        obj1.study();
+
+        // 프로토타입 메서드
+        function Func11(name, action){
+            this.name = name;
+            this.action = action;
+        }
+        Func11.prototype.study = function(){
+            document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+        }
+        const obj2 = new Func11("function11","실행");
+        obj2.study();
+
+        // 클래스
+        class Func12 {
+            constructor(name, action){
+                this.name = name;
+                this.action = action;
+            }
+            study(){
+                document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+            }
+        }
+        const obj3 = new Func12("function12","실행");
+        obj3.study();
+
+        // 템플릿 리터럴
+        function func100(name, action){
+            document.write(name + "이 되었습니다.<br>");
+            document.write(`${name} 이 ${action} 되었습니다.<br>`);
+        }
+        func100("function100","실행");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
