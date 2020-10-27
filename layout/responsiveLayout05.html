@@ -7,76 +7,70 @@
     <style>
         *{margin: 0; padding: 0;}
         header {width: 100%; height: 100px; background: #badefb;}
-        #head2 {width: 100%; height: 200px; background: #8ecbf9;}
-        aside {float: left; width: 30%; height: 400px; background: #61b6f6;}
-        #banner .banner1 {float: left; width: 70%; height: 200px; background: #3da7f5;}
-        #banner .banner2 {float: left; width: 70%; height: 200px; background: #1799f3;}
-        #cotants1 {width: 100%; overflow: hidden;}
-        #cotants1 .cont1-article1 {float: left; width: 33.3333%; height: 300px; background: #168be5;}
-        #cotants1 .cont1-article2 {float: left; width: 33.3333%; height: 300px; background: #127ad2;}
-        #cotants1 .cont1-article3 {float: left; width: 33.3333%; height: 300px; background: #0f69c0;}
-        #cotants2 {width: 100%; overflow: hidden; background: #3da7f5;}
-        #cotants2 .cont2-article1 {float: left; width: 17%; height: 200px; margin: 4%; border-radius: 5px; background: #127ad2;}
-        #cotants2 .cont2-article2 {float: left; width: 17%; height: 200px; margin: 4%; border-radius: 5px; background: #127ad2;}
-        #cotants2 .cont2-article3 {float: left; width: 17%; height: 200px; margin: 4%; border-radius: 5px; background: #127ad2;}
-        #cotants2 .cont2-article4 {float: left; width: 17%; height: 200px; margin: 4%; border-radius: 5px; background: #127ad2;}  
+        #head {width: 100%; height: 100px;  background: #8ecbf9;}
+        aside {float: left; width: 30%; height: 300px;  background: #61b6f6;}
+        #side .side1 {float: left; width: 70%; height: 150px; background: #3da7f5;}
+        #side .side2 {float: left; width: 70%; height: 150px; background: #1799f3;}
+        #contents1 {overflow: hidden; width: 100%;}
+        #contents1 .cont1_article1 {float: left; width: 33.3333%; height: 300px; background: #168be5;}
+        #contents1 .cont1_article2 {float: left; width: 33.3333%; height: 300px; background: #127ad2;}
+        #contents1 .cont1_article3 {float: left; width: 33.3333%; height: 300px; background: #0f69c0;}
+        #contents2 {overflow: hidden; width: 100%; background: #3da7f5;}
+        #contents2 .cont2_article1 {float: left; width: 17%; height: 150px; margin: 4%; border-radius: 10px; background: #127ad2;}
+        #contents2 .cont2_article2 {float: left; width: 17%; height: 150px; margin: 4%; border-radius: 10px; background: #127ad2;}
+        #contents2 .cont2_article3 {float: left; width: 17%; height: 150px; margin: 4%; border-radius: 10px; background: #127ad2;}
+        #contents2 .cont2_article4 {float: left; width: 17%; height: 150px; margin: 4%; border-radius: 10px; background: #127ad2;}
         footer {width: 100%; height: 100px; background: #61b6f6;}
-
-        .cotnainer {width: 1200px; margin: 0 auto;}
+        .container {width: 1200px; margin: 0 auto;}
 
         @media (max-width: 1210px){
-            .cotnainer {width: 100%;}
-            #cotants1 .cont1-article1 {width: 50%;}
-            #cotants1 .cont1-article2 {width: 50%;}
-            #cotants1 .cont1-article3 {display: none;}
-            #cotants2 .cont2-article1 {width: 25.3333%;} 
-            #cotants2 .cont2-article2 {width: 25.3333%;}
-            #cotants2 .cont2-article3 {width: 25.3333%;}
-            #cotants2 .cont2-article4 {display: none;}
+            .container {width: 100%;}
+            #contents1 .cont1_article1 {width: 50%;}
+            #contents1 .cont1_article2 {width: 50%;}
+            #contents1 .cont1_article3 {display: none;}
+
+            #contents2 .cont2_article1 {width: 25.3333%;}
+            #contents2 .cont2_article2 {width: 25.3333%;}
+            #contents2 .cont2_article3 {width: 25.3333%;}
+            #contents2 .cont2_article4 {display: none;}
         }
 
         @media (max-width: 900px){
-            #cotants1 .cont1-article1 {width: 100%;}
-            #cotants1 .cont1-article2 {width: 100%;}
-
-            #cotants2 .cont2-article1 {width: 25.3333%;} 
-            #cotants2 .cont2-article2 {width: 25.3333%;}
-            #cotants2 .cont2-article3 {width: 25.3333%;}
-            #cotants2 .cont2-article4 {display: none;}
+            #contents1 .cont1_article1 {width: 100%;}
+            #contents1 .cont1_article2 {width: 100%;}
         }
-
 
         @media (max-width: 480px){
             aside {width: 100%;}
-            #banner .banner1 {width: 100%;}
-            #banner .banner2 {width: 100%;}
-            #cotants2 .cont2-article1 {width: 93%;}
-            #cotants2 .cont2-article2 {width: 93%;}
-            #cotants2 .cont2-article3 {width: 93%;}
-            #cotants2 .cont2-article4 {width: 93%;}
+            #side .side1 {width: 100%;}
+            #side .side2 {width: 100%;}
+            #contents2 .cont2_article1 {width: 93%;}
+            #contents2 .cont2_article2 {width: 93%;}
+            #contents2 .cont2_article3 {width: 93%;}
+
         }
     </style>
 </head>
 <body>
     <div id="wrap">
-        <div class="cotnainer">
+        <div class="container">
             <header></header>
-            <section id="head2"></section>
+            <section id="head"></section>
             <aside></aside>
-            <section id="banner">
-                <article class="banner1"></article>
-                <article class="banner2"></article>
+            <section id="side">
+                <article class="side1"></article>
+                <article class="side2"></article>
             </section>
-            <section id="cotants1">
-                <article class="cont1-article1"></article>
-                <article class="cont1-article2"></article>
-                <article class="cont1-article3"></article>
+            <section id="contents1">
+                <article class="cont1_article1"></article>
+                <article class="cont1_article2"></article>
+                <article class="cont1_article3"></article>
             </section>
-            <section  id="cotants2">
-                <article class="cont2-article1"></article>
-                <article class="cont2-article2"></article>
-                <article class="cont2-article3"></article>
-                <article class="cont2-article4"></article>
+            <section id="contents2">
+                <article class="cont2_article1"></article>
+                <article class="cont2_article2"></article>
+                <article class="cont2_article3"></article>
+                <article class="cont2_article4"></article>
             </section>
             <footer></footer>
         </div>

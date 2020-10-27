@@ -156,6 +156,18 @@
                     .radius08 {border-radius: 70px;}
                     .radius09 {border-radius: 80px;}
                     .radius10 {border-radius: 90px;}
+                    .radius10.active {
+                        animation-name: radius10;
+                        animation-duration: 2s;
+                        animation-iteration-count: 50;
+                    }
+                    @keyframes radius10 {
+                        0% {border-radius: 90px 0px;}
+                        25% {border-radius: 100px 80px;}
+                        50% {border-radius: 0px 0px;}
+                        75% {border-radius: 80px 100px;}
+                        100% {border-radius: 0px 90px;}
+                    }
 
                     .radius11 {border-radius: 0px 0px;}
                     .radius12 {border-radius: 15px 0px;}
@@ -190,6 +202,18 @@
                     .radius28 {border-radius: 105px / 50px;}
                     .radius29 {border-radius: 120px / 50px;}
                     .radius30 {border-radius: 135px / 50px;}
+                    .radius30.active {
+                        animation-name: radius30;
+                        animation-duration: 2s;
+                        animation-iteration-count: 50;
+                    }
+                    @keyframes radius30 {
+                        0% {border-radius: 50px 50px;}
+                        25% {border-radius: 0px 0px;}
+                        50% {border-radius: 40px 40px;}
+                        75% {border-radius: 0px 0px;}
+                        100% {border-radius: 50px 50px;}
+                    }
 
                     .radius31 {border-radius: 0 10px 10px;}
                     .radius32 {border-radius: 0 30px 30px;}
@@ -201,6 +225,18 @@
                     .radius38 {border-radius: 50px 50px 0px;}
                     .radius39 {border-radius: 70px 70px 0px;}
                     .radius40 {border-radius: 90px 90px 0px;}
+                    .radius40.active {
+                        animation-name: radius40;
+                        animation-duration: 2s;
+                        animation-iteration-count: 50;
+                    }
+                    @keyframes radius40 {
+                        0% {border-radius: 75px 65px;}
+                        25% {border-radius: 55px 45px;}
+                        50% {border-radius: 40px 40px;}
+                        75% {border-radius: 55px 45px;}
+                        100% {border-radius: 75px 65px;}
+                    }
 
                     .radius41 {border-radius: 0px 0px 10px 10px;}
                     .radius42 {border-radius: 0px 0px 30px 30px;}
@@ -212,6 +248,18 @@
                     .radius48 {border-radius: 50px 50px 0px 0px;}
                     .radius49 {border-radius: 70px 70px 0px 0px;}
                     .radius50 {border-radius: 90px 90px 0px 0px;}
+                    .radius50.active {
+                        animation-name: radius50;
+                        animation-duration: 2s;
+                        animation-iteration-count: 50;
+                    }
+                    @keyframes radius50 {
+                        0% {border-radius: 15px 65px;}
+                        25% {border-radius: 55px 45px;}
+                        50% {border-radius: 40px 30px;}
+                        75% {border-radius: 50px 45px;}
+                        100% {border-radius: 75px 15px;}
+                    }
                     
 
                 </style>
@@ -401,17 +449,25 @@
     <script src="../assets/js/prism.js"></script>
 
     <script>
-        // radius20번을 클릭하면 글씨색을 파란색으로 변경
-        $(".radius20").click(function(){
-            $(".radius20").css("color","blue");
+        // radius10번을 클릭하면 클래스("active")를 추가
+        $(".radius10").click(function(){
+            $(".radius10").addClass("active");
         });
-        document.querySelector(".radius20").addEventListener("click",function(){
-            document.querySelector(".radius20").style.color = "blue"
-        });
-
         // radius20번을 클릭하면 클래스("active")를 추가
         $(".radius20").click(function(){
             $(".radius20").addClass("active");
+        });
+        // radius30번을 클릭하면 클래스("active")를 추가
+        $(".radius30").click(function(){
+            $(".radius30").addClass("active");
+        });
+        // radius40번을 클릭하면 클래스("active")를 추가
+        $(".radius40").click(function(){
+            $(".radius40").addClass("active");
+        });
+        // radius50번을 클릭하면 클래스("active")를 추가
+        $(".radius50").click(function(){
+            $(".radius50").addClass("active");
         });
         
     </script>
