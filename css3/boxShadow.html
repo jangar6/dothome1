@@ -131,13 +131,188 @@
                 <!-- //Intro0 -->
 
                 <style>
+                    .sample .boxWrap.shadowWrap > div {width: 150px; height: 150px; line-height: 150px; margin: 35px;}
                     .shadowWrap.bg1 > div {background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
                     .shadowWrap.bg2 > div {background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);}
                     .shadowWrap.bg3 > div {background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);}
                     .shadowWrap.bg4 > div {background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);}
                     .shadowWrap.bg5 > div {background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);}
                     .shadowWrap.bg6 > div {background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);}
-                    .shadowWrap > div {}
+                    .shadowWrap.bg7 > div {background-color: #ad1457;}
+                    .shadowWrap > div {transition: all 0.6s;}
+                    .shadowWrap > div:hover {box-shadow: none;}
+
+                    .shadow01 {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);}
+                    .shadow02 {box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow03 {box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow04 {box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow05 {box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow06 {box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow07 {box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow08 {box-shadow: 14px 14px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow09 {box-shadow: 16px 16px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow10 {box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.8);}
+                    .shadow10.active {
+                        animation-name: shadow10;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow10 {
+                        0% {box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.8);}
+                        10% {box-shadow: 16px 16px 5px rgba(0, 0, 0, 0.8);}
+                        20% {box-shadow: 14px 14px 5px rgba(0, 0, 0, 0.8);}
+                        30% {box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.8);}
+                        40% {box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);}
+                        50% {box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.8);}
+                        60% {box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.8);}
+                        70% {box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);}
+                        80% {box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);}
+                        100% {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);}
+                    }
+
+                    .shadow11 {box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);}
+                    .shadow12 {box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);}
+                    .shadow13 {box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);}
+                    .shadow14 {box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);}
+                    .shadow15 {box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);}
+                    .shadow16 {box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);}
+                    .shadow17 {box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.8);}
+                    .shadow18 {box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.8);}
+                    .shadow19 {box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.8);}
+                    .shadow20 {box-shadow: 4px 4px 27px rgba(0, 0, 0, 0.8);}
+                    .shadow20.active {
+                        animation-name: shadow20;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow20 {
+                        0% {box-shadow: 4px 4px 27px rgba(0, 0, 0, 0.8);}
+                        10% {box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.8);}
+                        20% {box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.8);}
+                        30% {box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.8);}
+                        40% {box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);}
+                        50% {box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);}
+                        60% {box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);}
+                        70% {box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);}
+                        80% {box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);}
+                        90% {box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);}
+                        100% {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);}
+                    }
+                   
+                    .shadow21 {box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);}
+                    .shadow22 {box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.8);}
+                    .shadow23 {box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.8);}
+                    .shadow24 {box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.8);}
+                    .shadow25 {box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.8);}
+                    .shadow26 {box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.8);}
+                    .shadow27 {box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.8);}
+                    .shadow28 {box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.8);}
+                    .shadow29 {box-shadow: 0px 0px 0px 16px rgba(0, 0, 0, 0.8);}
+                    .shadow30 {box-shadow: 0px 0px 0px 18px rgba(0, 0, 0, 0.8);}
+                    .shadow30.active {
+                        animation-name: shadow30;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow30 {
+                        0% {box-shadow: 0px 0px 0px 18px rgba(0, 0, 0, 0.8);}
+                        25% {box-shadow: 0px 0px 0px 16px rgba(0, 0, 0, 0.8);}
+                        50% {box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.8);}
+                        75% {box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.8);}
+                        100% {box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.8);}
+                    }
+
+                    .shadow31 {box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);}
+                    .shadow32 {box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.8);}
+                    .shadow33 {box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.8);}
+                    .shadow34 {box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.8);}
+                    .shadow35 {box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.8);}
+                    .shadow36 {box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8);}
+                    .shadow37 {box-shadow: 0px 0px 18px 12px rgba(0, 0, 0, 0.8);}
+                    .shadow38 {box-shadow: 0px 0px 21px 14px rgba(0, 0, 0, 0.8);}
+                    .shadow39 {box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.8);}
+                    .shadow40 {box-shadow: 0px 0px 27px 18px rgba(0, 0, 0, 0.8);}
+                    .shadow40.active {
+                        animation-name: shadow40;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow40 {
+                        0% {box-shadow: 0px 0px 27px 18px rgba(0, 0, 0, 0.8);}
+                        25% {box-shadow: 0px 0px 21px 14px rgba(0, 0, 0, 0.8);}
+                        50% {box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8);}
+                        75% {box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.8);}
+                        100% {box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.8);}
+                    }
+
+                    .shadow41 {box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow42 {box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow43 {box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow44 {box-shadow: 0px 6px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow45 {box-shadow: 0px 8px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow46 {box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow47 {box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow48 {box-shadow: 0px 14px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow49 {box-shadow: 0px 16px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow50 {box-shadow: 0px 18px 5px -3px rgba(0, 0, 0, 0.8);}
+                    .shadow50.active {
+                        animation-name: shadow50;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow50 {
+                        0% {box-shadow: 0px 18px 5px -3px rgba(0, 0, 0, 0.8);}
+                        25% {box-shadow: 0px 14px 5px -3px rgba(0, 0, 0, 0.8);}
+                        50% {box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.8);}
+                        75% {box-shadow: 0px 6px 5px -3px rgba(0, 0, 0, 0.8);}
+                        100% {box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.8);}
+                    }
+
+                    .shadow51 {box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow52 {box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow53 {box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow54 {box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow55 {box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow56 {box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow57 {box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow58 {box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow59 {box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow60 {box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.8)inset;}
+                    .shadow60.active {
+                        animation-name: shadow60;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow60 {
+                        0% {box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.8)inset;}
+                        25% {box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.8)inset;}
+                        50% {box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.8)inset;}
+                        75% {box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.8)inset;}
+                        100% {box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.8)inset;}
+                    }
+
+                    .shadow61 {box-shadow: 5px 5px 0px 0px #c2185b;}
+                    .shadow62 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60;}
+                    .shadow63 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63;}
+                    .shadow64 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63, 20px 20px 0px 0px #ec407a;}
+                    .shadow65 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63, 20px 20px 0px 0px #ec407a, 25px 25px 0px 0px #f06292;}
+                    .shadow66 {box-shadow: 0px 0px 0px 5px #c2185b inset;}
+                    .shadow67 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset;}
+                    .shadow68 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset;}
+                    .shadow69 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset, 0px 0px 0px 20px #ec407a inset;}
+                    .shadow70 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset, 0px 0px 0px 20px #ec407a inset, 0px 0px 0px 25px #f06292 inset;}
+                    .shadow70.active {
+                        animation-name: shadow70;
+                        animation-duration: 2s;
+                        animation-iteration-count: 100;
+                    }
+                    @keyframes shadow70{
+                        0% {box-shadow: 0px 0px 0px 5px #c2185b inset;}
+                        25% {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset;}
+                        50% {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset;}
+                        75% {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset;}
+                        100% {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset, 0px 0px 0px 20px #ec407a inset, 0px 0px 0px 25px #f06292 inset;}
+                    }
                 </style>
 
                 <!-- Intro1 -->
@@ -158,7 +333,16 @@
                             <div class="shadow10"><span>shadow10</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>.shadow01 {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);}
+.shadow02 {box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);}
+.shadow03 {box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);}
+.shadow04 {box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.8);}
+.shadow05 {box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.8);}
+.shadow06 {box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);}
+.shadow07 {box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.8);}
+.shadow08 {box-shadow: 14px 14px 5px rgba(0, 0, 0, 0.8);}
+.shadow09 {box-shadow: 16px 16px 5px rgba(0, 0, 0, 0.8);}
+.shadow10 {box-shadow: 18px 18px 5px rgba(0, 0, 0, 0.8);}
 </code></pre>
                 </div>
                 <!-- //Intro1 -->
@@ -181,7 +365,16 @@
                             <div class="shadow20"><span>shadow20</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>.shadow11 {box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);}
+.shadow12 {box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);}
+.shadow13 {box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);}
+.shadow14 {box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);}
+.shadow15 {box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);}
+.shadow16 {box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);}
+.shadow17 {box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.8);}
+.shadow18 {box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.8);}
+.shadow19 {box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.8);}
+.shadow20 {box-shadow: 4px 4px 27px rgba(0, 0, 0, 0.8);}
 </code></pre>
                 </div>
                 <!-- //Intro2 -->
@@ -204,7 +397,16 @@
                             <div class="shadow30"><span>shadow30</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>.shadow31 {box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);}
+.shadow32 {box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.8);}
+.shadow33 {box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.8);}
+.shadow34 {box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.8);}
+.shadow35 {box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.8);}
+.shadow36 {box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8);}
+.shadow37 {box-shadow: 0px 0px 18px 12px rgba(0, 0, 0, 0.8);}
+.shadow38 {box-shadow: 0px 0px 21px 14px rgba(0, 0, 0, 0.8);}
+.shadow39 {box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.8);}
+.shadow40 {box-shadow: 0px 0px 27px 18px rgba(0, 0, 0, 0.8);}
 </code></pre>
                 </div>
                 <!-- //Intro3 -->
@@ -227,7 +429,16 @@
                             <div class="shadow40"><span>shadow40</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>.shadow41 {box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow42 {box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow43 {box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow44 {box-shadow: 0px 6px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow45 {box-shadow: 0px 8px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow46 {box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow47 {box-shadow: 0px 12px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow48 {box-shadow: 0px 14px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow49 {box-shadow: 0px 16px 5px -3px rgba(0, 0, 0, 0.8);}
+.shadow50 {box-shadow: 0px 18px 5px -3px rgba(0, 0, 0, 0.8);}
 </code></pre>
                 </div>
                 <!-- //Intro4 -->
@@ -273,10 +484,51 @@
                             <div class="shadow60"><span>shadow60</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>.shadow51 {box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8)inset;}
+.shadow52 {box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.8)inset;}
+.shadow53 {box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.8)inset;}
+.shadow54 {box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.8)inset;}
+.shadow55 {box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.8)inset;}
+.shadow56 {box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.8)inset;}
+.shadow57 {box-shadow: 0px 0px 11px 7px rgba(0, 0, 0, 0.8)inset;}
+.shadow58 {box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.8)inset;}
+.shadow59 {box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.8)inset;}
+.shadow60 {box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.8)inset;}
 </code></pre>
                 </div>
                 <!-- //Intro6 -->
+
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro7" class="page-header">Sample07</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg7">
+                            <div class="shadow61"><span>shadow61</span></div>
+                            <div class="shadow62"><span>shadow62</span></div>
+                            <div class="shadow63"><span>shadow63</span></div>
+                            <div class="shadow64"><span>shadow64</span></div>
+                            <div class="shadow65"><span>shadow65</span></div>
+                            <div class="shadow66"><span>shadow66</span></div>
+                            <div class="shadow67"><span>shadow67</span></div>
+                            <div class="shadow68"><span>shadow68</span></div>
+                            <div class="shadow69"><span>shadow69</span></div>
+                            <div class="shadow70"><span>shadow70</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.shadow61 {box-shadow: 5px 5px 0px 0px #c2185b;}
+.shadow62 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60;}
+.shadow63 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63;}
+.shadow64 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63, 20px 20px 0px 0px #ec407a;}
+.shadow65 {box-shadow: 5px 5px 0px 0px #c2185b, 10px 10px 0px 0px #d81b60, 15px 15px 0px 0px #e91e63, 20px 20px 0px 0px #ec407a, 25px 25px 0px 0px #f06292;}
+.shadow66 {box-shadow: 0px 0px 0px 5px #c2185b inset;}
+.shadow67 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset;}
+.shadow68 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset;}
+.shadow69 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset, 0px 0px 0px 20px #ec407a inset;}
+.shadow70 {box-shadow: 0px 0px 0px 5px #c2185b inset, 0px 0px 0px 10px #d81b60 inset, 0px 0px 0px 15px #e91e63 inset, 0px 0px 0px 20px #ec407a inset, 0px 0px 0px 25px #f06292 inset;}
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
                 
             </div>
             
@@ -306,5 +558,34 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/docs.min.js"></script>
     <script src="../assets/js/prism.js"></script>
+
+    <script>
+        // document.querySelector(".shadow70").addEventListener("click",function(){});
+        $(".shadow10").click(function(){
+            $(".shadow10").addClass("active");
+        });
+        $(".shadow20").click(function(){
+            $(".shadow20").addClass("active");
+        });
+        $(".shadow30").click(function(){
+            $(".shadow30").addClass("active");
+        });
+        $(".shadow40").click(function(){
+            $(".shadow40").addClass("active");
+        });
+        $(".shadow50").click(function(){
+            $(".shadow50").addClass("active");
+        });
+        $(".shadow60").click(function(){
+            $(".shadow60").addClass("active");
+        });
+        $(".shadow70").click(function(){
+            $(".shadow70").addClass("active");
+        });
+
+
+        
+
+    </script>
 </body>
 </html>
