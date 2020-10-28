@@ -9,9 +9,6 @@ a {color: #222; text-decoration: none;}
 a:hover {color: #2698cb;}
 
 /* 폰트 초기화 */
-
-/* 폰트 초기화 */
-/* 폰트 초기화 */
 body, input, textarea, select, button, table {
     font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
     color: #222; 

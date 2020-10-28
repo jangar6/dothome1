@@ -7,6 +7,7 @@
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
     <meta name="keywords" content="JangAReum, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
     <title>JangAReum | BoxShadow</title>
+
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/docs.min.css" rel="stylesheet">
@@ -75,40 +76,211 @@
     </div>
     <div class="container bs-docs-container">
         <div class="row">
-            <div class="col-md-9" role="main">
+            <div class="col-md-12" role="main">
+                <!-- 배너광고1140-->
+                <div class="ad">
+                    <script src="https://ads-partners.coupang.com/g.js"></script>
+                    <script>
+                        new PartnersCoupang.G({ id:348401 });
+                    </script>
+                </div>
+                <!-- //배너광고1140 -->
                 
-                <!-- Intro1 -->
+                <!-- Intro0 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">클리핑 마스크</h2>
-                    <p class="bs-callout bs-callout-info">클리핑 마스크는 레이어 마스크와 달리 상위 레이어의 이미지를 하위 레이어에 클리핑하여 레이어의 모양으로 잘라낸 것처럼 나타내는 기능입니다.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample01.jpg">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample02.jpg">
-                            </a>
-                        </div>
+                    <h2 id="intro0" class="page-header">box-shadow</h2>
+                    <p class="bs-callout bs-callout-info">box-shadow : none | h-shadow | v-shadow | blur | spread | color | inset</p>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>none</td>
+                                    <td>그림자 효과를 적용하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>h-shadow</td>
+                                    <td>그림자의 수평(X축) 거리를 나타냅니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>v-shadow</td>
+                                    <td>그림자의 수평(Y축) 거리를 나타냅니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>blur</td>
+                                    <td>그림자의 흐림 정도를 나타냅니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>spread</td>
+                                    <td>그림자의 거리를 나타냅니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>inset</td>
+                                    <td>그림자의 내부에 적용 할 수 있습니다.</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
                     </div>
                 </div>
+                <!-- //Intro0 -->
+
+                <style>
+                    .shadowWrap.bg1 > div {background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
+                    .shadowWrap.bg2 > div {background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);}
+                    .shadowWrap.bg3 > div {background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);}
+                    .shadowWrap.bg4 > div {background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);}
+                    .shadowWrap.bg5 > div {background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);}
+                    .shadowWrap.bg6 > div {background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);}
+                    .shadowWrap > div {}
+                </style>
+
+                <!-- Intro1 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro1" class="page-header">Sample01</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg1">
+                            <div class="shadow01"><span>shadow01</span></div>
+                            <div class="shadow02"><span>shadow02</span></div>
+                            <div class="shadow03"><span>shadow03</span></div>
+                            <div class="shadow04"><span>shadow04</span></div>
+                            <div class="shadow05"><span>shadow05</span></div>
+                            <div class="shadow06"><span>shadow06</span></div>
+                            <div class="shadow07"><span>shadow07</span></div>
+                            <div class="shadow08"><span>shadow08</span></div>
+                            <div class="shadow09"><span>shadow09</span></div>
+                            <div class="shadow10"><span>shadow10</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
                 <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro2" class="page-header">Sample02</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg2">
+                            <div class="shadow11"><span>shadow11</span></div>
+                            <div class="shadow12"><span>shadow12</span></div>
+                            <div class="shadow13"><span>shadow13</span></div>
+                            <div class="shadow14"><span>shadow14</span></div>
+                            <div class="shadow15"><span>shadow15</span></div>
+                            <div class="shadow16"><span>shadow16</span></div>
+                            <div class="shadow17"><span>shadow17</span></div>
+                            <div class="shadow18"><span>shadow18</span></div>
+                            <div class="shadow19"><span>shadow19</span></div>
+                            <div class="shadow20"><span>shadow20</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro2 -->
+
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro3" class="page-header">Sample03</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg3">
+                            <div class="shadow21"><span>shadow21</span></div>
+                            <div class="shadow22"><span>shadow22</span></div>
+                            <div class="shadow23"><span>shadow23</span></div>
+                            <div class="shadow24"><span>shadow24</span></div>
+                            <div class="shadow25"><span>shadow25</span></div>
+                            <div class="shadow26"><span>shadow26</span></div>
+                            <div class="shadow27"><span>shadow27</span></div>
+                            <div class="shadow28"><span>shadow28</span></div>
+                            <div class="shadow29"><span>shadow29</span></div>
+                            <div class="shadow30"><span>shadow30</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro3 -->
+
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro4" class="page-header">Sample04</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg4">
+                            <div class="shadow31"><span>shadow31</span></div>
+                            <div class="shadow32"><span>shadow32</span></div>
+                            <div class="shadow33"><span>shadow33</span></div>
+                            <div class="shadow34"><span>shadow34</span></div>
+                            <div class="shadow35"><span>shadow35</span></div>
+                            <div class="shadow36"><span>shadow36</span></div>
+                            <div class="shadow37"><span>shadow37</span></div>
+                            <div class="shadow38"><span>shadow38</span></div>
+                            <div class="shadow39"><span>shadow39</span></div>
+                            <div class="shadow40"><span>shadow40</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro4 -->
+                
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro5" class="page-header">Sample05</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg5">
+                            <div class="shadow41"><span>shadow41</span></div>
+                            <div class="shadow42"><span>shadow42</span></div>
+                            <div class="shadow43"><span>shadow43</span></div>
+                            <div class="shadow44"><span>shadow44</span></div>
+                            <div class="shadow45"><span>shadow45</span></div>
+                            <div class="shadow46"><span>shadow46</span></div>
+                            <div class="shadow47"><span>shadow47</span></div>
+                            <div class="shadow48"><span>shadow48</span></div>
+                            <div class="shadow49"><span>shadow49</span></div>
+                            <div class="shadow50"><span>shadow50</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro5 -->
+                
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="Intro6" class="page-header">Sample06</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">box-shadow</em></h3>
+                        <div class="boxWrap shadowWrap bg6">
+                            <div class="shadow51"><span>shadow51</span></div>
+                            <div class="shadow52"><span>shadow52</span></div>
+                            <div class="shadow53"><span>shadow53</span></div>
+                            <div class="shadow54"><span>shadow54</span></div>
+                            <div class="shadow55"><span>shadow55</span></div>
+                            <div class="shadow56"><span>shadow56</span></div>
+                            <div class="shadow57"><span>shadow57</span></div>
+                            <div class="shadow58"><span>shadow58</span></div>
+                            <div class="shadow59"><span>shadow59</span></div>
+                            <div class="shadow60"><span>shadow60</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
                 
             </div>
             
-            <!-- //col-md-9 -->
-            
-            <!-- //col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">레이어 마스크</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--//col-md-3 -->
+            <!-- //col-md-12 -->
         </div>
         <!-- //row -->
     </div>
