@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsiveLayout03</title>
     <style>
+        /* reset */
         *{margin: 0; padding: 0;}
-        .container {width: 1200px; margin: 0 auto;}
+
+        /* layout */
         header {width: 100%; height: 100px; background: #dcedc8;}
         aside {width: 30%; height: 900px; background: #c5e1a5; float: left;}
         article {width: 70%; height: 300px; background: #aed581; float: left;}
@@ -15,7 +17,12 @@
         article:nth-of-type(3) {background: #7cb342 ;}
         footer {width: 100%; height: 100px; background: #689f38; clear: both;}
 
+        /* container */
+        .container {width: 1200px; margin: 0 auto;}
+
+        /* 미디어쿼리 */
         @media (max-width: 1280px){
+            .container {width: 100%;}
             article:nth-of-type(1) {height: 450px;}
             article:nth-of-type(2) {height: 450px;}
             article:nth-of-type(3) {width: 100%;}
@@ -29,9 +36,9 @@
         }
 
         @media (max-width: 480px){
-            article:nth-of-type(1) {height: 300px;}
-            article:nth-of-type(2) {height: 300px;}
-            article:nth-of-type(3) {height: 300px;}
+            article:nth-of-type(1) {width: 100%; height: 300px;}
+            article:nth-of-type(2) {width: 100%; height: 300px;}
+            article:nth-of-type(3) {width: 100%; height: 300px;}
         }
 
     </style>
@@ -40,12 +47,19 @@
     <div id="wrap">
         <div class="container">
             <header></header>
+            <!-- //header -->
             <aside></aside>
+            <!-- //aside -->
             <article></article>
+            <!-- //article1 -->
             <article></article>
+            <!-- //article2 -->
             <article></article>
+            <!-- //article3 -->
             <footer></footer>
+            <!-- //footer -->
         </div>
     </div>
+    <!-- //wrap -->
 </body>
 </html>

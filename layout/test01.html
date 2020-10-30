@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        *{margin: 0; padding: 0;}
+
+        /* layout */
+        #wrap {background: #f0f4c3;}
+        header {width: 100%; height: 100px; background: #e6ee9c;}
+        nav {width: 100%; height: 300px; background: #dce775;}
+        #contents {width: 100%; height: 400px; background: #d4e157; overflow: hidden;}
+        #contents .cont_article1 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article2 {float: left; width: 16%;  height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article3 {float: left; width: 16%;  height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article4 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article5 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article6 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article7 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article8 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article9 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        #contents .cont_article10 {float: left; width: 16%; height: 150px; margin: 2%; border-radius: 5px; background: #afb42b;}
+        footer {width: 100%; height: 100px; background: #c0ca33;}
+        
+        /* container */
+        .container {width: 1200px; margin: 0 auto;}
+
+        /* media */
+        @media (max-width: 1210px){
+            .container{width: 100%;} 
+        }
+
+        @media (max-width: 900px){
+            #contents {height: 520px;}
+            #contents .cont_article1 {width: 29.3333%;}
+            #contents .cont_article2 {width: 29.3333%;}
+            #contents .cont_article3 {width: 29.3333%;}
+            #contents .cont_article4 {width: 29.3333%;}
+            #contents .cont_article5 {width: 29.3333%;}
+            #contents .cont_article6 {width: 29.3333%;}
+            #contents .cont_article7 {width: 29.3333%;}
+            #contents .cont_article8 {width: 29.3333%;}
+            #contents .cont_article9 {width: 29.3333%;}
+            #contents .cont_article10 {display: none;}
+        }
+
+        @media (max-width: 480px){
+            #contents {height: 810px;}
+            #contents .cont_article1 {width: 46%;}
+            #contents .cont_article2 {width: 46%;}
+            #contents .cont_article3 {width: 46%;}
+            #contents .cont_article4 {width: 46%;}
+            #contents .cont_article5 {width: 46%;}
+            #contents .cont_article6 {width: 46%;}
+            #contents .cont_article7 {width: 46%;}
+            #contents .cont_article8 {width: 46%;}
+            #contents .cont_article9 {width: 46%;}
+            #contents .cont_article10 {width: 46%; display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <header></header>
+            <!-- //header -->
+            <nav></nav>
+            <!-- //nav -->
+            <section id="contents">
+                <article class="cont_article1"></article>
+                <article class="cont_article2"></article>
+                <article class="cont_article3"></article>
+                <article class="cont_article4"></article>
+                <article class="cont_article5"></article>
+                <article class="cont_article6"></article>
+                <article class="cont_article7"></article>
+                <article class="cont_article8"></article>
+                <article class="cont_article9"></article>
+                <article class="cont_article10"></article>
+            </section>
+            <!-- //section -->
+            <footer></footer>
+            <!-- //footer -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

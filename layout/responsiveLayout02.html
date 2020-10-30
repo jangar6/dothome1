@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsiveLayout02</title>
     <style>
+        /* reset */
         *{margin: 0; padding: 0;}
-        .container {width: 100%;}
+        
+        /* layout */
         header {width: 100%; height: 100px; background: #cfd8dc;}
         aside {width: 30%; height: 700px; background: #b0bec5; float: left;}
         section {width: 40%; height: 700px; background: #90a4ae; float: left;}
         article {width: 30%; height: 700px; background: #78909c; float: left;}
         footer {width: 100%; height: 100px; background: #607d8b; clear: both;}
 
+        /* container */
+        .container {width: 100%;}
+
+        /* 미디어쿼리 */
         /* 화면너비  0 ~ 1280px */
         @media (max-width: 1290px){
             section {width: 70%;}
@@ -36,11 +42,18 @@
     <div id="wrap">
         <div class="container">
             <header></header>
+            <!-- //header -->
             <aside></aside>
+            <!-- //aside -->
             <section></section>
+            <!-- //section -->
             <article></article>
+            <!-- //article -->
             <footer></footer>
+            <!-- //footer -->
         </div>
+        <!-- //container -->
     </div>
+    <!-- //wrap -->
 </body>
 </html>

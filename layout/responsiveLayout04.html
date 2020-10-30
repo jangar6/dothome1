@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsiveLayout04</title>
     <style>
+         /* reset */
         *{margin: 0; padding: 0;}
+
+        /* layout */
         body {background: #fff8e1;}
-        .container {width: 1200px; margin: 0 auto;}
         header {width: 100%; height: 100px; background: #ffde81;}
         aside {width: 100%; height: 300px; background: #ffd34e;}
         section {width: 90%; padding: 5%; background: #ffc825; overflow: hidden;}
@@ -18,6 +20,8 @@
         }
         footer {width: 100%; height: 100px; background: #ffb200;}
 
+        /* container */
+        .container {width: 1200px; margin: 0 auto;}
         @media (max-width:1210px){
             .container {width: 100%;}
             section > article {width: 23%;}
@@ -43,7 +47,9 @@
     <div id="wrap">
         <div class="container">
             <header></header>
+            <!-- //header -->
             <aside></aside>
+            <!-- //aside -->
             <section>
                 <article></article>
                 <article></article>
@@ -56,8 +62,12 @@
                 <article></article>
                 <article></article>
             </section>
+            <!-- //section -->
             <footer></footer>
+            <!-- //footer -->
         </div>
+        <!-- //container -->
     </div>
+    <!-- //wrap -->
 </body>
 </html>

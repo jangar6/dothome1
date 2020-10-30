@@ -5,80 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        // //함수가 실행되었습니다.
+        //함수가 실행되었습니다.
+        function func1(){
+            document.write("1. 함수가 실행되었습니다.<br>");
+        }
+        func1();
 
-        // function func1(){
-        //     document.write("1. 함수가 실행되었습니다.<br>");
-        // }
-        // func1();
+        // 함수를 20번 실행 -> 재귀함수
 
-        //함수를 20번 실행 -> 재귀함수
+        function func2(num){
+            if(num == 0){
+                document.write("2. 함수가 실행되었습니다.<br>");
+            } else {
+                document.write("2. 함수가 실행되었습니다.<br>");
+                func2(num-1);
+            }
+        }
+        func2(20);
+        //2. 함수가 실행되었습니다.<br> 21번 반복
 
-        // function func2(num){
-        //     if(num == 0){
-        //         document.write("2. 함수가 실행되었습니다.<br>");
-        //     } else {
-        //         document.write("2. 함수가 실행되었습니다.<br>");
-        //         func2(num-1);
-        //     }
-        // }
-        // func2(20);
-        // //2. 함수가 실행되었습니다.<br> 21번 반복
+        //함수가 실행되었습니다.
 
-        // //함수가 실행되었습니다.
+        let func3 = function(){
+            document.write("3. 함수가 실행되었습니다.<br>");
+        }
+        func3();
 
-        // let func3 = function(){
-        //     document.write("3. 함수가 실행되었습니다.<br>");
-        // }
-        // func3();
+        //매개변수가 있는 함수
+        function func4(num1, num2){
+            document.write("4. " + num1 + "가 " + num2 + "되었습니다.<br>");
+        }
+        func4("함수", "실행");
 
-        // //매개변수가 있는 함수
-        // function func4(num1, num2){
-        //     document.write("4. " + num1 + "가 " + num2 + "되었습니다.<br>");
-        // }
-        // func4("함수", "실행");
+        // 리턴값이 있는 함수
+        function func5(){
+            let str = "5. 함수가 실행되었습니다.<br>";
+            return str;
+        }
+        let result = func5 ();
+        document.write(result);
 
-        //리턴값이 있는 함수
-        // function func5(){
-        //     let str = "5. 함수가 실행되었습니다.<br>";
-        //     return str;
-        // }
-        // let result = func5 ();
-        // document.write(result);
+        //객체 생성자 함수
+        function func6(num1, str1, str2){
+            this.youNum = num1;
+            this.youStr1 = str1;
+            this.youStr2 = str2;
+            this.result = function(){
+                //출력문
+                // let str = this.youNum + this.youStr1 + this.youStr2 ;
+                let str = "";
+                str += this.youNum+". "; //"" + 6 + ". " = "6. "
+                str += this.youStr1 + "가 ";//"" + 함수 + 가 = "함수가"
+                str += this.youStr2+"되었습니다.<br>";//"" + 실행 + "되었습니다.<br>" = "실행 되었습니다."
+                return str;
+            }
+        }
+        let java = new func6(6, "함수", "실행");
+        document.write(java.result());
 
-        // //객체 생성자 함수
-        // function func6(num1, str1, str2){
-        //     this.youNum = num1;
-        //     this.youStr1 = str1;
-        //     this.youStr2 = str2;
-        //     this.result = function(){
-        //         //출력문
-        //         // let str = this.youNum + this.youStr1 + this.youStr2 ;
-        //         let str = "";
-        //         str += this.youNum+". "; //"" + 6 + ". " = "6. "
-        //         str += this.youStr1 + "가 ";//"" + 함수 + 가 = "함수가"
-        //         str += this.youStr2+"되었습니다.<br>";//"" + 실행 + "되었습니다.<br>" = "실행 되었습니다."
-        //         return str;
-        //     }
-        // }
-        // let java = new func6(6, "함수", "실행");
-        // document.write(java.result());
-
-        // //프로토타입
-        // function func7(num1, str1, str2){
-        //     this.youNum = num1;
-        //     this.youStr1 = str1;
-        //     this.youStr2 = str2;
-        // }
-        // func7.prototype.result = function(){
-        //     let str = "";
-        //         str += this.youNum + ". ";
-        //         str += this.youStr1 + "가 ";
-        //         str += this.youStr2 + "되었습니다.";
-        //         return str;
-        // }
-        // let javas = new func7(7, "함수", "실행");
-        // document.write(javas.result());
+        //프로토타입
+        function func7(num1, str1, str2){
+            this.youNum = num1;
+            this.youStr1 = str1;
+            this.youStr2 = str2;
+        }
+        func7.prototype.result = function(){
+            let str = "";
+                str += this.youNum + ". ";
+                str += this.youStr1 + "가 ";
+                str += this.youStr2 + "되었습니다.";
+                return str;
+        }
+        let javas = new func7(7, "함수", "실행");
+        document.write(javas.result());
 
         // 화살표 함수(선언적 함수)
         func1 = () => {
