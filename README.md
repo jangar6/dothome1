@@ -12,4 +12,4 @@ addClass : <a href="https://jangar6.github.io/dothome1/jquery/jquery06_addClass2
 
 
 #일러스트
-find() : <a href="http://jangar6621.dothome.co.kr/illustrator/index.html">바로가기</a>
+<a href="http://jangar6621.dothome.co.kr/illustrator/index.html">바로가기</a>
