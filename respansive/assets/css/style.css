@@ -2,7 +2,7 @@
 #header {height: 327px; background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /* 컨테이너 */
-.container {width: 1200px; margin: 0 auto; background: rgba(0, 0, 0, 0);}
+.container {width: 1200px; margin: 0 auto; background: rgba(0, 0, 0, 0.3);}
 
 /* 헤더 */
 .header {}
@@ -89,3 +89,16 @@
 @media (max-width: 1220px){
     .container {width: 100%;}
 }
+
+/* 네비 */
+.nav {overflow: hidden; padding: 10px;}
+.nav > div {float: left; width: 40%;}
+.nav > div:last-child {width: 20%;}
+.nav > div h3 {font-size: 15px; color: #25a2d0; margin-bottom: 5px;}
+.nav > div ol {overflow: hidden;}
+.nav > div ol li {float: left; width: 50%;}
+.nav > div:last-child ol li {width: 100%;}
+.nav > div a {}
+
+/* background: url(../img/dot.gif); */
+
