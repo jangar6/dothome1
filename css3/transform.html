@@ -228,10 +228,13 @@
                 <!-- //Intro0 -->
 
                 <style>
-                    .boxWrap {padding: 40px 20px !important;}
-                    .boxWrap.bg1 > div > div {transition: all 0.33s; background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);}
-                    .boxWrap.bg1 > div > div:hover {transform: none;}
-                    .boxWrap .box {border: 1px solid #ccc; background: #f1f1f1 !important;}
+                    .boxWrap {padding: 30px 20px !important;}
+                    .boxWrap > div {perspective: 500px;}
+                    .boxWrap > div > div {transition: all 0.33s;}
+                    .boxWrap > div > div:hover {transform: none;}
+                    .boxWrap .box {border: 1px solid #ccc; background: #F1F1F1 !important;}
+
+                    .boxWrap.bg1 > div > div {background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);}
                     .translate01 {transform: translate(10px, 10px);}
                     .translate02 {transform: translate(15px, 15px);}
                     .translate03 {transform: translate(20px, 20px);}
@@ -271,10 +274,7 @@
                 <!-- //Intro1 -->
 
                 <style>
-                    .boxWrap {padding: 40px 20px !important;}
-                    .boxWrap.bg2 > div > div {transition: all 0.33s; background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);}
-                    .boxWrap.bg2 > div > div:hover {transform: none;}
-                    .boxWrap .box {border: 1px solid #ccc; background: #f1f1f1 !important;}
+                    .boxWrap.bg2 > div > div {background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);}
                     .translate06 {transform: translateX(10px);}
                     .translate07 {transform: translateX(15px);}
                     .translate08 {transform: translateX(20px);}
@@ -314,10 +314,7 @@
                 <!-- //Intro2 -->
                 
                 <style>
-                    .boxWrap {padding: 40px 20px !important;}
-                    .boxWrap.bg3 > div > div {transition: all 0.33s; background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);}
-                    .boxWrap.bg3 > div > div:hover {transform: none;}
-                    .boxWrap .box {border: 1px solid #ccc; background: #f1f1f1 !important;}
+                    .boxWrap.bg3 > div > div {background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);}
                     .translate11 {transform: translateY(10px);}
                     .translate12 {transform: translateY(15px);}
                     .translate13 {transform: translateY(20px);}
@@ -357,10 +354,7 @@
                 <!-- //Intro3 -->
 
                 <style>
-                    .boxWrap {padding: 40px 20px !important;}
-                    .boxWrap.bg4 > div > div {transition: all 0.33s; background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);}
-                    .boxWrap.bg4 > div > div:hover {transform: none;}
-                    .boxWrap .box {border: 1px solid #ccc; background: #f1f1f1 !important;}
+                    .boxWrap.bg4 > div > div {background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);}
                     .translate16 {transform: translateZ(10px);}
                     .translate17 {transform: translateZ(15px);}
                     .translate18 {transform: translateZ(20px);}
@@ -398,6 +392,466 @@
 </code></pre>
                 </div>
                 <!-- //Intro4 -->
+
+                <style>
+                    .boxWrap.bg5 > div > div {background-image: linear-gradient(to top, #09203f 0%, #537895 100%);}
+
+                    .scale01 {transform: scale(1.05, 1.05); opacity: 0.7;}
+                    .scale02 {transform: scale(1.1, 1.1); opacity: 0.7;}
+                    .scale03 {transform: scale(1.15, 1.15); opacity: 0.7;}
+                    .scale04 {transform: scale(1.2, 1.2); opacity: 0.7;}
+                    .scale05 {transform: scale(1.25, 1.25); opacity: 0.7;}
+                    .scale06 {transform: scale(0.95, 0.95); opacity: 0.7;}
+                    .scale07 {transform: scale(0.9, 0.9); opacity: 0.7;}
+                    .scale08 {transform: scale(0.85, 0.85); opacity: 0.7;}
+                    .scale09 {transform: scale(0.8, 0.8); opacity: 0.7;}
+                    .scale10 {transform: scale(0.75, 0.75); opacity: 0.7;}
+                </style>
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Transform : scale</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg5">
+                            <div class="box"><div class="scale01">scale01</div></div>
+                            <div class="box"><div class="scale02">scale02</div></div>
+                            <div class="box"><div class="scale03">scale03</div></div>
+                            <div class="box"><div class="scale04">scale04</div></div>
+                            <div class="box"><div class="scale05">scale05</div></div>
+                            <div class="box"><div class="scale06">scale05</div></div>
+                            <div class="box"><div class="scale07">scale05</div></div>
+                            <div class="box"><div class="scale08">scale05</div></div>
+                            <div class="box"><div class="scale09">scale05</div></div>
+                            <div class="box"><div class="scale10">scale10</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.scale01 {transform: scale(1.05, 1.05); opacity: 0.7;}
+.scale02 {transform: scale(1.1, 1.1); opacity: 0.7;}
+.scale03 {transform: scale(1.15, 1.15); opacity: 0.7;}
+.scale04 {transform: scale(1.2, 1.2); opacity: 0.7;}
+.scale05 {transform: scale(1.25, 1.25); opacity: 0.7;}
+.scale06 {transform: scale(0.95, 0.95); opacity: 0.7;}
+.scale07 {transform: scale(0.9, 0.9); opacity: 0.7;}
+.scale08 {transform: scale(0.85, 0.85); opacity: 0.7;}
+.scale09 {transform: scale(0.8, 0.8); opacity: 0.7;}
+.scale10 {transform: scale(0.75, 0.75); opacity: 0.7;}
+</code></pre>
+                </div>
+                <!-- //Intro5 -->
+
+                <style>
+                    .boxWrap.bg6 > div > div {background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);}
+                    .scale11 {transform: scaleX(1.05); opacity: 0.7;}
+                    .scale12 {transform: scaleX(1.1); opacity: 0.7;}
+                    .scale13 {transform: scaleX(1.15); opacity: 0.7;}
+                    .scale14 {transform: scaleX(1.2); opacity: 0.7;}
+                    .scale15 {transform: scaleX(1.25); opacity: 0.7;}
+                </style>
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Transform : scaleX</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg6">
+                            <div class="box"><div class="scale11">scale11</div></div>
+                            <div class="box"><div class="scale12">scale12</div></div>
+                            <div class="box"><div class="scale13">scale13</div></div>
+                            <div class="box"><div class="scale14">scale14</div></div>
+                            <div class="box"><div class="scale15">scale15</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.scale11 {transform: scaleX(1.05); opacity: 0.7;}
+.scale12 {transform: scaleX(1.1); opacity: 0.7;}
+.scale13 {transform: scaleX(1.15); opacity: 0.7;}
+.scale14 {transform: scaleX(1.2); opacity: 0.7;}
+.scale15 {transform: scaleX(1.25); opacity: 0.7;}
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
+
+                <style>
+                    .boxWrap.bg7 > div > div {background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);}
+                    .scale16 {transform: scaleY(1.05); opacity: 0.7;}
+                    .scale17 {transform: scaleY(1.1); opacity: 0.7;}
+                    .scale18 {transform: scaleY(1.15); opacity: 0.7;}
+                    .scale19 {transform: scaleY(1.2); opacity: 0.7;}
+                    .scale20 {transform: scaleY(1.25); opacity: 0.7;}
+                </style>
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Transform : scaleY</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg7">
+                            <div class="box"><div class="scale16">scale16</div></div>
+                            <div class="box"><div class="scale17">scale17</div></div>
+                            <div class="box"><div class="scale18">scale18</div></div>
+                            <div class="box"><div class="scale19">scale19</div></div>
+                            <div class="box"><div class="scale20">scale20</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.scale16 {transform: scaleY(1.05); opacity: 0.7;}
+.scale17 {transform: scaleY(1.1); opacity: 0.7;}
+.scale18 {transform: scaleY(1.15); opacity: 0.7;}
+.scale19 {transform: scaleY(1.2); opacity: 0.7;}
+.scale20 {transform: scaleY(1.25); opacity: 0.7;}
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+
+                <style>
+                    .boxWrap.bg8 > div > div {background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);}
+
+                    .rotate01 {transform: rotate(10deg);}
+                    .rotate02 {transform: rotate(20deg);}
+                    .rotate03 {transform: rotate(30deg);}
+                    .rotate04 {transform: rotate(40deg);}
+                    .rotate05 {transform: rotate(50deg);}
+                </style>
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">Transform : rotate</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg8">
+                            <div class="box"><div class="rotate01">rotate01</div></div>
+                            <div class="box"><div class="rotate02">rotate02</div></div>
+                            <div class="box"><div class="rotate03">rotate03</div></div>
+                            <div class="box"><div class="rotate04">rotate04</div></div>
+                            <div class="box"><div class="rotate05">rotate05</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.rotate01 {transform: rotate(10deg);}
+.rotate02 {transform: rotate(20deg);}
+.rotate03 {transform: rotate(30deg);}
+.rotate04 {transform: rotate(40deg);}
+.rotate05 {transform: rotate(50deg);}
+</code></pre>
+                </div>
+                <!-- //Intro8 -->
+
+                <style>
+                    .boxWrap.bg9 > div > div {background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);}
+                    
+                    .rotate06 {transform: rotateX(10deg);}
+                    .rotate07 {transform: rotateX(20deg);}
+                    .rotate08 {transform: rotateX(30deg);}
+                    .rotate09 {transform: rotateX(40deg);}
+                    .rotate10 {transform: rotateX(50deg);}
+                </style>
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">Transform : rotateX</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg9">
+                            <div class="box"><div class="rotate06">rotate06</div></div>
+                            <div class="box"><div class="rotate07">rotate07</div></div>
+                            <div class="box"><div class="rotate08">rotate08</div></div>
+                            <div class="box"><div class="rotate09">rotate09</div></div>
+                            <div class="box"><div class="rotate10">rotate10</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.rotate06 {transform: rotateX(10deg);}
+.rotate07 {transform: rotateX(20deg);}
+.rotate08 {transform: rotateX(30deg);}
+.rotate09 {transform: rotateX(40deg);}
+.rotate10 {transform: rotateX(50deg);}
+</code></pre>
+                </div>
+                <!-- //Intro9 -->
+
+                <style>
+                    .boxWrap.bg10 > div > div {background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);}
+                    
+                    .rotate11 {transform: rotateY(10deg);}
+                    .rotate12 {transform: rotateY(20deg);}
+                    .rotate13 {transform: rotateY(30deg);}
+                    .rotate14 {transform: rotateY(40deg);}
+                    .rotate15 {transform: rotateY(50deg);}
+                </style>
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">Transform : rotateY</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg10">
+                            <div class="box"><div class="rotate11">rotate11</div></div>
+                            <div class="box"><div class="rotate12">rotate12</div></div>
+                            <div class="box"><div class="rotate13">rotate13</div></div>
+                            <div class="box"><div class="rotate14">rotate14</div></div>
+                            <div class="box"><div class="rotate15">rotate15</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.rotate11 {transform: rotateY(10deg);}
+.rotate12 {transform: rotateY(20deg);}
+.rotate13 {transform: rotateY(30deg);}
+.rotate14 {transform: rotateY(40deg);}
+.rotate15 {transform: rotateY(50deg);}
+</code></pre>
+                </div>
+                <!-- //Intro10 -->
+
+                <style>
+                    .boxWrap.bg11 > div > div {background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);}
+                    
+                    .rotate16 {transform: rotate3d(0, 1, 1, 10deg);}
+                    .rotate17 {transform: rotate3d(0, 1, 1, 25deg);}
+                    .rotate18 {transform: rotate3d(0, 1, 1, 40deg);}
+                    .rotate19 {transform: rotate3d(0, 1, 1, 55deg);}
+                    .rotate20 {transform: rotate3d(0, 1, 1, 70deg);}
+                </style>
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">Transform : rotateZ</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg11">
+                            <div class="box"><div class="rotate16">rotate16</div></div>
+                            <div class="box"><div class="rotate17">rotate17</div></div>
+                            <div class="box"><div class="rotate18">rotate18</div></div>
+                            <div class="box"><div class="rotate19">rotate19</div></div>
+                            <div class="box"><div class="rotate20">rotate20</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.rotate16 {transform: rotate3d(0, 1, 1, 10deg);}
+.rotate17 {transform: rotate3d(0, 1, 1, 25deg);}
+.rotate18 {transform: rotate3d(0, 1, 1, 40deg);}
+.rotate19 {transform: rotate3d(0, 1, 1, 55deg);}
+.rotate20 {transform: rotate3d(0, 1, 1, 70deg);}
+</code></pre>
+                </div>
+                <!-- //Intro11 -->
+                <style>
+                    .boxWrap.bg12 > div > div {background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);}
+                    
+                    .skew01 {transform: skew(5deg, 5deg);}
+                    .skew02 {transform: skew(10deg, 10deg);}
+                    .skew03 {transform: skew(15deg, 15deg);}
+                    .skew04 {transform: skew(20deg, 20deg);}
+                    .skew05 {transform: skew(25deg, 25deg);}
+                </style>
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">Transform : skew</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg12">
+                            <div class="box"><div class="skew01">skew01</div></div>
+                            <div class="box"><div class="skew02">skew02</div></div>
+                            <div class="box"><div class="skew03">skew03</div></div>
+                            <div class="box"><div class="skew04">skew04</div></div>
+                            <div class="box"><div class="skew05">skew05</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.skew01 {transform: skew(5deg, 5deg);}
+.skew02 {transform: skew(10deg, 10deg);}
+.skew03 {transform: skew(15deg, 15deg);}
+.skew04 {transform: skew(20deg, 20deg);}
+.skew05 {transform: skew(25deg, 25deg);}
+</code></pre>
+                </div>
+                <!-- //Intro12 -->
+
+                <style>
+                    .boxWrap.bg13 > div > div {background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);}
+
+                    .skew06 {transform: skewX(5deg);}
+                    .skew07 {transform: skewX(10deg);}
+                    .skew08 {transform: skewX(15deg);}
+                    .skew09 {transform: skewX(20deg);}
+                    .skew10 {transform: skewX(25deg);}
+                </style>
+                <!-- Intro13 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro13" class="page-header">Transform : skewX</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg13">
+                            <div class="box"><div class="skew06">skew06</div></div>
+                            <div class="box"><div class="skew07">skew07</div></div>
+                            <div class="box"><div class="skew08">skew08</div></div>
+                            <div class="box"><div class="skew09">skew09</div></div>
+                            <div class="box"><div class="skew10">skew10</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.skew06 {transform: skewX(5deg);}
+.skew07 {transform: skewX(10deg);}
+.skew08 {transform: skewX(15deg);}
+.skew09 {transform: skewX(20deg);}
+.skew10 {transform: skewX(25deg);}
+</code></pre>
+                </div>
+                <!-- //Intro13 -->
+
+                <style>
+                    .boxWrap.bg14 > div > div {background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);}
+                    .skew11 {transform: skewY(5deg);}
+                    .skew12 {transform: skewY(10deg);}
+                    .skew13 {transform: skewY(15deg);}
+                    .skew14 {transform: skewY(20deg);}
+                    .skew15 {transform: skewY(25deg);}
+                    </style>
+                <!-- Intro14 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro14" class="page-header">Transform : skewY</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg14">
+                            <div class="box"><div class="skew11">skew11</div></div>
+                            <div class="box"><div class="skew12">skew12</div></div>
+                            <div class="box"><div class="skew13">skew13</div></div>
+                            <div class="box"><div class="skew14">skew14</div></div>
+                            <div class="box"><div class="skew15">skew15</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.skew11 {transform: skewY(5deg);}
+.skew12 {transform: skewY(10deg);}
+.skew13 {transform: skewY(15deg);}
+.skew14 {transform: skewY(20deg);}
+.skew15 {transform: skewY(25deg);}
+</code></pre>
+                </div>
+                <!-- //Intro14 -->
+                <style>
+                    .boxWrap.bg15 > div > div {background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);}
+                    
+                    .origin01 {transform: rotate(0deg); transform-origin: 100% 0;}
+                    .origin02 {transform: rotate(5deg); transform-origin: 100% 0;}
+                    .origin03 {transform: rotate(10deg); transform-origin: 100% 0;}
+                    .origin04 {transform: rotate(15deg); transform-origin: 100% 0;}
+                    .origin05 {transform: rotate(20deg); transform-origin: 100% 0;}
+                    .origin06 {transform: rotate(0deg); transform-origin: 0 100%;}
+                    .origin07 {transform: rotate(5deg); transform-origin: 0 100%;}
+                    .origin08 {transform: rotate(10deg); transform-origin: 0 100%;}
+                    .origin09 {transform: rotate(15deg); transform-origin: 0 100%;}
+                    .origin10 {transform: rotate(20deg); transform-origin: 0 100%;}
+                </style>
+                <!-- Intro15 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro15" class="page-header">Transform-origin 01</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg15">
+                            <div class="box"><div class="origin01">origin01</div></div>
+                            <div class="box"><div class="origin02">origin02</div></div>
+                            <div class="box"><div class="origin03">origin03</div></div>
+                            <div class="box"><div class="origin04">origin04</div></div>
+                            <div class="box"><div class="origin05">origin05</div></div>
+                            <div class="box"><div class="origin06">origin06</div></div>
+                            <div class="box"><div class="origin07">origin07</div></div>
+                            <div class="box"><div class="origin08">origin08</div></div>
+                            <div class="box"><div class="origin09">origin09</div></div>
+                            <div class="box"><div class="origin10">origin10</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.origin01 {transform: rotate(0deg); transform-origin: 100% 0;}
+.origin02 {transform: rotate(5deg); transform-origin: 100% 0;}
+.origin03 {transform: rotate(10deg); transform-origin: 100% 0;}
+.origin04 {transform: rotate(15deg); transform-origin: 100% 0;}
+.origin05 {transform: rotate(20deg); transform-origin: 100% 0;}
+.origin06 {transform: rotate(0deg); transform-origin: 0 100%;}
+.origin07 {transform: rotate(5deg); transform-origin: 0 100%;}
+.origin08 {transform: rotate(10deg); transform-origin: 0 100%;}
+.origin09 {transform: rotate(15deg); transform-origin: 0 100%;}
+.origin10 {transform: rotate(20deg); transform-origin: 0 100%;}
+</code></pre>
+                </div>
+                <!-- //Intro15 -->
+
+                <style>
+                    .boxWrap.bg16 > div > div {background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);}
+
+                    .origin11 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 0;}
+                    .origin12 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 25%;}
+                    .origin13 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 50%;}
+                    .origin14 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 75%;}
+                    .origin15 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 100%;}
+
+                    .origin16 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 0%;}
+                    .origin17 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 25%;}
+                    .origin18 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 50%;}
+                    .origin19 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 75%;}
+                    .origin20 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 100%;}
+                </style>
+                <!-- Intro16 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro16" class="page-header">Transform-origin 02</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg16">
+                            <div class="box"><div class="origin11">origin11</div></div>
+                            <div class="box"><div class="origin12">origin12</div></div>
+                            <div class="box"><div class="origin13">origin13</div></div>
+                            <div class="box"><div class="origin14">origin14</div></div>
+                            <div class="box"><div class="origin15">origin15</div></div>
+                            <div class="box"><div class="origin16">origin16</div></div>
+                            <div class="box"><div class="origin17">origin17</div></div>
+                            <div class="box"><div class="origin18">origin18</div></div>
+                            <div class="box"><div class="origin19">origin19</div></div>
+                            <div class="box"><div class="origin20">origin20</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code> .origin11 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 0;}
+.origin12 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 25%;}
+.origin13 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 50%;}
+.origin14 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 75%;}
+.origin15 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 100%;}
+.origin16 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 0%;}
+.origin17 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 25%;}
+.origin18 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 50%;}
+.origin19 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 75%;}
+.origin20 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 100%;}
+</code></pre>
+                </div>
+                <!-- //Intro16 -->
+
+                <style>
+                    .boxWrap.bg17 > div > div {background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);}
+                    
+                    .origin21 {transform: rotate3d(0,1,0,10deg); transform-origin: right;}
+                    .origin22 {transform: rotate3d(0,1,0,20deg); transform-origin: right;}
+                    .origin23 {transform: rotate3d(0,1,0,30deg); transform-origin: right;}
+                    .origin24 {transform: rotate3d(0,1,0,40deg); transform-origin: right;}
+                    .origin25 {transform: rotate3d(0,1,0,50deg); transform-origin: right;}
+
+                    .origin26 {transform: rotate3d(0,1,0,-10deg); transform-origin: right;}
+                    .origin27 {transform: rotate3d(0,1,0,-20deg); transform-origin: right;}
+                    .origin28 {transform: rotate3d(0,1,0,-30deg); transform-origin: right;}
+                    .origin29 {transform: rotate3d(0,1,0,-40deg); transform-origin: right;}
+                    .origin30 {transform: rotate3d(0,1,0,-50deg); transform-origin: right;}
+                </style>
+                <!-- Intro17 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro17" class="page-header">Transform-origin 03</h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Transform</em></h3>
+                        <div class="boxWrap bg17">
+                            <div class="box"><div class="origin21">origin21</div></div>
+                            <div class="box"><div class="origin22">origin22</div></div>
+                            <div class="box"><div class="origin23">origin23</div></div>
+                            <div class="box"><div class="origin24">origin24</div></div>
+                            <div class="box"><div class="origin25">origin25</div></div>
+                            <div class="box"><div class="origin26">origin26</div></div>
+                            <div class="box"><div class="origin27">origin27</div></div>
+                            <div class="box"><div class="origin28">origin28</div></div>
+                            <div class="box"><div class="origin29">origin29</div></div>
+                            <div class="box"><div class="origin30">origin30</div></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.origin21 {transform: rotate3d(0,1,0,10deg); transform-origin: right;}
+.origin22 {transform: rotate3d(0,1,0,20deg); transform-origin: right;}
+.origin23 {transform: rotate3d(0,1,0,30deg); transform-origin: right;}
+.origin24 {transform: rotate3d(0,1,0,40deg); transform-origin: right;}
+.origin25 {transform: rotate3d(0,1,0,50deg); transform-origin: right;}
+.origin26 {transform: rotate3d(0,1,0,-10deg); transform-origin: right;}
+.origin27 {transform: rotate3d(0,1,0,-20deg); transform-origin: right;}
+.origin28 {transform: rotate3d(0,1,0,-30deg); transform-origin: right;}
+.origin29 {transform: rotate3d(0,1,0,-40deg); transform-origin: right;}
+.origin30 {transform: rotate3d(0,1,0,-50deg); transform-origin: right;}
+</code></pre>
+                </div>
+                <!-- //Intro17 -->
                 
             </div>
             
