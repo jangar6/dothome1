@@ -173,39 +173,39 @@
         }
 
         .content-item:nth-child(1) .content-item-img{
-            background: url(img/imges10.jpg);
+            background: url(img/images01.jpg);
             background-size: cover;
         }
         .content-item:nth-child(2) .content-item-img{
-            background: url(img/imges11.jpg);
+            background: url(img/images02.jpg);
             background-size: cover;
         }
         .content-item:nth-child(3) .content-item-img{
-            background: url(img/imges12.jpg);
+            background: url(img/images03.jpg);
             background-size: cover;
         }
         .content-item:nth-child(4) .content-item-img{
-            background: url(img/imges13.jpg);
+            background: url(img/images04.jpg);
             background-size: cover;
         }
         .content-item:nth-child(5) .content-item-img{
-            background: url(img/imges14.jpg);
+            background: url(img/images05.jpg);
             background-size: cover;
         }
         .content-item:nth-child(6) .content-item-img{
-            background: url(img/imges15.jpg);
+            background: url(img/images06.jpg);
             background-size: cover;
         }
         .content-item:nth-child(7) .content-item-img{
-            background: url(img/imges16.jpg);
+            background: url(img/images07.jpg);
             background-size: cover;
         }
         .content-item:nth-child(8) .content-item-img{
-            background: url(img/imges17.jpg);
+            background: url(img/images08.jpg);
             background-size: cover;
         }
         .content-item:nth-child(9) .content-item-img{
-            background: url(img/imges18.jpg);
+            background: url(img/images09.jpg);
             background-size: cover;
         }
         
@@ -405,7 +405,7 @@
         //     $(".s8OffsetTop").text( parseInt($("#section8").offset().top) );
         //     $(".s9OffsetTop").text( parseInt($("#section9").offset().top) );
         
-            // 출력용 글씨 색
+        //     // 출력용 글씨 색
         //     if( scrollTop > $("#section1").offset().top ){
         //         $(".s1OffsetTop").css("color","red");
         //     } else {
@@ -500,25 +500,25 @@
         // });
 
         // for문
-        // $(window).scroll(function(){
-            // const scrollTop = $(window).scrollTop() + $(window).height()/2;
-        //     $(".scrollTop").text(parseInt(scrollTop));
+        $(window).scroll(function(){
+            const scrollTop = $(window).scrollTop() + $(window).height()/2;
+            $(".scrollTop").text(parseInt(scrollTop));
 
-        //     for(let i=1; i<=$(".content-item").length; i++){
-        //         $(".s"+i+"OffsetTop").text( parseInt($("#section"+i).offset().top) );
-        //     }
+            for(let i=1; i<=$(".content-item").length; i++){
+                $(".s"+i+"OffsetTop").text( parseInt($("#section"+i).offset().top) );
+            }
 
-        //     // 글씨 색 출력
-        //     for(let i=1; i<=$(".content-item").length; i++){
-        //         if( scrollTop > $("#section"+i).offset().top ){
-        //             $(".s"+i+"OffsetTop").css("color","red");
-        //             $("#section"+i).addClass("show");
-        //         } else {
-        //             $(".s"+i+"OffsetTop").css("color","white");
-        //             $("#section"+i).removeClass("show");
-        //         }
-        //     }
-        // });
+            // 글씨 색 출력
+            for(let i=1; i<=$(".content-item").length; i++){
+                if( scrollTop > $("#section"+i).offset().top ){
+                    $(".s"+i+"OffsetTop").css("color","red");
+                    $("#section"+i).addClass("show");
+                } else {
+                    $(".s"+i+"OffsetTop").css("color","white");
+                    $("#section"+i).removeClass("show");
+                }
+            }
+        });
         
         // each문
         // $(window).scroll(function(){

@@ -6,102 +6,125 @@
     <title>Document</title>
     <script>
         // 선언적 함수
-        function func1() {
-            document.write("function1이 실행되었습니다.<br>");
-        }
-        func1();
+        // function func1() {
+        //     document.write("function1이 실행되었습니다.<br>");
+        // }
+        // func1();
 
-        // 익명함수
-        const func2 = function(){
-            document.write("function2이 실행되었습니다.<br>");
-        }
-        func2();
+        // // 익명함수
+        // const func2 = function(){
+        //     document.write("function2이 실행되었습니다.<br>");
+        // }
+        // func2();
 
-        // 매개변수가 있는 함수
-        const func3 = function(name){
-            document.write(name + "이 실행되었습니다.<br>");
-        }
-        func3("function3");
+        // // 매개변수가 있는 함수
+        // const func3 = function(name){
+        //     document.write(name + "이 실행되었습니다.<br>");
+        // }
+        // func3("function3");
 
-        // 리턴값(종료)이 있는 함수
-        function func4(){
-            const str = "function4이 실행되었습니다.<br>";
-            return str;
-        }
-        document.write(func4());
+        // // 리턴값(종료)이 있는 함수
+        // function func4(){
+        //     const str = "function4이 실행되었습니다.<br>";
+        //     return str;
+        // }
+        // document.write(func4());
 
-        // 즉시 실행 함수(괄호)
-        (function (){
-            document.write("function5이 실행되었습니다.<br>");
-        }());
+        // // 즉시 실행 함수(괄호)
+        // (function (){
+        //     document.write("function5이 실행되었습니다.<br>");
+        // }());
 
-        // 화살표 함수(선언적 함수를 화살표함수로 바꿈)
-        func6 = () => {
-            document.write("function6이 실행되었습니다.<br>");
-        }
-        func6();
+        // // 화살표 함수(선언적 함수를 화살표함수로 바꿈)
+        // func6 = () => {
+        //     document.write("function6이 실행되었습니다.<br>");
+        // }
+        // func6();
 
-        // 화살표 함수(익명함수)
-        const func7 = () => {
-            document.write("function7이 실행되었습니다.<br>");
-        }
-        func7();
+        // // 화살표 함수(익명함수)
+        // const func7 = () => {
+        //     document.write("function7이 실행되었습니다.<br>");
+        // }
+        // func7();
         
-        // 화살표 함수(매개변수가 있는 함수)
-        const func8 = (str) => {
-            document.write(str + "이 실행되었습니다. <br>");
-        }
-        func8("function8");
+        // // 화살표 함수(매개변수가 있는 함수)
+        // const func8 = (str) => {
+        //     document.write(str + "이 실행되었습니다. <br>");
+        // }
+        // func8("function8");
 
-        // 화살표 함수(리턴값이 있는 함수)
-        const func9 = () => {
-            const str = "function9이 실행되었습니다.<br>";
-            return str;
-        }
-        document.write(func9());
+        // // 화살표 함수(리턴값이 있는 함수)
+        // const func9 = () => {
+        //     const str = "function9이 실행되었습니다.<br>";
+        //     return str;
+        // }
+        // document.write(func9());
         
-        // 객체 생성자 함수
-        function Func10(name, action){
-            this.name = name;
-            this.action = action;
-            this.study = function(){
-                document.write(this.name + "이 " + this.action + "되었습니다.<br>");
-            }
-        }
-        const obj1 = new Func10("function10","실행");
-        obj1.study();
+        // // 객체 생성자 함수
+        // function Func10(name, action){
+        //     this.name = name;
+        //     this.action = action;
+        //     this.study = function(){
+        //         document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+        //     }
+        // }
+        // const obj1 = new Func10("function10","실행");
+        // obj1.study();
 
-        // 프로토타입 메서드
-        function Func11(name, action){
-            this.name = name;
-            this.action = action;
-        }
-        Func11.prototype.study = function(){
-            document.write(this.name + "이 " + this.action + "되었습니다.<br>");
-        }
-        const obj2 = new Func11("function11","실행");
-        obj2.study();
+        // // 프로토타입 메서드
+        // function Func11(name, action){
+        //     this.name = name;
+        //     this.action = action;
+        // }
+        // Func11.prototype.study = function(){
+        //     document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+        // }
+        // const obj2 = new Func11("function11","실행");
+        // obj2.study();
 
-        // 클래스
-        class Func12 {
-            constructor(name, action){
-                this.name = name;
-                this.action = action;
-            }
-            study(){
-                document.write(this.name + "이 " + this.action + "되었습니다.<br>");
-            }
-        }
-        const obj3 = new Func12("function12","실행");
-        obj3.study();
+        // // 클래스
+        // class Func12 {
+        //     constructor(name, action){
+        //         this.name = name;
+        //         this.action = action;
+        //     }
+        //     study(){
+        //         document.write(this.name + "이 " + this.action + "되었습니다.<br>");
+        //     }
+        // }
+        // const obj3 = new Func12("function12","실행");
+        // obj3.study();
 
-        // 템플릿 리터럴
-        function func100(name, action){
-            document.write(name + "이 되었습니다.<br>");
-            document.write(`${name} 이 ${action} 되었습니다.`);
-        }
-        func100("function100","실행");
+        // // 템플릿 리터럴
+        // function func100(name, action){
+        //     document.write(name + "이 되었습니다.<br>");
+        //     document.write(`${name} 이 ${action} 되었습니다.`);
+        // }
+        // func100("function100","실행");
+    </script>
+    <script src="jquery.min_1.12.4.js"></script>
+    <script>
+        $(function(){
+            let obj = [{
+                "area":"서울"
+            },
+            {
+                "area":"부산"
+            },
+            {
+                "area":"전주"
+            }]
 
+            $(obj).each(function(i,o){
+                console.log(i+":",o);
+            });
+            console.log("====The End1====");
+
+            $.each($("#menu2 li"),function(i,o){
+                console.log(i+":",o);
+            });
+            console.log("====The End2====");
+        });
     </script>
 </head>
 <body>
