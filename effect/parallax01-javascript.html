@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax01 - JQuery</title>
+    <title>Parallax01 - Javascript</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
     <style>
         /* reset */
         @font-face {
             font-family: 'Cafe24Danjunghae';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'MapoPeacefull';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -57,9 +63,9 @@
             line-height: 1.4;
         }
         .info li a {
-            color: #fff;
+            color: #222;
             width: 25px; height: 25px;
-            border: 1px solid #fff;
+            border: 1px solid #222;
             display: inline-block;
             border-radius: 50%;
             text-align: center;
@@ -68,8 +74,8 @@
             margin: 3px;
         }
         .info li a.active {
-            background: #fff;
-            color: #000;
+            background: #222;
+            color: #fff;
         }
 
         @media (max-width: 800px){
@@ -81,13 +87,13 @@
             --color-title : #fff;
             --color-sub : #999;
             --color-link : #000;
-            --color-bg : #111;
+            --color-bg :#cecece;
             --font-cafe : 'Cafe24Danjunghae';
             --font-lato : 'Lato', sans-serif;
 
             background-color: var(--color-bg);
             color: var(--color-title);
-            font-family: var(--font-cafe);
+            font-family: 'MapoPeacefull';
         }
         #parallax-wrap h1 {
             color: var(--color-h1);
@@ -266,13 +272,13 @@
 
     <!-- info -->
     <div class="info left">
-        <h1>Parallax Effect01 - jQuery</h1>
+        <h1>Parallax Effect01 - Javascript</h1>
         <p>패랠랙스 스크로링 효과 - 기본</p>
     </div>
     <div class="info right">
         <!-- ul>li*10>a*2 -->
         <ul>
-            <li><a href="parallax01-jquery.html" class="active">1</a><a href="parallax01-javascript.html">1</a></li>
+            <li><a href="parallax01-jquery.html">1</a><a href="parallax01-javascript.html" class="active">1</a></li>
             <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html">2</a></li>
             <li><a href="parallax03-jquery.html">3</a><a href="parallax03-javascript.html">3</a></li>
             <li><a href="parallax04-jquery.html">4</a><a href="parallax04-javascript.html">4</a></li>
@@ -286,7 +292,7 @@
 
     <div class="info bottom">
         <ul>
-            <li>scrollTop() : <span class="scrollTop">0</span>px</li>
+            <li>scrollTop() : <span class="pageYOffset">0</span>px</li>
             <li>#section1 : <span class="s1OffsetTop">0</span>px</li>
             <li>#section2 : <span class="s2OffsetTop">0</span>px</li>
             <li>#section3 : <span class="s3OffsetTop">0</span>px</li>
@@ -383,162 +389,75 @@
     
 
 
-
-
-
     <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         
         // $(window).scroll(function(){
-        //     const scrollTop = $(window).scrollTop() + $(window).height()/2;
+        //     const scrollTop = $(window).scrollTop();
+        // });
+        window.addEventListener("scroll", function(){
+            let pageYOffset = window.pageYOffset;
 
-        //     // 출력용
-        //     $(".scrollTop").text(parseInt(scrollTop));
-        //     $(".s1OffsetTop").text( parseInt($("#section1").offset().top) );
-        //     $(".s2OffsetTop").text( parseInt($("#section2").offset().top) );
-        //     $(".s3OffsetTop").text( parseInt($("#section3").offset().top) );
-        //     $(".s4OffsetTop").text( parseInt($("#section4").offset().top) );
-        //     $(".s5OffsetTop").text( parseInt($("#section5").offset().top) );
-        //     $(".s6OffsetTop").text( parseInt($("#section6").offset().top) );
-        //     $(".s7OffsetTop").text( parseInt($("#section7").offset().top) );
-        //     $(".s8OffsetTop").text( parseInt($("#section8").offset().top) );
-        //     $(".s9OffsetTop").text( parseInt($("#section9").offset().top) );
-        
+            // 출력용
+            document.querySelector(".pageYOffset").innerText = parseInt(pageYOffset);
+            document.querySelector(".s1OffsetTop").innerText = document.getElementById("section1").offsetTop;
+            document.querySelector(".s2OffsetTop").innerText = document.getElementById("section2").offsetTop;
+            document.querySelector(".s3OffsetTop").innerText = document.getElementById("section3").offsetTop;
+            document.querySelector(".s4OffsetTop").innerText = document.getElementById("section4").offsetTop;
+            document.querySelector(".s5OffsetTop").innerText = document.getElementById("section5").offsetTop;
+            document.querySelector(".s6OffsetTop").innerText = document.getElementById("section6").offsetTop;
+            document.querySelector(".s7OffsetTop").innerText = document.getElementById("section7").offsetTop;
+            document.querySelector(".s8OffsetTop").innerText = document.getElementById("section8").offsetTop;
+            document.querySelector(".s9OffsetTop").innerText = document.getElementById("section9").offsetTop;
+            
             // 출력용 글씨 색
-        //     if( scrollTop > $("#section1").offset().top ){
-        //         $(".s1OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s1OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section2").offset().top ){
-        //         $(".s2OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s2OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section3").offset().top ){
-        //         $(".s3OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s3OffsetTop").css("color","white");
-        //     } 
-        //     if( scrollTop > $("#section4").offset().top ){
-        //         $(".s4OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s4OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section5").offset().top ){
-        //         $(".s5OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s5OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section6").offset().top ){
-        //         $(".s6OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s6OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section7").offset().top ){
-        //         $(".s7OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s7OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section8").offset().top ){
-        //         $(".s8OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s8OffsetTop").css("color","white");
-        //     }
-        //     if( scrollTop > $("#section9").offset().top ){
-        //         $(".s9OffsetTop").css("color","red");
-        //     } else {
-        //         $(".s9OffsetTop").css("color","white");
-        //     }
-        //     // 나타나기
-        //     if( scrollTop > $("#section1").offset().top){
-        //         $("#section1").addClass("show");
-        //     } else {
-        //         $("#section1").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section2").offset().top){
-        //         $("#section2").addClass("show");
-        //     } else {
-        //         $("#section2").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section3").offset().top){
-        //         $("#section3").addClass("show");
-        //     } else {
-        //         $("#section3").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section4").offset().top){
-        //         $("#section4").addClass("show");
-        //     } else {
-        //         $("#section4").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section5").offset().top){
-        //         $("#section5").addClass("show");
-        //     } else {
-        //         $("#section5").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section6").offset().top){
-        //         $("#section6").addClass("show");
-        //     } else {
-        //         $("#section6").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section7").offset().top){
-        //         $("#section7").addClass("show");
-        //     } else {
-        //         $("#section7").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section8").offset().top){
-        //         $("#section8").addClass("show");
-        //     } else {
-        //         $("#section8").removeClass("show");
-        //     }
-        //     if( scrollTop > $("#section9").offset().top){
-        //         $("#section9").addClass("show");
-        //     } else {
-        //         $("#section9").removeClass("show");
-        //     }
-        // });
-
-        // for문
-        // $(window).scroll(function(){
-            // const scrollTop = $(window).scrollTop() + $(window).height()/2;
-        //     $(".scrollTop").text(parseInt(scrollTop));
-
-        //     for(let i=1; i<=$(".content-item").length; i++){
-        //         $(".s"+i+"OffsetTop").text( parseInt($("#section"+i).offset().top) );
-        //     }
-
-        //     // 글씨 색 출력
-        //     for(let i=1; i<=$(".content-item").length; i++){
-        //         if( scrollTop > $("#section"+i).offset().top ){
-        //             $(".s"+i+"OffsetTop").css("color","red");
-        //             $("#section"+i).addClass("show");
-        //         } else {
-        //             $(".s"+i+"OffsetTop").css("color","white");
-        //             $("#section"+i).removeClass("show");
-        //         }
-        //     }
-        // });
+            if( pageYOffset > document.getElementById("section1").offsetTop ) {
+                document.querySelector(".s1OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s1OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section2").offsetTop ) {
+                document.querySelector(".s2OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s2OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section3").offsetTop ) {
+                document.querySelector(".s3OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s3OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section4").offsetTop ) {
+                document.querySelector(".s4OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s4OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section5").offsetTop ) {
+                document.querySelector(".s5OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s5OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section6").offsetTop ) {
+                document.querySelector(".s6OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s6OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section7").offsetTop ) {
+                document.querySelector(".s7OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s7OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section8").offsetTop ) {
+                document.querySelector(".s8OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s8OffsetTop").style.color = "white";
+            }
+            if( pageYOffset > document.getElementById("section9").offsetTop ) {
+                document.querySelector(".s9OffsetTop").style.color = "red";
+            } else {
+                document.querySelector(".s9OffsetTop").style.color = "white";
+            }
+        });
         
-        // each문
-        // $(window).scroll(function(){
-        //     const scrollTop = $(window).scrollTop() + $(window).height()/2;
-        //     $(".scrollTop").text(parseInt(scrollTop));
-
-        //     $(".content-item").each(function(num){
-        //         // console.log(num+1);
-        //         $(".s"+(num+1)+"OffsetTop").text( parseInt($("#section"+(num+1)).offset().top) );
-            
-        //         if( scrollTop > $(this).offset().top ){
-        //             $(".s"+(num+1)+"OffsetTop").css("color","red");
-        //             $(this).addClass("show");
-        //         } else {
-        //             $(".s"+(num+1)+"OffsetTop").css("color","white");
-        //             $(this).removeClass("show");
-        //         }
-        //     });
-        // });
-            
     </script>
 </body>
 </html>
