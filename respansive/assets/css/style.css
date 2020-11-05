@@ -172,7 +172,16 @@
 .column.col8 {}
 .column.col9 {border-bottom: 0}
 
-
+/* 메뉴 */
+.menu {}
+.menu li {position: relative;}
+.menu li a {
+    font-size: 16px; text-transform: uppercase;
+    color: #878787;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px; display: block;
+}
+.menu li a i {position: absolute; right: 15px; top: 15px;}
 
 
 
