@@ -1,9 +1,22 @@
 /* 레이아웃 */
 #header {height: 327px; background: url(../img/header_bg.jpg) repeat-x center top;}
 #nav {background-color: #f6fdff;}
+#title {background-color: #eaf7fd;}
+#contents .container {
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+#cont_left {float: left; width: 250px; height: 1000px; }
+#cont_center {
+    overflow: hidden; height: 1000px;margin-right: 250px;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+#cont_right {position: absolute; right: 0; top: 0; width: 250px; height: 1000px;}
+#footer {border-top: 1px solid #dbdbdb;}
 
 /* 컨테이너 */
-.container {width: 1200px; margin: 0 auto; /* background: rgba(0, 0, 0, 0.3);*/} 
+.container {position: relative; width: 1200px; margin: 0 auto; /* background: rgba(0, 0, 0, 0.3);*/} 
 
 /* 헤더 */
 .header .header_menu {text-align: right;}
@@ -122,37 +135,56 @@
     width: 100%;
 }
 
-/* 서브 타이틀 */
-article {background-color: #eaf7fd;}
-article .container{position: relative;}
-article > div h2 {
-    text-align: center;
-    background: #eaf7fd;
-    color: #2c94c4;
-    font-size: 45px;
-    font-family:"Nanum Brush Script";
-}
-article > div .tit_icon a {
-    margin-top: 4px;
-    background-color: #4a9abf;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
+/* 타이틀 */
+
+.title {position: relative; text-align: center;}
+.title h2 {font-family: 'Nanum Brush Script'; font-size: 39px; color: #0093bd; padding: 5px 0;}
+.title .btn {
+    position: absolute; right: 0; top: 5px;
+    width: 60px; height: 60px;
+    background: #3192bf;
+    line-height: 60px;
     border-radius: 50%;
-    width: 50px; height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    position: absolute;
-    right: 0; top: 5px;
+    font-size: 35px; color: #fff;
 }
-article > div .tit_icon a:hover {
+.title .btn:hover {
     box-shadow: 
-    0 0 0 5px rgba(75, 154, 191, 0.9) inset,
-    0 0 0 100px rgba(0,0,0,0.1) inset;
+    0 0 0 3px rgba(71, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
+
+/* 컨텐츠 */
+.column {padding: 15px; border-bottom: 1px solid #dbdbdb;}
+.column .col_tit {font-size: 20px; color: #2f7fa6; padding-bottom: 5px;}
+.column .col_desc {
+    border-bottom: 1px dashed #dbdbdb;
+    padding-bottom: 15px; margin-bottom: 15px;
+    color: #878787; line-height: 18px;
+}
+
+.column.col1 {}
+.column.col2 {}
+.column.col3 {border-bottom: 0}
+.column.col4 {}
+.column.col5 {}
+.column.col6 {border-bottom: 0}
+.column.col7 {}
+.column.col8 {}
+.column.col9 {border-bottom: 0}
+
+
+
 
 
 /* 미디어쿼리 */
 @media (max-width: 1220px){
     .container {width: 100%;}
+}
+@media (max-width: 960px){
+    #cont_center {margin-right: 0;}
+    #cont_right {position: static; width: 100%; height: 400px;}
+}
+@media (max-width: 768px){
+    #cont_left {float: none; width: 100%; height: 400px;}
+    #cont_center {height: 400px;}
 }
