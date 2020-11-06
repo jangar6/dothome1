@@ -102,7 +102,18 @@
         // result6.study();
         // result6.study2();
 
-        
+        function obj8(a,b){
+                this.a = a;
+                this.b = b;
+                this.c = function(){
+                    return a+b;
+                }
+            }
+            const result1 = new obj8(100,200);
+            const result2 = new obj8("자바스크립트","제이쿼리");
+            document.write (result1.c());
+            document.write (result2.c());
+            
         
     </script>
 </head>

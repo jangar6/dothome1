@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <style>
+        a {color: #a8a8a8; text-decoration: none;}
+        li {list-style: none;}
+        *{margin: 0; top: 0;}
+        #wrap {}
+        #header {
+            position: fixed; left: 0; top: 0; 
+            width: 100%; height: 88px; 
+            background: rgba(0, 0, 0, 0.8);
+        }
+        #banner {
+            margin-top: 50px;
+            height: 650px; 
+            background: url(https://static-clova.pstatic.net/static/468c453/img/main/main_lamp.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #contents {background: #666;}
+        #footer {height: 100px; background: #555;}
+
+        .header {text-align: center; position: relative;}
+        .header .logo {
+            float: left; margin-top: 32px; 
+            background: url(https://static-clova.pstatic.net/static/468c453/img/sprite/sp_svg_icon.svg); 
+            width: 150px; height: 30px; 
+            position: absolute; left: 0; top: 0;
+            }
+        .header .menu {padding-top: 33px;}
+        .header .menu li {display: inline-block;}
+        .header .menu li a {font-size: 16px; padding: 20px 30px; color: #A8A8A8;}
+        .header .btn {position: absolute; right: 0; top: 30px;}
+        .header .btn li {display: inline-block;}
+        .header .btn li a {
+            font-size: 14px; padding: 8px 13px; color: #A8A8A8;
+            border: 1px solid #A8A8A8;
+            border-radius: 4px;
+            padding: 7px 10px;
+        }
+        .banner {}
+        .banner h2 {
+            z-index: 1.2;
+            position: absolute; left: 35%; top: 30%;
+            color: #fff;
+            font-size: 32px;
+            text-align: center;
+        }
+        .banner a {
+            position: absolute; left: 45%; top: 43%;
+            color: #fff;
+            border: 2px solid #fff; display: block;
+            border-radius: 50px;
+            padding: 10px 13px;
+        }
+        .banner a:hover {color: #fff; border-color: green; background: green;}
+
+        .cont1 {height: 200px; background: #888;}
+        .cont2 {height: 200px; background: #888;}
+        .cont3 {height: 200px; background: #888;}
+        .cont4 {height: 200px; background: #888;}
+        .cont5 {height: 200px; background: #888;}
+        .cont6 {height: 200px; background: #888;}
+        
+        .container {width: 1200px; height: inherit; margin: 0 auto; /*background: rgba(255, 255, 255, 0.3);*/}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">기술 · 솔루션</a></li>
+                            <li><a href="#">제품</a></li>
+                            <li><a href="#">플랫폼</a></li>
+                            <li><a href="#">파트너</a></li>
+                            <li><a href="#">리서치</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <ul>
+                            <li><a href="#">Biz Stars</a</li>
+                            <li><a href="#">비즈니스 문의</a></li>
+                        </ul>
+                    </div>
+                </div>          
+            </div>
+        </header>
+        <section id="banner">
+            <div class="container">
+                <div class="banner">
+                    <h2>클로바 램프로 시작하는<br>책상 앞이 좋은 아이 프로젝트</h2>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+        </section>
+        <section id="contents">
+            <div class="container">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+                <div class="cont4"></div>
+                <div class="cont5"></div>
+                <div class="cont6"></div>
+            </div>      
+        </section>
+        <footer id="footer">
+            <div class="container"></div>
+        </footer>
+    </div>
+</body>
+</html>
