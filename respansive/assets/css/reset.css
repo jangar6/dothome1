@@ -1,5 +1,5 @@
 /* 여백 초기화 */
-body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td,  textarea, button, form {margin: 0; padding: 0;}
+body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td,  textarea, button, form, figure, figcaption{margin: 0; padding: 0;}
 
 /* 링크 초기화 */
 a {color: #222; text-decoration: none;}
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {font-size: 13px; color: #222; font-weight: normal;}
 ul,ol,dl,menu {list-style: none;}
 
 /* 이미지 초기화 */
-img {vertical-align: top;} /*이미지 여백 제거*/
+img {width: 100%; vertical-align: top;} /*이미지 여백 제거*/
 
 /* 폰트 스타일 초기화 */
 em, address {font-style: normal;} /* 이텔릭체 초기화 */

@@ -9,7 +9,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 #cont_left {float: left; width: 250px;}
 #cont_center {
-    min-height: 1200px;
+    min-height: 1300px;
     overflow: hidden;margin-right: 250px;
     border-right: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
@@ -203,12 +203,10 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .notice1 li::before {
     content: '';
     width: 3px; height: 3px;
-    background-color: #2f7fa6;
+    background: #449ce2;
     border-radius: 50%;
-    position: absolute; left: 0px; bottom: 8px;
+    position: absolute; left: 0px; top: 6px;
 }
-
-
 
 .notice2 {position: relative; margin-top: 15px;}
 .notice2 h5 {font-weight: bold; font-size: 14px; color: #2f7fa6; padding-bottom: 5px;}
@@ -229,9 +227,9 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .notice2 li::before {
     content: '';
     width: 3px; height: 3px;
-    background-color: #2f7fa6;
+    background-color: #449ce2;
     border-radius: 50%;
-    position: absolute; left: 0px; bottom: 25px;
+    position: absolute; left: 0px; top: 6px;
 }
 
 
