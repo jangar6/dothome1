@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.css">
 
     <!-- Web font -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -202,36 +204,68 @@
                         <div class="blog1">
                             <h5 class="ir_so">imge1</h5>
                             <figure>
-                                <img src="assets/img/blog1_@1.jpg" alt="이미지">
+                                <img src="assets/img/blog3_@1.jpg" srcset ="assets/img/blog3_@1.jpg, assets/img/blog3_@2.jpg 2x, assets/img/blog3_@3.jpg 3x" alt="이미지">
                                 <figcaption>반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.</figcaption>
                             </figure>
                         </div>
                          <!-- //blog1 -->
                         <!-- blog2 -->
                         <div class="blog2">
-                            <h5 class="ir_so">imge2</h5>
-                            <figure>
-                                <img src="assets/img/blog1_@2.jpg" alt="이미지">
-                                <figcaption>반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.</figcaption>
-                            </figure>
+                            <div class="img-ratina">
+                                <h5>imge2</h5>
+                            </div>
+                            <p>반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.</p>
                         </div>
                         <!-- //blog2 -->
-                        
                     </article>
+
                 </section>
                 <section id="cont_center">
                     <h3 class="ir_so">반응형 사이트 가운데 컨텐츠</h3>
                     <article class="column col4">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이곳은 타이틀 영역입니다. 타이틀과 관련된 부분입니다.</p>
-                        <!--  -->
-                        <!-- // -->
+                        <h4 class="col_tit">Slick Slider</h4>
+                        <p class="col_desc">slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
+                        <!-- 이미지 슬라이드 -->
+                        <div class="slider">
+                            <div>
+                                <figure>
+                                    <img src="assets/img/slider001.jpg" alt="이미지1">
+                                    <figcaption><em>Responsive Site1</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="assets/img/slider001.jpg" alt="이미지2">
+                                    <figcaption><em>Responsive Site2</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="assets/img/slider001.jpg" alt="이미지3">
+                                    <figcaption><em>Responsive Site3</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- //이미지 슬라이드 -->
                     </article>
+
                     <article class="column col5">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이곳은 타이틀 영역입니다. 타이틀과 관련된 부분입니다.</p>
-                        <!--  -->
-                        <!-- // -->
+                        <h4 class="col_tit">Blend Effect</h4>
+                        <p class="col_desc">Background-blend-mode와 Mix-blend-mode</p>
+                        <!-- 라이트 박스 -->
+                        <div class="lightbox square clearfix">
+                            <a href="assets/img/light01_s.jpg"><img src="assets/img/light01.jpg" alt="이미지"></a>
+                            <a href="assets/img/light02_s.jpg"><img src="assets/img/light02.jpg" alt="이미지"></a>
+                            <a href="assets/img/light03_s.jpg"><img src="assets/img/light03.jpg" alt="이미지"></a>
+                            <a href="assets/img/light04_s.jpg"><img src="assets/img/light04.jpg" alt="이미지"></a>
+                            <a href="assets/img/light05_s.jpg"><img src="assets/img/light05.jpg" alt="이미지"></a>
+                            <a href="assets/img/light06_s.jpg"><img src="assets/img/light06.jpg" alt="이미지"></a>
+                            <a href="assets/img/light07_s.jpg"><img src="assets/img/light07.jpg" alt="이미지"></a>
+                            <a href="assets/img/light08_s.jpg"><img src="assets/img/light08.jpg" alt="이미지"></a>
+                            <a href="assets/img/light09_s.jpg"><img src="assets/img/light09.jpg" alt="이미지"></a>
+                            <a href="assets/img/light10_s.jpg"><img src="assets/img/light10.jpg" alt="이미지"></a>
+                        </div>
+                        <!-- //라이트 박스 -->
                     </article>
                     <article class="column col6">
                         <h4 class="col_tit">Title</h4>
@@ -277,5 +311,19 @@
 
     <!-- javascript Libraries -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script>
+        // 라이트 박스
+        $(".lightbox").lightGallery();
+        
+        // 이미지 슬라이드
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: true
+        });
+    </script>
 </body>
 </html>

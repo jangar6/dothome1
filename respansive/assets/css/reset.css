@@ -23,10 +23,15 @@ ul,ol,dl,menu {list-style: none;}
 img {width: 100%; vertical-align: top;} /*이미지 여백 제거*/
 
 /* 폰트 스타일 초기화 */
-em, address {font-style: normal;} /* 이텔릭체 초기화 */
+em {font-style: normal;} /* 이텔릭체 초기화 */
 
 /* 보더 초기화 */
 img, fieldset {border:0;}
+
+/* clearfix */
+.clearfix {*zoom:1;}
+.clearfix:before, .clearfix::after {content: ''; display: block; line-height: 0;}
+.clearfix::after {clear: both;}
 
 /* IR 효과 */
 .ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
@@ -36,3 +41,11 @@ img, fieldset {border:0;}
 
 /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공 할 때 */
 .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+/* 영역 깨짐 방지법 */
+/* 
+1. 똑같이 float을 사용한다.
+2. 깨지는 영역에 clear:both를 사용한다.
+3. 상위 영역에 oveflow: hidden을 사용한다.
+4. 가상의 영역을 만들어서 사용한다. 
+*/

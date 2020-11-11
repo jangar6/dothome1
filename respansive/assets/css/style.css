@@ -232,8 +232,99 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     position: absolute; left: 0px; top: 6px;
 }
 
+/* 블로그 */
+.blog1 figcaption {margin-top: 5px;}
 
+.blog2 {margin-top: 15px;}
+.blog2 h5 {color: #fff; text-align: center; padding: 30px;}
+.blog2 .img-ratina {
+    /* background-image: url(../img/blog4_@1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
 
+    background: url(../img/blog4_@1.jpg) no-repeat center center / cover;
+}
+
+/* 이미지 슬라이드 */
+.slider {}
+.slider figure {position: relative;}
+.slider figcaption {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+}
+.slider figcaption em {
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Abel';
+    opacity: 0;
+    transition: all .84s ease;
+    transform: translateX(50px);
+}
+.slider figcaption span {
+    display: block;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    opacity: 0;
+    transition: all .84s .2s ease;
+    transform: translateX(50px);
+}
+.slider .slick-active figcaption em {opacity: 1; transform: translateX(0);}
+.slider .slick-active figcaption span {opacity: 1; transform: translateX(0);}
+
+.slider .slick-prev {
+    position: absolute; left: 0; bottom: 0;
+    width: 30px; height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    border-color: #5dbfeb;
+}
+.slider .slick-prev::before {
+    content: "<";
+    color: #5dbfeb;
+    text-indent: 0;
+    position: absolute; left: 9px; top: 3px;
+}
+.slider .slick-next {
+    position: absolute; right: 0; bottom: 0;
+    width: 30px; height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    border-color: #5dbfeb;
+}
+.slider .slick-next::before {
+    content: ">";
+    color: #5dbfeb;
+    text-indent: 0;
+    position: absolute; left: 10px; top: 3px;
+}
+.slider .slick-dots {
+    width: 100%;
+    text-align: center;
+}
+.slider .slick-dots li {
+    display: inline-block;
+    width: 15px; height: 15px; margin: 5px;
+}
+.slider .slick-dots li button {
+    width: 15px; height: 15px;
+    background: #5dbfeb;
+    border-radius: 50%;
+    text-indent: -9999px;
+    border-width: 0;
+}
+.slider .slick-dots li.slick-active button {
+    background: #2b91c8;
+}
+
+/* 라이트 박스 */
+.square {}
+.square a {float: left; width: 19%; margin: 0.5%;}
 
 /* 미디어쿼리 */
 @media (max-width: 1220px){

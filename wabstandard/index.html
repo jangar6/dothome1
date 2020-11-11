@@ -10,6 +10,8 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
 
     <!-- wabfonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -122,6 +124,17 @@
             <div id="cont_ban">
                 <div class="container">
                     <div class="ban">
+                        <div>
+                            <div class="ban_img1"><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                            <div class="ban_img2"><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                            <div class="ban_img3"><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="cont_ban">
+                <div class="container">
+                    <div class="ban">
                         <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
                         <ul>
                             <li class="ban_img1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></li>
@@ -131,7 +144,7 @@
                         <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- //cont_ban -->
             <div id="cont_cont">
                 <div class="container">
@@ -256,12 +269,20 @@
                             <!-- 팝업 -->
                             <div class="popup">
                                 <h4>Advertisement</h4>
+                                <div class="popup_img">
+                                    <a href="img/sban07.jpg"><img src="img/sban07.jpg" alt="이미지7"></a>
+                                    <a href="img/sban08.jpg"><img src="img/sban08.jpg" alt="이미지8"></a>
+                                    <a href="img/sban09.jpg"><img src="img/sban09.jpg" alt="이미지9"></a>
+                                </div>
+                            </div>
+                            <!-- <div class="popup">
+                                <h4>Advertisement</h4>
                                 <ul>
                                     <li><img src="img/sban07.jpg" alt="이미지7"></li>
                                     <li><img src="img/sban08.jpg" alt="이미지8"></li>
                                     <li><img src="img/sban09.jpg" alt="이미지9"></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- //팝업 -->
                         </div>
                         <div class="column col4">
@@ -424,7 +445,22 @@
 
     <!-- script -->
     <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+
     <script>
+        // 라이트 박스
+        $(".popup_img").lightGallery();
+
+        // 슬라이드
+        $('.ban_button').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        // 전체 메뉴
         $(".tit .btn").click(function(event){
             event.preventDefault();                 // #의 기본 기능을 차단
             // 전체 메뉴 나타내기

@@ -117,7 +117,25 @@
     background-position: 0px -660px;
 }
 /* 배너 */
-.ban {position: relative; padding: 24px 0;}
+.ban {position: relative; padding: 24px 0; overflow: hidden;}
+/* .ban > a {
+    position: absolute;
+    top: 60px;
+    width: 43px;  height: 43px;
+    background-image: url(../img/icon.png);
+} */
+.ban a.prev {left: -80px; background-position: -150px 0px;}
+.ban a.next {right: -80px; background-position: -150px -43px;}
+.ban a.prev:hover {background-position: -193px 0;}
+.ban a.next:hover {background-position: -193px -43px;}
+.ban div a {float: left; width: 330px;}
+.ban div img {border: 4px solid #dcdcdc;}
+.ban div img:hover {border: 4px solid #98bcdc;}
+.ban div.ban_img1 {text-align: left;}
+.ban div.ban_img2 {text-align: center;}
+.ban div.ban_img3 {text-align: right;}
+
+/* .ban {position: relative; padding: 24px 0;}
 .ban > a {
     position: absolute;
     top: 60px;
@@ -128,14 +146,15 @@
 .ban a.next {right: -80px; background-position: -150px -43px;}
 .ban a.prev:hover {background-position: -193px 0;}
 .ban a.next:hover {background-position: -193px -43px;}
-.ban ul {overflow: hidden;} /* flaot: left로 깨짐 방지 */
+.ban ul {overflow: hidden;} flaot: left로 깨짐 방지
 .ban ul li {float: left; width: 330px;}
-.ban ul li img {border: 4px solid #dcdcdc}
-.ban ul li img:hover {border: 4px solid #98bcdc}
+.ban ul li img {border: 4px solid #DCDCDC;}
+.ban ul li img:hover {border: 4px solid #98BCDC;}
 .ban ul li.ban_img1 {text-align: left;}
 .ban ul li.ban_img2 {text-align: center;}
 .ban ul li.ban_img3 {text-align: right;}
-
+ */
+ 
 /* 컨텐츠 */
 .cont {overflow: hidden; padding-top: 30px;}
 .cont .column {
@@ -245,7 +264,6 @@
     width: 17px; height: 17px; display: block;
     background: url(../img/icon.png) -150px -90px;
 }
-
 
 /* 마우스 오버 효과1 */
 .notice_hover h4 {
@@ -378,7 +396,19 @@
     padding-bottom: 3px; 
     font-weight: bold;
 }
+.popup .popup_img {overflow: hidden;}
+.popup .popup_img a {float: left; width: 93px; height: 93px; margin-right: 5px;}
+.popup .popup_img a:last-child {margin-right: 0;}
+.popup img {width: 100%;}
+/* 
+.popup {}
+.popup h4 {
+    font-size: 14px; 
+    color: #0093bd; 
+    padding-bottom: 3px; 
+    font-weight: bold;
+}
 .popup ul {overflow: hidden;}
 .popup li {float: left; width: 93px; height: 93px; margin-right: 5px;}
 .popup li:last-child {margin-right: 0;}
-.popup img {width: 100%;} 
+.popup img {width: 100%;}  */
