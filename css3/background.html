@@ -6,7 +6,7 @@
     <meta name="author" content="webstoryboy">
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
     <meta name="keywords" content="JangAReum, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
-    <title>JangAReum | Bacground </title>
+    <title>JangAReum | Background</title>
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/docs.min.css" rel="stylesheet">
@@ -69,7 +69,7 @@
     </header>
     <div class="bs-header bgs5" id="content">
         <div class="container">
-            <h1>Bacground Reference v1.0 &lt;/doc&gt;</h1>
+            <h1>Background Reference v1.0 &lt;/doc&gt;</h1>
             <p><a href="http://jangar6621.dothome.co.kr/" target="_blank">jangar6621.dothome.co.kr</a></p>
         </div>
     </div>
@@ -77,24 +77,503 @@
         <div class="row">
             <div class="col-md-9" role="main">
                 
-                <!-- Intro1 -->
+                <!-- Intro0 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">클리핑 마스크</h2>
-                    <p class="bs-callout bs-callout-info">클리핑 마스크는 레이어 마스크와 달리 상위 레이어의 이미지를 하위 레이어에 클리핑하여 레이어의 모양으로 잘라낸 것처럼 나타내는 기능입니다.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample01.jpg">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample02.jpg">
-                            </a>
-                        </div>
+                    <h2 id="intro0" class="page-header">Background</h2>
+                    <p class="bs-callout bs-callout-info">
+                        background-image : url | linear-gradient | radial-gradient | repeating-linear-gradient | repeating-radial-gradient | none;
+                    </p>
+                    <div class="table-reponsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>종류</th>
+                                    <th>예시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>background-image 주소를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>none</td>
+                                    <td>background-image를 설정하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>linear-gradient</td>
+                                    <td>선형 그라데이션 백그라운드를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>radial-gradient</td>
+                                    <td>원형 그라데이션 백그라운드를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>repeating-linear-gradient</td>
+                                    <td>반복 선형 그라데이션 백그라운드를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>repeating-radial-gradient</td>
+                                    <td>반복 원형 그라데이션 백그라운드를 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+                <!-- //Intro0 -->
+
+                <style>
+                    .sample .gradientWrap > div {
+                        width: 160px; height: 160px; margin: 20px;
+                        line-height: 160px;
+                    }
+
+                    .sample .gradientWrap .gradient01 {background-image: linear-gradient(to top, #fbc2eb, #a6c1ee);}
+                    .sample .gradientWrap .gradient02 {background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);}
+                    .sample .gradientWrap .gradient03 {background-image: linear-gradient(to bottom, #fbc2eb, #a6c1ee);}
+                    .sample .gradientWrap .gradient04 {background-image: linear-gradient(to left, #fbc2eb, #a6c1ee);}
+                </style>
+
+                <!-- Intro1 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro1" class="page-header">Gradient01</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient01</em></h3>
+                        <div class="boxWrap gradientWrap bg1">
+                            <div class="gradient01"><span>gradient01</span></div>
+                            <div class="gradient02"><span>gradient02</span></div>
+                            <div class="gradient03"><span>gradient03</span></div>
+                            <div class="gradient04"><span>gradient04</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient01 {background-image: linear-gradient(to top, #fbc2eb, #a6c1ee);}
+.gradient02 {background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);}
+.gradient03 {background-image: linear-gradient(to bottom, #fbc2eb, #a6c1ee);}
+.gradient04 {background-image: linear-gradient(to left, #fbc2eb, #a6c1ee);}
+</code></pre>
+                </div>
                 <!-- //Intro1 -->
+                <style>
+                    .sample .gradientWrap .gradient05 {background-image: linear-gradient(0deg, #30cfd0, #330867)}
+                    .sample .gradientWrap .gradient06 {background-image: linear-gradient(30deg, #30cfd0, #330867)}
+                    .sample .gradientWrap .gradient07 {background-image: linear-gradient(60deg, #30cfd0, #330867)}
+                    .sample .gradientWrap .gradient08 {background-image: linear-gradient(90deg, #30cfd0, #330867)}
+                </style>
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">Gradient02</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient02</em></h3>
+                        <div class="boxWrap gradientWrap bg2">
+                            <div class="gradient05"><span>gradient05</span></div>
+                            <div class="gradient06"><span>gradient06</span></div>
+                            <div class="gradient07"><span>gradient07</span></div>
+                            <div class="gradient08"><span>gradient08</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient05 {background-image: linear-gradient(0deg, #30cfd0, #330867)}
+.gradient06 {background-image: linear-gradient(30deg, #30cfd0, #330867)}
+.gradient07 {background-image: linear-gradient(60deg, #30cfd0, #330867)}
+.gradient08 {background-image: linear-gradient(90deg, #30cfd0, #330867)}
+</code></pre>
+                </div>
+                <!-- //Intro2 -->
+                <style>
+                    .sample .gradientWrap .gradient09 {background-image: linear-gradient(140deg, #FA709A, #FEE140);}
+                    .sample .gradientWrap .gradient10 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A);}
+                    .sample .gradientWrap .gradient11 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0);}
+                    .sample .gradientWrap .gradient12 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF);}
+                    .sample .gradientWrap .gradient13 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2);}
+                    .sample .gradientWrap .gradient14 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD);}
+                    .sample .gradientWrap .gradient15 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD, #2575FC);}
+                    .sample .gradientWrap .gradient16 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD, #2575FC, #72AFD3);}
+                </style>
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Gradient03</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient03</em></h3>
+                        <div class="boxWrap gradientWrap bg3">
+                            <div class="gradient09"><span>gradient09</span></div>
+                            <div class="gradient10"><span>gradient10</span></div>
+                            <div class="gradient11"><span>gradient11</span></div>
+                            <div class="gradient12"><span>gradient12</span></div>
+                            <div class="gradient13"><span>gradient13</span></div>
+                            <div class="gradient14"><span>gradient14</span></div>
+                            <div class="gradient15"><span>gradient15</span></div>
+                            <div class="gradient16"><span>gradient16</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient09 {background-image: linear-gradient(140deg, #FA709A, #FEE140);}
+.gradient10 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A);}
+.gradient11 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0);}
+.gradient12 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF);}
+.gradient13 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2);}
+.gradient14 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD);}
+.gradient15 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD, #2575FC);}
+.gradient16 {background-image: linear-gradient(140deg, #FA709A, #FEE140, #FA709A, #30CFD0, #66A6FF, #764BA2, #009EFD, #2575FC, #72AFD3);}
+</code></pre>
+                </div>
+                <!-- //Intro3 -->
+                <style>
+                    .sample .gradientWrap .gradient17 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 20%, #453A94 100%);}
+                    .sample .gradientWrap .gradient18 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 30%, #453A94 100%);}
+                    .sample .gradientWrap .gradient19 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 40%, #453A94 100%);}
+                    .sample .gradientWrap .gradient20 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 50%, #453A94 100%);}
+                    .sample .gradientWrap .gradient21 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 60%, #453A94 100%);}
+                    .sample .gradientWrap .gradient22 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 70%, #453A94 100%);}
+                    .sample .gradientWrap .gradient23 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 80%, #453A94 100%);}
+                    .sample .gradientWrap .gradient24 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 90%, #453A94 100%);}
+                </style>
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Gradient04</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient04</em></h3>
+                        <div class="boxWrap gradientWrap bg4">
+                            <div class="gradient17"><span>gradient17</span></div>
+                            <div class="gradient18"><span>gradient18</span></div>
+                            <div class="gradient19"><span>gradient19</span></div>
+                            <div class="gradient20"><span>gradient20</span></div>
+                            <div class="gradient21"><span>gradient21</span></div>
+                            <div class="gradient22"><span>gradient22</span></div>
+                            <div class="gradient23"><span>gradient23</span></div>
+                            <div class="gradient24"><span>gradient24</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient17 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 20%, #453A94 100%);}
+.gradient18 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 30%, #453A94 100%);}
+.gradient19 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 40%, #453A94 100%);}
+.gradient20 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 50%, #453A94 100%);}
+.gradient21 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 60%, #453A94 100%);}
+.gradient22 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 70%, #453A94 100%);}
+.gradient23 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 80%, #453A94 100%);}
+.gradient24 {background-image: linear-gradient(140deg, #F43B47 0%, #FA709A 90%, #453A94 100%);}
+</code></pre>
+                </div>
+                <!-- //Intro4 -->
+                <style>
+                    .sample .gradientWrap .gradient25 {background-image: linear-gradient(0deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient26 {background-image: linear-gradient(30deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient27 {background-image: linear-gradient(60deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient28 {background-image: linear-gradient(90deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient29 {background-image: linear-gradient(120deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient30 {background-image: linear-gradient(150deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient31 {background-image: linear-gradient(180deg, #c471f5 50%, #fa71cd 50%);}
+                    .sample .gradientWrap .gradient32 {background-image: linear-gradient(210deg, #c471f5 50%, #fa71cd 50%);}
+                </style>
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Gradient05</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient05</em></h3>
+                        <div class="boxWrap gradientWrap bg5">
+                            <div class="gradient25"><span>gradient25</span></div>
+                            <div class="gradient26"><span>gradient26</span></div>
+                            <div class="gradient27"><span>gradient27</span></div>
+                            <div class="gradient28"><span>gradient28</span></div>
+                            <div class="gradient29"><span>gradient29</span></div>
+                            <div class="gradient30"><span>gradient30</span></div>
+                            <div class="gradient31"><span>gradient31</span></div>
+                            <div class="gradient32"><span>gradient32</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient25 {background-image: linear-gradient(0deg, #c471f5 50%, #fa71cd 50%);}
+.gradient26 {background-image: linear-gradient(30deg, #c471f5 50%, #fa71cd 50%);}
+.gradient27 {background-image: linear-gradient(60deg, #c471f5 50%, #fa71cd 50%);}
+.gradient28 {background-image: linear-gradient(90deg, #c471f5 50%, #fa71cd 50%);}
+.gradient29 {background-image: linear-gradient(120deg, #c471f5 50%, #fa71cd 50%);}
+.gradient30 {background-image: linear-gradient(150deg, #c471f5 50%, #fa71cd 50%);}
+.gradient31 {background-image: linear-gradient(180deg, #c471f5 50%, #fa71cd 50%);}
+.gradient32 {background-image: linear-gradient(210deg, #c471f5 50%, #fa71cd 50%);}
+</code></pre>
+                </div>
+                <!-- //Intro5 -->
+                <style>
+                    .sample .gradientWrap .gradient33 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient34 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient35 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient36 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient37 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient38 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient39 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                    .sample .gradientWrap .gradient40 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+                </style>
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Gradient06</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient06</em></h3>
+                        <div class="boxWrap gradientWrap bg6">
+                            <div class="gradient33"><span>gradient33</span></div>
+                            <div class="gradient34"><span>gradient34</span></div>
+                            <div class="gradient35"><span>gradient35</span></div>
+                            <div class="gradient36"><span>gradient36</span></div>
+                            <div class="gradient37"><span>gradient37</span></div>
+                            <div class="gradient38"><span>gradient38</span></div>
+                            <div class="gradient39"><span>gradient39</span></div>
+                            <div class="gradient40"><span>gradient40</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient33 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient34 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient35 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient36 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient37 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient38 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient39 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+.gradient40 {background: linear-gradient(20deg, #FA709A, #FEE140) fixed;}
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
+                <style>
+                    .sample .gradientWrap .gradient41 {background: radial-gradient(#2A5298 0%, #209CFF 20%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient42 {background: radial-gradient(#2A5298 0%, #209CFF 30%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient43 {background: radial-gradient(#2A5298 0%, #209CFF 40%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient44 {background: radial-gradient(#2A5298 0%, #209CFF 50%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient45 {background: radial-gradient(#2A5298 0%, #209CFF 60%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient46 {background: radial-gradient(#2A5298 0%, #209CFF 70%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient47 {background: radial-gradient(#2A5298 0%, #209CFF 80%, #68E0CF 100%);}
+                    .sample .gradientWrap .gradient48 {background: radial-gradient(#2A5298 0%, #209CFF 90%, #68E0CF 100%);}
+                </style>
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Gradient07</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient07</em></h3>
+                        <div class="boxWrap gradientWrap bg7">
+                            <div class="gradient41"><span>gradient41</span></div>
+                            <div class="gradient42"><span>gradient42</span></div>
+                            <div class="gradient43"><span>gradient43</span></div>
+                            <div class="gradient44"><span>gradient44</span></div>
+                            <div class="gradient45"><span>gradient45</span></div>
+                            <div class="gradient46"><span>gradient46</span></div>
+                            <div class="gradient47"><span>gradient47</span></div>
+                            <div class="gradient48"><span>gradient48</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient41 {background: radial-gradient(#2A5298 0%, #209CFF 20%, #68E0CF 100%);}
+.gradient42 {background: radial-gradient(#2A5298 0%, #209CFF 30%, #68E0CF 100%);}
+.gradient43 {background: radial-gradient(#2A5298 0%, #209CFF 40%, #68E0CF 100%);}
+.gradient44 {background: radial-gradient(#2A5298 0%, #209CFF 50%, #68E0CF 100%);}
+.gradient45 {background: radial-gradient(#2A5298 0%, #209CFF 60%, #68E0CF 100%);}
+.gradient46 {background: radial-gradient(#2A5298 0%, #209CFF 70%, #68E0CF 100%);}
+.gradient47 {background: radial-gradient(#2A5298 0%, #209CFF 80%, #68E0CF 100%);}
+.gradient48 {background: radial-gradient(#2A5298 0%, #209CFF 90%, #68E0CF 100%);}
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+                <style>
+                     .sample .gradientWrap .gradient49 {background: radial-gradient(ellipse farthest-corner at center top, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient50 {background: radial-gradient(ellipse farthest-corner at left top, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient51 {background: radial-gradient(ellipse farthest-corner at right top, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient52 {background: radial-gradient(ellipse farthest-corner at bottom left, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient53 {background: radial-gradient(ellipse farthest-corner at bottom center, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient54 {background: radial-gradient(ellipse farthest-corner at center top, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient55 {background: radial-gradient(ellipse farthest-corner at left top, #F8BFA4 0%, #F33B4E 100%);}
+                     .sample .gradientWrap .gradient56 {background: radial-gradient(ellipse farthest-corner at right center, #F8BFA4 0%, #F33B4E 100%);}
+                </style>
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">Gradient08</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient08</em></h3>
+                        <div class="boxWrap gradientWrap bg8">
+                            <div class="gradient49"><span>gradient49</span></div>
+                            <div class="gradient50"><span>gradient50</span></div>
+                            <div class="gradient51"><span>gradient51</span></div>
+                            <div class="gradient52"><span>gradient52</span></div>
+                            <div class="gradient53"><span>gradient53</span></div>
+                            <div class="gradient54"><span>gradient54</span></div>
+                            <div class="gradient55"><span>gradient55</span></div>
+                            <div class="gradient56"><span>gradient56</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient49 {background: radial-gradient(ellipse farthest-corner at center top, #F8BFA4 0%, #F33B4E 100%);}
+.gradient50 {background: radial-gradient(ellipse farthest-corner at left top, #F8BFA4 0%, #F33B4E 100%);}
+.gradient51 {background: radial-gradient(ellipse farthest-corner at right top, #F8BFA4 0%, #F33B4E 100%);}
+.gradient52 {background: radial-gradient(ellipse farthest-corner at bottom left, #F8BFA4 0%, #F33B4E 100%);}
+.gradient53 {background: radial-gradient(ellipse farthest-corner at bottom center, #F8BFA4 0%, #F33B4E 100%);}
+.gradient54 {background: radial-gradient(ellipse farthest-corner at center top, #F8BFA4 0%, #F33B4E 100%);}
+.gradient55 {background: radial-gradient(ellipse farthest-corner at left top, #F8BFA4 0%, #F33B4E 100%);}
+.gradient56 {background: radial-gradient(ellipse farthest-corner at right center, #F8BFA4 0%, #F33B4E 100%);}
+</code></pre>
+                </div>
+                <!-- //Intro8 -->
+                <style>
+                    .sample .gradientWrap .gradient57 {background-image: radial-gradient(#e14fad, #f9d423);}
+                    .sample .gradientWrap .gradient58 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1);}
+                    .sample .gradientWrap .gradient59 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8);}
+                    .sample .gradientWrap .gradient60 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb);}
+                    .sample .gradientWrap .gradient61 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da);}
+                    .sample .gradientWrap .gradient62 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4);}
+                    .sample .gradientWrap .gradient63 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea);}
+                    .sample .gradientWrap .gradient64 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea, #cddc39);}
+                </style>
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">Gradient09</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient09</em></h3>
+                        <div class="boxWrap gradientWrap bg9">
+                            <div class="gradient57"><span>gradient57</span></div>
+                            <div class="gradient58"><span>gradient58</span></div>
+                            <div class="gradient59"><span>gradient59</span></div>
+                            <div class="gradient60"><span>gradient60</span></div>
+                            <div class="gradient61"><span>gradient61</span></div>
+                            <div class="gradient62"><span>gradient62</span></div>
+                            <div class="gradient63"><span>gradient63</span></div>
+                            <div class="gradient64"><span>gradient64</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient57 {background-image: radial-gradient(#e14fad, #f9d423);}
+.gradient58 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1);}
+.gradient59 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8);}
+.gradient60 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb);}
+.gradient61 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da);}
+.gradient62 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4);}
+.gradient63 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea);}
+.gradient64 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea, #cddc39);}
+</code></pre>
+                </div>
+                <!-- //Intro9 -->
+                <style>
+                    .sample .gradientWrap .gradient65 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    .sample .gradientWrap .gradient66 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    .sample .gradientWrap .gradient67 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    .sample .gradientWrap .gradient68 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+                </style>
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">Gradient10</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient10</em></h3>
+                        <div class="boxWrap gradientWrap bg10">
+                            <div class="gradient65"><span>gradient65</span></div>
+                            <div class="gradient66"><span>gradient66</span></div>
+                            <div class="gradient67"><span>gradient67</span></div>
+                            <div class="gradient68"><span>gradient68</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient65 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient66 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient67 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient68 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+</code></pre>
+                </div>
+                <!-- //Intro10 -->
+                <style>
+                    .sample .gradientWrap .gradient69 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+                    .sample .gradientWrap .gradient70 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+                    .sample .gradientWrap .gradient71 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+                    .sample .gradientWrap .gradient72 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}
+                </style>
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">Gradient11</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient11</em></h3>
+                        <div class="boxWrap gradientWrap bg11">
+                            <div class="gradient69"><span>gradient69</span></div>
+                            <div class="gradient70"><span>gradient70</span></div>
+                            <div class="gradient71"><span>gradient71</span></div>
+                            <div class="gradient72"><span>gradient72</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient69 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+.gradient70 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+.gradient71 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+.gradient72 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}
+</code></pre>
+                </div>
+                <!-- //Intro11 -->
+                <style>
+                    .sample .gradientWrap .gradient73 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+                    .sample .gradientWrap .gradient74 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+                    .sample .gradientWrap .gradient75 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+                    .sample .gradientWrap .gradient76 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+                </style>
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">Gradient12</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient12</em></h3>
+                        <div class="boxWrap gradientWrap bg12">
+                            <div class="gradient73"><span>gradient73</span></div>
+                            <div class="gradient74"><span>gradient74</span></div>
+                            <div class="gradient75"><span>gradient75</span></div>
+                            <div class="gradient76"><span>gradient76</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient73 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+.gradient74 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+.gradient75 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+.gradient76 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+</code></pre>
+                </div>
+                <!-- //Intro12 -->
+                <style>
+                    .sample .gradientWrap .gradient77 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+                    .sample .gradientWrap .gradient78 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+                    .sample .gradientWrap .gradient79 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+                    .sample .gradientWrap .gradient80 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+                </style>
+                <!-- Intro13 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro13" class="page-header">Gradient13</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Gradient13</em></h3>
+                        <div class="boxWrap gradientWrap bg13">
+                            <div class="gradient77"><span>gradient77</span></div>
+                            <div class="gradient78"><span>gradient78</span></div>
+                            <div class="gradient79"><span>gradient79</span></div>
+                            <div class="gradient80"><span>gradient80</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.gradient77 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+.gradient78 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+.gradient79 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+.gradient80 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+</code></pre>
+                </div>
+                <!-- //Intro13 -->
+
+                 <!-- Sample01 -->
+                 <div class="bs-docs-section">
+                    <h2 id="sample01" class="page-header">Sample01</h2>
+                    <p class="codepen" data-height="600" data-theme-id="light" data-default-tab="result" data-user="jangar6" data-slug-hash="PozXXyj" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Backgorund Effext01">
+                        <span>See the Pen <a href="https://codepen.io/jangar6/pen/PozXXyj">
+                        Backgorund Effext01</a> by jangar6621 (<a href="https://codepen.io/jangar6">@jangar6</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <!-- //Sample01 -->
+
+                <!-- Sample02 -->
+                <div class="bs-docs-section">
+                    <h2 id="sample02" class="page-header">Sample02</h2>
+                    <p class="codepen" data-height="600" data-theme-id="light" data-default-tab="result" data-user="jangar6" data-slug-hash="MWeZZRZ" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Backgorund Effext02">
+                        <span>See the Pen <a href="https://codepen.io/jangar6/pen/MWeZZRZ">
+                        Backgorund Effext02</a> by jangar6621 (<a href="https://codepen.io/jangar6">@jangar6</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <!-- //Sample02 -->
                 
             </div>
             
@@ -104,7 +583,22 @@
             <div class="col-md-3">
                 <div class="bs-sidebar hidden-print" role="complementary">
                     <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">레이어 마스크</a></li>
+                        <li><a href="#intro0">Background</a></li>
+                        <li><a href="#intro1">Gradient01</a></li>
+                        <li><a href="#intro2">Gradient02</a></li>
+                        <li><a href="#intro3">Gradient03</a></li>
+                        <li><a href="#intro4">Gradient04</a></li>
+                        <li><a href="#intro5">Gradient05</a></li>
+                        <li><a href="#intro6">Gradient06</a></li>
+                        <li><a href="#intro7">Gradient07</a></li>
+                        <li><a href="#intro8">Gradient08</a></li>
+                        <li><a href="#intro9">Gradient09</a></li>
+                        <li><a href="#intro10">Gradient10</a></li>
+                        <li><a href="#intro11">Gradient11</a></li>
+                        <li><a href="#intro12">Gradient12</a></li>
+                        <li><a href="#intro13">Gradient13</a></li>
+                        <li><a href="#sample01">Sample01</a></li>
+                        <li><a href="#sample02">Sample02</a></li>
                     </ul>
                 </div>
             </div>
