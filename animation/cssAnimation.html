@@ -11,6 +11,8 @@
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/docs.min.css" rel="stylesheet">
     <link href="../assets/css/prism.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
@@ -20,6 +22,7 @@
     <link rel="icon" href="../assets/ico/favicon_114.png" sizes="48x48">
     <link rel="icon" href="../assets/ico/favicon_114.png" sizes="64x64">
     <link rel="icon" href="../assets/ico/favicon_114.png" sizes="128x128">
+    
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="JangAReum" />
@@ -27,18 +30,21 @@
     <meta property="og:image" content="http://Jangar6621.dothome.co.kr/assets/ico/icon.png" />
     <meta property="og:site_name" content="JangAReum" />
     <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+    
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ueECICkra5RuNJm" />
     <meta name="twitter:title" content="JangAReum" />
     <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
     <meta property="twitter:image" content="http://Jangar6621.dothome.co.kr/assets/ico/icon.png" />
+    
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -482,17 +488,113 @@
                             <div class="timing25"><span>timing25</span></div>
                         </div>
                     </div>
-<pre class="line-numbers language-css"><code>.timing.bg6 {height: 600px;}
-.timing.bg6 > div {background-image: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%);}
-.timing25.normal {animation: move2 4s 5 ease normal;}
+<pre class="line-numbers language-css"><code>.timing25.normal {animation: move2 4s 5 ease normal;}
 .timing25.reverse {animation: move2 4s 5 ease reverse;}
 .timing25.alternate {animation: move2 4s 5 ease alternate;}
 .timing25.alternate-reverse {animation: move2 4s 5 ease alternate-reverse;}
 </code></pre>
                 <!-- //Intro6 -->
+                <style>
+                    .timing.bg7 > div {background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}
+                    .timing26.show {animation: move3 3s 1 ease; animation-fill-mode: none;}
+                    .timing27.show {animation: move3 3s 1 ease; animation-fill-mode: forwards;}
+                    .timing28.show {animation: move3 3s 1 ease; animation-fill-mode: backwards;}
+                    .timing29.show {animation: move3 3s 1 ease; animation-fill-mode: both;}
+                    @keyframes move3 {
+                        0% {left: 0%;}
+                        100% {left: calc(100% - 120px);}
+                    }
+                </style>
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">animation-fill-mode <button type="button" class="btn btn-warning start7">Start</button></h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">animation-fill-mode</em></h3>
+                        <div class="timing bg7">
+                            <div class="timing26"><span>timing26</span></div>
+                            <div class="timing27"><span>timing27</span></div>
+                            <div class="timing28"><span>timing28</span></div>
+                            <div class="timing29"><span>timing29</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.timing.bg7 > div {background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}
+.timing26.show {animation: move3 3s 1 ease; animation-fill-mode: none;}
+.timing27.show {animation: move3 3s 1 ease; animation-fill-mode: forwards;}
+.timing28.show {animation: move3 3s 1 ease; animation-fill-mode: backwards;}
+.timing29.show {animation: move3 3s 1 ease; animation-fill-mode: both;}
+@keyframes move3 {
+    0% {left: 0%;}
+    100% {left: calc(100% - 120px);}
+}
+</code></pre>
+                <!-- //Intro7 -->
+                <style>
+                    .timing.bg8 {height: 600px;}
+                    .timing.bg8 > div {background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);}
+                    .timing30.running {animation: move2 4s 100 ease; animation-play-state: running;}
+                    .timing30.paused {animation: move2 4s 100 ease; animation-play-state: paused;}
+                </style>
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">animation-play-state 
+                        <button type="button" class="btn btn-warning start8-1">running</button>
+                        <button type="button" class="btn btn-warning start8-2">paused</button>
+                    </h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">animation-play-state</em></h3>
+                        <div class="timing bg8">
+                            <div class="timing30"><span>timing30</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.timing30.running {animation: move2 4s 100 ease; animation-play-state: running;}
+.timing30.paused {animation: move2 4s 100 ease; animation-play-state: paused;}
+</code></pre>
+                <!-- //Intro8 -->
+                <style>
+                    .timing.bg9 {display: flex; justify-content: space-between; min-height: 400px;}
+                    .timing.bg9 > div {background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);}
+                    .timing.bg9 > div.ani1 {animation: wobble 1s 10 ease;}
+                    .timing.bg9 > div.ani2 {animation: rubberBand 1s 10 ease;}
+                    .timing.bg9 > div.ani3 {animation: jackInTheBox 1s 10 ease;}
+                    .timing.bg9 > div.ani4 {animation: slideInUp 1s 10 ease;}
+                    .timing.bg9 > div.ani5 {animation: heartBeat 1s 10 ease;}
+                    .timing.bg9 > div.ani6 {animation: flipInY 1s 10 ease;}
+                    .timing.bg9 > div.ani7 {animation: swing 1s 10 ease;}
+                    
+                    
+                </style>
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">Animation.css
+                        <button type="button" class="btn btn-warning">ani1</button>
+                        <button type="button" class="btn btn-warning">ani2</button>
+                        <button type="button" class="btn btn-warning">ani3</button>
+                        <button type="button" class="btn btn-warning">ani4</button>
+                        <button type="button" class="btn btn-warning">ani5</button>
+                        <button type="button" class="btn btn-warning">ani6</button>
+                        <button type="button" class="btn btn-warning">ani7</button>
+                    </h2>
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">Animation.css</em></h3>
+                        <div class="timing bg9">
+                            <div class="timing31"><span>timing31</span></div>
+                            <div class="timing32"><span>timing32</span></div>
+                            <div class="timing33"><span>timing33</span></div>
+                            <div class="timing34"><span>timing34</span></div>
+                            <div class="timing35"><span>timing35</span></div>
+                            <div class="timing36"><span>timing36</span></div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-css"><code>.timing.bg9 > div.ani1 {animation: wobble 1s 10 ease;}
+.timing.bg9 > div.ani2 {animation: rubberBand 1s 10 ease;}
+.timing.bg9 > div.ani3 {animation: jackInTheBox 1s 10 ease;}
+.timing.bg9 > div.ani4 {animation: slideInUp 1s 10 ease;}
+.timing.bg9 > div.ani5 {animation: heartBeat 1s 10 ease;}
+.timing.bg9 > div.ani6 {animation: flipInY 1s 10 ease;}
+.timing.bg9 > div.ani7 {animation: swing 1s 10 ease;}
+</code></pre>
+                <!-- //Intro9 -->
                 
-                
-            </div>
             
             <!-- //col-md-12 -->
             
@@ -573,6 +675,21 @@
             $(".timing25").removeClass("normal reverse alternate alternate-reverse").addClass(txt);
         });
 
+        //Intro7 
+        $(".start7").click(function(){
+            $(".timing.bg7 > div").addClass("show");
+        });
+        //Intro8 
+        $("#intro8 > button").click(function(){
+            const txt = $(this).text();
+            $(".timing30").removeClass("running paused").addClass(txt);
+        });
+        //Intro9 
+        $("#intro9 > button").click(function(){
+            const txt = $(this).text();
+            $(".timing.bg9 > div").removeClass("ani1 ani2 ani3 ani4 ani5 ani6 ani7").addClass(txt);
+        });
+        
     </script>
 </body>
 </html>
