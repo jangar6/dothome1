@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     
     <style>
+        .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
         a {text-decoration: none;}
         li {list-style: none;}
-
+        
         *{margin: 0; padding: 0;}
         #wrap {}
         #header {
@@ -28,6 +29,7 @@
         }
         #footer {height: 220px; background: #191919;}
         
+        /* header */
         .header {overflow: hidden;}
         .header .logo img {float: left; margin-top: 30px; padding: 0 100px 0 0;}
         .header .menu li {
@@ -48,6 +50,7 @@
             padding: 7px 10px;
         }
 
+        /* banner */
         .banner {position: relative; }
         .banner h3 {
             text-align: center;
@@ -243,21 +246,23 @@
         }
 
         /* footer */
-        .footer {position: relative;}
-        .left {overflow: hidden; color: #565656; padding-top: 40px;}
-        .left h3 {float: left; padding: 5px;}
-        .left h2 {float: left;}
-        .left p {position: absolute; left: 0px; top: 80px; font-size: 16px;}
-
-        .center {color: #565656; position: absolute; left: 520px; top: 80px; font-size: 16px;}
-
-        .right {
-            color: #565656;
-            position: absolute; right: 0; top: 80px;
-            font-size: 16px;
+        .footer {position: relative; padding: 40px; overflow: hidden;}
+        .footer .logo {
+            background: url(https://static-clova.pstatic.net/static/c9c16b3/img/sprite/sp_svg_icon.svg);
+            background-position: -4px -34px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 20px;
+            display: block;
+            content: '';
         }
-        .right div {position: absolute; right: 0; top: -40px;}
-        .right div a {padding-right: 10px;}
+        
+        .footer .left li {float: left; color: #4a4a4a;}
+        .footer .left li::after {
+            content: '';
+            width: 1px; height: 12px; background: #4a4a4a;
+        }
+        
 
         .container {width: 1200px; height: initial; margin: 0 auto; /*background: rgba(255, 255, 255, 0.4);*/}
     </style>
@@ -406,22 +411,12 @@
         <footer id="footer">
             <div class="container">
                 <div class="footer">
+                    <a href="#" class="logo"><span class="title ir_so">NAVER CLOVA</span></a>
                     <div class="left">
-                        <h3>NAVER</h3>
-                        <h2>CLOVA</h2>
-                        <p>고객센터 | 1833-5387 | 19:00-18:00 (주말, 공휴일 휴무)</p>
-                    </div>
-                    <div class="center">
-                        <p>Powered by NAVER · LINE</p>
-                    </div>
-                    <div class="right">
-                        <p>공지사항 | 이용약관 | CLOVA 채용안내 | CLOVA JP</p>
-                        <div>
-                            <a href="#" class="blog"><img src="img/clova_footer03.PNG" alt="blog"></a>
-                            <a href="#" class="facebook"><img src="img/clova_footer04.PNG" alt="facebook"></a>
-                            <a href="#" class="instargram"><img src="img/clova_footer05.PNG" alt="instargram"></a>
-                            <a href="#" class="youtube"><img src="img/clova_footer06.PNG" alt="youtube"></a>
-                        </div>
+                        <ul>
+                            <li>고객센터 1833-5387</li>
+                            <li>09:00 - 18:00 (주말, 공휴일 휴무)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
