@@ -75,40 +75,70 @@
     </div>
     <div class="container bs-docs-container">
         <div class="row">
-            <div class="col-md-9" role="main">
+            <!-- col-md-12 -->
+            <div class="col-md-12" role="main">
+                <!-- 배너광고1140-->
+                <div class="ad">
+                    <script src="https://ads-partners.coupang.com/g.js"></script>
+                    <script>
+                        new PartnersCoupang.G({ id:348401 });
+                    </script>
+                </div>
+                <!-- //배너광고1140 -->
                 
                 <!-- Intro1 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">클리핑 마스크</h2>
-                    <p class="bs-callout bs-callout-info">클리핑 마스크는 레이어 마스크와 달리 상위 레이어의 이미지를 하위 레이어에 클리핑하여 레이어의 모양으로 잘라낸 것처럼 나타내는 기능입니다.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample01.jpg">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-md-12">
-                            <a href="#" class="thumbnail">
-                                <img src="img/sample02.jpg">
-                            </a>
-                        </div>
-                    </div>
+                    <h2 id="intro1" class="page-header">Slider Effect01</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 3초에 한 번씩 변경하기</p>
+                    <iframe width="100%" height="1000px" src="slideEffect01-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h>
+<pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
+const sliderImg = $(".slider_img");
+const slider = $(".slider");
+
+let currentIndex = 0;               // 현재  첫 번째로 보이는 이미지
+let sliderCount = slider.length;    // 이미지의 갯수
+
+// 3초에 한 번씩 함수를 실행
+setInterval(function(){
+    let nextIndex = (currentIndex + 1) % sliderCount; // 다음 이미지
+
+    slider.eq(currentIndex).fadeOut(); // 첫 번째 이미지를 사라짐
+    slider.eq(nextIndex).fadeIn();
+
+    console.log("currentIndex : " + currentIndex);
+    console.log("nextIndex : " + nextIndex);
+    
+    // currentIndex++;
+    currentIndex = nextIndex;
+},3000);
+</code></pre>
+<h2>Javascript</h>
+<pre class="line-numbers language-css"><code>const sliderWrap = document.querySelector(".slider_wrap")
+const sliderImg = document.querySelector(".slider_img");
+const slider = document.querySelectorAll(".slider");
+
+let currentIndex = 0;               // 현재 보이는 첫 번째 이미지
+let sliderCount = slider.length;    // 이미지 갯수
+
+setInterval( () => {
+    let nextIndex = (currentIndex + 1) % sliderCount;
+    
+    // slider.eq(currentIndex).fadeOut();
+    slider[currentIndex].style.opacity = "0";
+    slider[nextIndex].style.opacity = "1";
+
+    currentIndex = nextIndex;
+},3000);
+</code></pre>
                 </div>
                 <!-- //Intro1 -->
                 
+                
             </div>
             
-            <!-- //col-md-9 -->
+            <!-- //col-md-12 -->
             
-            <!-- //col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">레이어 마스크</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--//col-md-3 -->
         </div>
         <!-- //row -->
     </div>

@@ -6,7 +6,7 @@
     <meta name="author" content="webstoryboy">
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
     <meta name="keywords" content="JangAReum, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
-    <title>JangAReum | GameEffect</title>
+    <title>JangAReum | Game Script</title>
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/docs.min.css" rel="stylesheet">
@@ -69,7 +69,7 @@
     </header>
     <div class="bs-header bgs5" id="content">
         <div class="container">
-            <h1>GameEffect Reference v1.0 &lt;/doc&gt;</h1>
+            <h1>Game Script Reference v1.0 &lt;/doc&gt;</h1>
             <p><a href="http://jangar6621.dothome.co.kr/" target="_blank">jangar6621.dothome.co.kr</a></p>
         </div>
     </div>
@@ -124,6 +124,7 @@ questionBtn.click(function(){
 </code></pre>
                 </div>
                 <!-- //Intro1 -->
+
                 <!-- Intro2 -->
                 <div class="bs-docs-section">
                     <h2 id="intro2" class="page-header">Quiz2</h2>
@@ -160,6 +161,7 @@ questionBtn.addEventListener("click",function(){
 });
 </code></pre>
                 <!-- //Intro2 -->
+
                 <!-- Intro3 -->
                 <div class="bs-docs-section">
                     <h2 id="intro3" class="page-header">Quiz3</h2>
@@ -196,7 +198,7 @@ const quizInfo = [
 
 // 문제출력
 // for문
-for(let i=0; i< quizInfo.length; i++){
+for(let i=0; i&gt; quizInfo.length; i++){
     questionNum.eq(i).html(quizInfo[i].quizNum);
     questionAsk.eq(i).html(quizInfo[i].quizAsk);
     questionAnswer.eq(i).html(quizInfo[i].quizAnswer);
@@ -222,9 +224,9 @@ questionBtn.click(function(){
 });
 </code></pre>
                 <!-- //Intro3 -->
-                <!-- Intro3 -->
+                <!-- Intro4 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro3" class="page-header">Quiz4</h2>
+                    <h2 id="intro4" class="page-header">Quiz4</h2>
                     <p class="bs-callout bs-callout-info">주관식 3문제 스타일(자바스크립트)</p>
                     <iframe width="100%" height="560px" src="quizEffect02-javascript.html" frameborder="0"></iframe>
 <pre class="line-numbers language-css"><code>// 선택자
@@ -260,7 +262,7 @@ const quizInfo = [
 
 // 문제출력
 // for문
-// for(let i=0; i< quizInfo.length; i++){
+// for(let i=0; i&lt;quizInfo.length; i++){
 //     questionNum[i].innerHTML = quizInfo[i].quizNum;
 //     questionAsk[i].innerHTML = quizInfo[i].quizAsk;
 //     questionAnswer[i].innerHTML = quizInfo[i].quizAnswer;
@@ -277,7 +279,7 @@ questionquiz.forEach((elem,index) => {
 });
 
 // 정답 숨기기
-for(let i=0; i< quizInfo.length; i++){
+for(let i=0; i&lt;quizInfo.length; i++){
     // questionAnswer[i].style.display = "none";
     // questionEX[i].style.display = "none";
     confirmBottom[i].style.display = "none";
@@ -291,7 +293,7 @@ questionBtn.forEach(elem => {
     });
 });
 </code></pre>
-                <!-- //Intro3 -->
+                <!-- //Intro4 -->
             </div>
             
             <!-- //col-md-12 -->
