@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+        a {text-decoration: none;}
+        li {list-style: none;}
+
         * {margin: 0; padding: 0;}
         #wrap {}
-        #header {height: 85px; background: #000;}
+        #header {height: 85px; background: #fff;}
         #banner {height: 670px; background: #222;}
         #contents {height: 3000px; background: #444;}
         #footer {height: 132px; background: #666;}
+
+        .header {}
+        .header .logo {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.svg);
+            background-position: -4px -62px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 22px;
+            display: block;
+            margin: 30px;
+        }
+        .header .menu {overflow: hidden;}
+        .header .menu ul {}
+        .header .menu li {
+            padding: 34px 36px;
+            box-sizing: border-box;
+            display: inline;
+        }
+        .header .menu li span{
+            color: (0,0,0,0.6);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            color: rgba(0,0,0,.6);
+        }
+        .header .btn li {float: left; margin-top: 24px; padding-left: 8px;}
+        .header .btn li a {
+            font-size: 14px;
+            color: rgba(0,0,0,.8);
+            border: 1px solid rgba(0,0,0,.6);
+            border-radius: 4px;
+            padding: 7px 10px;
+        }
 
         .container {width: 1140px; height: inherit; margin: 0 auto; background: rgba(255,255,255,0.3);}
     </style>
@@ -18,7 +55,28 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="container"></div>
+            <div class="container">
+                <div class="header">
+                    <div class="logo ir_so">
+                        <h2>logo</h2>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="menu1"><a href="#"><span>기술 · 솔루션</span></a></li>
+                            <li class="menu2"><a href="#"><span>제품</span></a></li>
+                            <li class="menu3"><a href="#"><span>플랫폼</span></a></li>
+                            <li class="menu4"><a href="#"><span>파트너</span></a></li>
+                            <li class="menu5"><a href="#"><span>리서치</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <ul>
+                            <li><a href="#"><span>Biz Start</span></a></li>
+                            <li><a href="#"><span>비즈니스 문의</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <nav id="banner">
             <div class="container"></div>

@@ -345,7 +345,8 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /* 마우스오버효과 */
 #cont_right {}
-#cont_right .column.col7 {}
+#cont_right .side1 {}
+#cont_right .side1 .img {}
 /* 푸터 */
 .footer {text-align: center; padding: 30px 50px;}
 .footer li {
