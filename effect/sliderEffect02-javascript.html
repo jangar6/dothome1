@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sliderEffect01 - JQuery</title>
+    <title>Slider Effect02 - JavaScript</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
     <style>
         /* reset */
@@ -89,14 +89,15 @@
             color: var(--color-title);
             font-family: var(--font-cafe);
             font-size: 16px;
-            background: url(img/images03@2.jpg);
+            background: url(img/images02@2.jpg)no-repeat center center;
             background-size: cover;
+            height: 100vh;
         }
         body::before {
             content: '';
             position: absolute; left: 0; top: 0;
             width: 100%; height: 100vh;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(36, 8, 8, 0.7);
         }
         #parallax-wrap h1 {
             color: var(--color-h1);
@@ -217,98 +218,44 @@
             background: url(img/images09.jpg);
             background-size: cover;
         }
-        
-        /* 한 번에 나타내기*/
-        /*
-        .contents > section {
-            opacity: 0;
-            transform: translateY(200px);
-            transition: all 1s;
-        }
-        .contents > section.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        */
-
-        /* 개별적으로 나타내기 */
-        .contents > section .content-item-num{
-            opacity: 0; 
-            transform: translateY(200px);
-            transition: all 1s 0.1s cubic-bezier(0, 0.68, 0.22, 0.99);
-        }
-        .contents > section .content-item-title {
-            opacity: 0; 
-            transform: translateX(-200px);
-            transition: all 1s 0.3s cubic-bezier(0, 0.68, 0.22, 0.99);
-        }
-        .contents > section .content-item-imgWrap {
-            opacity: 0; 
-            transform: translateY(200px);
-            transition: all 1s 0.6s cubic-bezier(0, 0.68, 0.22, 0.99);
-        }
-        .contents > section .content-item-desc {
-            opacity: 0; 
-            transform: translateX(-200px);
-            transition: all 1s 0.9s cubic-bezier(0, 0.68, 0.22, 0.99);
-        }
-
-        .contents > section.show .content-item-num {
-            opacity: 0.7;
-            transform:translateY(0)
-        }
-        .contents > section.show .content-item-title {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        .contents > section.show .content-item-imgWrap {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .contents > section.show .content-item-desc {
-            opacity: 1;
-            transform: translateX(0);
-        }
 
         /* slider */
         .slider_wrap {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            width: 800px; height: 480px;
+            overflow: hidden;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 100;
         }
         .slider_img {
-            position: relative;
-            width: 1000px; height: 600px;
             overflow: hidden;
-            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+            width: 4000px; height: 480px;
+            position: relative;
         }
         .slider_img .slider {
-            position: absolute;
-            left: 0; top: 0;
+            width: 800px; height: 480px;
+            float: left;
+            position: relative;
         }
         .slider_img .slider span {
             position: absolute;
             left: 5px; top: 5px;
         }
-        .slider_img .slider:nth-child(1) {z-index: 5;}
-        .slider_img .slider:nth-child(2) {z-index: 4;}
-        .slider_img .slider:nth-child(3) {z-index: 3;}
-        .slider_img .slider:nth-child(4) {z-index: 2;}
-        .slider_img .slider:nth-child(5) {z-index: 1;}
+        
         
     </style>
 </head>
 <body>
     <!-- info -->
     <div class="info left">
-        <h1>sliderEffect01 - jQuery</h1>
-        <p>이미지 슬라이드 - 3초에 한 번씩 변경하기</p>
+        <h1>sliderEffect02 - JavaScript</h1>
+        <p>이미지 슬라이드 - 가로로 이동하기</p>
     </div>
     <div class="info right">
         <ul>
-            <li><a href="sliderEffect01-jquery.html" class="active">1</a><a href="sliderEffect01-javascript.html">1</a></li>
-            <li><a href="sliderEffect02-jquery.html">2</a><a href="sliderEffect02-javascript.html">2</a></li>
+            <li><a href="sliderEffect01-jquery.html">1</a><a href="sliderEffect01-javascript.html">1</a></li>
+            <li><a href="sliderEffect02-jquery.html">2</a><a href="sliderEffect02-javascript.html" class="active">2</a></li>
             <li><a href="sliderEffect03-jquery.html">3</a><a href="sliderEffect03-javascript.html">3</a></li>
             <li><a href="sliderEffect04-jquery.html">4</a><a href="sliderEffect04-javascript.html">4</a></li>
             <li><a href="sliderEffect05-jquery.html">5</a><a href="sliderEffect05-javascript.html">5</a></li>
@@ -319,42 +266,49 @@
         </ul>
     </div>
     <!-- info -->
+
     <!-- main -->
     <main>
         <div class="slider_wrap">
             <div class="slider_img">
-                <div class="slider"><img src="img/images02.jpg" alt="이미지1"><span>이미지1</span></div>
-                <div class="slider"><img src="img/images04.jpg" alt="이미지2"><span>이미지2</span></div>
-                <div class="slider"><img src="img/images05.jpg" alt="이미지3"><span>이미지3</span></div>
-                <div class="slider"><img src="img/images06.jpg" alt="이미지4"><span>이미지4</span></div>
-                <div class="slider"><img src="img/images07.jpg" alt="이미지5"><span>이미지5</span></div>
+                <div class="slider"><img src="img/images14.jpg" alt="이미지1"><span>이미지1</span></div>
+                <div class="slider"><img src="img/images15.jpg" alt="이미지2"><span>이미지2</span></div>
+                <div class="slider"><img src="img/images10.jpg" alt="이미지3"><span>이미지3</span></div>
+                <div class="slider"><img src="img/images11.jpg" alt="이미지4"><span>이미지4</span></div>
+                <div class="slider"><img src="img/images12.jpg" alt="이미지5"><span>이미지5</span></div>
             </div>
         </div>
     </main>
     <!-- //main -->
     <!-- scirpt -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-        const sliderWrap = $(".slider_wrap");
-        const sliderImg = $(".slider_img");
-        const slider = $(".slider");
+        const sliderWrap = document.querySelector(".slider_wrap")
+        const sliderImg = document.querySelector(".slider_img");
+        const slider = document.querySelectorAll(".slider");
+
+        let currentIndex = 0;
+        let  sliderCount = slider.length;
+        let sliderWidth = sliderWrap.offsetWidth;
         
-        let currentIndex = 0;               // 현재  첫 번째로 보이는 이미지
-        let sliderCount = slider.length;    // 이미지의 갯수
 
-        // 3초에 한 번씩 함수를 실행
         setInterval(function(){
-            let nextIndex = (currentIndex + 1) % sliderCount; // 다음 이미지
-
-            slider.eq(currentIndex).fadeOut(); // 첫 번째 이미지를 사라짐
-            slider.eq(nextIndex).fadeIn();
-
-            console.log("currentIndex : " + currentIndex);
-            console.log("nextIndex : " + nextIndex);
+            // if( currentIndex < sliderCount -1 ){
+            //     currentIndex++;
+            // } else {
+            //     currentIndex = 0;
+            // }
+            currentIndex < sliderCount -1 ? currentIndex++ :  currentIndex = 0;
             
-            // currentIndex++;
-            currentIndex = nextIndex;
-        },3000);
+            let sliderPosition = currentIndex * -sliderWidth;
+            // (-800)+"px"
+            // sliderImg.animate({ left: sliderPosition }, 400);
+            // sliderImg.style.left = sliderPosition;
+            // sliderImg.style.transition = "all 0.6s";
+            
+            gsap.to(sliderImg, {duration: 0.6, left: sliderPosition, ease: "slow(0.7, 0.7, false)"});
+
+        }, 3000);
     </script>
 </body>
 </html>

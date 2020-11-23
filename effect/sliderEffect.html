@@ -90,7 +90,7 @@
                 <div class="bs-docs-section">
                     <h2 id="intro1" class="page-header">Slider Effect01</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 3초에 한 번씩 변경하기</p>
-                    <iframe width="100%" height="1000px" src="slideEffect01-jquery.html" frameborder="0"></iframe>
+                    <iframe width="100%" height="1000px" src="sliderEffect01-jquery.html" frameborder="0"></iframe>
                     <h2>jQuery</h>
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
@@ -133,6 +133,68 @@ setInterval( () => {
 </code></pre>
                 </div>
                 <!-- //Intro1 -->
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">Slider Effect02</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 가로로 이동하기</p>
+                    <iframe width="100%" height="1000px" src="sliderEffect02-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h>
+<pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
+    const sliderImg = $(".slider_img");
+    const slider = $(".slider");
+
+    let currentIndex = 0;
+    let sliderCount = slider.length;
+
+    setInterval(function(){
+        // if ( currentIndex &lt; sliderCount -1 ){
+        //     currentIndex++;
+        // } else {
+        //     currentIndex = 0;
+        // }
+        currentIndex &lt; sliderCount -1 ? currentIndex++ : currentIndex = 0;
+        
+
+        console.log(currentIndex)
+
+        let sliderPosition = currentIndex * (-800)+"px";
+                            // 0 * -800px = 0       (1번째 이미지)
+                            // 1 * -800px = -800px  (2번째 이미지)
+                            // 2 * -800px = -1600px (3번째 이미지)
+                            // 3 * -800px = -2400px (4번째 이미지)
+
+        sliderImg.animate({ left: sliderPosition }, 400);
+    }, 3000);
+</code></pre>
+<h2>Javascript</h>
+<pre class="line-numbers language-css"><code>const sliderWrap = document.querySelector(".slider_wrap")
+    const sliderImg = document.querySelector(".slider_img");
+    const slider = document.querySelectorAll(".slider");
+
+    let currentIndex = 0;
+    let  sliderCount = slider.length;
+    let sliderWidth = sliderWrap.offsetWidth;
+    
+
+    setInterval(function(){
+        // if( currentIndex &lt; sliderCount -1 ){
+        //     currentIndex++;
+        // } else {
+        //     currentIndex = 0;
+        // }
+        currentIndex &lt; sliderCount -1 ? currentIndex++ :  currentIndex = 0;
+        let sliderPosition = currentIndex * -sliderWidth;
+        // (-800)+"px"
+        // sliderImg.animate({ left: sliderPosition }, 400);
+        // sliderImg.style.left = sliderPosition;
+        // sliderImg.style.transition = "all 0.6s";
+        
+        gsap.to(sliderImg, {duration: 0.6, left: sliderPosition, ease: "slow(0.7, 0.7, false)"});
+
+    }, 3000);
+</code></pre>
+                </div>
+                <!-- //Intro2 -->
                 
                 
             </div>

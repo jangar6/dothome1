@@ -521,23 +521,23 @@
         });
         
         // each문
-        // $(window).scroll(function(){
-        //     const scrollTop = $(window).scrollTop() + $(window).height()/2;
-        //     $(".scrollTop").text(parseInt(scrollTop));
+        $(window).scroll(function(){
+            const scrollTop = $(window).scrollTop() + $(window).height()/2;
+            $(".scrollTop").text(parseInt(scrollTop));
 
-        //     $(".content-item").each(function(num){
-        //         // console.log(num+1);
-        //         $(".s"+(num+1)+"OffsetTop").text( parseInt($("#section"+(num+1)).offset().top) );
+            $(".content-item").each(function(num){
+                // console.log(num+1);
+                $(".s"+(num+1)+"OffsetTop").text( parseInt($("#section"+(num+1)).offset().top) );
             
-        //         if( scrollTop > $(this).offset().top ){
-        //             $(".s"+(num+1)+"OffsetTop").css("color","red");
-        //             $(this).addClass("show");
-        //         } else {
-        //             $(".s"+(num+1)+"OffsetTop").css("color","white");
-        //             $(this).removeClass("show");
-        //         }
-        //     });
-        // });
+                if( scrollTop > $(this).offset().top ){
+                    $(".s"+(num+1)+"OffsetTop").css("color","red");
+                    $(this).addClass("show");
+                } else {
+                    $(".s"+(num+1)+"OffsetTop").css("color","white");
+                    $(this).removeClass("show");
+                }
+            });
+        });
             
     </script>
 </body>
