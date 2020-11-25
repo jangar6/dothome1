@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax02 - Javascript</title>
+    <title>Parallax03 - Javascript</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
     <style>
         /* reset */
@@ -240,15 +240,15 @@
 
     <!-- info -->
     <div class="info left">
-        <h1>Parallax Effect02 - Javascript</h1>
+        <h1>Parallax Effect03 - Javascript</h1>
         <p>패랠랙스 스크로링 효과 - 이질감 느끼기</p>
     </div>
     <div class="info right">
         <!-- ul>li*10>a*2 -->
         <ul>
             <li><a href="parallax01-jquery.html">1</a><a href="parallax01-javascript.html">1</a></li>
-            <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html" class="active">2</a></li>
-            <li><a href="parallax03-jquery.html">3</a><a href="parallax03-javascript.html">3</a></li>
+            <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html">2</a></li>
+            <li><a href="parallax03-jquery.html">3</a><a href="parallax03-javascript.html" class="active">3</a></li>
             <li><a href="parallax04-jquery.html">4</a><a href="parallax04-javascript.html">4</a></li>
             <li><a href="parallax05-jquery.html">5</a><a href="parallax05-javascript.html">5</a></li>
             <li><a href="parallax06-jquery.html">6</a><a href="parallax06-javascript.html">6</a></li>
@@ -347,45 +347,41 @@
     </main>
 
     <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-       window.addEventListener("scroll",() => {
-           let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
-
-            // 시작점 0으로 맞추기 위해 작업
-            // let offset1 = (pageYOffset - document.getElementById("section1").offsetTop) * 0.2;
-            // let offset2 = (pageYOffset - document.getElementById("section2").offsetTop) * 0.2;
-            // let offset3 = (pageYOffset - document.getElementById("section3").offsetTop) * 0.2;
-            // let offset4 = (pageYOffset - document.getElementById("section4").offsetTop) * 0.2;
-            // let offset5 = (pageYOffset - document.getElementById("section5").offsetTop) * 0.2;
-            // let offset6 = (pageYOffset - document.getElementById("section6").offsetTop) * 0.2;
-            // let offset7 = (pageYOffset - document.getElementById("section7").offsetTop) * 0.2;
-            // let offset8 = (pageYOffset - document.getElementById("section8").offsetTop) * 0.2;
-            // let offset9 = (pageYOffset - document.getElementById("section9").offsetTop) * 0.2;
-            
-            // document.querySelector("#section1 .content-item-desc").style.transform = "translateY("+ -offset1 +"px)"
-            // document.querySelector("#section2 .content-item-desc").style.transform = "translateY("+ -offset2 +"px)"
-            // document.querySelector("#section3 .content-item-desc").style.transform = "translateY("+ -offset3 +"px)"
-            // document.querySelector("#section4 .content-item-desc").style.transform = "translateY("+ -offset4 +"px)"
-            // document.querySelector("#section5 .content-item-desc").style.transform = "translateY("+ -offset5 +"px)"
-            // document.querySelector("#section6 .content-item-desc").style.transform = "translateY("+ -offset6 +"px)"
-            // document.querySelector("#section7 .content-item-desc").style.transform = "translateY("+ -offset7 +"px)"
-            // document.querySelector("#section8 .content-item-desc").style.transform = "translateY("+ -offset8 +"px)"
-            // document.querySelector("#section9 .content-item-desc").style.transform = "translateY("+ -offset9 +"px)"
-       
-            // 한번에(for문)
-            for(let i=1; i<10; i++){
-                let offset = (pageYOffset - document.getElementById("section"+i).offsetTop) * 0.2;
-                document.querySelector("#section"+i+" .content-item-desc").style.transform = "translateY("+ -offset +"px)"
-            }
-            
-            // 한번에(forEach문)
-            document.querySelectorAll(".content-item").forEach((elem) => {
-                // console.log(elem);
-                let target = elem.childNodes[7];
-                let offset = (pageYOffset - elem.offsetTop) * 0.2;
-                target.style.transform = "translateY("+ -offset +"px)"
+        let pageYOffset = window.pageYOffset
+        const scroll = () => {
+            const newPageYOffset = window.pageYOffset;
+            const different = newPageYOffset - pageYOffset;
+            console.log("pageYOffset :" + pageYOffset);
+            console.log("newPageYOffset :" + newPageYOffset);
+            console.log("different :" + different);
+            let target = document.querySelectorAll(".content-item-imgWrap");
+            //target.style.transform = "rotate("+different+"deg)";
+            //forEach
+            target.forEach((elem)=>{
+                elem.style.transform = "rotate("+different*+"deg)";
             });
-       });
+            gsap.to(".content-item-imgWrap", {duration: .3, skewY: different*0.2, ease: Power1.out});
+            gsap.to(".content-item-num", {duration: .6, x: different*0.5, ease: Power4.out});
+            gsap.to(".content-item-desc", {duration: .6, skewX: different*0.2, ease: Power3.out});
+            pageYOffset = newPageYOffset
+            requestAnimationFrame(scroll);
+        }
+        scroll();
+        
+
+        // let num = 0;
+        // function render(){
+        //     document.querySelector(".content-item-num").innerHTML = num;
+        //     num++;
+        //     //setInterval(render, 100);
+        //     requestAnimationFrame(render);
+        // }
+        // render()
+
+
+
     </script>
 </body>
 </html>

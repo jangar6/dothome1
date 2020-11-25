@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Web font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <style>
+        .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+        a {text-decoration: none; color: #000;}
+        em {font-style: normal; color: #05d696;}
+        * {margin: 0; padding: 0;}
+        body {font-family: 'NanumSquare';}
+        #header {height: 85px; background: #fff;}
+        #banner {height: 670px;}
+        #contents {padding-bottom: 100px; background: #fff;}
+        #footer {height: 132px; background: #191919;}
+        .container {position: relative; width: 1140px; height: inherit; margin: 0 auto; /* background: rgba(255,255,255,0.3); */}
+
+        /* header */
+        .header {color: #000; text-align: center;}
+        .header .logo {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -4px -62px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 22px;
+            margin-top: 30px;
+        }
+        .header .nav {padding: 30px;}
+        .header .nav li {
+            display: inline;
+            padding: 0 50px;
+            color: rgba(0,0,0,.6);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+        .header .quick {position: absolute; right: 0; top: 10px;}
+        .header .quick li {
+            display: inline-block;
+            padding: 8px 13px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+            color: rgba(0,0,0,.8);
+            text-align: center;
+            margin: 15px 13px 15px 0px
+        }
+        /* banner */
+        .banner {height: 415px; background: rgba(0, 0, 0, 0.4)}
+        .banner .bg1 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_career_1.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 0s infinite;
+            opacity: 1;
+        }
+        .banner .bg2 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_career_2.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 5s infinite;
+            opacity: 0;
+        }
+        .banner .bg3 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_career_3.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 10s infinite;
+            opacity: 0;
+        }
+
+        @keyframes change {
+            0% {opacity: 0;}
+            10% {opacity: 1;}
+            20% {opacity: 1;}
+            30% {opacity: 1;}
+            40% {opacity: 0;}
+            100% {opacity: 0;}
+        }
+
+        .banner {
+            text-align: left;
+            padding: 170px 0 0 105px;
+        }
+        .banner h2 {
+            font-size: 52px;
+            line-height: 54px;
+            font-weight: 300;
+            color: #fff;
+        }
+        .banner p {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #dfdfdf;
+        }
+        /* cont1 */
+        .cont1 {
+            overflow: hidden;
+            position: relative;
+            height: 34px;
+        }
+        .cont1 .lang {float: right; font-size: 13px; text-align: center; overflow: hidden;}
+        .cont1 .lang .lang_e {
+            float: left;
+            width: 76px; height: 32px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            line-height: 34px;
+            background: #dbdbdb;
+            color: #888;
+            margin: -1px;
+        }
+        .cont1 .lang .lang_k {
+            float: left;
+            width: 76px; height: 32px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            line-height: 34px;
+            color: #2ebc76;
+            background: #fff;
+        }
+
+        /* cont2 */
+        .cont2 {}
+        .cont2 .cont2_1 {}
+        .cont2 .cont2_1 .cont_btn1 {
+            position: relative;
+            font-size: 19px;
+            width: 100%; height: 94px;
+            line-height: 94px;
+            color: #000;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            background: none;
+            text-align: left; 
+        }
+        .cont2 .cont2_1 .cont_btn1::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -654px -256px;
+            background-repeat: no-repeat;
+            width: 20px; height: 12px;
+            position: absolute; top: 50%; right: 20px;
+            margin-top: -6px;
+        }
+        .cont2 .cont2_2 .cont_btn2 {
+            position: relative;
+            font-size: 19px;
+            width: 100%; height: 94px;
+            line-height: 94px;
+            color: #000;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            background: none;
+            text-align: left; 
+        }
+        .cont2 .cont2_2 .cont_btn2::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -654px -256px;
+            background-repeat: no-repeat;
+            width: 20px; height: 12px;
+            position: absolute; top: 50%; right: 20px;
+            margin-top: -6px;
+        }
+        .cont2 .cont2_3 .cont_btn3 {
+            position: relative;
+            font-size: 19px;
+            width: 100%; height: 94px;
+            line-height: 94px;
+            color: #000;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            background: none;
+            text-align: left; 
+        }
+        .cont2 .cont2_3 .cont_btn3::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -654px -256px;
+            background-repeat: no-repeat;
+            width: 20px; height: 12px;
+            position: absolute; top: 50%; right: 20px;
+            margin-top: -6px;
+        }
+        .cont2 .cont2_4 .cont_btn4 {
+            position: relative;
+            font-size: 19px;
+            width: 100%; height: 94px;
+            line-height: 94px;
+            color: #000;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            background: none;
+            text-align: left; 
+        }
+        .cont2 .cont2_4 .cont_btn4::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -654px -256px;
+            background-repeat: no-repeat;
+            width: 20px; height: 12px;
+            position: absolute; top: 50%; right: 20px;
+            margin-top: -6px;
+        }
+        
+        /* cont_list */
+        .cont2 .cont2_1 .list1.on {
+            /* display: block; */
+        }
+        .cont2 .cont2_1 .list1 {
+            display: none;
+            padding: 60px 50px 70px;
+            border: 1px solid #e8e8e8;
+        }
+        .cont2 .cont2_1 .list1 em {
+            font-size: 17px;
+            padding-bottom: 14px;
+            line-height: 24px;
+        }
+        .cont2 .cont2_1 .list1 .list_title1 {padding-top: 19px; padding-bottom: 43px;}
+        .cont2 .cont2_1 .list1 .lt1 {
+            font-size: 15px;
+            position: relative;
+            margin: 0 0 8px 15px;
+            line-height: 23px;
+            color: #333;
+            list-style: block;
+        }
+        .cont2 .cont2_1 .list1 h4 {
+            font-size: 15px;
+            padding-top: 19px;
+            padding-bottom: 0;
+            line-height: 23px;
+            color: #000;
+        }
+        .cont2 .cont2_1 .list1 .lt2 {
+            font-size: 15px;
+            position: relative;
+            padding: 8px 0 0 10px;
+            line-height: 23px;
+            color: #333;
+            list-style: none;
+        }
+        .cont2 .cont2_1 .list1 .lt2::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+        }
+        .cont2 .cont2_1 .list1 > div {
+            margin-top: 2px;
+            padding: 31px 35px 8px;
+            background: #f8f8f8;
+        }
+        .cont2 .cont2_1 .list1 > div h5 {
+            font-size: 16px;
+            padding-top: 0;
+            padding-bottom: 2px;
+            line-height: 24px;
+            color: #000;
+        }
+        .cont2 .cont2_1 .list1 > div .list_title3 {
+            padding-bottom: 20px;
+            list-style: none;
+        }
+        .cont2 .cont2_1 .list1 > div .lt3 {
+            font-size: 14px;
+            position: relative;
+            line-height: 25px;
+            color: #333;
+            padding-left: 10px;
+        }
+        .cont2 .cont2_1 .list1 > div .lt3::after {
+            content: '-';
+            position: absolute;
+            left: 0;
+        }
+        .cont2 .cont2_1 .list1 .lb {
+            background: #fff;
+            padding-top: 50px;
+            text-align: center;
+        }
+        .cont2 .cont2_1 .list1 a {
+            
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            border-radius: 4px;
+            background: #36d488;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 63px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* footer */
+        .footer {overflow: hidden; padding-top: 30px; color: #666;}
+        .footer-top {height: 30px;}
+        .footer-top .flogo {
+            float: left;
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -4px -34px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 20px;
+        }
+        .footer-top .ficon {float: right;}
+        .footer-top .ficon ul {float: left;}
+        .footer-top .ficon li {display: inline-block; padding: 0 20px;}
+        .footer-top .ficon li .blog {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -128px -92px;
+            background-repeat: no-repeat;
+            width: 21px;
+            height: 18px;
+        }
+        .footer-top .ficon li .facebook {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -164px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .instargram {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -138px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .youtube {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -200px -172px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 14px;
+        }
+        .footer .footer-bottom {line-height: 14px; height: 30px;}
+        .footer .footer-bottom .fb1 {
+            float: left;
+            text-align: left;
+            font-size: 15px;
+            width: 35%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb1 li {display: inline;}
+        .footer-bottom .fb1 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb1 li:first-child::before {
+            content: none;
+        }
+        .footer .footer-bottom .fb2 {
+            padding-left: 15px;
+            float: left;
+            font-size: 13px;
+            text-align: center;
+            width: 30.666%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 {
+            float: right;
+            text-align: right;
+            font-size: 13px;
+            width: 33%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 li {display: inline;}
+        .footer-bottom .fb3 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb3 li:first-child::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <h1 class="logo ir_so">logo</h1>
+                    <div class="nav">
+                        <ul>
+                            <li>기술 · 솔루션</li>
+                            <li>제품</li>
+                            <li>플랫폼</li>
+                            <li>파트너</li>
+                            <li>리서치</li>
+                        </ul>
+                    </div>
+                    <div class="quick">
+                        <ul>
+                            <li>Biz start</li>
+                            <li>비즈니스 문의</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <nav id="banner">
+            <div class="banner">
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+                <div class="bg3"></div>
+                <div class="container">
+                    <h2>Careers</h2>
+                    <p>클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해<br>우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</p>
+                </div>
+            </div>
+        </nav>
+        <!-- //banner --><!-- //banner -->
+        <section id="contents">
+            <div class="container">
+                <div class="cont1">
+                    <div class="lang">
+                        <a class="lang_e" href="#">English</a>
+                        <a class="lang_k" href="#">korean</a>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="cont2_1">
+                        <button class="cont_btn1">상시채용</button>
+                        <div class="list1">
+                            <em>소개</em>
+                            <ul class="list_title1">
+                                <li class="lt1">CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                <li class="lt1">CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                <li class="lt1">글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                            </ul>
+                            
+                            <em>지원자격</em>
+                            <ul class="list_title1">
+                                <li class="lt1">CLOVA의 성능향상을 위한 AI 선행 기술 연구가 가능한 인력
+                                    <br>(자연어처리, 컴퓨터비전, 추천 등을 포함한 기계학습기반 AI기술 전 분야)
+                                </li>
+                                
+                                <h4>선행기술 연구 전문가 (Research Scientist)</h4>
+                                <ul class="list_title2">
+                                    <li class="lt2">최신 AI 연구 기술에 대한 이해 , 우수한 연구 역량 및 실적</li>
+                                    <li class="lt2">프로젝트를 리딩하고 연구방향을 제시할 수 있는 강력한 연구개발 리더십</li>
+                                </ul>
+                                
+                                <h4>AI SW 엔지니어</h4>
+                                <ul class="list_title2">
+                                    <li class="lt2">Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                    <li class="lt2">멀티 GPU 및 고성능 컴퓨팅관련 업무 경험</li>
+                                    <li class="lt2">머신러닝/딥러닝 모델 설계 및 구축 경험</li>
+                                    <li class="lt2">최신 AI 논문에 대한 빠르고 정확한 구현 능력</li>
+                                </ul>
+                            </ul>
+                            
+                            <em>우대</em>
+                            <ul class="list_title1">
+                                <h4>선행기술 연구 전문가</h4>
+                                <ul class="list_title2">
+                                    <li class="lt2">AI관련분야(기계학습, 자연어처리, 컴퓨터비전, 응용수학 등) 박사학위 소지자 혹은 이에 준하는 역량/경력 소유자</li>
+                                    <li class="lt2">AI관련 분야 Top-tier 학회 논문의 저자(NIPS, ICML, ICLR, CVPR, ACL, EMNLP, ICCV, AAAI, IJCAI, KDD 등)</li>
+                                    <li class="lt2">우수한 영어작문 및 커뮤니케이션 역량 보유자</li>
+                                </ul>
+                                
+                                <h4>AI SW 엔지니어</h4>
+                                <ul class="list_title2">
+                                    <li class="lt2">CUDA기반 GPU 프로그래밍 혹은 Hadoop /Spark 등 분산처리 프로그래밍 경험자</li>
+                                    <li class="lt2">우수한 시각화 및 Front-end 개발 경험 보유자</li>
+                                </ul>
+                            </ul>
+
+                            <em>채용하고 싶은 사람</em>
+                            <ul class="list_title1">
+                                <li class="lt1">열정을 갖고 자기주도적으로 업무를 수행하시는 분</li>
+                                <li class="lt1">오픈 마인드를 갖고 적극적으로 커뮤니케이션 하고 협력하시는 분</li>
+                                <li class="lt1">국적은 무관함</li>
+                            </ul>
+                            <div>
+                                <h5>전형절차 및 기타사항</h5>
+                                <ul class="list_title3">
+                                    <li class="lt3">서류전형 &gt; 1차면접 &gt; 2차면접 &gt; 입사</li>
+                                    <li class="lt3">전형절차는 일정 및 상황에 따라 변동될 수 있습니다.</li>
+                                    <li class="lt3">진행일정은 확정되는 대로 지원자 분들에게 개별 안내 예정입니다.</li>
+                                </ul>
+                                <h5>안내사항</h5>
+                                <ul class="list_title3">
+                                    <li class="lt3">지원서 내용 중 허위사실이 있는 경우에는 합격이 취소될 수 있습니다.</li>
+                                    <li class="lt3">국가유공자 및 장애인 등 취업보호대상자는 관계법령에 따라 우대합니다.</li>
+                                    <li class="lt3">문의사항은 NAVER 채용 홈페이지 &gt; 지원문의로 접수해주시기 바랍니다.</li>
+                                    <li class="lt3">본 채용은 상시모집 채용으로 인재 선발 완료 시 공고가 조기 마감 될 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <div class="lb">
+                                <a href="#">지원하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont2_2">
+                        <button class="cont_btn2">인턴십</button>
+                        <div class="list1">
+                            <em>소개</em>
+                                <ul class="list_title1">
+                                    <li class="lt1">CLOVA AI Research는 클로바에 필요한 선행 AI기술 연구개발 위한 글로벌 팀입니다. 클로바를 글로벌 수준의 AI 플랫폼으로 만들기 위해 우수한 역량을 보유한 AI 연구자 및 엔지니어분들을 찾고 있습니다.</li>
+                                    <li class="lt1">CLOVA AI Research는 클로바 내부 뿐 아니라 네이버 내의 타 조직들과 매우 강력하고 열린 협업체계를 구축하고 있습니다.</li>
+                                    <li class="lt1">글로벌 팀이므로 공용언어는 영어를 사용합니다.</li>
+                                </ul>
+
+                                <em>지원자격</em>
+                                <ul class="list_title1">
+                                    <li class="lt1">AI관련분야(기계학습, 자연어처리, 컴퓨터비전, 응용수학 등) 전공자 및 이에 준하는 역량/경력 소유자</li>
+                                    <li class="lt1">Tensorflow, PyTorch, MXNet, Caffe2 등 오픈소스 프레임워크 기반 개발역량</li>
+                                    <li class="lt1">적극적이고 자기주도적 연구 수행 능력</li>
+                                </ul>
+
+                                <em>우대</em>
+                                <ul class="list_title1">
+                                    <li class="lt1">영어 커뮤니케이션 역량 보유자</li>
+                                    <li class="lt1">최신 AI 논문에 대한 빠르고 정확한 구현 능력(1~2주 이내)</li>
+                                </ul>
+
+                                <em>채용하고 싶은 사람</em>
+                                <ul class="list_title1">
+                                    <li class="lt1">열정을 갖고 자기주도적으로 업무를 수행하시는 분</li>
+                                    <li class="lt1">오픈 마인드를 갖고 적극적으로 커뮤니케이션 하고 협력하시는 분</li>
+                                    <li class="lt1">국적은 무관함</li>
+                                </ul>
+
+                                <div>
+                                    <h5>전형절차 및 기타사항</h5>
+                                    <ul class="list_title3">
+                                        <li class="lt3">서류전형 &gt; 1차면접 &gt; 2차면접 &gt; 입사</li>
+                                        <li class="lt3">전형절차는 일정 및 상황에 따라 변동될 수 있습니다.</li>
+                                        <li class="lt3">진행일정은 확정되는 대로 지원자 분들에게 개별 안내 예정입니다.</li>
+                                    </ul>
+
+                                    <h5>안내사항</h5>
+                                    <ul class="list_title3">
+                                        <li class="lt3">지원서 내용 중 허위사실이 있는 경우에는 합격이 취소될 수 있습니다.</li>
+                                        <li class="lt3">국가유공자 및 장애인 등 취업보호대상자는 관계법령에 따라 우대합니다.</li>
+                                        <li class="lt3">문의사항은 NAVER 채용 홈페이지 &gt; 지원문의로 접수해주시기 바랍니다.</li>
+                                        <li class="lt3">본 채용은 상시모집 채용으로 인재 선발 완료 시 공고가 조기 마감 될 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="lb">
+                                    <a href="#">지원하기</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="cont2_3">
+                        <button class="cont_btn3">박사 후 연구원</button>
+                    </div>
+                    <div class="cont2_4">
+                        <button class="cont_btn4">글로벌 레지던시</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //contents -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-top">
+                        <h5 class="flogo ir_so">logo</h5>
+                        <div class="ficon">
+                            <ul>
+                                <li><a href="#" class="blog ir_so">blog</a></li>
+                                <li><a href="#" class="facebook ir_so">facebook</a></li>
+                                <li><a href="#" class="instargram ir_so">instargram</a></li>
+                                <li><a href="#" class="youtube ir_so">youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="fb1">
+                            <li>고객센터 1833-5387</li>
+                            <li>09:00 - 18:00 (주말, 공휴일 휴무)</li>
+                        </ul>
+                        <p class="fb2">Powered by NAVER · LINE</p>
+                        <ul class="fb3">
+                            <li>공지사항</li>
+                            <li>이용약관</li>
+                            <li>CLOVA채용안내</li>
+                            <li>CLOVA JP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".cont2 .cont2_1").click(function(event){
+            event.preventDefault();
+            $(".list1").css("display","block");
+            $(this).toggleClass("on")
+        });
+    </script>
+</body>
+</html>

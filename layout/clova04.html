@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Web font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <style>
+        .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+        ul, li {list-style: none;}
+        a {text-decoration: none; color: #000;}
+        em {font-style: normal; color: #05d696;}
+        * {margin: 0; padding: 0;}
+        body {font-family: 'NanumSquare';}
+        #header {height: 85px; background: #fff;}
+        #banner {height: 670px;}
+        #contents {height: 1390px; background: #fff;}
+        #footer {height: 132px; background: #191919;}
+        .container {position: relative; width: 1140px; height: inherit; margin: 0 auto; /* background: rgba(255,255,255,0.3); */}
+        
+        /* header */
+        .header {color: #000; text-align: center;}
+        .header .logo {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -4px -62px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 22px;
+            margin-top: 30px;
+        }
+        .header .nav {padding: 30px;}
+        .header .nav li {
+            display: inline;
+            padding: 0 50px;
+            color: rgba(0,0,0,.6);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+        .header .quick {position: absolute; right: 0; top: 10px;}
+        .header .quick li {
+            display: inline-block;
+            padding: 8px 13px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+            color: rgba(0,0,0,.8);
+            text-align: center;
+            margin: 15px 13px 15px 0px
+        }
+        /* banner */
+        .banner {}
+        .banner .bg1 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_main_1.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 0s infinite;
+            opacity: 1;
+        }
+        .banner .bg2 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_main_2.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 5s infinite;
+            opacity: 0;
+        }
+        .banner .bg3 {
+            width: 100%; height: 670px;
+            background: url(https://static-clova.pstatic.net/static/4b722fb/img/research/research_intro_main_3.png) 50% 0 no-repeat;
+            background-size: cover;
+            position: absolute; left: 0; top: 0;
+            z-index: -10;
+            animation: change 15s ease-in-out 10s infinite;
+            opacity: 0;
+        }
+
+        @keyframes change {
+            0% {opacity: 0;}
+            15% {opacity: 1;}
+            30% {opacity: 1;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+
+        .banner {
+            text-align: left;
+            padding: 130px 0 0 105px;
+        }
+        .banner h2 {
+            font-size: 52px;
+            line-height: 54px;
+            font-weight: 300;
+            color: #fff;
+        }
+        .banner p {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #ffff;
+            margin-bottom: 15px;
+        }
+        .banner > div {margin-top: 70px;}
+        .banner > div a {
+            position: relative;
+            height: 60px; line-height: 58px;
+            padding: 20px 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            font-size: 18px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        .banner > div a::before {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_research.png);
+            background-position: -1089px -119px;
+            background-repeat: no-repeat;
+            width: 16px; height: 19px;
+            position: absolute;
+            top: 19px; left: 20px;
+        }
+        /* cont1 */
+        .cont1 {
+            overflow: hidden;
+            position: relative;
+            height: 34px;
+            padding-top: 40px;
+        }
+        .cont1 .lang {float: right; font-size: 13px; text-align: center; overflow: hidden;}
+        .cont1 .lang .lang_e {
+            float: left;
+            width: 76px; height: 32px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            line-height: 34px;
+            background: #dbdbdb;
+            color: #888;
+            margin: -1px;
+        }
+        .cont1 .lang .lang_k {
+            float: left;
+            width: 76px; height: 32px;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            line-height: 34px;
+            color: #2ebc76;
+            background: #fff;
+        }
+        /* cont2 */
+        .cont2 {padding-top: 30px;}
+        .cont2 .text {
+            font-size: 16px;
+            line-height: 28px;
+            color: #333;
+            padding-bottom: 30px;
+        }
+        .cont2 a {
+            
+            display: inline-block;
+            line-height: 45px;
+            padding: 0 40px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            font-weight: 700;
+            color: #888;
+            box-sizing: border-box;
+        }
+        /* cont3 */
+        .cont3 {padding-top: 50px;}
+        .cont3 ul {}
+        .cont3 li {
+            position: relative;
+            float: left;
+            width: 264px; height: 338px;
+            padding: 0 38px 0 40px;
+            border: 1px solid #e9e9e9;
+            background: #fff;
+            margin: 0 14px 14px 0;
+        }
+        .cont3 li em {
+            display: block;
+            padding-top: 37px;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #2ebc76;
+        }
+        .cont3 li p {
+            font-size: 16px;
+            margin-top: 13px;
+            line-height: 27px;
+            color: #333;
+        }
+        .cont3 li a {
+            font-size: 15px;
+            position: absolute; left: 40px; bottom: 35px;
+            line-height: 21px;
+            color: #999;
+        }
+        .cont3 li a::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -650px -282px;
+            background-repeat: no-repeat;
+            width: 7px; height: 11px;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        
+        /* footer */
+        .footer {overflow: hidden; padding-top: 30px; color: #666;}
+        .footer-top {height: 30px;}
+        .footer-top .flogo {
+            float: left;
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -4px -34px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 20px;
+        }
+        .footer-top .ficon {float: right;}
+        .footer-top .ficon ul {float: left;}
+        .footer-top .ficon li {display: inline-block; padding: 0 20px;}
+        .footer-top .ficon li .blog {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -128px -92px;
+            background-repeat: no-repeat;
+            width: 21px;
+            height: 18px;
+        }
+        .footer-top .ficon li .facebook {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -164px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .instargram {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -138px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .youtube {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -200px -172px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 14px;
+        }
+        .footer .footer-bottom {line-height: 14px; height: 30px;}
+        .footer .footer-bottom .fb1 {
+            float: left;
+            text-align: left;
+            font-size: 15px;
+            width: 35%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb1 li {display: inline;}
+        .footer-bottom .fb1 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb1 li:first-child::before {
+            content: none;
+        }
+        .footer .footer-bottom .fb2 {
+            padding-left: 15px;
+            float: left;
+            font-size: 13px;
+            text-align: center;
+            width: 30.666%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 {
+            float: right;
+            text-align: right;
+            font-size: 13px;
+            width: 33%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 li {display: inline;}
+        .footer-bottom .fb3 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb3 li:first-child::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <h1 class="logo ir_so">logo</h1>
+                    <div class="nav">
+                        <ul>
+                            <li>기술 · 솔루션</li>
+                            <li>제품</li>
+                            <li>플랫폼</li>
+                            <li>파트너</li>
+                            <li>리서치</li>
+                        </ul>
+                    </div>
+                    <div class="quick">
+                        <ul>
+                            <li>Biz start</li>
+                            <li>비즈니스 문의</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <nav id="banner">
+            <div class="banner">
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+                <div class="bg3"></div>
+                <div class="container">
+                    <h2>Research Areas</h2>
+                    <p>CLOVA AI Research 는 네이버와 라인이 함께 만드는<br>오감인지 AI플랫폼을 더욱 스마트하게 만들기 위한<br>머신러닝/딥러닝 기반의 AI 선행 기술을 연구 개발하는 조직입니다.</p>
+                    <div>
+                        <a href="#">RESEARCH VIDEO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- //banner -->
+        <section id="contents">
+            <div class="container">
+                <div class="cont1">
+                    <div class="lang">
+                        <a class="lang_e" href="#">English</a>
+                        <a class="lang_k" href="#">korean</a>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <p class="text">클로바는 한국의 1등 검색포털 네이버와 일본의 1등 메신저 라인이 함께 만드는 인공지능 플랫폼으로 네이버와 라인이 20여년간 연구해온 세계 최고 수준의 검색, 언어처리, 대화, 음성, 이미지, 비전, 추천 등의 인공지능 기술과 네이버와 라인이 보유한 수많은 콘텐츠와 서비스를 하나의 플랫폼으로 제공할 예정입니다. 또한, 누구나 쉽게 클로바 플랫폼을 활용하여 인공지능 서비스를 만들 수 있게 하여 사용자나 다양한 파트너들과 함께 AI 생태계를 만들고 더 편리한 세상을 함께 만들어 나갈 예정입니다.</p>
+                    <a href="#">TECHNOLOGIES VIDEO</a>
+                </div>
+                <div class="cont3">
+                    <ul>
+                        <li>
+                            <em>CLOVA AI Research</em>
+                            <p>CLOVA AI Research 는 네이버와 라인이 함께 만드는 오감인지 AI플랫폼을 더욱 스마트하게 만들기 위한 머신러닝/딥러닝 기반의 AI 선행 기술을 연구 개발하는 조직입니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>NSML</em>
+                            <p>NSML은 CLOVA AI Research 에서 개발한 딥러닝 클라우드 플랫폼으로 딥러닝을 연구하는 분들의 쉽고 빠른 Machine Learning 연구를 가능하게 합니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>AI Recommender System</em>
+                            <p>AiRS는 다양한 콘텐츠를 개인의 관심사에 맞춰서 추천해 주는 인공지능 기반 개인화 추천 시스템입니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Dialogue</em>
+                            <p>클로바 대화 시스템은 대화를 통하여 사용자의 요구 사항을 해결하는 시스템으로, 대화에서 사용자의 의도를 정확히 파악하고 의도에 부합한 결과를 제공합니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Music Recommendation</em>
+                            <p>클로바 음악추천 시스템은 사용자의 요청에 적합한 개인화된 음악을 추천합니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Natural Language Processing</em>
+                            <p>클로바의 자연언어처리는 사용자가 발화한 여러 표현을 기계적으로 분석하여 시스템이 이해할 수 있는 형태로 만들고 사용자의 질의에 대한 답변이 될 수 있는 정답을 문서나 Knowledge Base에서 찾아서 제시해주는 일을 합니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Speech Recognition</em>
+                            <p>클로바의 음성 인식은 가장 뛰어난 한국어 인식 능력을 가지고 있습니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Speech Synthesis</em>
+                            <p>음성합성은 텍스트를 사람의 목소리로 읽어주는 기술입니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                        <li>
+                            <em>Vision</em>
+                            <p>클로바 비전 팀은 우리 주변의 시각적 세계를 이해하는 기계 학습 알고리즘을 개발하고, 비전 기반의 새로운 사용자 경험을 네이버 제품에 적용합니다.</p>
+                            <a class="more" href="#">더보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //contents -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-top">
+                        <h5 class="flogo ir_so">logo</h5>
+                        <div class="ficon">
+                            <ul>
+                                <li><a href="#" class="blog ir_so">blog</a></li>
+                                <li><a href="#" class="facebook ir_so">facebook</a></li>
+                                <li><a href="#" class="instargram ir_so">instargram</a></li>
+                                <li><a href="#" class="youtube ir_so">youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="fb1">
+                            <li>고객센터 1833-5387</li>
+                            <li>09:00 - 18:00 (주말, 공휴일 휴무)</li>
+                        </ul>
+                        <p class="fb2">Powered by NAVER · LINE</p>
+                        <ul class="fb3">
+                            <li>공지사항</li>
+                            <li>이용약관</li>
+                            <li>CLOVA채용안내</li>
+                            <li>CLOVA JP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

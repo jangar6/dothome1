@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax02 - Javascript</title>
+    <title>Parallax04 - JQuery</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
     <style>
         /* reset */
@@ -81,7 +81,7 @@
             --color-title : #fff;
             --color-sub : #999;
             --color-link : #000;
-            --color-bg : #cecece;
+            --color-bg : #111;
             --font-cafe : 'Cafe24Danjunghae';
             --font-lato : 'Lato', sans-serif;
             --aspect-ratio: 33/17;
@@ -138,7 +138,6 @@
             /* padding-bottom: 50%; */
             padding-bottom: calc(var(--width) / (var(--aspect-ratio)));
             overflow: hidden;
-            background: red;
         }
         .content-item-img {
             width: var(--width);
@@ -180,41 +179,41 @@
         .content-item:nth-child(even) .content-item-title {
             text-align: left;
         }
-        /* 사진 */
+
         .content-item:nth-child(1) .content-item-img{
-            background: url(img/images10.jpg);
+            background: url(img/images01.jpg);
             background-size: cover;
         }
         .content-item:nth-child(2) .content-item-img{
-            background: url(img/images11.jpg);
+            background: url(img/images02.jpg);
             background-size: cover;
         }
         .content-item:nth-child(3) .content-item-img{
-            background: url(img/images12.jpg);
+            background: url(img/images03.jpg);
             background-size: cover;
         }
         .content-item:nth-child(4) .content-item-img{
-            background: url(img/images13.jpg);
+            background: url(img/images04.jpg);
             background-size: cover;
         }
         .content-item:nth-child(5) .content-item-img{
-            background: url(img/images14.jpg);
+            background: url(img/images05.jpg);
             background-size: cover;
         }
         .content-item:nth-child(6) .content-item-img{
-            background: url(img/images15.jpg);
+            background: url(img/images06.jpg);
             background-size: cover;
         }
         .content-item:nth-child(7) .content-item-img{
-            background: url(img/images16.jpg);
+            background: url(img/images07.jpg);
             background-size: cover;
         }
         .content-item:nth-child(8) .content-item-img{
-            background: url(img/images17.jpg);
+            background: url(img/images08.jpg);
             background-size: cover;
         }
         .content-item:nth-child(9) .content-item-img{
-            background: url(img/images18.jpg);
+            background: url(img/images09.jpg);
             background-size: cover;
         }
 
@@ -234,22 +233,44 @@
             opacity: 1;
             transform: translateX(0);
         }
+        
+        /* 문장 나타나기 */
+        /* .content-item-desc {
+            opacity: 1;
+            transform: translateY(150px);
+            transition: all 0.77s cubic-bezier(0.25, 0.1, 0.37, 0.75);
+        }
+        .content-item-desc.show {
+            transform: translateY(0);
+            opacity: 0;
+        } */
+
+        /* 한 글자씩 나타나기 */
+        .content-item-desc span {
+            opacity: 0;
+            transform: translateY(100px);
+            display: inline-block;
+            transition: all 0.77s cubic-bezier(0, 0.49, 0, 1);
+            min-width: 20px; /* 최소한의 공간(띄어쓰기) */
+        }
+
+        
     </style>
 </head>
 <body>
 
     <!-- info -->
     <div class="info left">
-        <h1>Parallax Effect02 - Javascript</h1>
-        <p>패랠랙스 스크로링 효과 - 이질감 느끼기</p>
+        <h1>Parallax Effect04 - jQuery</h1>
+        <p>패랠랙스 스크로링 효과 - 글자 나타내기</p>
     </div>
     <div class="info right">
         <!-- ul>li*10>a*2 -->
         <ul>
             <li><a href="parallax01-jquery.html">1</a><a href="parallax01-javascript.html">1</a></li>
-            <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html" class="active">2</a></li>
+            <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html">2</a></li>
             <li><a href="parallax03-jquery.html">3</a><a href="parallax03-javascript.html">3</a></li>
-            <li><a href="parallax04-jquery.html">4</a><a href="parallax04-javascript.html">4</a></li>
+            <li><a href="parallax04-jquery.html" class="active">4</a><a href="parallax04-javascript.html">4</a></li>
             <li><a href="parallax05-jquery.html">5</a><a href="parallax05-javascript.html">5</a></li>
             <li><a href="parallax06-jquery.html">6</a><a href="parallax06-javascript.html">6</a></li>
             <li><a href="parallax07-jquery.html">7</a><a href="parallax07-javascript.html">7</a></li>
@@ -347,45 +368,50 @@
     </main>
 
     <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-       window.addEventListener("scroll",() => {
-           let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+        // let text = $("#section1 .content-item-desc").text();
+        // let split = text.split("").join("</span><span>"); // ""-> 글자 분리 / " "->단어
+        // split = "<span>" + split + "</span>";
 
-            // 시작점 0으로 맞추기 위해 작업
-            // let offset1 = (pageYOffset - document.getElementById("section1").offsetTop) * 0.2;
-            // let offset2 = (pageYOffset - document.getElementById("section2").offsetTop) * 0.2;
-            // let offset3 = (pageYOffset - document.getElementById("section3").offsetTop) * 0.2;
-            // let offset4 = (pageYOffset - document.getElementById("section4").offsetTop) * 0.2;
-            // let offset5 = (pageYOffset - document.getElementById("section5").offsetTop) * 0.2;
-            // let offset6 = (pageYOffset - document.getElementById("section6").offsetTop) * 0.2;
-            // let offset7 = (pageYOffset - document.getElementById("section7").offsetTop) * 0.2;
-            // let offset8 = (pageYOffset - document.getElementById("section8").offsetTop) * 0.2;
-            // let offset9 = (pageYOffset - document.getElementById("section9").offsetTop) * 0.2;
-            
-            // document.querySelector("#section1 .content-item-desc").style.transform = "translateY("+ -offset1 +"px)"
-            // document.querySelector("#section2 .content-item-desc").style.transform = "translateY("+ -offset2 +"px)"
-            // document.querySelector("#section3 .content-item-desc").style.transform = "translateY("+ -offset3 +"px)"
-            // document.querySelector("#section4 .content-item-desc").style.transform = "translateY("+ -offset4 +"px)"
-            // document.querySelector("#section5 .content-item-desc").style.transform = "translateY("+ -offset5 +"px)"
-            // document.querySelector("#section6 .content-item-desc").style.transform = "translateY("+ -offset6 +"px)"
-            // document.querySelector("#section7 .content-item-desc").style.transform = "translateY("+ -offset7 +"px)"
-            // document.querySelector("#section8 .content-item-desc").style.transform = "translateY("+ -offset8 +"px)"
-            // document.querySelector("#section9 .content-item-desc").style.transform = "translateY("+ -offset9 +"px)"
-       
-            // 한번에(for문)
-            for(let i=1; i<10; i++){
-                let offset = (pageYOffset - document.getElementById("section"+i).offsetTop) * 0.2;
-                document.querySelector("#section"+i+" .content-item-desc").style.transform = "translateY("+ -offset +"px)"
-            }
-            
-            // 한번에(forEach문)
-            document.querySelectorAll(".content-item").forEach((elem) => {
-                // console.log(elem);
-                let target = elem.childNodes[7];
-                let offset = (pageYOffset - elem.offsetTop) * 0.2;
-                target.style.transform = "translateY("+ -offset +"px)"
+        // 글자 분리하기
+        $(".content-item-desc").each(function(){
+            let text = $(this).text();
+            let split = text.split("").join("</span><span aria-hidden='true'>"); // 웹 접근성 aria-hidden:'true'
+            split = "<span aria-hidden='true'>" + split + "</span>";
+            $(this).html(split).attr("aria-label", text);
+        });
+        // 나타나기
+        $(window).scroll(function(){
+        // //  한번에 나오게 하기
+        // $(".content-item").each(function(){
+        //     if( $(window).scrollTop() > $(this).offset().top ){
+        //         $(this).find(".content-item-desc").addClass("show");
+        //     } else {
+        //         $(this).find(".content-item-desc").removeClass("show");
+        //     }
+        
+            // 한글자씩 나오게 하기(section1)
+            // if( $(window).scrollTop() > $("#section1").offset().top ){
+            //     $("#section1 .content-item-desc span").each(function(i){
+            //         setTimeout(() => {
+            //             $("#section1 .content-item-desc span").eq(i).addClass("show");
+            //         }, 50 * (i+1));
+            //     });
+            // }
+
+            // 한 글자씩 나오게(전체)
+            $(".content-item").each(function(){
+                if( $(window).scrollTop() > $(this).offset().top ){
+                    gsap.to( $(this).find(".content-item-desc span"), {duration: .3, opacity:1, y:0, stagger: 0.05, ease:Power1.ease} )
+                }
             });
-       });
+
+        });
+        
+
+
     </script>
 </body>
 </html>
