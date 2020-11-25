@@ -45,3 +45,4 @@ video,img {width: 100%;}
        only screen and (min-resolution: 1.5dppx){
         .icon {background-image: url(../img/icon@2.png); background-size: 500px;}
        }
+ 
