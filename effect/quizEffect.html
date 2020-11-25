@@ -284,6 +284,143 @@ questionBtn.forEach(elem => {
 });
 </code></pre>
                 <!-- //Intro2 -->
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Quiz3</h2>
+                    <p class="bs-callout bs-callout-info">개관식 스타일</p>
+                    <iframe width="100%" height="560px" src="quizEffect03-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>// 선택자
+const questionAsk = $(".question");
+const questionNum = $(".num");
+const questionBtn = $(".confirm-btn");
+const questionAnswer = $(".confirm-answer");
+const questionEX = $(".confirm-ex");
+const questionBottom = $(".confirm-bottom");
+const questionSelect = $(".select");
+const questionChoice = $(".choice");
+
+
+// 문제정보
+const quizInfo = [
+    {
+        quizNum : 1,
+        quizASk : "다음 중 시멘틱 태그는 무엇인가요?",
+        quizChoice : ["div 태그", "h1 태그", "span 태그", "main 태그"],
+        quizAnswer : "4",
+        quizEx : "시멘틱 태그는 의미가 부여된 태그로써 main 태그는 사이트에서 중요한 컨텐츠에 한번만 사용할 수 있습니다."
+    }
+];
+
+// 문제 출력
+function updataQuiz(){
+    questionNum.html(quizInfo[0].quizNum);
+    questionAsk.html(quizInfo[0].quizASk);
+    questionAnswer.html(quizInfo[0].quizAnswer);
+    questionEX.html(quizInfo[0].quizEx);
+    
+    // 보기 출력(each)
+    questionChoice.each(function(i){
+        $(this).html(quizInfo[0].quizChoice[i]);
+    });
+
+    // 정답 감추기
+    questionAnswer.hide();
+    questionEX.hide();
+};
+updataQuiz();
+
+// 정답 확인
+function answerQuiz(){
+    questionSelect.each(function(index){
+        // 사용자가 체크한 choice를 선별하는 스크립트
+        if( questionSelect[index].checked == true ){
+            // 정답과 사용자의 정답이 일치하는지 확인
+            if( questionSelect[index].value == quizInfo[0].quizAnswer ){
+                // 정답인 경우
+                // alert("정답");
+                questionAnswer.html("정답입니다.");
+                questionBtn.hide();
+                questionAnswer.show();
+                questionEX.show();
+            } else {
+                // 오답인 경우
+                // alert("오답");
+                questionAnswer.html("오답입니다.");
+                questionBtn.hide();
+                questionAnswer.show();
+                questionEX.show();
+            }
+        }
+    });
+}
+questionBtn.on("click",answerQuiz);
+</code></pre>
+<h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code>// 선택자
+const questionAsk = document.querySelector(".question");
+const questionNum = document.querySelector(".num");
+const questionBtn = document.querySelector(".confirm-btn");
+const questionAnswer = document.querySelector(".confirm-answer");
+const questionEX = document.querySelector(".confirm-ex");
+const questionBottom = document.querySelector(".confirm-bottom");
+const questionSelect = document.querySelectorAll(".select");
+const questionChoice = document.querySelectorAll(".choice");
+
+// 문제정보
+const quizInfo = [
+    {
+        quizNum : 1,
+        quizASk : "다음 중 시멘틱 태그는 무엇인가요?",
+        quizChoice : ["div 태그", "h1 태그", "span 태그", "main 태그"],
+        quizAnswer : "4",
+        quizEx : "시멘틱 태그는 의미가 부여된 태그로써 main 태그는 사이트에서 중요한 컨텐츠에 한번만 사용할 수 있습니다."
+    }
+];
+
+// 문제출력
+function updataQuiz(){
+    questionNum.innerHTML = quizInfo[0].quizNum;
+    questionAsk.innerHTML = quizInfo[0].quizASk;
+    questionAnswer.innerHTML = quizInfo[0].quizAnswer;
+    questionEX.innerHTML = quizInfo[0].quizEx;
+    
+    // 보기 출력
+    for(let i=0; i&lt;4; i++){
+        questionChoice[i].innerHTML = quizInfo[0].quizChoice[i];
+    }
+    
+    // 정답 감추기
+    questionAnswer.style.display = "none";
+    questionEX.style.display = "none";
+}
+updataQuiz();
+
+// 정답 확인
+function answerQuiz(){
+    for (let i=0; i&lt;questionSelect.length; i++){
+        if( questionSelect[i].checked == true ){
+            if( questionSelect[i].value == quizInfo[0].quizAnswer){
+                // 정답입니다.
+                // alert("정답");
+                questionAnswer.innerHTML = "정답입니다.";
+                questionBtn.style.display = "none";
+                questionAnswer.style.display = "block";
+                questionEX.style.display = "block";
+            } else {
+                // 오답입니다.
+                // alert("오답");
+                questionAnswer.innerHTML = "오답입니다.";
+                questionBtn.style.display = "none";
+                questionAnswer.style.display = "block";
+                questionEX.style.display = "block";
+            }
+        }
+    }
+}
+questionBtn.addEventListener("click", answerQuiz);
+</code></pre>
+                <!-- //Intro3 -->
             </div>
             
             <!-- //col-md-12 -->

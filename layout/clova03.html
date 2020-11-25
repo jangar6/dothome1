@@ -6,20 +6,21 @@
     <title>Document</title>
     <!-- Web font -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
     <style>
         .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
         ul, li {list-style: none;}
         a {text-decoration: none; color: #000;}
         em {font-style: normal; color: #05d696;}
-        * {margin: 0; padding: 0;}
-        body {font-family: 'NanumSquare';}
-
-        #header {height: 85px;}
-        #banner {height: 112px;}
-        #contents {padding: 124px 0 220px;}
-        #footer {height: 132px; background: #191919;}
-        .container {position: relative; width: 1140px; height: inherit; margin: 0 auto;}
         
+        * {margin: 0; padding: 0;}
+
+        body {position: relative; font-family: 'NanumSquare';}
+        #header {height: 85px; box-sizing: border-box; border-bottom: 1px solid #f2f2f2;}
+        #footer {height: 132px; background: #191919;}
+
+        .container {position: relative; width: 1140px; height: inherit; margin: 0 auto;}
+
         /* header */
         .header {color: #000; text-align: center;}
         .header .logo {
@@ -55,34 +56,140 @@
         }
 
         /* banner */
-        .banner {margin: 123px 0 23px; text-align: center;}
+        .banner {margin-top: 120px; text-align: center;}
         .banner h1 {
             font-size: 41px;
             font-weight: 300;
             line-height: 56px;
             color: #2c2c2c;
-            margin-bottom: 20px;
         }
         .banner a {
+            margin-top: 30px;
             display: inline-block;
-            width: 200px; height: 22px;
+            width: 200px;
             padding: 21px 0 17px;
             color: #fff;
+            font-size: 20px;
             line-height: 22px;
             font-weight: 400;
+            text-align: center;
             border-radius: 4px;
-            background-color: #05d686;
-            font-size: 20px;
+            background: #05d686;
         }
+        
+        /* contents */
         .cont {
+            position: relative;
             width: 1060px;
-            margin: 50px;
+            padding: 50px 44px 111px;
             background: #fff;
             box-sizing: border-box;
         }
-        .cont li {display: inline;}
-        .cont li img {width: 194px; height: 194px;}
-
+        .cont ul {
+            overflow: hidden;
+            border: 1px solid #f2f2f2;
+        }
+        .cont ul li {display: inline;}
+        .cont ul li a {float: left; position: relative;}
+        .cont ul li a::before{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: -1px 0 0 -1px;
+            border: 1px solid #ebecef;
+            border-width: 1px 0 0 1px;
+            content: '';
+        }
+        .cont ul li img {width: 194px; height: 194px;}
+        
+        /* footer */
+        .footer {overflow: hidden; padding-top: 30px; color: #666;}
+        .footer-top {height: 30px;}
+        .footer-top .flogo {
+            float: left;
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -4px -34px;
+            background-repeat: no-repeat;
+            width: 145px;
+            height: 20px;
+        }
+        .footer-top .ficon {float: right;}
+        .footer-top .ficon ul {float: left;}
+        .footer-top .ficon li {display: inline-block; padding: 0 20px;}
+        .footer-top .ficon li .blog {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -128px -92px;
+            background-repeat: no-repeat;
+            width: 21px;
+            height: 18px;
+        }
+        .footer-top .ficon li .facebook {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -164px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .instargram {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -138px -218px;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+        .footer-top .ficon li .youtube {
+            background-image: url(https://static-clova.pstatic.net/static/70fd2ea/img/sprite/sp_svg_icon.png);
+            background-position: -200px -172px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 14px;
+        }
+        .footer .footer-bottom {line-height: 14px; height: 30px;}
+        .footer .footer-bottom .fb1 {
+            float: left;
+            text-align: left;
+            font-size: 15px;
+            width: 35%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb1 li {display: inline;}
+        .footer-bottom .fb1 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb1 li:first-child::before {
+            content: none;
+        }
+        .footer .footer-bottom .fb2 {
+            padding-left: 15px;
+            float: left;
+            font-size: 13px;
+            text-align: center;
+            width: 30.666%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 {
+            float: right;
+            text-align: right;
+            font-size: 13px;
+            width: 33%; height: 50px; line-height: 50px;
+        }
+        .footer .footer-bottom .fb3 li {display: inline;}
+        .footer-bottom .fb3 li::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 0 8px;
+            background: #2c2c2c;
+        }
+        .footer-bottom .fb3 li:first-child::before {
+            content: none;
+        }
     </style>
 </head>
 <body>
@@ -159,12 +266,41 @@
                         <li><a href="#"><img src="https://static-clova.pstatic.net/static/70fd2ea/img/partner/partner_logo_27.png" alt="이미지"></a></li>
                         <li><a href="#"><img src="https://static-clova.pstatic.net/static/70fd2ea/img/partner/partner_logo_28.png" alt="이미지"></a></li>
                         <li><a href="#"><img src="https://static-clova.pstatic.net/static/70fd2ea/img/partner/partner_logo_29.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="img/캡처.PNG" alt="#"></a></li>
+                        <li><a href="#"><img src="img/캡처.PNG" alt="#"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <footer id="footer">
-            <div class="container"></div>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-top">
+                        <h5 class="flogo ir_so">logo</h5>
+                        <div class="ficon">
+                            <ul>
+                                <li><a href="#" class="blog ir_so">blog</a></li>
+                                <li><a href="#" class="facebook ir_so">facebook</a></li>
+                                <li><a href="#" class="instargram ir_so">instargram</a></li>
+                                <li><a href="#" class="youtube ir_so">youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="fb1">
+                            <li>고객센터 1833-5387</li>
+                            <li>09:00 - 18:00 (주말, 공휴일 휴무)</li>
+                        </ul>
+                        <p class="fb2">Powered by NAVER · LINE</p>
+                        <ul class="fb3">
+                            <li>공지사항</li>
+                            <li>이용약관</li>
+                            <li>CLOVA채용안내</li>
+                            <li>CLOVA JP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
