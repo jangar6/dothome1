@@ -115,13 +115,26 @@
 
 /* 오프닝 */
 .opening {padding: 100px 0; text-align: center; color: #bb9b51;}
-.opening h2 {}
-.opening h2 .grand {background-position: 0 -175px; display: inline-block; width: 330px; height: 50px;}
-.opening .data {background-position: 0 -225px; display: inline-block; width: 260px; height: 45px;}
+.opening h2 {margin-bottom: 15px;}
+.opening h2 .grand {background-position: 0 -175px; display: inline-block; width:330px; height: 50px;}
+.opening .date {background-position: 0 -225px; display: inline-block; width:260px; height: 45px;}
 .opening .desc {font-size: 35px; font-weight: 300; padding-bottom: 20px; background: url(../img/bar.png) no-repeat bottom center; background-size: 100%;}
 .opening .open_box {overflow: hidden; padding: 20px 3% 0 3%;}
-.opening .open_box > div {float: left; width: 27.333%; margin: 4% 3% 0 3%; box-sizing: border-box; border: 1px solid #3e4b44;}
-.opening .open_box > div h3 {color: #fff; border: 1px solid #6e3abb;}
+.opening .open_box > div {float: left; width: 27.333%; margin: 4% 3% 0 3%; box-sizing: border-box; background: rgba(0,0,0,0.5); border: 1px solid #3e4b44;}
+.opening .open_box > div h3 {color:#fff; border: 1px solid #6e3abb; margin-top: -24px; font-size: 19px; display: inline-block; padding: 10px 20px; background: #551e9b;}
+.opening .open_box > div p {font-size: 23px; color:#fff; font-weight: 300; padding: 6% 0 10% 0;}
+.opening .open_box > div em {display: block; }
+.opening .open_box > div strong {display: block; font-weight: 700}
+
+/* 새로운 영화 */
+.new {padding: 100px 0; position: relative;}
+.new h2 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+.new .new_left {position: relative; margin-right: 423px; height: 500px; background: #ccc url(../img/new01.jpg) center center; background-size: cover;}
+.new .new_left .play {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px;}
+.new .new_left .play .st0 {fill: #fff; opacity: 0.3;}
+.new .new_left .play .st1 {fill: #fff;}
+.new .new_right {position: absolute; right: 0; top: 165px; width: 400px; height: 500px; background: #f0f0f0;}
+
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
@@ -152,7 +165,11 @@
     .slider .swiper-slide p {font-size: 16px; padding-top: 35px;}
     
     .movie_title ul {width: auto;}
-    .movie_title li {width: 25%; box-sizing: border-box; }
+    .movie_title li {width: 25%; box-sizing: border-box;}
+
+    .opening {padding: 50px 0;}
+    .opening .open_box {display: none;}
+    .opening .desc {background: none; font-size: 25px;}
 }
 
 @media (max-width: 768px){
@@ -180,6 +197,8 @@
     .event h2 {font-size: 24px; font-weight: 700;}
     .event .event_left {width: 100%; margin: 0 auto;}
     .event .event_right {display: none;}
+
+    #opening {margin: 0;}
 }
 
 @media (max-width: 600px){
@@ -214,6 +233,13 @@
     #event .row {padding: 0 8px;}
     .event {padding: 16px;}
     .event h2 {font-size: 18px; margin-bottom: 10px;}
+
+    #opening {margin: 8px 0;}
+    .opening {padding: 20px 0;}
+    .opening h2 {margin-bottom: 10px;}
+    .opening h2 .grand {background-size: 200px; background-position: 40px -63px; width: 197px; height: 24px;}
+    .opening .date {display: none;}
+    .opening .desc {font-size: 16px; font-weight: 400; padding-bottom: 0;}
 }
 
 @media (max-width: 480px){
