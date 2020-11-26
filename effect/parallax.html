@@ -384,7 +384,7 @@ $(window).scroll(function(){
                 <!-- Intro2 -->
                 <div class="bs-docs-section">
                     <h2 id="intro2" class="page-header">Parallax02</h2>
-                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop값을 이용하여 패랠랙스 스크로링 효과를 완성하였습니다.</p>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop값을 이용하여 패랠랙스 스크로링 효과를 주고, 이질감 효과를 추가하여 완성하였습니다.</p>
                     <a class="btn btn-primary btn-lg" href="parallax02-jquery.html" role="button">확인하기</a></p>
                     <iframe width="100%" height="1000px" src="parallax02-jquery.html" frameborder="0"></iframe>
                     <h2>jQuery</h2>
@@ -472,6 +472,235 @@ let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
 </code></pre>
                 </div>
                 <!-- //Intro2 -->
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Parallax03</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop값을 이용하여 패랠랙스 스크로링 효과를 주고, 이질감 효과를 추가하여 완성하였습니다.</p>
+                    <a class="btn btn-primary btn-lg" href="parallax03-jquery.html" role="button">확인하기</a></p>
+                    <iframe width="100%" height="1000px" src="parallax03-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>let scrollTop = $(window).scrollTop();
+function scroll(){
+    const newScrollTop = $(window).scrollTop();
+    const different = newScrollTop - scrollTop;
+    console.log("scrollTop :" + scrollTop)
+    console.log("newScrollTop :" + newScrollTop)
+    console.log("different :" + different)
+
+    // $(".content-item-imgWrap").css({"transform":"rotate("+different+"deg)"})
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY:different * 0.1, ease: Power1.ease});
+    gsap.to(".content-item-num", {duration: .6, x:different * 3, ease: Power1.ease});
+    gsap.to(".content-item-desc", {duration: .6, skewX:different * 0.2, ease: Power4.ease});
+
+    scrollTop = newScrollTop; // 초기화
+    requestAnimationFrame(scroll);
+}
+scroll();
+</code></pre>
+                    <h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code><p>let pageYOffset = window.pageYOffset
+const scroll = () => {
+    const newPageYOffset = window.pageYOffset;
+    const different = newPageYOffset - pageYOffset;
+    console.log("pageYOffset :" + pageYOffset);
+    console.log("newPageYOffset :" + newPageYOffset);
+    console.log("different :" + different);
+    let target = document.querySelectorAll(".content-item-imgWrap");
+    //target.style.transform = "rotate("+different+"deg)";
+    //forEach
+    target.forEach((elem)=>{
+        elem.style.transform = "rotate("+different*+"deg)";
+    });
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY: different*0.2, ease: Power1.out});
+    gsap.to(".content-item-num", {duration: .6, x: different*0.5, ease: Power4.out});
+    gsap.to(".content-item-desc", {duration: .6, skewX: different*0.2, ease: Power3.out});
+    pageYOffset = newPageYOffset
+    requestAnimationFrame(scroll);
+}
+scroll();
+</code></pre>
+                </div>
+                <!-- //Intro3 -->
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Parallax04</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 OffsetTop값을 이용하여 패랠랙스 스크로링 효과를 주고, 글자 효과를 추가하여 완성하였습니다.</p>
+                    <a class="btn btn-primary btn-lg" href="parallax04-jquery.html" role="button">확인하기</a></p>
+                    <iframe width="100%" height="1000px" src="parallax04-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>// 글자 분리하기
+$(".content-item-desc").each(function(){
+    let text = $(this).text();
+    let split = text.split("").join("</span><span aria-hidden='true'>"); // 웹 접근성 aria-hidden:'true'
+    split = "<span aria-hidden='true'>" + split + "</span>";
+    $(this).html(split).attr("aria-label", text);
+});
+// 나타나기
+$(window).scroll(function(){
+// //  한번에 나오게 하기
+// $(".content-item").each(function(){
+//     if( $(window).scrollTop() > $(this).offset().top ){
+//         $(this).find(".content-item-desc").addClass("show");
+//     } else {
+//         $(this).find(".content-item-desc").removeClass("show");
+//     }
+
+    // 한글자씩 나오게 하기(section1)
+    if( $(window).scrollTop() > $("#section1").offset().top ){
+        $("#section1 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section1 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section2").offset().top ){
+        $("#section2 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section2 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section3").offset().top ){
+        $("#section3 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section3 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section4").offset().top ){
+        $("#section4 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section4 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section5").offset().top ){
+        $("#section5 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section5 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section6").offset().top ){
+        $("#section6 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section6 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section7").offset().top ){
+        $("#section7 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section7 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section8").offset().top ){
+        $("#section8 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section8 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+    if( $(window).scrollTop() > $("#section9").offset().top ){
+        $("#section9 .content-item-desc span").each(function(i){
+            setTimeout(() => {
+                $("#section9 .content-item-desc span").eq(i).addClass("show");
+            }, 50 * (i+1));
+        });
+    }
+});
+</code></pre>
+                    <h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code><p>// 글씨 쪼개기 (한번에 쓰기,forEach)
+document.querySelectorAll(".content-item-desc").forEach(elem => {
+    let splitText = elem.innerText;
+    let splitWrap = splitText.split("").join("&lt;/span>&lt;span aria-hidden: 'true'>");
+        splitWrap = "&lt;span aria-hidden: 'true'>" + splitWrap + "&lt;/span>";
+
+    elem.innerHTML = splitWrap;
+    elem.setAttribute("aria-label", splitText);
+});
+
+// 한글자씩 나오게 하기(section1)
+// if( $(window).scrollTop() > $("#section1").offset().top ){
+//     $("#section1 .content-item-desc span").each(function(i){
+//         setTimeout(() => {
+//             $("#section1 .content-item-desc span").eq(i).addClass("show");
+//         }, 50 * (i+1));
+//     });
+// }
+
+window.addEventListener("scroll", () => {
+    let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+
+    if( pageYOffset > document.getElementById("section1").offsetTop ){
+        document.querySelectorAll("#section1 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section2").offsetTop ){
+        document.querySelectorAll("#section2 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section3").offsetTop ){
+        document.querySelectorAll("#section3 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section4").offsetTop ){
+        document.querySelectorAll("#section4 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section5").offsetTop ){
+        document.querySelectorAll("#section5 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section6").offsetTop ){
+        document.querySelectorAll("#section6 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section7").offsetTop ){
+        document.querySelectorAll("#section7 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section8").offsetTop ){
+        document.querySelectorAll("#section8 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+    if( pageYOffset > document.getElementById("section9").offsetTop ){
+        document.querySelectorAll("#section9 .content-item-desc span").forEach((elem, index) => {
+            setTimeout(() => {
+                elem.classList.add("show");
+            },50 * ( index +1 ));
+        });
+    }
+});
+</code></pre>
+                </div>
+                <!-- //Intro4 -->
                 
                 <!-- figma -->
                 <div class="bs-docs-section">
@@ -494,6 +723,8 @@ let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
                     <ul class="nav bs-sidenav">
                         <li><a href="#intro1">parallax01</a></li>
                         <li><a href="#intro2">parallax02</a></li>
+                        <li><a href="#intro3">parallax03</a></li>
+                        <li><a href="#intro4">parallax04</a></li>
                         <li><a href="#figma">figma</a></li>
                     </ul>
                 </div>
