@@ -157,6 +157,66 @@
             position: absolute; top: 50%; right: 20px;
             margin-top: -6px;
         }
+        /*  */
+        .cont2 .cont2_1 .cont_btn1.active {
+            background-position: -614px -282px;
+        }
+        .cont2 .cont2_1 .cont_btn1.active::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -614px -282px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 12px;
+        }
+        .cont2 .cont2_1 .list1 {display: none;}
+        .cont2 .cont2_1 .list1.active {display: block;}
+        /*  */
+        /*  */
+        .cont2 .cont2_2 .cont_btn2.active {
+            background-position: -614px -282px;
+        }
+        .cont2 .cont2_2 .cont_btn2.active::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -614px -282px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 12px;
+        }
+        .cont2 .cont2_2 .list2 {display: none;}
+        .cont2 .cont2_2 .list2.active {display: block;}
+        /*  */
+        /*  */
+        .cont2 .cont2_3 .cont_btn3.active {
+            background-position: -614px -282px;
+        }
+        .cont2 .cont2_3 .cont_btn3.active::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -614px -282px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 12px;
+        }
+        .cont2 .cont2_3 .list3 {display: none;}
+        .cont2 .cont2_3 .list3.active {display: block;}
+        /*  */
+        /*  */
+        .cont2 .cont2_4 .cont_btn4.active {
+            background-position: -614px -282px;
+        }
+        .cont2 .cont2_4 .cont_btn4.active::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png);
+            background-position: -614px -282px;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 12px;
+        }
+        .cont2 .cont2_4 .list4 {display: none;}
+        .cont2 .cont2_4 .list4.active {display: block;}
+        /*  */
         .cont2 .cont2_2 .cont_btn2 {
             position: relative;
             font-size: 19px;
@@ -1044,8 +1104,25 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".cont2 .cont2_1").click(function(e){
+        $(".cont_btn1").click(function(e){
             e.preventDefault();
+            $(this).toggleClass("active");
+            $(this).next().toggleClass("active");
+        });
+        $(".cont_btn2").click(function(e){
+            e.preventDefault();
+            $(this).toggleClass("active");
+            $(this).next().toggleClass("active");
+        });
+        $(".cont_btn3").click(function(e){
+            e.preventDefault();
+            $(this).toggleClass("active");
+            $(this).next().toggleClass("active");
+        });
+        $(".cont_btn4").click(function(e){
+            e.preventDefault();
+            $(this).toggleClass("active");
+            $(this).next().toggleClass("active");
         });
     </script>
 </body>
