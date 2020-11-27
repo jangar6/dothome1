@@ -190,7 +190,8 @@
         document.addEventListener("mousemove", function(e){
             gsap.to(cursor, {duration: 0.3, left: e.pageX, top: e.pageY});
         });
-            
+
+        
         // 오버효과
         contentsEm.forEach(elem => {
             elem.addEventListener("mouseenter", () => {
