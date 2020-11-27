@@ -177,10 +177,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 	margin: 1%;
 	overflow: hidden;
 }
-.column.col7 .side1 img {
-    opacity: 1;
-	transition: all .33s ease-in-out;
-}
+.column.col7 .side1 img {opacity: 1; transition: all .33s ease-in-out;}
 .column.col7 .side1::before {
     content: '';
 	width: 60px; height: 1px;
@@ -198,15 +195,10 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 	transform: translate(-50%, -50%);
 	transition: all .33s ease-in-out;
 }
-.column.col7 .side1:hover::before {
-    left: 23%; top: 50%;
-}
-.column.col7 .side1:hover::after {
-    left: 50%; top: 50%;
-}
-.column.col7 .side1:hover img {
-    opacity: 0.5;
-}
+.column.col7 .side1:hover::before {left: 23%; top: 50%;}
+.column.col7 .side1:hover::after {left: 50%; top: 50%;}
+.column.col7 .side1:hover img {opacity: 0.5;}
+
 .column.col8 {position: relative;}
 .column.col8 .front {}
 .column.col8 .back {position: absolute; left: 0; top: 0; z-index: -1}
@@ -218,12 +210,8 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 	backface-visibility: hidden;
 }
 .column.col8 .side2:hover .front {transform: rotateY(180deg);}
-.column.col8 .back {
-    transform: rotateY(-180deg);
-	transition: transform 1s;
-}
+.column.col8 .back {transform: rotateY(-180deg); transition: transform 1s;}
 .column.col8 .side2:hover .back {transform: rotateY(0deg)};
-
 
 .column.col9 {
     border-bottom: 0;
