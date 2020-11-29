@@ -4,37 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Web font -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    
     <style>
+        /* font */
+        @font-face{
+            font-family:NanumSquare;
+            src:url(https://static-whale.pstatic.net/font/NanumSquare_seR.eot);src:local(※),
+            url(https://static-whale.pstatic.net/font/NanumSquare_seR.eot#iefix)
+            format("embedded-opentype"),url(https://static-whale.pstatic.net/font/NanumSquare_seR.woff)
+            format("woff"),url(https://static-whale.pstatic.net/font/NanumSquare_seR.ttf)
+            format("truetype")
+        }
+        body,button,input,select{
+            font-family:-apple-system,BlinkMacSystemFont,NanumSquare,Segoe UI,Avenir,Helvetica Neue,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Malgun Gothic,"\B9D1\C740   \ACE0\B515",sans-serif
+        }
+        
+        /* reset */
         .ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+        ul, li {list-style: none;}
         a {text-decoration: none; color: #000;}
         em {font-style: normal; color: #05d696;}
         * {margin: 0; padding: 0;}
 
-        body {font-family: 'NanumSquare';}
-
-        #wrap {}
-        #header {height: 72px; background: #000;}
-        #banner {height: 820px; background: #111;}
-        #contents {height: 1500px; background: #222;}
+        /* layout */
+        #wrap {position:relative;}
+        #header {height: 72px;}
+        #content {}
+        #banner {height: 820px;}
         #footer {height: 295px; background: #333;}
+        
+        /* header */
+        .header {
+            height: 4.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 20;
+            padding-left: 200px;
+            padding-right: 200px;
+            background: #fff;
+        }
+        .header .logo {}
+        .header .logo .nw_logo {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            line-height: 0;
+        }
+        .header .logo .nw_logo .naver-only-logo {
+            width: 63px; height: 14px;
+            color: #03c75a;
+        }
+        .header .logo .nw_logo .whale-only-logo {
+            width: 73px; height: 20px;
+            overflow: hidden;
+            color: #424242;
+        }
+
+        .header .menu {display: block;}
+        .header .menu a {
+            display: inline-block;
+            font-weight: 600;
+            padding: 0 1.85em;
+            color: #121212;
+        }
+        .header a.hBtn {
+            padding: .65em 1.12em;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: 2px;
+            font-size: 0.875rem;
+            border-color: #05c3a7;
+            background: #05c3a7;
+            color: #fff;
+        }
+
+        /* banner */
+        .banner {position: relative; z-index: -1000;}
+        .banner .vd {
+            width: 100%; height: 1120px;
+            background-image: url(https://whale.naver.com/img/visual_bg03.d4ee0ee5.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -180px;
+            bottom: 0;
+            overflow: hidden;
+        }
+        .banner .vd video {
+            transform: translateX(-50%) translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        
+        .banner .b_wrap {overflow: hidden;}
+        .banner .b_wrap .left {float: left; width: 35%; height: 100%; vertical-align: middle;}
+        .banner .b_wrap .left .lcont {color: #fff;}
+        .banner .b_wrap .left .lcont .lcont_t {padding-top: 150px;}
+        .banner .b_wrap .left .lcont .lcont_t h2 {white-space: nowrap; line-height: 1.2; font-size: 3.75rem;}
+        .banner .b_wrap .left .lcont .lcont_t p {margin: 1em 0 3em; font-size: 1.0625rem; line-height: 1.75;}
+        .banner .b_wrap .left .lcont .lcont_t a {
+            text-align: center;
+            display: inline-block;
+            background-color: #05c3a7;
+            border-radius: 3px;
+            padding: 1em 2.77em;
+            color: #fff;
+        }
 
 
-        .container {}
+        .banner .b_wrap .right {float: right; width: 50%; padding-top: 150px; position: relative;}
+        .banner .b_wrap .right .rcont1 {display: table; table-layout: fixed; height: 100%; box-sizing: border-box;}
+        .banner .b_wrap .right .rcont1 img {
+            width: 585.96px; height: 401.95px;
+            overflow: hidden;
+        }
+        .banner .b_wrap .right .rcont2 {display: table; table-layout: fixed; height: 100%; box-sizing: border-box;}
+        .banner .b_wrap .right .rcont2 img {
+            position: absolute; left: 0; top: 150px;
+            width: 585.96px; height: 401.95px;
+            overflow: hidden;
+            animation: fade 12s 3s infinite;
+            opacity: 0;
+        }
+        .banner .b_wrap .right .rcont3 {display: table; table-layout: fixed; height: 100%; box-sizing: border-box;}
+        .banner .b_wrap .right .rcont3 img {
+            position: absolute; left: 0; top: 150px;
+            width: 585.96px; height: 401.95px;
+            overflow: hidden;
+            animation: fade 12s 6s infinite;
+            opacity: 0;
+        }
+
+        @keyframes fade {
+            0% {opacity:0;}
+            5% {opacity:1;}
+            25% {opacity:1;}
+            30% {opacity:0;}
+            100% {opacity:0;}
+        }
+
+        /* cont1_left */
+        .cont1_wrap {overflow: hidden; height: 58em; background: #fff;}
+        .cont1 {width: 35%; padding-right: 100px;}
+        .cont1 .cont1_l {
+            display: table-cell;
+            height: 100%; width: 100%;
+        }
+        .cont1 .cont1_l .cont1_t {position: relative; height: 100%;}
+        .cont1 .cont1_l .cont1_t .box1 {
+            position: absolute;
+            opacity: 0; left: 0; top: 50%;
+            animation: change1 .3s ease-in;
+            animation-fill-mode: forwards;
+            
+        }
+        .cont1 .cont1_l .cont1_t .box1 .bi1 {
+            background-image: url(data:image/png;base64,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);
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            width: 68px;
+            height: 68px;
+            margin: 0;
+        }
+        .cont1 .cont1_l .cont1_t .box1 .bi1 h3 {
+            font-size: 2.5vw;
+        }
+        .cont1 .cont1_l .cont1_t .box1 .bi1 p {}
+        .cont1 .cont1_l .cont1_t .box1 .bi1 a {}
+        
+        .cont1 .cont1_l .cont1_t .box2 {}
+        .cont1 .cont1_l .cont1_t .box2 .bi2 {}
+        .cont1 .cont1_l .cont1_t .box2 .bi2 h3 {}
+        .cont1 .cont1_l .cont1_t .box2 .bi2 p {}
+        .cont1 .cont1_l .cont1_t .box2 .bi2 a {}
+        /* container */
+        .container {position: relative; margin: 0 auto; max-width: 1200px; height: inherit; padding-left: 100px; padding-right: 100px;}
     </style>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
             <div class="container">
-                
+                <div class="header">
+                    <div class="logo">
+                        <h1 class="nw_logo">
+                            <svg viewBox="0 0 63 14" class="naver-only-logo">
+                                <path fill="currentColor" d="M 18.111 0.729 L 13.376 13.45 h 4.025 l 0.572 -1.684 h 4.538 l 0.572 1.684 h 4.025 L 22.373 0.73 H 18.11 Z m 2.13 4.008 l 1.35 3.974 h -2.699 l 1.35 -3.974 Z M 40.01 0.729 V 13.45 h 9.53 v -3.118 h -5.683 V 8.617 h 5.505 V 5.56 h -5.505 V 3.847 h 5.564 V 0.729 Z m -5.268 0 l -2.84 8.364 L 29.06 0.73 h -4.025 l 4.735 12.721 h 4.261 L 38.767 0.73 Z m -26.515 0 v 6.809 L 3.728 0.728 H 0 V 13.45 h 3.906 V 6.641 l 4.499 6.81 h 3.728 V 0.728 Z m 49.007 5.924 h -2.072 V 3.972 h 2.072 c 0.703 0 1.272 0.6 1.272 1.34 c 0 0.74 -0.57 1.34 -1.272 1.34 Z m 2.629 2.433 l 0.366 -0.162 c 1.403 -0.619 2.117 -1.957 2.117 -3.657 c 0 -1.607 -0.556 -2.795 -1.653 -3.533 C 59.673 1.048 58.35 0.728 56.53 0.728 h -5.097 V 13.45 h 3.788 V 9.895 h 1.361 l 2.308 3.555 h 4.025 l -3.052 -4.364 Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 73 20" class="whale-only-logo">
+                                <path fill="currentcolor" d="M 63.73 11.861 c 0.278 -1.528 1.136 -2.45 2.635 -2.45 h 0.038 c 1.499 0 2.357 0.922 2.635 2.45 H 63.73 Z m 8.722 1.28 c 0 -3.935 -2.477 -6.64 -6.068 -6.644 c -3.59 0.004 -6.068 2.709 -6.068 6.644 c 0 3.936 2.566 6.565 6.235 6.565 c 2.032 0 3.742 -0.595 5.118 -1.904 l -1.896 -2.175 c -0.88 0.777 -1.996 1.204 -3.037 1.204 c -1.524 0 -2.764 -0.79 -3.086 -2.602 h 8.733 c 0.046 -0.352 0.069 -0.712 0.069 -1.088 Z M 15.58 15.618 l -2.87 -8.755 H 9.12 l -2.831 8.716 l -2.702 -8.716 H -0.04 l 4.28 12.476 h 3.863 l 2.78 -8.434 l 2.805 8.434 h 3.889 l 4.28 -12.476 h -3.563 Z m 15.02 -9.12 h -0.387 c -1.1 0 -2.058 0.385 -2.834 1.039 V 0.625 h -3.397 v 18.714 h 3.397 v -6.665 c 0 -1.592 0.997 -2.872 2.567 -2.872 h 0.001 c 1.57 0 2.567 1.28 2.567 2.872 v 6.665 h 3.422 v -6.764 c 0 -3.468 -2.287 -6.077 -5.335 -6.077 m 13.777 10.06 c -1.891 0 -3.09 -1.541 -3.09 -3.457 s 1.199 -3.457 3.09 -3.457 c 1.89 0 3.09 1.54 3.09 3.457 c 0 1.916 -1.2 3.457 -3.09 3.457 Z m 3.733 -8.494 a 5.41 5.41 0 0 0 -3.832 -1.566 h -0.42 c -3.313 0 -5.797 2.835 -5.797 6.603 s 2.484 6.603 5.796 6.603 h 0.42 a 5.41 5.41 0 0 0 3.833 -1.566 v 1.2 h 3.226 V 6.864 h -3.226 v 1.2 Z m 10.033 7.84 V 0.624 h -3.405 V 15.89 c 0 2.158 1.4 3.803 3.405 3.815 a 12.872 12.872 0 0 0 1.408 -0.086 c -0.93 -0.965 -1.408 -2.18 -1.408 -3.714"></path>
+                            </svg>
+                        </h1>
+                    </div>
+                    <nav class="menu">
+                        <a href="#">새로운 기능</a>
+                        <a href="#">스토어</a>
+                        <a href="#">연구소</a>
+                        <a href="#">다양한 지원</a>
+                    </nav>
+                    <a class="hBtn" href="#">다운로드</a>
+                </div>
             </div>
         </header>
-        <nav id="banner"></nav>
-        <section id="contents"></section> 
-        <!-- 4개 -->
+        <main id="content">
+            <section id="banner">
+                <div class="banner">
+                    <div class="vd">
+                        <video playsinline autoplay="autoplay" muted="muted" loop="loop">
+                            <source src="https://whale.naver.com/media/intro.fcb9a048.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                    <div class="container">
+                        <div class="b_wrap">
+                            <div class="left">
+                                <div class="lcont">
+                                    <div class="lcont_t">
+                                        <h2>인터넷의<br>새로운 시작</h2>
+                                        <p>이제 빠르고 안전한 웨일 브라우저로 차원이 다른 웹 서핑을 시작해보세요.</p>
+                                        <a href="#">웨일 다운로드</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="rcont1">
+                                    <img src="https://whale.naver.com/img/fast.png" alt="fast">
+                                </div>
+                                <div class="rcont2">
+                                    <img src="https://whale.naver.com/img/secure.png" alt="secure">
+                                </div>
+                                <div class="rcont3">
+                                    <img src="https://whale.naver.com/img/smart.png" alt="secure">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cont1_wrap">
+                <div class="container">
+                    <div class="cont1">
+                        <div class="cont1_l">
+                            <div class="cont1_t">
+                                <div class="box1">
+                                    <figure class="bi1">
+                                        <img src="data:image/png;base64,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" alt="">
+                                    </figure>
+                                    <h3>필요한 기능을<br>빠르게 꺼내쓰기</h3>
+                                    <p>웹 서핑에 필요한 주요 기능들은 웨일 사이드바에서 간편하게 사용해보세요. 별도 프로그램을 설치할 필요 없이 캡쳐, 번역, 계산기 등의 도구가 기본 제공되며 내가 원하는 확장앱과 사이트도 간편하게 추가해 사용할 수 있습니다.</p>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="box2">
+                                    <figure class="bi2"></figure>
+                                    <h3>다양한 작업을 한 번에,<br>더 스마트하게!</h3>
+                                    <p>웨일을 사용하는 것만으로 더 많은 일들을 쉽게 해낼 수 있습니다.
+                                        동시에 두 개의 화면을 자유롭게 오고가며 사용할 수 있는 스페이스는
+                                        여러 개의 창을 띄우지 않고도 다양한 작업을 가능하게 합니다.</p>
+                                    <a href="#">살펴보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont1_r"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer id="footer"></footer>
     </div>
+
 </body>
 </html>
