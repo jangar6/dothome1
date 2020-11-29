@@ -154,23 +154,24 @@
             100% {opacity:0;}
         }
 
-        /* cont1_left */
-        .cont1_wrap {overflow: hidden; height: 58em; background: #fff;}
+        /* cont1_left1 */
+        .cont1_wrap {position: relative; overflow: hidden; padding-top: 200px; height: 58em; background: #fff;}
         .cont1 {width: 35%; padding-right: 100px;}
         .cont1 .cont1_l {
             display: table-cell;
             height: 100%; width: 100%;
+            position: relative;
         }
-        .cont1 .cont1_l .cont1_t {position: relative; height: 100%;}
-        .cont1 .cont1_l .cont1_t .box1 {
+        /* .cont1 .cont1_l > div .box1 {
             position: absolute;
             opacity: 0; left: 0; top: 50%;
             animation: change1 .3s ease-in;
             animation-fill-mode: forwards;
-            
-        }
-        .cont1 .cont1_l .cont1_t .box1 .bi1 {
+        } */
+        .cont1 .cont1_l .box1 figure {
             background-image: url(data:image/png;base64,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);
+        }
+        .cont1 .cont1_l .box1 figure.bi1 {
             background-size: contain;
             background-position: 50%;
             background-repeat: no-repeat;
@@ -178,17 +179,39 @@
             height: 68px;
             margin: 0;
         }
-        .cont1 .cont1_l .cont1_t .box1 .bi1 h3 {
-            font-size: 2.5vw;
+        .cont1 .cont1_l .box1 h3 {
+            font-size: 3.5vw;
+            margin-top: 26px;
+            font-weight: 400;
+            white-space: nowrap;
+            color: #212121;
         }
-        .cont1 .cont1_l .cont1_t .box1 .bi1 p {}
-        .cont1 .cont1_l .cont1_t .box1 .bi1 a {}
+        .cont1 .cont1_l .box1 p {
+            margin: 1.375em 0;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 1.75;
+        }
+        .cont1 .cont1_l .box1 a {
+            color: #06a0fe;
+            font-size: 1.0625rem;
+            font-weight: 700;
+            display: inline-flex;
+        }
+        .cont1 .cont1_l .box1 a .icon_more_arrow {
+            width: 16px; height: 1.0625rem;
+            margin-left: 0.4em;
+        }
+        /* cont1_-right1 */
+        .cont1 .cont1_r {
+            position: absolute; left: 600px; top: -100px;
+        }
+        .cont1 .cont1_r img {
+            width: 700px; height: 700px;
+        }
+
         
-        .cont1 .cont1_l .cont1_t .box2 {}
-        .cont1 .cont1_l .cont1_t .box2 .bi2 {}
-        .cont1 .cont1_l .cont1_t .box2 .bi2 h3 {}
-        .cont1 .cont1_l .cont1_t .box2 .bi2 p {}
-        .cont1 .cont1_l .cont1_t .box2 .bi2 a {}
+
+
         /* container */
         .container {position: relative; margin: 0 auto; max-width: 1200px; height: inherit; padding-left: 100px; padding-right: 100px;}
     </style>
@@ -256,26 +279,39 @@
                 <div class="container">
                     <div class="cont1">
                         <div class="cont1_l">
-                            <div class="cont1_t">
-                                <div class="box1">
-                                    <figure class="bi1">
-                                        <img src="data:image/png;base64,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" alt="">
-                                    </figure>
-                                    <h3>필요한 기능을<br>빠르게 꺼내쓰기</h3>
-                                    <p>웹 서핑에 필요한 주요 기능들은 웨일 사이드바에서 간편하게 사용해보세요. 별도 프로그램을 설치할 필요 없이 캡쳐, 번역, 계산기 등의 도구가 기본 제공되며 내가 원하는 확장앱과 사이트도 간편하게 추가해 사용할 수 있습니다.</p>
-                                    <a href="#"></a>
-                                </div>
-                                <div class="box2">
-                                    <figure class="bi2"></figure>
-                                    <h3>다양한 작업을 한 번에,<br>더 스마트하게!</h3>
-                                    <p>웨일을 사용하는 것만으로 더 많은 일들을 쉽게 해낼 수 있습니다.
-                                        동시에 두 개의 화면을 자유롭게 오고가며 사용할 수 있는 스페이스는
-                                        여러 개의 창을 띄우지 않고도 다양한 작업을 가능하게 합니다.</p>
-                                    <a href="#">살펴보기</a>
-                                </div>
+                            <div class="box1">
+                                <figure class="bi1"></figure>
+                                <h3>필요한 기능을<br>빠르게 꺼내쓰기</h3>
+                                <p>웹 서핑에 필요한 주요 기능들은 웨일 사이드바에서 간편하게 사용해보세요. 별도 프로그램을 설치할 필요 없이 캡쳐, 번역, 계산기 등의 도구가 기본 제공되며 내가 원하는 확장앱과 사이트도 간편하게 추가해 사용할 수 있습니다.</p>
+                                <a href="#">
+                                    살펴보기
+                                    <svg viewBox="0 0 32 28" class="icon_more_arrow">
+                                        <path fill-rule="evenodd" fill="currentColor" d="M31.986 14.195L18.791 27.496l-2.777-2.798L24.642 16H0v-4h24.622l-8.608-8.677L18.791.524l13.195 13.302-.183.184.183.185z"></path>
+                                    </svg>
+                                </a>
                             </div>
+                        <div class="cont1_r">
+                            <img src="img/whayle_cont_right.PNG" alt="이미지1">
                         </div>
-                        <div class="cont1_r"></div>
+                    </div>
+                    <div class="cont2">
+                        <div class="cont1_2">
+                            <div class="box2">
+                                <figure class="bi2"></figure>
+                                <h3>다양한 작업을 한 번에,<br>더 스마트하게!</h3>
+                                <p>웨일을 사용하는 것만으로 더 많은 일들을 쉽게 해낼 수 있습니다.
+                                    동시에 두 개의 화면을 자유롭게 오고가며 사용할 수 있는 스페이스는
+                                    여러 개의 창을 띄우지 않고도 다양한 작업을 가능하게 합니다.</p>
+                                <a href="#">
+                                    살펴보기
+                                    <svg viewBox="0 0 32 28" class="icon_more_arrow">
+                                        <path fill-rule="evenodd" fill="currentColor" d="M31.986 14.195L18.791 27.496l-2.777-2.798L24.642 16H0v-4h24.622l-8.608-8.677L18.791.524l13.195 13.302-.183.184.183.185z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        <div class="cont1_r">
+                            <img src="img/whayle_cont_right.PNG" alt="이미지1">
+                        </div>
                     </div>
                 </div>
             </section>
