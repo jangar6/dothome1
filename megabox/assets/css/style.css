@@ -13,7 +13,7 @@
 #event {}
 #opening {margin: 17px 0; background: url(../img/bg01.jpg) no-repeat center top; background-size: cover;}
 #new {}
-#help {}
+#help {margin-bottom: 150px;}
 #footer {background: #211f1f;}
 
 /* 가운데 영역 */
