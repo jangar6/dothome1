@@ -193,7 +193,8 @@
         const questionQuiz = document.querySelector(".quiz")
         const questionBtn = document.querySelector(".confirm-btn");
         const questionResult = document.querySelector(".confirm-result");
-        const questionEx = document.querySelector(".confirm-quizEx")
+
+
         // 문제정보
         const quizInfo = [
             {
@@ -284,7 +285,6 @@
                 }
             });
             questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추었습니다.`;
-            questionEx.innerHTML = `${quizInfo} 문제 중에 `;
         };
         questionBtn.addEventListener("click", showResults);
 
