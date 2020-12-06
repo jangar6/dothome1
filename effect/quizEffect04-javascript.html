@@ -276,14 +276,15 @@
                 
                 if(resultAnswer == currentQuestion.quizAnswer){//비교
                     numCorrect++;
-                   selectContainers[questionNumber].style.color = "blue";
+                    selectContainers[questionNumber].style.color = "blue";
+                    
                 } else {
                    selectContainers[questionNumber].style.color = "red";
+                
                 }
             });
             questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추었습니다.`;
-
-            // questionEx.innerHTML = `${this}문제의 정답은 `;
+            questionEx.innerHTML = `${quizInfo} 문제 중에 `;
         };
         questionBtn.addEventListener("click", showResults);
 

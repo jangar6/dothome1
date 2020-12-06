@@ -150,7 +150,7 @@ document.querySelectorAll(".contents em").forEach(elem => {
 });
 </code></pre>
                 </div>
-                <!-- //Intro2 -->
+                <!-- //Intro1 -->
                 <!-- Intro2 -->
                 <div class="bs-docs-section">
                     <h2 id="intro2" class="page-header">Mouse Effect02</h2>
@@ -215,6 +215,181 @@ cursorText.forEach( elem => {
 </code></pre>
                 </div>
                 <!-- //Intro2 -->
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Mouse Effect03</h2>
+                    <p class="bs-callout bs-callout-info">Blend Effect를 적용한 마우스 오버 효과입니다.</p>
+                    <iframe width="100%" height="560px" src="mouseEffect03-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>// 움직임 효과
+$(document).mousemove(function(e){
+    gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
+});
+
+// 오버 효과
+$(".contents em").hover(function(){
+    $(".cursor").addClass("active");
+},function(){
+    $(".cursor").removeClass("active");
+});
+
+// 출력용
+$(".info.bottom li").click(function(){
+    // 클릭한 글씨 값을 가져와서 alert으로 출력
+    const text = $(this).text();
+    // alert(text);
+    // 클릭한 글씨를 커서에 클래스로 추가
+    $(".info.bottom li").removeClass("active");
+    $(this).addClass("active");
+    $(".cursor").css("mix-blend-mode", text);
+});
+
+// 제목에 마우스 오버했을 때
+$(".info h1").hover(function(){
+    $(".cursor").addClass("active");
+    $(".cursor").css("background","red");
+},function(){
+    $(".cursor").removeClass("active");
+    $(".cursor").css("background","white");
+});
+</code></pre>
+<h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code>// 선택자
+const cursor = document.querySelector(".cursor");
+const contentsEm = document.querySelectorAll(".contents em");
+const infoLi = document.querySelectorAll(".info.bottom li");
+
+// 움직임 효과
+document.addEventListener("mousemove", function(e){
+    gsap.to(cursor, {duration: 0.3, left: e.pageX, top: e.pageY});
+});
+
+
+// 오버효과
+contentsEm.forEach(elem => {
+    elem.addEventListener("mouseenter", () => {
+        cursor.classList.add("active");
+    });
+    elem.addEventListener("mouseleave", () => {
+        cursor.classList.remove("active");
+    });
+});
+
+// 출력용
+infoLi.forEach(info => {
+    info.addEventListener("click", function(){
+        const text = this.textContent || this.innerHTML;
+        cursor.style.mixBlendMode = text;
+
+        infoLi.forEach(li => {
+            li.classList.remove("active");
+            this.classList.add("active");
+        });
+    });
+});
+</code></pre>
+                </div>
+                <!-- //Intro3 -->
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Mouse Effect04</h2>
+                    <p class="bs-callout bs-callout-info">마우스 방향에 따라 이미지가 움직이는 3D효과입니다.</p>
+                    <iframe width="100%" height="560px" src="mouseEffect04-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>let x = 0,
+y = 0;
+mouseX = 0;
+mouseY = 0;
+angleX = 0;
+angleY = 0;
+fmouseX = 0;
+fmouseY = 0;
+
+
+$(window).mousemove(function(e){
+    x = e.pageX;
+    y = e.pageY;
+    // 마우스 기준점을 가운데로 구하기
+    // :전체 길이를 구하고 반으로 나누면 됨.  세로 길이도 동일.
+    // mouseX = $(window).width() / 2 - x; //마우스의 x축 좌표값을 가운데로
+    // mouseY = $(window).height() / 2 - y;  //마우스의 y축 좌표값을 가운데로
+
+
+    // 마우스의 x축 y축 최소값 -50 최대값 50으로 설정 //제한,원래는 50이지만 사이 값을 설정 못하므로 이렇게 설정!
+    mouseX = Math.max(-50, Math.min(50, $(window).width()/2 - x));
+    mouseY = Math.max(-50, Math.min(50, $(window).height()/2 - y));
+
+    angleX = (12 * mouseX) / 100; // 가공 
+    angleY = (12 * mouseY) / 100;
+
+    fmouseX += (angleX - fmouseX) * 0.1 // = 1 / 10
+    fmouseY += (angleY - fmouseY) * 0.1 // = 1 / 10
+
+    // 커서
+    gsap.to (".cursor", {duration:0.3, left: x, top: y});
+
+    // 움직임 
+    $(".move-image").css({"transform": "translate(-50%, -50%) perspective(600px) rotateX("+fmouseY+"deg) rotateY("+ -fmouseX+"deg)"}); // 요소 3D 효과
+    
+
+});
+
+// 출력용
+$(window).mousemove(function(e){
+    $(".pageX").text(x);
+    $(".pageY").text(y);
+    $(".mouseX").text(mouseX);
+    $(".mouseY").text(mouseY);
+    $(".angleX").text(angleX);
+    $(".angleY").text(angleY);
+    $(".fmouseX").text(Math.round(fmouseX));
+    $(".fmouseY").text(Math.round(fmouseY));
+});
+</code></pre>
+<h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro4 -->
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Mouse Effect05</h2>
+                    <p class="bs-callout bs-callout-info">마우스 방향에 따라 이미지가 움직이기는 효과입니다.</p>
+                    <iframe width="100%" height="560px" src="mouseEffect05-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>$(".move-image").mousemove(function(e){
+    gsap.to(".cursor",{duration: 0.2, left: e.pageX - 10, top: e.pageY - 10});
+    
+    let x = e.clientX - ($(".move-image").width()/2 + $(".move-image").position().left ); //position: left 값은 사진의 왼쪽을 기준으로 반의 값
+    let y = e.clientY - ($(".move-image").height()/2+ $(".move-image").position().top ); //position: left 값은 사진의 왼쪽 위를 기준으로 반의 값
+   
+    $(".img").attr({"style":"transform:translate("+x/20+"px, "+y/20+"px)"});
+});
+
+// 출력용
+$(window).mousemove(function(e){
+    $(".clientX").text(e.clientX);
+    $(".clientY").text(e.clientY);
+});
+</code></pre>
+<h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code>
+</code></pre>
+                </div>
+                <!-- //Intro5 -->
+                <!-- Intro6 -->
+                <!-- <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Mouse Effect06</h2>
+                    <p class="bs-callout bs-callout-info">Blend Effect를 적용한 마우스 오버 효과입니다.</p>
+                    <iframe width="100%" height="560px" src="mouseEffect06-jquery.html" frameborder="0"></iframe>
+                    <h2>jQuery</h2>
+<pre class="line-numbers language-css"><code>/
+</code></pre>
+<h2>JavaScript</h2>
+<pre class="line-numbers language-css"><code>
+</code></pre> -->
+                </div>
+                <!-- //Intro6 -->
                 
             </div>
             
