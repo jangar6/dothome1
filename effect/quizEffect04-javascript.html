@@ -193,6 +193,7 @@
         const questionQuiz = document.querySelector(".quiz")
         const questionBtn = document.querySelector(".confirm-btn");
         const questionResult = document.querySelector(".confirm-result");
+        const questionEX = document.querySelector(".confirm-quizEx");
 
 
         // 문제정보
@@ -285,6 +286,7 @@
                 }
             });
             questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추었습니다.`;
+           
         };
         questionBtn.addEventListener("click", showResults);
 
