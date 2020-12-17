@@ -185,7 +185,7 @@
             background-size: cover;
         }
         .content-item:nth-child(2) .content-item-img {
-            background: url(img/images20@2.jpg);
+            background: url(img/images20.jpg);
             background-size: cover;
         }
         .content-item:nth-child(3) .content-item-img {
@@ -233,40 +233,20 @@
             opacity: 1;
             transform: translateX(0);
         }
-        
-        /* 문장 나타나기 */
-        /* .content-item-desc {
-            opacity: 1;
-            transform: translateY(150px);
-            transition: all 0.77s cubic-bezier(0.25, 0.1, 0.37, 0.75);
-        }
-        .content-item-desc.show {
-            transform: translateY(0);
-            opacity: 0;
-        } */
 
-        /* 한 글자씩 나타나기 */
-        .content-item-desc {
-            padding-left: 10vw;
-        }
-        .content-item:nth-child(even) .content-item-desc {
-            padding-left: 0vw; padding-right: 10vw;
-        }
-        .content-item-desc span {
+        /* reveal - imgWrap */
+        .reveal > div, 
+        .reveal > span {
             opacity: 0;
-            transform: translateY(100px);
-            transition: all 0.77s cubic-bezier(0, 0.48, 0, 1.04);
-            display: inline-block;
-            min-width: 20px;
         }
-        .content-item-desc span.show {
-            transform: translateY(0);
-            opacity: 1;
+        .reveal.show > div, 
+        .reveal.show > span {
+            animation: opacitiy 1000ms 200ms linear forwards;
         }
-
-        /* reveal */
-        .content-item-imgWrap {position: relative;}
-        .content-item-imgWrap::before {
+        .reveal {
+            position: relative;
+        }
+        .reveal::before {
             content: '';
             position: absolute;
             right: 0; top: 0;
@@ -275,23 +255,73 @@
             z-index: 100;
             background: #fff;
         }
-        .show .content-item-imgWrap::before  {
+        .reveal.reveal-two::before {
+            content: '';
+            position: absolute;
+            right: 0; top: 0;
+            width: 0;
+            height: 100%;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .reveal.reveal-two::after {
+            content: '';
+            position: absolute;
+            right: 0; top: 0;
+            width: 0;
+            height: 100%;
+            z-index: 100;
+            background: #dc6e25;
+        }
+
+        .reveal.show::before {
             animation: reveal 1000ms cubic-bezier(.77,0,.18,1);
         }
+        .reveal.reveal-RTL.show::before {
+            animation: reveal-RTL 1000ms cubic-bezier(.77,0,.18,1);
+        }
+        .reveal.reveal-TTB.show::before {
+            animation: reveal-TTB 1000ms cubic-bezier(.77,0,.18,1);
+        }
+        .reveal.reveal-BTT.show::before {
+            animation: reveal-BTT 1000ms cubic-bezier(.77,0,.18,1);
+        }
+        
+        /* 두가지 */
+        .reveal.reveal-two.show::after {
+            animation: reveal 1000ms 300ms cubic-bezier(.77,0,.18,1);
+        }
+
         @keyframes reveal {
             0%   {width: 0; left: 0;}
             50%  {width: 100%; left: 0;}
             80%  {width: 100%; left: 0;}
             100% {width: 0; left: 100%;}
         }
-        .content-item-imgWrap .content-item-img {
-            opacity: 0;
+        @keyframes reveal-RTL {
+            0%   {width: 0; right: 0;}
+            50%  {width: 100%; right: 0;}
+            80%  {width: 100%; right: 0;}
+            100% {width: 0; right: 100%;}
         }
-        .show .content-item-imgWrap .content-item-img {
-            animation: opacitiy 1000ms 600ms linear forwards;
+        /* 위 */
+        @keyframes reveal-TTB { 
+            0%   {height: 0;}
+            50%  {height: 100%;}
+            80%  {height: 100%;}
+            100% {height: 0;}
+        }
+        /* 아래 */
+        @keyframes reveal-BTT {
+            0%   {width: 0; right: 0;}
+            50%  {width: 100%; right: 0;}
+            80%  {width: 100%; right: 0;}
+            100% {width: 0; right: 100%;}
         }
         @keyframes opacitiy {
             0%   {opacity: 0;}
+            60%  {opacity: 0;}
             70%  {opacity: 1;}
             100% {opacity: 1;}
         }
@@ -334,74 +364,74 @@
                 <section id="section1" class="content-item">
                     <span class="content-item-num">01</span>
                     <h2 class="content-item-title">Section1</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+                    <p class="content-item-desc reveal"><span>높은 목표를 세우고, 스스로 채찍질 한다.</span></p>
                 </section>
                 <section id="section2" class="content-item">
                     <span class="content-item-num">02</span>
                     <h2 class="content-item-title">Section2</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-two">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">당신은 모든 사람들을 잠시 동안 속일 수 있다.</p>
+                    <p class="content-item-desc reveal reveal-two"><span>당신은 모든 사람들을 잠시 동안 속일 수 있다.</span></p>
                 </section>
                 <section id="section3" class="content-item">
                     <span class="content-item-num">03</span>
                     <h2 class="content-item-title">Section3</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-RTL">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">말도 아름다운 꽃처럼 그 색깔을 지니고 있다.</p>
+                    <p class="content-item-desc reveal reveal-RTL"><span>말도 아름다운 꽃처럼 그 색깔을 지니고 있다.</span></p>
                 </section>
                 <section id="section4" class="content-item">
                     <span class="content-item-num">04</span>
                     <h2 class="content-item-title">Section4</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-TTB">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">쓸모 없는 것이 쓸모가 있다.</p>
+                    <p class="content-item-desc reveal reveal-TTB"><span>쓸모 없는 것이 쓸모가 있다.</span></p>
                 </section>
                 <section id="section5" class="content-item">
                     <span class="content-item-num">05</span>
                     <h2 class="content-item-title">Section5</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-BTT">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">악한 일은 작다 해도 하지 말라.</p>
+                    <p class="content-item-desc reveal reveal-BTT"><span>악한 일은 작다 해도 하지 말라.</span></p>
                 </section>
                 <section id="section6" class="content-item">
                     <span class="content-item-num">06</span>
                     <h2 class="content-item-title">Section6</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-tow">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">행복할 때는 행복에 매달리지 말라.</p>
+                    <p class="content-item-desc reveal reveal-tow"><span>행복할 때는 행복에 매달리지 말라.</span></p>
                 </section>
                 <section id="section7" class="content-item">
                     <span class="content-item-num">07</span>
                     <h2 class="content-item-title">Section7</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">위대한 행동이라는 것은 없다.</p>
+                    <p class="content-item-desc reveal reveal-BTT"><span>위대한 행동이라는 것은 없다.</span></p>
                 </section>
                 <section id="section8" class="content-item">
                     <span class="content-item-num">08</span>
                     <h2 class="content-item-title">Section8</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal reveal-BTT">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">청춘은 다시 오지 않는다.</p>
+                    <p class="content-item-desc reveal reveal-TTB"><span>청춘은 다시 오지 않는다.</span></p>
                 </section>
                 <section id="section9" class="content-item">
                     <span class="content-item-num">09</span>
                     <h2 class="content-item-title">Section9</h2>
-                    <figure class="content-item-imgWrap">
+                    <figure class="content-item-imgWrap reveal">
                         <div class="content-item-img"></div>
                     </figure>
-                    <p class="content-item-desc">자존심은 어리석은 자의 소유물이다.</p>
+                    <p class="content-item-desc reveal"><span>자존심은 어리석은 자의 소유물이다.</span></p>
                 </section>
             </div>
         </section>
@@ -413,9 +443,15 @@
     <script>
         $(window).scroll(function(){
             let scrollTop = $(window).scrollTop();
-            if( scrollTop > $("#section2").offset().top ){
-                $("#section2").addClass("show");
-            }
+            // if( scrollTop > $("#section2").offset().top ){
+            //     $("#section2").addClass("show");
+            // }
+
+            $(".reveal").each(function(){
+                if( scrollTop + $(window).height()/2 > $(this).offset().top){ // this=reveal
+                    $(this).addClass("show");
+                }
+            });
         });
     </script>
 </body>

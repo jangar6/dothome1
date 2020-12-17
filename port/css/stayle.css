@@ -156,6 +156,7 @@ ul, li {list-style: none;}
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 .about .about-title {
     position: relative; 
@@ -174,8 +175,17 @@ ul, li {list-style: none;}
     width: 50vw; height: 50vh;
     z-index: 100;
 }
-.about .imgWrap img {
+.about .imgWrap .cloud-color1 {
     position: absolute;
     right: 700px;
     top: 340px;
+}
+.about .imgWrap .cloud-color2 {
+    position: absolute;
+    left: 907px;
+    bottom: 117px;
+    z-index: -10;
+}
+.about .more {
+    
 }
