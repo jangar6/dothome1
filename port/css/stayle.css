@@ -7,7 +7,6 @@ ul, li {list-style: none;}
 #header {
     width: 100%;
 }
-
 #nav {
     position: fixed;
     left: 0;
@@ -19,6 +18,13 @@ ul, li {list-style: none;}
     z-index: 1000;
     color: #fff;
 }
+#about {
+    background-image: url(../img/about01@2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .logo {
     width: 165px;
     height: 31px;
@@ -42,6 +48,44 @@ ul, li {list-style: none;}
     padding-left: 31px;
     margin-top: 150px;
 }
+/* star */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.stars {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat 50% 50%;
+    z-index: 0;
+    animation: star 6s infinite cubic-bezier(1,-0.01, 1, 0.31);
+    background-size: 100%;
+}
+@keyframes star {
+    from {
+      background-size: 10%;
+      opacity: 0;
+    }
+    
+    30% {
+      opacity: 1;
+    }
+    
+    to {
+      background-size: 100%;
+    }
+}
+  
+._1 {background-position: 50% 50%; transform: rotate(0deg);   z-index: 10; animation-delay: -6s;}
+._2 {background-position: 50% 50%; transform: rotate(60deg);  z-index: 20; animation-delay: -5s;}
+._3 {background-position: 50% 50%; transform: rotate(120deg); z-index: 30; animation-delay: -4s;}
+._4 {background-position: 50% 50%; transform: rotate(180deg); z-index: 40; animation-delay: -3s;}
+._5 {background-position: 50% 50%; transform: rotate(240deg); z-index: 50; animation-delay: -2s;}
+._6 {background-position: 50% 50%; transform: rotate(300deg); z-index: 60; animation-delay: -1s;}
 
 /* header */
 .header {
@@ -144,7 +188,7 @@ ul, li {list-style: none;}
     position: absolute;
     left: 20px; top: 225px;
 }
-
+/* about */
 .about {
     width: 100%;
     height: 1110px;
@@ -185,47 +229,65 @@ ul, li {list-style: none;}
     bottom: 117px;
     z-index: -10;
 }
-.about .more {
-    
+/* button */
+.about a {
+    padding-top: 60px;
+    position: relative;
+    right: 43%;
+    top: 40%;
 }
-
-.stars {
+.about a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    opacity: 70%;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.about a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -9px 0 0 -11px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-style: 1px;
+    transform: rotate(-135deg);
+    box-sizing: border-box;
+}
+.about a span::before {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  
-  .stars {
-    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat 50% 50%;
-    z-index: 0;
-    animation: bg 6s infinite cubic-bezier(1,-0.01, 1, 0.31);
-    background-size: 100%;
-  }
-  
-  
-  @keyframes bg {
-    from {
-      background-size: 10%;
-      opacity: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 0;
+    animation: effect 3s infinite;
+    box-sizing: border-box;
+}
+@keyframes effect {
+    0% {
+        opacity: 0;
     }
-    
     30% {
-      opacity: 1;
+        opacity: 1;
     }
-    
-    to {
-      background-size: 100%;
+    60% {
+        box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+        opacity: 0;
     }
-  }
-  
-  ._1 {background-position: 50% 50%; transform: rotate(0deg); z-index: 10;   animation-delay: -6s;}
-  ._2 {background-position: 50% 50%; transform: rotate(60deg); z-index: 20;  animation-delay: -5s;}
-  ._3 {background-position: 50% 50%; transform: rotate(120deg); z-index: 30; animation-delay: -4s;}
-  ._4 {background-position: 50% 50%; transform: rotate(180deg); z-index: 40; animation-delay: -3s;}
-  ._5 {background-position: 50% 50%; transform: rotate(240deg); z-index: 50; animation-delay: -2s;}
-  ._6 {background-position: 50% 50%; transform: rotate(300deg); z-index: 60; animation-delay: -1s;}
+    100% {
+        opacity: 0;
+    }
+}
+
