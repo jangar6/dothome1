@@ -91,7 +91,13 @@
                     <h2 id="intro1" class="page-header">Slider Effect01</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 3초에 한 번씩 변경하기</p>
                     <iframe width="100%" height="1000px" src="sliderEffect01-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home1">
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
 const slider = $(".slider");
@@ -113,7 +119,8 @@ setInterval(function(){
     currentIndex = nextIndex;
 },3000);
 </code></pre>
-<h2>Javascript</h>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile1">
 <pre class="line-numbers language-css"><code>const sliderWrap = document.querySelector(".slider_wrap")
 const sliderImg = document.querySelector(".slider_img");
 const slider = document.querySelectorAll(".slider");
@@ -131,6 +138,10 @@ setInterval( () => {
     currentIndex = nextIndex;
 },3000);
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- //Intro1 -->
                 <!-- Intro2 -->
@@ -138,61 +149,72 @@ setInterval( () => {
                     <h2 id="intro2" class="page-header">Slider Effect02</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 가로로 이동하기</p>
                     <iframe width="100%" height="1000px" src="sliderEffect02-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
-<pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
-    const sliderImg = $(".slider_img");
-    const slider = $(".slider");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home2">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider_wrap");
+const sliderImg = $(".slider_img");
+const slider = $(".slider");
 
-    let currentIndex = 0;
-    let sliderCount = slider.length;
+let currentIndex = 0;
+let sliderCount = slider.length;
 
-    setInterval(function(){
-        // if ( currentIndex &lt; sliderCount -1 ){
-        //     currentIndex++;
-        // } else {
-        //     currentIndex = 0;
-        // }
-        currentIndex &lt; sliderCount -1 ? currentIndex++ : currentIndex = 0;
-        
 
-        console.log(currentIndex)
-
-        let sliderPosition = currentIndex * (-800)+"px";
-                            // 0 * -800px = 0       (1번째 이미지)
-                            // 1 * -800px = -800px  (2번째 이미지)
-                            // 2 * -800px = -1600px (3번째 이미지)
-                            // 3 * -800px = -2400px (4번째 이미지)
-
-        sliderImg.animate({ left: sliderPosition }, 400);
-    }, 3000);
-</code></pre>
-<h2>Javascript</h>
-<pre class="line-numbers language-css"><code>const sliderWrap = document.querySelector(".slider_wrap")
-    const sliderImg = document.querySelector(".slider_img");
-    const slider = document.querySelectorAll(".slider");
-
-    let currentIndex = 0;
-    let  sliderCount = slider.length;
-    let sliderWidth = sliderWrap.offsetWidth;
+setInterval(function(){
+    // if ( currentIndex &lt; sliderCount -1 ){
+    //     currentIndex++;
+    // } else {
+    //     currentIndex = 0;
+    // }
+    currentIndex &lt; sliderCount -1 ? currentIndex++ : currentIndex = 0;
     
 
-    setInterval(function(){
-        // if( currentIndex &lt; sliderCount -1 ){
-        //     currentIndex++;
-        // } else {
-        //     currentIndex = 0;
-        // }
-        currentIndex &lt; sliderCount -1 ? currentIndex++ :  currentIndex = 0;
-        let sliderPosition = currentIndex * -sliderWidth;
-        // (-800)+"px"
-        // sliderImg.animate({ left: sliderPosition }, 400);
-        // sliderImg.style.left = sliderPosition;
-        // sliderImg.style.transition = "all 0.6s";
-        
-        gsap.to(sliderImg, {duration: 0.6, left: sliderPosition, ease: "slow(0.7, 0.7, false)"});
+    console.log(currentIndex)
 
-    }, 3000);
+    let sliderPosition = currentIndex * (-800)+"px";
+                        // 0 * -800px = 0       (1번째 이미지)
+                        // 1 * -800px = -800px  (2번째 이미지)
+                        // 2 * -800px = -1600px (3번째 이미지)
+                        // 3 * -800px = -2400px (4번째 이미지)
+
+    sliderImg.animate({ left: sliderPosition }, 400);
+}, 3000);
 </code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile2">
+<pre class="line-numbers language-css"><code>const sliderWrap = document.querySelector(".slider_wrap")
+const sliderImg = document.querySelector(".slider_img");
+const slider = document.querySelectorAll(".slider");
+
+let currentIndex = 0;
+let  sliderCount = slider.length;
+let sliderWidth = sliderWrap.offsetWidth;
+
+
+setInterval(function(){
+    // if( currentIndex &lt; sliderCount -1 ){
+    //     currentIndex++;
+    // } else {
+    //     currentIndex = 0;
+    // }
+    currentIndex &lt; sliderCount -1 ? currentIndex++ :  currentIndex = 0;
+    
+    let sliderPosition = currentIndex * -sliderWidth;
+    // (-800)+"px"
+    // sliderImg.animate({ left: sliderPosition }, 400);
+    // sliderImg.style.left = sliderPosition;
+    // sliderImg.style.transition = "all 0.6s";
+    
+    gsap.to(sliderImg, {duration: 0.6, left: sliderPosition, ease: "slow(0.7, 0.7, false)"});
+
+}, 3000);
+</code></pre>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro2 -->
                 <!-- Intro3 -->
@@ -200,7 +222,13 @@ setInterval( () => {
                     <h2 id="intro3" class="page-header">Slider Effect03</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 가로로 이동하기(연속적)</p>
                     <iframe width="100%" height="1000px" src="sliderEffect03-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home3" aria-controls="home3" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile3" aria-controls="profile3" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home3">
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
 const slider = $(".slider");
@@ -212,14 +240,25 @@ setInterval(function(){
     }); // 0.4초
 }, 3000);
 </code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile3">
+<pre class="line-numbers language-css"><code>...
+</code></pre>
+
                 </div>
                 <!-- //Intro3 -->
                 <!-- Intro4 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro4" class="page-header">Slider Effect03</h2>
+                    <h2 id="intro4" class="page-header">Slider Effect04</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 위로 넘기기(연속적)</p>
                     <iframe width="100%" height="1000px" src="sliderEffect04-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home4" aria-controls="home4" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile4" aria-controls="profile4" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home4">
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
 const slider = $(".slider");
@@ -247,6 +286,11 @@ setInterval(function(){
     });
 },3000);
 </code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile4">
+<pre class="line-numbers language-css"><code>...
+</code></pre>
+
                 </div>
                 <!-- //Intro4 -->
                 <!-- Intro5 -->
@@ -254,7 +298,13 @@ setInterval(function(){
                     <h2 id="intro5" class="page-header">Slider Effect05</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 위로 넘기기(연속적)</p>
                     <iframe width="100%" height="1000px" src="sliderEffect05-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home5" aria-controls="home5" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile5" aria-controls="profile5" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home5">
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
 const slider = $(".slider");
@@ -289,6 +339,11 @@ sliderBtn.find(".next").click(function(){
     moveRight();
 });
 </code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile5">
+<pre class="line-numbers language-css"><code>...
+</code></pre>
+
                 </div>
                 <!-- //Intro5 -->
                 <!-- Intro6 -->
@@ -296,7 +351,13 @@ sliderBtn.find(".next").click(function(){
                     <h2 id="intro6" class="page-header">Slider Effect06</h2>
                     <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 3단 구조 슬라이드</p>
                     <iframe width="100%" height="1000px" src="sliderEffect06-jquery.html" frameborder="0"></iframe>
-                    <h2>jQuery</h>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home6" aria-controls="home6" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile6" aria-controls="profile6" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home6">
 <pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
 const sliderImg = $(".slider_img");
 const slider = $(".slider");
@@ -336,8 +397,151 @@ sliderBtn.on("click","a",function(){
     }
 });
 </code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile6">
+<pre class="line-numbers language-css"><code>...
+</code></pre>
                 </div>
                 <!-- //Intro6 -->
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Slider Effect07</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 닷 버튼 슬라이드</p>
+                    <iframe width="100%" height="1000px" src="sliderEffect07-jquery.html" frameborder="0"></iframe>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home7" aria-controls="home7" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile7" aria-controls="profile7" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home7">
+<pre class="line-numbers language-css"><code>const sliderWrap = $(".slider_wrap");
+const sliderImg = $(".slider_img");
+const slider = $(".slider");
+const sliderBtn = $(".slider_btn");
+const sliderDot = $(".slider_dot");
+
+let sliderCount = slider.length;
+let sliderWidth = slider.outerWidth();
+let sliderHeight = slider.outerHeight();
+let sliderTotalWidth = sliderWidth * sliderCount; 
+let currentIndex = 0;
+let dotIndex = "";
+
+// 기본값
+sliderImg.css({ width: sliderTotalWidth, height: sliderHeight });
+
+// gotoSlider(닷을 클릭하면 해당 인덱스 이미지로 이동.)
+// 이미지 움직이기
+function gotoSlider(index){
+    sliderImg.animate({ left: -sliderWidth * index }, 400);
+    currentIndex = index; // 증감식, 현재 보이는 이미지와 인덱스는 같다.
+    sliderDot.find("a").removeClass("active").eq(currentIndex).addClass("active");
+    
+}
+
+// 이미지 갯수 만큼 닷 버튼 만들기
+slider.each(function(index){
+    //dotIndex += "&lt;a href='#'&gt;&lt;/a&gt;";
+    //dotIndex += "&lt;a href='#'&gt;"+ (index+1) +"&lt;/a&gt;";
+    //let name = $(this).find("img").attr("alt");
+    //dotIndex += "&lt;a href='#'&gt;"+ name +"&lt;/a&gt;";
+    let sliderName = $(this).find("img").attr("alt");
+    let sliderSrc = $(this).find("img").attr("src");
+    dotIndex += "&lt;a href='#' style='background-image:url("+sliderSrc+")'&gt;"+sliderName+"&lt;/a&gt;";
+});// 슬라이드 갯수만큼 반복
+sliderDot.html(dotIndex); //태그로써 반환.
+sliderDot.find("a").eq(0).addClass("active");
+// 닷 버튼 클릭하기
+sliderDot.on("click","a",function(e){
+    e.preventDefault();
+    gotoSlider($(this).index());
+    
+});
+
+
+// 버튼 클릭하기
+sliderBtn.on("click", "a", function(e){
+    e.preventDefault();
+    let nextIndex = (currentIndex + 1) % sliderCount;// 인덱스 번호 1씩 추가
+    let prevIndex = (currentIndex - 1) % sliderCount ; // 인덱스 번호 1씩 빼기
+    if( currentIndex == 0 ) prevIndex = sliderCount -1; // 인덱스 0에서 1을 빼면 마이너스가 아니라 플러스 값이 나옴.(4)
+
+    if( $(this).hasClass("prev") ){
+        gotoSlider(prevIndex);
+    } else {
+        gotoSlider(nextIndex);
+    }
+});
+</code></pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile7">
+<pre class="line-numbers language-css"><code>...
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+
+                <!-- sample -->
+                <div class="bs-docs-section">
+                    <h2 id="sample" class="page-header">Sample</h2>
+                    <p class="bs-callout bs-callout-info">이미지 슬라이드 효과 - 3D효과 슬라이드</p>
+                    <iframe width="100%" height="1000px" src="sliderEffect-3d.html" frameborder="0"></iframe>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#sample01" aria-controls="sample01" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="sample01">
+<pre class="line-numbers language-css"><code>const n = 12;
+gsap.timeline()
+    .set("#container", {perspective: 800})
+
+for(let i=0; i&lt;n; i++){
+    let b = document.createElement('div');
+    b.classList.add("box");
+    document.getElementById("container").appendChild(b);
+
+    gsap.set(b,{
+        left: '50%',
+        top: '50%',
+        x: '-50%',
+        y: '-50%',
+        z: 600,
+        width: 300,
+        height: 600,
+        borderRadius: 20,
+        background: () => 'hsl('+(i/n*360)+', 100%, 50%)' //(i/n*360) i변수 / 12개 * 360deg
+    });
+
+    gsap.fromTo(b,{
+        scaleY:0,
+        zIndex: () =&gt; (i&lt;n/2)? -i:i, // true: -6, false: 6
+        rotationY: 90+i/n*206.5, //각각의 위치(값)
+        transformOrigin:String("50% 50% -1060%")
+    },{
+        scaleY:1,
+        duration:1,
+        delay: 1,
+        ease: 'elastic'
+    })
+
+    b.onmouseenter = (e) =&gt; {
+        gsap.to(b, {duration: 0.3, rotationX: -14, y:'-130%', ease: 'back,out(6)'})
+    }
+    b.onmouseleave = (e) =&gt; {
+        gsap.to(b, {duration: 0.4, rotationX: 0, y:'-50%'})
+    }
+}
+
+    window.onmousemove = (e) => {
+        gsap.to('.box', {duration: 0.6, rotationY: (i)=>45+i/n*206.5+90*(e.clientX/window.innerWidth)})
+    }
+});
+</code></pre>
+                            </div>
+
+                </div>
+                <!-- //sample -->
                 
                 
             </div>

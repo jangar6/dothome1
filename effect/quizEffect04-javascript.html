@@ -56,7 +56,7 @@
         .quiz-wrap .quiz h2 {
             font-size: 30px;
             text-align: center;
-            padding-bottom: 20px;
+            padding: 40px 0 10px 0;
         }
         .quiz-wrap .quiz .question {
             font-size: 22px;
@@ -192,26 +192,25 @@
         // 선택자
         const questionQuiz = document.querySelector(".quiz")
         const questionBtn = document.querySelector(".confirm-btn");
-        const questionResult = document.querySelector(".confirm-result");
-        const questionEX = document.querySelector(".confirm-quizEx");
+        const questionResult = document.querySelector(".confirm-result")
 
-
-        // 문제정보
+        //문제정보
         const quizInfo = [
             {
                 quizNum : 1,
-                quizASk : "다음 중 시멘틱 태그는 무엇인가요?",
+                quizAsk : "다음 중 시멘틱 태그는 무엇인가요?",
                 quizChoice : {
-                    1: "&lt;a&gt;태그",
-                    2: "&lt;br&gt;태그",
-                    3: "&lt;em&gt;태그",
-                    4: "&lt;main&gt;태그",
+                    1: "&lt;a&gt; 태그",
+                    2: "&lt;br&gt; 태그",
+                    3: "&lt;em&gt; 태그",
+                    4: "&lt;main&gt; 태그",
                 },
                 quizAnswer : 4,
-                quizEx : "&lt;main&gt; 태그는 시멘틱 태그입니다."
-            },{
+                quizEx : "&lt;main&gt; 태그는 시멘틱 태그 입니다."
+            },
+            {
                 quizNum : 2,
-                quizASk : "다음 중 CSS의 단위로 맞지 않는 것은 무엇인가요?",
+                quizAsk : "다음 중 CSS의 단위로 맞지 않는 것은 무엇인가요?",
                 quizChoice : {
                     1: "em",
                     2: "rem",
@@ -220,9 +219,10 @@
                 },
                 quizAnswer : 4,
                 quizEx : "vm 단위는 없습니다."
-            },{
+            },
+            {
                 quizNum : 3,
-                quizASk : "다음 중 자바스크립트 언어와 관련이 없는 것은 무엇인가요?",
+                quizAsk : "다음 중 자바스크립트 언어와 관련이 없는 것은 무엇인가요?",
                 quizChoice : {
                     1: "react.js",
                     2: "jquery.js",
@@ -230,44 +230,47 @@
                     4: "c++",
                 },
                 quizAnswer : 4,
-                quizEx : "c++는 자바스크립트 언어와 관련이 없습니다."
-            }
+                quizEx : "c++은 서버 언어입니다."
+            },
         ];
 
         // 문제 만들기
-        function updataQuiz(){
+        function updetaQuiz(){
             const output = [];
             quizInfo.forEach((currentQuestion, questionNumber) => {
                 output.push(`
-                    <h2>&lt; 문제<span class="num">${currentQuestion.quizNum}</span> &gt;</h2>
-                    <p class="question">${currentQuestion.quizASk}</p>
-                    <div class="selects">
-                        <label>
-                            <input class="select" type="radio" name="select${questionNumber}" value="1">
-                            <span class="choice">${currentQuestion.quizChoice[1]}</span>
-                        </label>
-                        <label>
-                            <input class="select" type="radio" name="select${questionNumber}" value="2">
-                            <span class="choice">${currentQuestion.quizChoice[2]}</span>
-                        </label>
-                        <label>
-                            <input class="select" type="radio" name="select${questionNumber}" value="3">
-                            <span class="choice">${currentQuestion.quizChoice[3]}</span>
-                        </label>
-                        <label>
-                            <input class="select" type="radio" name="select${questionNumber}" value="4">
-                            <span class="choice">${currentQuestion.quizChoice[4]}</span>
-                        </label>
+                    <div class="quizBox">
+                        <h2>&lt; 문제<span class="num">${currentQuestion.quizNum}</span> &gt;</h2>
+                        <p class="question">${currentQuestion.quizAsk}</p>
+                        <div class="selects">
+                            <label>
+                                <input class="select" type="radio" name="select${questionNumber}" value="1">
+                                <span class="choice">${currentQuestion.quizChoice[1]}</span>
+                            </label>
+                            <label>
+                                <input class="select" type="radio" name="select${questionNumber}" value="2">
+                                <span class="choice">${currentQuestion.quizChoice[2]}</span>
+                            </label>
+                            <label>
+                                <input class="select" type="radio" name="select${questionNumber}" value="3">
+                                <span class="choice">${currentQuestion.quizChoice[3]}</span>
+                            </label>
+                            <label>
+                                <input class="select" type="radio" name="select${questionNumber}" value="4">
+                                <span class="choice">${currentQuestion.quizChoice[4]}</span>
+                            </label>
+                        </div>
                     </div>
                 `)
             });
             questionQuiz.innerHTML = output.join(' ');
         }
-        updataQuiz();
+        updetaQuiz();
 
         // 정답 확인하기
         function showResults(){
             const selectContainers = questionQuiz.querySelectorAll(".selects"); // 전체 's'
+            const quizBox = document.querySelectorAll(".quizBox")
             // 사용자가 정답을 체크(chcked) == 문제의 정답
             let numCorrect = 0;
 
@@ -282,7 +285,16 @@
                     
                 } else {
                    selectContainers[questionNumber].style.color = "red";
-                
+                    // //해설
+                    // let correctAnswer = document.createElement("p");
+                    // correctAnswer.classList.add("ex")
+                    // correctAnswer.innerHTML = currentQuestion.quizEx;
+                    // quizBox[questionNumber].appendChild(correctAnswer);
+                    
+                   let correctAnswer = document.createElement("p");
+                   correctAnswer.className = "ex";
+                   correctAnswer.innerHTML = `${currentQuestion.quizNum}번 문제: ${currentQuestion.quizEx}`;
+                   quizBox[questionNumber].appendChild(correctAnswer);
                 }
             });
             questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추었습니다.`;

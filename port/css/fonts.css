@@ -1,0 +1,26 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: "Saol Display Regular"; 
+    src: url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot");
+    src: url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot?#iefix") format("embedded-opentype"),
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff2") format("woff2"),
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff") format("woff"),
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.ttf") format("truetype"),
+        url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.svg#Saol Display Regular") format("svg");
+}
+@font-face {
+    font-family: 'Blacksword';
+    src: url('Blacksword.eot');
+    src: url('Blacksword.eot?#iefix') format('embedded-opentype'),
+        url('Blacksword.svg#Blacksword') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
