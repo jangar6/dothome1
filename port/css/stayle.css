@@ -1,7 +1,6 @@
 
-
 /* reset */
-*{margin: 0; padding: 0; box-sizing: content-box;}
+*{margin: 0; padding: 0;}
 ul, li {list-style: none;}
 
 /* layout */
@@ -55,6 +54,7 @@ ul, li {list-style: none;}
     align-items: center;
     box-sizing: border-box;
     overflow: hidden;
+    z-index: -100;
 
 }
 .header h1 {

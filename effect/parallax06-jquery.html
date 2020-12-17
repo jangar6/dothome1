@@ -442,11 +442,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
         $(window).scroll(function(){
-            let scrollTop = $(window).scrollTop();
-            // if( scrollTop > $("#section2").offset().top ){
-            //     $("#section2").addClass("show");
-            // }
-
             $(".reveal").each(function(){
                 if( scrollTop + $(window).height()/2 > $(this).offset().top){ // this=reveal
                     $(this).addClass("show");
