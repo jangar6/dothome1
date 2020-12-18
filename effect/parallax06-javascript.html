@@ -455,11 +455,12 @@
         // });
 
         window.addEventListener("scroll",() => {
-            let scrollTop = window.scrollTop;
+            let pageYOffset = (document.documentElement.scrollTop);
+            let wHeight = window.innerHeight;
 
-            document.querySelectorAll(".reveal").forEach(function(){
-                if( scrollTop + window.height > this.offsetTop ){
-                    this.classList.add("show");
+            document.querySelectorAll(".reveal").forEach(function(elem){
+                if ( pageYOffset + wHeight / 2 >  elem.parentElement.offsetTop ){
+                    elem.classList.add("show");
                 }
             });
         });

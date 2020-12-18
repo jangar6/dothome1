@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {height: 20000px; font-family: 'NEXON Lv2 Gothic Bold';}
+        .scroll {
+            position: fixed; right: 10px; top: 10px;   
+            width: 50px; height: 50px; line-height: 50px;
+            text-align: center; color: #fff;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000000;
+        }
+        #section1 {}
+        #section2 {}
+        #section3 {}
+        #section4 {}
+        #section5 {}
+        #section6 {}
+        /* common */
+        .fixed {
+            position: fixed; 
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        img {
+            width: 100%; vertical-align: top;
+            object-fit: cover;
+        }
+        /* section1 */
+        .s1Txt01 {
+            font-size: 8vw;
+        }
+        .s1Txt02 {
+            font-size: 8vw;
+            white-space: nowrap;
+        }
+        .s1Txt03 {
+            width: 0%;
+            height: 0%;
+            z-index: 900;
+        }
+        .s1Txt04 {
+           width: 30vw;
+           height: 30vw;
+           background: #000;
+           border-radius: 50%;
+        }
+        .s1Txt05 {
+            color: #fff;
+            font-size: 4vw;
+        }
+        /* section2 */
+        .s2Txt01 {
+            width: 100vw; height: 100vh;
+            background: #000;
+        }
+        .s2Txt02 {
+        }
+        .s2Txt02 h2 {
+            font-size: 4vw;
+            text-align: center;
+            line-height: 1.2;
+            background-repeat: no-repeat;
+            background-image: url(img/apple.text-bg.jpg);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+        /*  */
+        .s2Txt03 {
+            color: #fff;
+            font-size: 3vw;
+        }
+        .s2Txt03 .text1 {
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .s2Txt03 .text1 h3 {
+            flex: 0 0 40%;
+            white-space: nowrap;
+        }
+        .s2Txt03 .text1 .text1-desc {
+            padding: 0 20px;
+            flex: 0 0 60%;
+            font-size: 1vw;
+            font-weight: 100;
+            line-height: 1.4;
+            font-family: 'NEXON Lv1 Gothic OTF Light';
+        }
+        .s2Txt03 .text2 {
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .s2Txt03 .text2 h3 {
+            flex: 0 0 40%;
+            white-space: nowrap;
+        }
+        .s2Txt03 .text2 .text2-desc {
+            flex: 0 0 60%;
+            font-size: 1vw;
+            font-weight: 100;
+            line-height: 1.4;
+            font-family: 'NEXON Lv1 Gothic OTF Light';
+        }
+        .s2Txt03 .text3 {
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .s2Txt03 .text3 h3 {
+            flex: 0 0 40%;
+            white-space: nowrap;
+        }
+        .s2Txt03 .text3 .text3-desc {
+            flex: 0 0 60%;
+            font-size: 1vw;
+            font-weight: 100;
+            line-height: 1.4;
+            font-family: 'NEXON Lv1 Gothic OTF Light';
+        }
+        .s2Txt03 .text4 {
+            top: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .s2Txt03 .text4 h3 {
+            flex: 0 0 40%;
+            white-space: nowrap;
+        }
+        .s2Txt03 .text4 .text4-desc {
+            padding: 0 5px;
+            flex: 0 0 60%;
+            font-size: 1vw;
+            font-weight: 100;
+            line-height: 1.4;
+            font-family: 'NEXON Lv1 Gothic OTF Light';
+        }
+        /*  */
+        .s2Txt04 {
+            width: 60vw;
+            height: 85vh;
+            background-image: url(img/apple.pad-mockup.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            top: 70%;
+            z-index: 1000;
+        }
+        .s2Txt04 .img1 {
+            width: 54vw;
+            height: 60vh;
+            overflow: hidden;
+            top: 42%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img1 .webstandard {
+            background: url(img/apple.site01.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img2 {
+            width: 54vw;
+            height: 60vh;
+            overflow: hidden;
+            top: 42%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img2 .responsive {
+            background: url(img/apple.site02.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img3 {
+            width: 54vw;
+            height: 60vh;
+            overflow: hidden;
+            top: 42%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img3 .megabox {
+            background: url(img/apple.site03.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img4 {
+            width: 54vw;
+            height: 60vh;
+            overflow: hidden;
+            top: 42%;
+            border-radius: 30px;
+        }
+        .s2Txt04 .img4 .react {
+            background: url(img/apple.site04.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="scroll">0</div>
+    <div id="contents">
+        <section id="section1">
+            <div class="s1Txt01 fixed"
+                data-0 = "top: 50%; opacity:1"
+                data-500 = "top: 30%; opacity:0"
+            >안녕하세요!</div>
+            <div class="s1Txt02 fixed"
+                data-300 = "top: 70%; opacity:0"
+                data-800 = "top: 50%; opacity:1; font-size: 8vw;"
+                data-1700 = "top: 50%; opacity:1; font-size: 0vw;"
+            >웹 퍼블리셔입니다.</div>
+            <div class="s1Txt03 fixed"
+                data-1600 = "width: 0%; height: 0%;"
+                data-3000 = "width: 100%; height: 100%;"
+                ><img src="img/apple.jpg" alt="이미지" class="fixed"
+                    data-1600 = "border-radius:500px"
+                    data-3000 = "border-radius:0px"
+                >
+            </div>
+            <div class="s1Txt04 fixed" data-title="black-circle"
+                data-2300="width: 0vw; height: 0vw;"
+                data-3300="width: 30vw; height: 30vw;"
+                data-5000="width: 30vw; height: 30vw;"
+                data-7600="width: 230vw; height: 230vw;"
+            >
+                <span class="s1Txt05 fixed"
+                    data-2800 = "transform: translate(-50%, -50%) scale(0) rotate(-360deg);"
+                    data-4300 = "transform: translate(-50%, -50%) scale(1) rotate(0deg);">
+                Hello!</span>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2"
+            data-7899="display:none"
+            data-7900="display:block"
+            data-17000="display:block"
+            data-17001="display:none">   
+            <div class="s2Txt01 fixed" data-title="black-bg"></div>
+            <div class="s2Txt02">
+                <h2 class="fixed"
+                    data-7900 = "opacity:0;"
+                    data-8200 = "opacity:1; top: 50%"
+                    data-8800 = "opacity:1; top: 10%;"
+                >I've been working on Sites</h2>
+                <div class="s2Txt03">
+                    <div class="fixed text1"
+                        data-8600="top: 130%;"
+                        data-9000="top: 30%;"
+                        data-9800="opacity:1"
+                        data-10600="opacity:0"
+                    >
+                        <h3>웹 표준 사이트</h3>
+                        <p class="text1-desc">
+                            웹 접근성 지침서 2.0을 바탕으로 제작한 웹 표준 사이트입니다.
+                            웹 표준에 필요한 인식의 용이성, 운용의 용이성, 견고성을 바탕으로 코딩하였습니다.
+                        </p>
+                    </div>
+                    <div class="fixed text2"
+                        data-10600="opacity:0"
+                        data-11400="opacity:1"
+                        data-12200="opacity:0"
+                    >
+                        <p class="text2">반응형 사이트</p>
+                        <p class="text2-desc">
+                            화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법, 반응형을 사용하여
+                            모든 디바이스 환경에 따라 사이트를 최적화시켜 제작한 사이트 입니다.
+                        </p>
+                    </div>
+                    <div class="fixed text3"
+                        data-12200="opacity:0"
+                        data-13000="opacity:1"
+                        data-13800="opacity:0"
+                    >
+                        <h3>기업 사이트</h3>
+                        <p class="text3-desc">
+                            기업에서 가장 많이 사용하는 스타일의 사이트를 제작하였습니다.
+                            문서 셋팅부터 반응형을 고려한 레이아웃, 게시판의 한 줄, 두 줄 효과, 해상도 이미지 넣기, 슬라이드 만들기, 라이트 박스, API 사용하기 등 다양한 기법을 사용하여 제작하였습니다.
+                        </p>
+                    </div>
+                    <div class="fixed text4"
+                        data-13800="opacity:0"
+                        data-14600="opacity:1"
+                        data-15400="opacity:0"
+                    >
+                        <h3>리액트 사이트</h3>
+                        <p class="text4-desc">
+                            리액트를 사용하여 제작한 포트폴리오 사이트 입니다.
+                            컴포넌트, 라우터, SCSS를 사용 하여 효율적인 UI를 구성한 사이트를 제작하였습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="s2Txt04 fixed"
+                    data-8600 = "top: 150%"
+                    data-9000 = "top: 80%"
+                >
+                    <div class="img1 fixed">
+                        <div class="webstandard fixed"
+                            data-9800 = "left: 50%"
+                            data-10600 = "left: -100%"
+                        ></div>
+                    </div>
+                    <div class="img2 fixed">
+                        <div class="responsive fixed"
+                            data-10600 = "left: 150%"
+                            data-11400 = "left: 50%"
+                            data-12200 = "left: -100%"
+                        ></div>
+                    </div>
+                    <div class="img3 fixed">
+                        <div class="megabox fixed"
+                            data-12200 = "left: 150%"
+                            data-13000 = "left: 50%"
+                            data-13800 = "left: -100%"
+                        ></div>
+                    </div>
+                    <div class="img4 fixed">
+                        <div class="react fixed"
+                            data-13800 = "left: 150%"
+                            data-14600 = "left: 50%"
+                            data-15400 = "left: 50%"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        <section id="section3"></section>
+        <!-- //section3 -->
+        <section id="section4"></section>
+        <!-- //section4 -->
+        <section id="section5"></section>
+        <!-- //section5 -->
+        <section id="section6"></section>
+        <!-- //section6 -->
+    </div>
+    <!-- //contents -->
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init(); // 사용 셋팅
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(parseInt(scrollTop)); // 스크롤 값 확인하기
+        });
+    </script>
+</body>
+</html>
