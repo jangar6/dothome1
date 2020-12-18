@@ -1,8 +1,18 @@
 /* reset */
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; }
 ul, li {list-style: none;}
 
 /* layout */
+body {
+    cursor: none;
+}
+.scroll {
+    position: fixed; right: 10px; top: 10px;   
+    width: 50px; height: 50px; line-height: 50px;
+    text-align: center; color: #fff;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000000;
+}
 #wrap {position: relative;}
 #header {
     width: 100%;
@@ -19,10 +29,16 @@ ul, li {list-style: none;}
     color: #fff;
 }
 #about {
-    background-image: url(../img/about01@2.jpg);
-    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 1110px;
+    background: linear-gradient(180deg, #FF9473 0%, rgba(239, 99, 122, 0.71) 100%);
+    font-family: 'Blacksword';
+    font-size: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .logo {
@@ -190,16 +206,7 @@ ul, li {list-style: none;}
 }
 /* about */
 .about {
-    width: 100%;
-    height: 1110px;
-    background: linear-gradient(180deg, #FF9473 0%, rgba(239, 99, 122, 0.71) 100%);
-    font-family: 'Blacksword';
-    font-size: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    
 }
 .about .about-title {
     position: relative; 
@@ -228,6 +235,15 @@ ul, li {list-style: none;}
     left: 907px;
     bottom: 117px;
     z-index: -10;
+}
+.about .me {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background-attachment: fixed;
+    opacity: 0;
 }
 /* button */
 .about a {
@@ -291,3 +307,20 @@ ul, li {list-style: none;}
     }
 }
 
+.cursor {
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+    background: #fff;
+    user-select: none;
+    pointer-events: none;
+    transition: transform .3s ease-in-out;
+}
+.cursor.active {
+    transform: scale(10);
+    background-image: url(../img/about01@2.jpg);
+    background-size: cover;
+    
+}
