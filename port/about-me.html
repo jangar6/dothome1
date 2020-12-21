@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/star.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <section id="about-me">
+        <div class="me-left">
+            <img class="moon" src="img/moon.jpg" alt="달">
+            <img class="cloud" src="img/cloud_color.jpg" alt="구름">
+        </div>
+        <div class="me-right">
+            <img class="me2" src="img/about02@2.jpg" alt="이미지">
+            <p class="present">안녕하세요, 항상 높은 곳을 올려다보는 장아름입니다. 위를 올려 보면서 정상을 향해 차근차근하다 보면 언젠가 정상에 도착하게 되듯이 항상 노력하는 것을 멈추지 않고 나아가는 웹 퍼블리셔가 되겠습니다.</p>
+        </div>
+    </section>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        window.addEventListener("mousemove", function(e){
+            gsap.to(cursor, {duration: 0.3, left: e.pageX, top: e.pageY});
+        });
+    </script>
+</body>
+</html>

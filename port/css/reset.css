@@ -1,0 +1,13 @@
+/* 여백 초기화 */
+body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td,  textarea, button, form, figure, figcaption{margin: 0; padding: 0;}
+
+/* 링크 초기화 */
+a {color: #fff;}
+a:hover {color: #fff;}
+
+/* 블릿 기호 초기화 */
+ul,ol,dl,menu {list-style: none;}
+
+/* 폰트 스타일 초기화 */
+em {font-style: normal;} /* 이텔릭체 초기화 */
+

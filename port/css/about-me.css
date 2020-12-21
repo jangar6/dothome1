@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(to bottom, #FF9473 0%, rgba(239, 99, 122, 0.71) 100%);
+    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+    position: relative;
+}
+.cursor {
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+    background: #fff;
+    user-select: none;
+    pointer-events: none;
+    transition: transform .3s ease-in-out;
+}
+/* about-me */
+#about-me {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 26px;
+}
+.me-left {
+    position: relative;
+    flex: 0 0 30%;
+}
+.me-left .moon {
+    width: 32vw;
+    height: 100%;
+    position: relative;
+}
+
+.me-left .cloud {
+    width: 70vw;
+    position: absolute;
+    right: 0px;
+    top: -131px;
+}
+.me-right {
+    flex: 0 0 50%;
+}
+.me-right .me2 {
+    width: 70%;
+    height: 70%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+.me-right .present {
+    font-family: 'Chosunilbo_myungjo';
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.3vw;
+    line-height: 1.33;
+    text-align: right;
+    color: #fff;
+    width: 60vw;
+    height: 30vh;
+    padding-top: 40px;
+    padding-right: 20px;
+}
