@@ -1,5 +1,4 @@
-  
-{
+  {
   "status": "ok",
   "status_message": "Query was successful",
   "data": {
@@ -24,8 +23,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -38,8 +36,7 @@
         "tag": "닫는 태그 사용(<address> ~ <address>)",
         "version" : "HTML4",
         "view" : "점선(브라우저마다 틀림) 및 툴팁"
-      },
-      {
+      },{
         "type": "html",
         "id": "B",
         "link": "https://webzz.tistory.com/231",
@@ -52,8 +49,7 @@
         "tag": "닫는 태그 사용(<acronym> ~ </acronym>)",
         "version" : "HTML4(HTML5에서 지원되지 않습니다.)",
         "view" : "점선(브라우저마다 틀림) 및 툴팁"
-      },
-      {
+      },{
         "type": "html",
         "id": "D",
         "link": "https://webzz.tistory.com/229",
@@ -73,8 +69,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -94,8 +89,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -115,8 +109,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -136,8 +129,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "E",
         "link": "https://webzz.tistory.com/229",
@@ -157,8 +149,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "F",
         "link": "https://webzz.tistory.com/229",
@@ -178,8 +169,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -199,8 +189,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -220,8 +209,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -241,8 +229,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "H",
         "link": "https://webzz.tistory.com/229",
@@ -262,8 +249,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "I",
         "link": "https://webzz.tistory.com/229",
@@ -283,8 +269,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -304,8 +289,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -325,8 +309,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "L",
         "link": "https://webzz.tistory.com/229",
@@ -346,8 +329,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -367,8 +349,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -388,8 +369,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "M",
         "link": "https://webzz.tistory.com/229",
@@ -409,8 +389,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "N",
         "link": "https://webzz.tistory.com/229",
@@ -430,8 +409,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "O",
         "link": "https://webzz.tistory.com/229",
@@ -451,8 +429,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "P",
         "link": "https://webzz.tistory.com/229",
@@ -472,8 +449,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -493,8 +469,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -514,8 +489,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -535,8 +509,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "S",
         "link": "https://webzz.tistory.com/229",
@@ -556,8 +529,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -577,8 +549,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -598,8 +569,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "T",
         "link": "https://webzz.tistory.com/229",
@@ -619,8 +589,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "U",
         "link": "https://webzz.tistory.com/229",
@@ -640,8 +609,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "ETC",
         "link": "https://webzz.tistory.com/229",
@@ -661,8 +629,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -682,8 +649,7 @@
             "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
             "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "B",
         "link": "https://webzz.tistory.com/229",
@@ -698,8 +664,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -714,8 +679,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -730,8 +694,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -746,8 +709,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -762,8 +724,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -778,8 +739,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -794,8 +754,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -810,8 +769,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "C",
         "link": "https://webzz.tistory.com/229",
@@ -826,8 +784,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -842,8 +799,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -858,8 +814,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "E",
         "link": "https://webzz.tistory.com/229",
@@ -874,8 +829,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "F",
         "link": "https://webzz.tistory.com/229",
@@ -890,8 +844,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -906,8 +859,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "G",
         "link": "https://webzz.tistory.com/229",
@@ -922,8 +874,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "I",
         "link": "https://webzz.tistory.com/229",
@@ -938,8 +889,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "L",
         "link": "https://webzz.tistory.com/229",
@@ -954,8 +904,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -970,8 +919,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "M",
         "link": "https://webzz.tistory.com/229",
@@ -986,8 +934,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "O",
         "link": "https://webzz.tistory.com/229",
@@ -1002,8 +949,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "P",
         "link": "https://webzz.tistory.com/229",
@@ -1018,8 +964,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1034,8 +979,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1050,8 +994,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "T",
         "link": "https://webzz.tistory.com/229",
@@ -1066,8 +1009,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1082,8 +1024,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1098,8 +1039,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1114,8 +1054,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1130,8 +1069,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1146,8 +1084,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "U",
         "link": "https://webzz.tistory.com/229",
@@ -1162,8 +1099,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "W",
         "link": "https://webzz.tistory.com/229",
@@ -1178,8 +1114,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1194,8 +1129,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1210,8 +1144,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "Z",
         "link": "https://webzz.tistory.com/229",
@@ -1226,8 +1159,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "ETC",
         "link": "https://webzz.tistory.com/229",
@@ -1242,8 +1174,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1258,8 +1189,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1274,8 +1204,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1290,8 +1219,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1306,8 +1234,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1322,8 +1249,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1338,8 +1264,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1354,8 +1279,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1370,8 +1294,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "css",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1386,8 +1309,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "변수",
         "link": "https://webzz.tistory.com/229",
@@ -1402,8 +1324,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1418,8 +1339,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1434,8 +1354,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1450,8 +1369,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "연산자",
         "link": "https://webzz.tistory.com/229",
@@ -1466,8 +1384,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1482,8 +1399,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1498,8 +1414,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1514,8 +1429,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1530,8 +1444,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "조건문",
         "link": "https://webzz.tistory.com/229",
@@ -1546,8 +1459,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1562,8 +1474,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1578,8 +1489,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1594,8 +1504,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1610,8 +1519,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "반복문",
         "link": "https://webzz.tistory.com/229",
@@ -1626,8 +1534,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1642,8 +1549,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1658,8 +1564,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1674,8 +1579,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1690,8 +1594,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1706,8 +1609,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "함수",
         "link": "https://webzz.tistory.com/229",
@@ -1722,8 +1624,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1738,8 +1639,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1754,8 +1654,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1770,8 +1669,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1786,8 +1684,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1802,8 +1699,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1818,8 +1714,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1834,8 +1729,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1850,8 +1744,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1866,8 +1759,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1882,8 +1774,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "A",
         "link": "https://webzz.tistory.com/229",
@@ -1898,8 +1789,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "C",
         "link": "https://webzz.tistory.com/229",
@@ -1914,8 +1804,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "F",
         "link": "https://webzz.tistory.com/229",
@@ -1930,8 +1819,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -1946,8 +1834,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "G",
         "link": "https://webzz.tistory.com/229",
@@ -1962,8 +1849,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "I",
         "link": "https://webzz.tistory.com/229",
@@ -1978,8 +1864,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "M",
         "link": "https://webzz.tistory.com/229",
@@ -1994,8 +1879,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2010,8 +1894,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "O",
         "link": "https://webzz.tistory.com/229",
@@ -2026,8 +1909,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2042,8 +1924,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2058,8 +1939,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2074,8 +1954,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2090,8 +1969,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
           ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2106,8 +1984,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "Q",
         "link": "https://webzz.tistory.com/229",
@@ -2122,8 +1999,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "R",
         "link": "https://webzz.tistory.com/229",
@@ -2138,8 +2014,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "S",
         "link": "https://webzz.tistory.com/229",
@@ -2154,8 +2029,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2170,8 +2044,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2186,8 +2059,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2202,8 +2074,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2218,8 +2089,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "T",
         "link": "https://webzz.tistory.com/229",
@@ -2234,8 +2104,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "javascript",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2250,8 +2119,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "A",
         "link": "https://webzz.tistory.com/229",
@@ -2266,8 +2134,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2282,8 +2149,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "E",
         "link": "https://webzz.tistory.com/229",
@@ -2298,8 +2164,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "F",
         "link": "https://webzz.tistory.com/229",
@@ -2314,8 +2179,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2330,8 +2194,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2346,8 +2209,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2362,8 +2224,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "H",
         "link": "https://webzz.tistory.com/229",
@@ -2378,8 +2239,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2394,8 +2254,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2410,8 +2269,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "I",
         "link": "https://webzz.tistory.com/229",
@@ -2426,8 +2284,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "N",
         "link": "https://webzz.tistory.com/229",
@@ -2442,8 +2299,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2458,8 +2314,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2474,8 +2329,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "O",
         "link": "https://webzz.tistory.com/229",
@@ -2490,8 +2344,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "P",
         "link": "https://webzz.tistory.com/229",
@@ -2506,8 +2359,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "R",
         "link": "https://webzz.tistory.com/229",
@@ -2522,8 +2374,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2538,8 +2389,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "S",
         "link": "https://webzz.tistory.com/229",
@@ -2554,8 +2404,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2570,8 +2419,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2586,8 +2434,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2602,8 +2449,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2618,8 +2464,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "T",
         "link": "https://webzz.tistory.com/229",
@@ -2634,8 +2479,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
-      {
+      },{
         "type": "jQuery",
         "id": "",
         "link": "https://webzz.tistory.com/229",
@@ -2650,7 +2494,7 @@
         "definition" : [
             "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
         ]
-      },
+      }
     ]
   }
 }
