@@ -15,14 +15,7 @@
         "element": "인라인 구조(Inline Element)",
         "tag": "닫는 태그 사용(<a> ~ </a>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
@@ -30,23 +23,36 @@
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<address>",
         "desc": "<address> 요소는 가까운 HTML 요소의 사람, 단체, 조직 등에 대한 연락처 정보를 나타냅니다.",
-        "category": "-",
+        "category": "플로우 콘텐츠(Flow Content), 팰퍼블 콘텐츠(palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<address> ~ <address>)",
+        "element": "닫는 태그 사용(<address> ~ </address>)",
+        "tag": "태그 생략",
         "version" : "HTML4",
-        "view" : "점선(브라우저마다 틀림) 및 툴팁"
+        "view" : "기울임꼴"
       },{
         "type": "html",
         "id": "B",
         "link": "https://webzz.tistory.com/231",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
+        "title": "<body>",
+        "desc": "<body> 태그는 문서 본문에 해당하는 콘텐츠를 포함하는 영역입니다. 문서에서 한 번만 사용됩니다.",
+        "category": "섹션 콘텐츠(Sectioning content)",
+        "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
+        "element": "블록 요소(Block Element)",
+        "tag": "태그 생략",
+        "version" : "HTML4(HTML5에서 지원되지 않습니다.)",
+        "view" : "점선(브라우저마다 틀림) 및 툴팁"
+      },{
+        "type": "html",
+        "id": "",
+        "link": "https://webzz.tistory.com/231",
+        "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<button>",
         "desc": "<button> 요소는 클릭 가능한 버튼을 나타냅니다. 버튼은 양식 내부는 물론 간단한 표준 버튼 기능이 필요한 곳이라면 문서 어디에나 배치할 수 있습니다.",
-        "category": "-",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing Content), 인터렉티브 콘텐츠(Interactive Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<acronym> ~ </acronym>)",
+        "tag": "닫는 태그 사용(<button> ~ </buttonx>)",
         "version" : "HTML4(HTML5에서 지원되지 않습니다.)",
         "view" : "점선(브라우저마다 틀림) 및 툴팁"
       },{
@@ -56,79 +62,51 @@
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<div>",
         "desc": "<div> 태그는 문서의 영역을 나누거나 그룹화 할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "category": "플로우 콘텐츠(Flow Content), 팰퍼블 콘텐츠 (palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<div> ~ </div>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<dl>",
-        "desc": "<dl>태그는 용어를 설명하는 목록을 만듭니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<dl> 태그는 용어를 설명하는 목록형 태그입니다.",
+        "category": "플로우 콘텐츠(Flow Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<dl> ~ </dl>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<dd>",
-        "desc": "<dd>는 용어의 제목을 넣을 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<dd> 태그는 용어를 설명하는 태그입니다",
+        "category": "-",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<dd> ~ </dd>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<dt>",
-        "desc": "<dt>는 용어의 제목을 넣을 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<dt> 태그는 용어의 제목을 설명하는 목록형 태그입니다.",
+        "category": "-",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<dt> ~ </dt>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "E",
@@ -136,319 +114,207 @@
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<em>",
         "desc": "<em>태그는 강조 텍스트를 정의하는 데 사용됩니다. 내부 콘텐츠는 일반적으로 기울임 꼴로 표시됩니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠 (Phrasing content), 팰퍼블 콘텐츠 (palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<em> ~ </em>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "F",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<form>",
-        "desc": "사용자와 웹사이트 또는 어플리케이션이 서로 상호 작용하는 것 중 중요한 기술 중에 하나입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<form> 태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 팰퍼블 콘텐츠 (palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<form> ~ </form>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<fieldset>",
-        "desc": "<fieldset> 태그는 <form> 요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<fieldset> 태그는 폼 요소의 그룹 내부 영역을 설정합니다.",
+        "category": "플로우 콘텐츠(Flow Content), Dectioning Root, Listed, Form-associated element, 섹션 콘텐츠 (Sectioning content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<fieldset> ~ </fieldset>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<figure>",
-        "desc": "<figure> 요소는 독립적인 콘텐츠를 표현합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<figure> 태그는 그림, 도표, 사진, 코드 등의 표현을 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 섹션 콘텐츠(Sectioning Content), 팰퍼블 콘텐츠(Palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<figure> ~ </figure>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<figcaption>",
-        "desc": "<figcaption> 요소를 사용해 설명을 붙일 수 있습니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<figcaption> 태그는 <figure> 요소의 제목을 정의합니다.",
+        "category": "-",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<figcaption> ~ </figcaption>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "H",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<h1>~<h6>",
-        "desc": "<h1>~<h6> 태그는 제목 영역을 나타낼 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<h1>~<h6> 태그는 제목 영역을 설정합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 헤드 콘텐츠(Heading Content), 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Blockk Element)",
         "tag": "닫는 태그 사용(<h1> ~ </h1>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "I",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<i>",
-        "desc": "<i>태그는 아이콘 요소에 의미를 추가합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<i> 태그는 특별한 이유로 평범한 글자와 구분하기 위해 사용됩니다.",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 팰퍼블 콘텐츠(palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<i> ~ </i>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<img>",
-        "desc": "<img> 요소는 문서에 이미지를 넣습니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<img> 태그는 웹 문서에 이미지를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing Content), 임베디드 콘텐츠(Embedded Content), 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<img> ~ </img>)",
+        "element": "인라인 요소(Inline Element)",
+        "tag": "Self-Closing(<img />)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<input>",
-        "desc": "<input>태그는 사용자가 데이터를 입력 할 수있는 입력 필드를 지정한다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<input> 태그는 데이터를 입력할 수 있는 폼 컨트롤을 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), listed,submittable,resettable,form-associated element, 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<input> ~ </input>)",
+        "element": "인라인 요소(Inline Element)",
+        "tag": "Self-Closing(<input />)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "L",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<li>",
-        "desc": "<li>태그는 list의 약자로, 목록을 만드는 태그입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<li> 태그는 목록의 항목을 나타내는 태그입니다.",
+        "category": "플로우 콘텐츠(Flow Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<li> ~ </li>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<legend>",
-        "desc": "<legend> 태그는 <fieldset> 요소의 캡션(caption)을 정의할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<legend> 태그는 <fieldset> 요소의 영역 제목을 정의합니다.",
+        "category": "프레이징 콘텐츠(Phrasing Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<legend> ~ </legend>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<label>",
-        "desc": "<label> 요소는 사용자 인터페이스 항목의 설명을 나타냅니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<label> 태그는 해당 <input> 요소의 제목을 설정합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing Content), 인터렉티브 콘텐츠(Interactive Content), 폼과 관련된 콘텐츠(form-associated element), 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<label> ~ </label>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "M",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<meta>",
-        "desc": "<meta> 태그는 해당 문서에 대한 정보인 메타데이터(metadata)를 정의할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<meta> 태그는 웹 문서에 대한 정보를 제공합니다.",
+        "category": "메타데이터 콘텐츠(Metadata Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<meta> ~ </meta>)",
+        "element": "메타 요소(Meta Element)",
+        "tag": "Self-Closing(<meta />)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "N",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<nav>",
-        "desc": "<nav> 요소는 문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 자주 쓰이는 예제는 메뉴, 목차, 색인입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<nav> 태그는 웹 문서에 네비게이션 링크를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 섹션 콘텐츠(Sectioning Content), 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<nav> ~ </nav>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "O",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<ol>",
-        "desc": "<ol> 순서(숫자)가 있는 목록을 만드는 태그입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<ol> 태그는 순서가 있는 목록형 태그입니다.",
+        "category": "플로우 콘텐츠(Flow Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<ol> ~ </ol>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "P",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<p>",
-        "desc": "<p> 태그는 paragraph, 즉 문단의 약자로, 하나의 문단을 만들 때 쓰입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<p> 태그는 단락을 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 팰퍼블 콘텐츠(palpable content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<p> ~ </p>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
@@ -461,154 +327,85 @@
         "element": "인라인 구조(Inline Element)",
         "tag": "닫는 태그 사용(<pre> ~ </pre>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
-      },{
-        "type": "html",
-        "id": "",
-        "link": "https://webzz.tistory.com/229",
-        "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
-        "title": "<pre>",
-        "desc": "<pre> 태그는 미리 정의된 형식(preformatted)의 텍스트를 정의할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
-        "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<pre> ~ </pre>)",
-        "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<picture>",
-        "desc": "<picture> 태그는 <img> 요소의 다중 이미지 리소스(multiple image resources)를 위한 컨테이너를 정의 할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<picture> 태그는 화면 크기에 따라 이미지를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing Content), 임베디드 콘텐츠(Embedded Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "-",
         "tag": "닫는 태그 사용(<picture> ~ </picture>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "S",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<span>",
-        "desc": "스타일을 적용하기 위해서, 또는 lang 등 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용할 수 있습니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<span> 태그는 인라인 요소 그룹화를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<span> ~ </span>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<section>",
-        "desc": "<section> 요소는 HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<section> 태그는 주제별 그룹의 콘텐츠 섹션을 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 섹션닝 콘텐츠(Sectioning Content), 팰퍼블 콘텐츠(Palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<section> ~ </section>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<source>",
-        "desc": "<source> 태그는 <audio> 요소나 <video> 요소, <picture> 요소에서 사용할 수 있는 다중 미디어 자원(multiple media resources)을 정의할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<source> 태그는 미디어 요소에 대한 소스를 지정하는데 사용합니다.",
+        "category": "-",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<source> ~ </source>)",
+        "element": "인라인 요소(Inline Element)",
+        "tag": "닫는 태그 사용 안함",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "T",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<table>",
-        "desc": "<table> 태그는 데이터를 포함하는 셀(cell)들의 행과 열로 구성된 2차원 테이블을 정의할 때 사용합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<table> 태그는 표를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "블록 요소(Block Element)",
         "tag": "닫는 태그 사용(<table> ~ </table>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "U",
         "link": "https://webzz.tistory.com/229",
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "<ul>",
-        "desc": "순서가 없는 목록 요소를 만듭니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
+        "desc": "<ul> 태그는 순서가 없는 목록형 태그를 정의합니다.",
+        "category": "플로우 콘텐츠(Flow Content), 팰퍼블 콘텐츠(palpable Content)",
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
+        "element": "인라인 요소(Inline Element)",
         "tag": "닫는 태그 사용(<ul> ~ </ul>)",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "ETC",
@@ -616,19 +413,12 @@
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "aria",
         "desc": "장애를 가진 사용자가 웹 콘텐츠와 웹 어플리케이션에 더 쉽게  접근할 수 있는 방법을 정의하는 여러 특성을 말합니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
-        "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 미사용",
+        "category": "플로우 콘텐츠(Flow Content)",
+        "property": "글로벌 속성 적용(Global Attributes)",
+        "element": "-",
+        "tag": "-",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "html",
         "id": "",
@@ -636,19 +426,12 @@
         "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://t1.daumcdn.net/cfile/tistory/99BECF3C5BB02F501B",
         "title": "Semantic",
         "desc": "시맨틱 (Semantic)은 의미가 부여된 뜻으로 div태그에서 파생된 태그입니다.",
-        "category": "플로우 콘텐츠(Flow Content), 프레이징 콘텐츠(Phrasing content), 인터렉티브 콘텐츠 (Interactive content)",
-        "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
-        "element": "인라인 구조(Inline Element)",
-        "tag": "닫는 태그 사용(<header> ~ </header>)",
+        "category": "섹션 콘텐츠(sectioning content)",
+        "property": "글로벌 속성 적용(Global Attributes)",
+        "element": "-",
+        "tag": "-",
         "version" : "HTML4",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.",
-            "방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.",
-            "방문한 링크는 밑줄과 보라색으로 표시됩니다.",
-            "활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
-            "HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "B",
@@ -660,10 +443,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -675,10 +455,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -690,10 +467,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -705,10 +479,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -720,10 +491,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -735,10 +503,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -750,10 +515,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -765,10 +527,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "C",
@@ -780,10 +539,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -795,10 +551,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -810,10 +563,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "E",
@@ -825,10 +575,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "F",
@@ -840,10 +587,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -855,10 +599,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "G",
@@ -870,10 +611,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "I",
@@ -885,10 +623,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "L",
@@ -900,10 +635,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -915,10 +647,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "M",
@@ -930,10 +659,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "O",
@@ -945,10 +671,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "P",
@@ -960,10 +683,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -975,10 +695,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -990,10 +707,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "T",
@@ -1005,10 +719,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1020,10 +731,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1035,10 +743,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1050,10 +755,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1065,10 +767,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1080,10 +779,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "U",
@@ -1095,10 +791,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "W",
@@ -1110,10 +803,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1125,10 +815,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1140,10 +827,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "Z",
@@ -1155,10 +839,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "ETC",
@@ -1170,10 +851,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1185,10 +863,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1200,10 +875,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1215,10 +887,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1230,10 +899,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1245,10 +911,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1260,10 +923,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1275,10 +935,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1290,10 +947,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "css",
         "id": "",
@@ -1305,10 +959,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "CSS3",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "변수",
@@ -1320,10 +971,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1335,10 +983,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1350,10 +995,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1365,10 +1007,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "연산자",
@@ -1380,10 +1019,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1395,10 +1031,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1410,10 +1043,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1425,10 +1055,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1440,10 +1067,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "조건문",
@@ -1455,10 +1079,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1470,10 +1091,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1485,10 +1103,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1500,10 +1115,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1515,10 +1127,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "반복문",
@@ -1530,10 +1139,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1545,10 +1151,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1560,10 +1163,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1575,10 +1175,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1590,10 +1187,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1605,10 +1199,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "함수",
@@ -1620,10 +1211,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1635,10 +1223,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1650,10 +1235,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1665,10 +1247,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1680,10 +1259,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1695,10 +1271,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1710,10 +1283,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1725,10 +1295,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1740,10 +1307,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1755,10 +1319,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1770,10 +1331,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "A",
@@ -1785,10 +1343,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "C",
@@ -1800,10 +1355,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "F",
@@ -1815,10 +1367,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1830,10 +1379,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "G",
@@ -1845,10 +1391,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "I",
@@ -1860,10 +1403,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "M",
@@ -1875,10 +1415,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1890,10 +1427,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "O",
@@ -1905,10 +1439,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1920,10 +1451,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1935,10 +1463,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1950,10 +1475,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -1980,10 +1502,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "Q",
@@ -1995,10 +1514,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "R",
@@ -2010,10 +1526,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "S",
@@ -2025,10 +1538,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -2040,10 +1550,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -2055,10 +1562,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -2070,10 +1574,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -2085,10 +1586,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "T",
@@ -2100,10 +1598,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "javascript",
         "id": "",
@@ -2115,10 +1610,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "A",
@@ -2130,10 +1622,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2145,10 +1634,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "E",
@@ -2160,10 +1646,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "F",
@@ -2175,10 +1658,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2190,10 +1670,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2205,10 +1682,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2220,10 +1694,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "H",
@@ -2235,10 +1706,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2250,10 +1718,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2265,10 +1730,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "I",
@@ -2280,10 +1742,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "N",
@@ -2295,10 +1754,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2310,10 +1766,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2325,10 +1778,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "O",
@@ -2340,10 +1790,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "P",
@@ -2355,10 +1802,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "R",
@@ -2370,10 +1814,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2385,10 +1826,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "S",
@@ -2400,10 +1838,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2415,10 +1850,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2430,10 +1862,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2445,10 +1874,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2460,10 +1886,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "T",
@@ -2475,10 +1898,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       },{
         "type": "jQuery",
         "id": "",
@@ -2490,10 +1910,7 @@
         "property": "글로벌 속성 적용(Global Attributes), 이벤트 속성 적용(Event Attributes)",
         "element": "인라인 구조(Inline Element)",
         "version" : "javascript",
-        "view" : "밑줄과 파란색으로 표시",
-        "definition" : [
-            "하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다."
-        ]
+        "view" : "밑줄과 파란색으로 표시"
       }
     ]
   }
