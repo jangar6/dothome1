@@ -12,17 +12,17 @@
 }
     
 /* cursor */
-.cursor {
+/* .cursor {
     position: absolute;
     left: 0; top: 0;
     width: 20px; height: 20px;
     border-radius: 50%;
-    z-index: 1000;
+    z-index: 10000;
     background: #fff;
     user-select: none;
     pointer-events: none;
     transition: transform .3s ease-in-out;
-}
+} */
 /* .cursor.active {
     transform: scale(10);
 } */
@@ -60,11 +60,10 @@
 
 /* layout */
 body {
-    cursor: none;
+    /* cursor: none; */
     overflow: auto; overflow-x:hidden;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #FF9473 50%, rgba(239, 99, 122, 0.71) 100%);
 }
 .scroll {
     position: fixed; left: 10px; bottom: 10px;   
@@ -87,7 +86,7 @@ body {
     align-items: left;
     height: 1001px;
     width: 196px;
-    z-index: 1000;
+    z-index: 9999999;
     color: #fff;
 }
 .logo {
@@ -142,13 +141,14 @@ body {
     color: #fff;
     position: relative;
     z-index: 10;
-    margin-bottom: 300px;
+    padding-bottom: 300px;
+    
 }
 .cover .date {
     font-size: 3vw;
     font-weight: 100;
     line-height: 50px;
-    padding: 210px 0 27px 0;
+    padding-bottom: 10px;
 }
 .covers {
     width: 20vw;
@@ -201,11 +201,8 @@ body {
     font-family: 'Blacksword';
     font-size: 250px;
     overflow: hidden;
-    position: fixed; 
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
     
+    background: linear-gradient(to bottom, #FF9473 50%, rgba(239, 99, 122, 0.71) 100%);
 }
 .about {position: relative;}
 .about .about-title {
@@ -235,8 +232,8 @@ body {
 .about .imgWrap .cloud-color2 {
     position: absolute;
     left: 907px;
-    bottom: 117px;
-    z-index: -10;
+    bottom: 60px;
+    z-index: 1000;
 }
 /* button */
 .about .button {
@@ -299,6 +296,13 @@ body {
         opacity: 0;
     }
 }
+#section2.on {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
 
 /* site */
 #site {

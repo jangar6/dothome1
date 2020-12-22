@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/stayle.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/star.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <!-- <div class="cursor"></div> -->
+    <div class="scroll">0</div>
+
+    <div id="contents">
+        <nav id="nav">
+            <div class="logo">Jang A-Reum</div>
+            <div class="nav">
+                <a href="#"><span>About</span></a>
+                <a href="#"><span>Site</span></a>
+                <a href="#"><span>Script</span></a>
+                <a href="#"><span>Animation</span></a>
+                <a href="#"><span>React</span></a>
+                <a href="#"><span>Contact</span></a>
+            </div>
+        </nav>
+        <section id="section1"
+            data-0 = "display:block"
+            data-10000 = "display:none"
+        >
+            <header id="header">
+                <div class="container">
+                    <div class="sky">
+                    <div class="stars"></div>
+                    <div class="stars1"></div>
+                    </div>
+                    <div class="header">
+                        <h1 class="center">Record so far</h1>
+                        <img src="img/moon.jpg" alt="moon">
+                    </div>
+                    <div class="cover">
+                        <div class="sky">
+                            <div class="stars"></div>
+                            <div class="stars1"></div>
+                        </div>
+                        <h2 class="date center">2020.07 - 2021.02</h2>
+                        <div class="covers">
+                            <h3 class="covers-title center">포트폴리오</h3>
+                            <p class="text">web publisher portfolio</p>
+                            <p class="name">장아름</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section id="section2">
+            <div id="about"
+                data-1000="display:block"
+                data-5040="display:none"
+            >
+                <div class="about center">
+                    <h3 class="about-title"
+                        data-2000="transform: scale(1)"
+                        data-2500="transform: scale(1)"
+                        data-3000="transform: scale(2)"
+                        data-3500="transform: scale(3)"
+                        data-4000="transform: scale(10)"
+                        data-4500="transform: scale(50); opacity: .5;"
+                        data-5000="transform: scale(100); opacity: 0;"
+                        data-5040="transform: scale(0); opacity: 0;"
+                    >
+                        About Me
+                    </h3>
+                    <div class="imgWrap">
+                        <img class="cloud-color1" src="img/cloud_color02.jpg" alt="이미지"
+                            data-2000="left: -100%;"
+                            data-2600="left: -110%;"
+                            data-3000="left: -130%;"
+                            data-4200="left: -150%;"
+                        >
+                        <img class="cloud-color2" src="img/cloud_color03.jpg" alt="이미지"
+                            data-2000="left: 100%;"
+                            data-2600="left: 110%;"
+                            data-3000="left: 130%;"
+                            data-4200="left: 150%;"
+                        >
+                    </div>
+                    <a class="button" href="about-me.html"
+                        data-2100="opacity: 1;"
+                        data-2800="opacity: 0.8;"
+                        data-3500="opacity: 0.5;"
+                        data-4200="opacity: 0;"
+                    ><span></span></a>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div id="site"
+                data-0="display:none"
+                data-5030="display:block; opacity: 0.3;"
+                data-5100="display:block; opacity: 1;"
+            >
+            site
+            </div>
+        </section>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init(); // 사용 셋팅
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(parseInt(scrollTop)); // 스크롤 값 확인하기
+        });
+
+        // 움직임 효과
+        // $(document).mousemove(function(e){
+        //     gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
+        // });
+
+        $("#section2").each(function(){
+            let about = $(this);
+            let aboutOffset = about.offset().top;
+	
+            $(window).scroll(function(){
+                let wScroll = $(this).scrollTop();
+                
+                if(wScroll > aboutOffset){
+                    $("#section2").addClass("on");
+                } else {
+                    $("#section2").removeClass("on");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
