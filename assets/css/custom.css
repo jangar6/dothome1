@@ -52,8 +52,8 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 /* Header  */
 
 #header{
-	background:#a5d5fa center 57px;
-	padding: 10px 0 10px 0px;
+	background: #ffddea;
+
 }
 #header.sub {
 	background:url(../img/header_bg.png) center 7px;

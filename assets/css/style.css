@@ -337,10 +337,8 @@
 }
 
 .image-wrap img {
-	width: 55%;
-    padding-top: 70px;
-    display: block;
-    margin: 0 auto;
+	width: 100%;
+	padding: 0;
 }
 
 .image-wrap .hover-wrap {
