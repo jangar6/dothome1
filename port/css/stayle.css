@@ -307,6 +307,8 @@ body {
 /* site */
 #site {
     background: linear-gradient(180deg, rgba(239, 99, 122, 0.71) 0%, rgba(174, 161, 202, 0.883607) 100%, rgba(174, 161, 202, 0.883607) 100%);
-    position: absolute;
-    
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }

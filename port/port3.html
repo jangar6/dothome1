@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>port</title>
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/stayle02.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+</head>
+<body>
+    <!-- <div class="cursor"></div> -->
+    <div class="scroll">0</div>
+
+    <div id="contents">
+        <nav id="nav fixed">
+            <div class="logo">Jang A-Reum</div>
+            <div class="nav">
+                <a href="#"><span>About</span></a>
+                <a href="#"><span>Site</span></a>
+                <a href="#"><span>Script</span></a>
+                <a href="#"><span>Animation</span></a>
+                <a href="#"><span>React</span></a>
+                <a href="#"><span>Contact</span></a>
+            </div>
+        </nav>
+        <section id="section1" class="fixed"
+            data-0 = "display:block"
+            data-7000 = "display:none" 
+        >
+            <div class="sec1-1 fixed"
+                data-0 = "display:block; opacity:1; top: 50%;"
+                data-500 = "opacity:0; top: 30%;"
+                data-510 = "display:none" 
+
+            >Record so far
+            </div>
+            <img class="sec1-2" src="img/moon.jpg" alt="달"
+                data-0 = "display:block; opacity:1; top: 3%;"
+                data-500 = "opacity:0; top: 30%; right: 30px"
+                data-510 = "display:none" 
+            >
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2 fixed"
+            data-0 = "display:none" 
+            data-600 = "display:block" 
+        >
+            <div class="sec2-1 fixed"
+                data-0="opacity: 0;"
+                data-490="opacity: .5;"
+                data-600="opacity: 1;"
+            >
+                <h2>2020.07 - 2021.02</h2>
+            </div>
+        </section>
+        <!-- //section2 -->
+        <section id="section3">
+        </section>
+        <!-- //section3 -->
+        <section id="section4">
+        </section>
+        <!-- //section4 -->
+        <section id="section5">
+        </section>
+        <!-- //section5 -->
+        <section id="section6">
+        </section>
+        <!-- //section6 -->
+        <section id="section7">
+        </section>
+        <!-- //section7 -->
+        <section id="section8">
+        </section>
+        <!-- //section8 -->
+    </div>
+
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init(); // 사용 셋팅
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(parseInt(scrollTop)); // 스크롤 값 확인하기
+        });
+
+        // 움직임 효과
+        // $(document).mousemove(function(e){
+        //     gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
+        // });
+
+        $("#section2").each(function(){
+            let about = $(this);
+            let aboutOffset = about.offset().top;
+	
+            $(window).scroll(function(){
+                let wScroll = $(this).scrollTop();
+                
+                if(wScroll > aboutOffset){
+                    $("#section2").addClass("on");
+                } else {
+                    $("#section2").removeClass("on");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
