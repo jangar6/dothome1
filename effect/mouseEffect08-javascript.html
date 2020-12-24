@@ -239,13 +239,41 @@
         //     });
         // }
         
-        window.addEventListener("mousemove",mouseMove)
-        function mouseMove(e){
-            let positionSlow = (e.pageX - (window.innerWidth/2)) * 0.1;
-            let positionFast = (e.pageX - (window.innerWidth/2))* 0.2;
-            gsap.to(".span-slow",{duration: .4, x: positionSlow});
-            gsap.to(".span-fast",{duration: .4, x: -positionFast});
-        };
+        // window.addEventListener("mousemove",mouseMove)
+        // function mouseMove(e){
+        //     let positionSlow = (e.pageX - (window.innerWidth/2)) * 0.1;
+        //     let positionFast = (e.pageX - (window.innerWidth/2))* 0.2;
+        //     gsap.to(".span-slow",{duration: .4, x: positionSlow});
+        //     gsap.to(".span-fast",{duration: .4, x: -positionFast});
+        // };
+
+        class Text {
+            constructor(obj) {
+                this.slow = document.body.querySelectorAll(".span-slow");
+                this.fast = document.body.querySelectorAll(".span-fast");
+                this.init();
+            }
+            init(){
+                this.binds();
+                this.events();
+            }
+
+            binds(){
+                this.handleMouse = this.handleMouse.bind(this);
+            }
+
+            events() {
+                window.addEventListener('mousemove', this.handleMouse);
+            }
+
+            handleMouse(e) {
+                this.positionSlow = (e.pageX - (window.innerWidth/2)) * 0.1;
+                this.positionFast = (e.pageX - (window.innerWidth/2)) * 0.2;
+                gsap.to(this.slow, {duration: .4, x: this.positionSlow});
+                gsap.to(this.fast, {duration: .4, x: -this.positionFast})
+            }
+        }
+        new Text();
 
     </script>
 </body>
