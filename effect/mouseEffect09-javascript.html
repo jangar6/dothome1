@@ -51,7 +51,6 @@
     </div> -->
     <!-- script -->
     <script>
-        // 변수 설정
         let wordWidth = 0;
         let width = 0;
         let cloned = [];
@@ -60,7 +59,7 @@
         let acc = 0;
         const item = document.querySelector(".menu-item");
         const word = item.querySelector(".menu-word");
-        // 계산하기
+        
         const calculate = () => {
             cloned.forEach(i => {
                 i.parentNode.removeChild(i);
@@ -74,7 +73,7 @@
                 cloned.push(clone);
             }
         }
-        // 이벤트 리스너
+        
         const handleMouse = bool => hover = bool;
         item.addEventListener("mouseenter", () => {handleMouse(true)});
         item.addEventListener("touchstart", () => {handleMouse(true)});
@@ -82,26 +81,27 @@
         item.addEventListener("touchend", () => {handleMouse(false)});
         window.addEventListener("resize", calculate);
         window.addEventListener("load", calculate);
-        // 애니메이션
+        
         const animate = () => {
-            // 가속
+            
             acc += 0.1;
             if(hover){
                 acc -= 0.35;
             }
-            // 최대값 제한걸기
+            
             acc = Math.min(13, Math.max(0, acc));
-            // 가속도 주기
+           
             speed += acc;
             if(speed >= wordWidth) {
                 speed = 0;
             }
-            // 텍스트 효과
+            
             item.style.transform = `translateX(${-speed}px) skewX(${-2 * acc}deg)`
-            //RaF
+            
             requestAnimationFrame(animate)
         }
         animate();
+        
     </script>
 </body>
 </html>

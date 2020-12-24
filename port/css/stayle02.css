@@ -23,20 +23,45 @@ img {
 
 
 /* nav */
-#nav {}
-
+#nav {
+    z-index: 10000;
+    position: fixed;
+    left: 0; top: 0;
+    width: 20vw;
+    height: 100vh;
+    color: #fff;
+}
+.logo {
+    margin: 20px;
+    font-family: 'Purple Purse', cursive;
+    font-size: 1vw;
+}
+.nav {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 10%; top: 25%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 50vw;
+    font-size: 1vw;
+}
+.nav a {
+    padding-right: 3%;
+}
 
 /* section1 */
 #section1 {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #16224C 0%, #031DA6 100%);
+}
+.bg01 {
+    background: linear-gradient(to bottom, #16224C 0%,  #001CA6 20%, #001CA6 40%, #B95393 100%);
 }
 .sec1-1 {
     font-family: 'Saol Display Regular';
-    font-size: 8vw;
+    font-size: 12vw;
     color: #fff;
     letter-spacing: 0.03em;
+    white-space : nowrap;
 }
 .sec1-2 {
     width: 40vw;
@@ -47,7 +72,59 @@ img {
 #section2 {
     width: 100vw;
     height: 100vh;
+}
+.sec2-1 {
+    font-family: 'Chosunilbo_myungjo';
+    line-height: 144.5%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 2.5vw;
+}
+.bg02 {
     background: linear-gradient(to bottom, #001CA6 0%, #B95393 60%, #FF9473 100%);
+}
+.covers-title {
+    font-weight: normal;
+}
+.date {
+    font-size: 2vw;
+    font-weight: normal;
+}
+.cover {
+    width: 20vw;
+    height: 72vh;
+    margin: 29px 0 0;
+    padding: 34px 20px 20px 20px;
+    border: solid 0.5vw #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.text {
+    font-size: 1.5vw;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 7%;
+    top: 54%;
+}
+.name {
+    font-size: 1.5vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    left: 65%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+}
+.name::after {
+    content: '';
+    width: 0.3vw;
+    height: 29.1vh;
+    position: absolute;
+    left: 45%;
+    top: 114%;
+    background: #fff;
 }
 #section3 {}
 #section4 {}

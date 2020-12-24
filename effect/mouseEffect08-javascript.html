@@ -262,11 +262,11 @@
                 this.handleMouse = this.handleMouse.bind(this);
             }
 
-            events() {
+            events(){
                 window.addEventListener('mousemove', this.handleMouse);
             }
 
-            handleMouse(e) {
+            handleMouse(e){
                 this.positionSlow = (e.pageX - (window.innerWidth/2)) * 0.1;
                 this.positionFast = (e.pageX - (window.innerWidth/2)) * 0.2;
                 gsap.to(this.slow, {duration: .4, x: this.positionSlow});

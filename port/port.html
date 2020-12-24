@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/stayle.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/star.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div class="scroll">0</div>
+    <div class="cursor"></div>
+
+    <div id="wrap">
+        <nav id="nav">
+            <div class="logo">Jang A-Reum</div>
+            <div class="nav">
+                <a href="#"><span>About</span></a>
+                <a href="#"><span>Site</span></a>
+                <a href="#"><span>Script</span></a>
+                <a href="#"><span>Animation</span></a>
+                <a href="#"><span>React</span></a>
+                <a href="#"><span>Contact</span></a>
+            </div>
+        </nav>
+        <header id="header">
+            <div class="container">
+                <div class="sky">
+                  <div class="stars"></div>
+                  <div class="stars1"></div>
+                </div>
+                <div class="header">
+                    <h1 class="center">Record so far</h1>
+                    <img src="img/moon.jpg" alt="moon">
+                </div>
+                <div class="cover">
+                    <div class="sky">
+                        <div class="stars"></div>
+                        <div class="stars1"></div>
+                    </div>
+                    <h2 class="date center">2020.07 - 2021.02</h2>
+                    <div class="covers">
+                        <h3 class="covers-title center">포트폴리오</h3>
+                        <p class="text">web publisher portfolio</p>
+                        <p class="name">장아름</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main id="main">
+        <section id="about"
+            data-0="opacity:0;"
+            data-1500="opacity:0.1;"
+            data-1600="opacity:0.3;"
+            data-2000="opacity:0.5;"
+            data-2010="opacity:0.8;"
+            data-2100="opacity:1;"
+            data-4000="opacity:0;"
+        >
+            <div class="about center">
+                <h3 class="about-title"
+                    data-2100="transform: scale(1)"
+                    data-2500="transform: scale(1)"
+                    data-3000="transform: scale(2)"
+                    data-3500="transform: scale(3)"
+                    data-4200="transform: scale(40)"
+                    data-4900="transform: scale(60); opacity: 0.5;"
+                    data-5600="transform: scale(80); opacity: 0.3;"
+                    data-6000="transform: scale(10); opacity: 0;"
+                >About Me</h3>
+                <div class="imgWrap">
+                    <img class="cloud-color1" src="img/cloud_color02.jpg" alt="이미지"
+                        data-2000="left: -100%;"
+                        data-2600="left: -110%;"
+                        data-3000="left: -130%;"
+                        data-4200="left: -150%;"
+                    >
+                    <img class="cloud-color2" src="img/cloud_color03.jpg" alt="이미지"
+                        data-2000="left: 100%;"
+                        data-2600="left: 110%;"
+                        data-3000="left: 130%;"
+                        data-4200="left: 150%;"
+                    >
+                </div>
+                <a class="button" href="about-me.html"
+                    data-2100="opacity: 1;"
+                    data-2800="opacity: 0.8;"
+                    data-3500="opacity: 0.5;"
+                    data-4200="opacity: 0;"
+                ><span></span></a>
+            </div>
+        </section>
+        <section id="site fixed"
+            data-0="display: none;"
+            data-3899=" opacity: 0;"
+            data-3900="opacity:0.5;"
+            data-6000="display: block; opacity:1;">
+            <div class="site">
+                site
+            </div>
+        </section>
+    </main>
+    <!-- //main -->
+    <footer id="footer"></footer>
+   
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+
+    <script>
+        // 커서
+        var about = document.getElementById("about");
+        var cursor = document.querySelector(".cursor");
+        var button = document.querySelector(".button");
+        var main = document.getElementById("main")
+
+        window.addEventListener("mousemove", function(e){
+            gsap.to(cursor, {duration: 0.3, left: e.pageX, top: e.pageY});
+        });
+        
+        // data- 사용하기
+        var s = skrollr.init();
+        window.addEventListener("scroll", function(){
+            let pageYOffset = window.pageYOffset
+            document.querySelector(".scroll").innerText = parseInt(pageYOffset);
+        });
+
+        document.querySelectorAll("a[href^='#']").forEach(elem => {
+           elem.addEventListener("click", e => {
+               e.preventDefault();
+           });
+       });
+    </script>
+    
+</body>
+</html>

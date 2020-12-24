@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무한 로딩 텍스트 애니메이션</title>
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            overflow: hidden;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+        .menu-item {
+            white-space: nowrap;
+            display: flex;
+            flex-wrap: nowrap;
+            cursor: pointer;
+            text-shadow: 5px 5px #Fff, 5px 5px rgba(0, 0, 0, 0.1), 10px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu {overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            <div class="menu-word">Areum-&nbsp;</div>
+        </div>
+    </div>
+
+
+    <!-- info -->
+    <!-- <div class="info right">
+        <ul>
+            <li><a href="mouseEffect01-jquery.html">1</a><a href="mouseEffect01-javascript.html">1</a></li>
+            <li><a href="mouseEffect02-jquery.html">2</a><a href="mouseEffect02-javascript.html">2</a></li>
+            <li><a href="mouseEffect03-jquery.html">3</a><a href="mouseEffect03-javascript.html">3</a></li>
+            <li><a href="mouseEffect04-jquery.html">4</a><a href="mouseEffect04-javascript.html">4</a></li>
+            <li><a href="mouseEffect05-jquery.html">5</a><a href="mouseEffect05-javascript.html">5</a></li>
+            <li><a href="mouseEffect06-jquery.html">6</a><a href="mouseEffect06-javascript.html">6</a></li>
+            <li><a href="mouseEffect07-jquery.html">7</a><a href="mouseEffect07-javascript.html">7</a></li>
+            <li><a href="mouseEffect08-jquery.html">8</a><a href="mouseEffect08-javascript.html">8</a></li>
+            <li><a href="mouseEffect09-jquery.html">9</a><a href="mouseEffect09-javascript.html" class="active">9</a></li>
+        </ul>
+    </div> -->
+    <!-- script -->
+    <script>
+        // 변수 설정
+        // let wordWidth = 0;
+        // let width = 0;
+        // let cloned = [];
+        // let hover = false;
+        // let speed = 0;
+        // let acc = 0;
+        // const item = document.querySelector(".menu-item");
+        // const word = item.querySelector(".menu-word");
+        // // 계산하기
+        // const calculate = () => {
+        //     cloned.forEach(i => {
+        //         i.parentNode.removeChild(i);
+        //     })
+        //     cloned = []
+        //     wordWidth = Math.ceil(word.clientWidth);
+        //     width = Math.ceil(window.innerWidth / wordWidth);
+        //     for (let i =0; i < width+1; i++){
+        //         const clone = word.cloneNode(true);
+        //         word.parentNode.appendChild(clone);
+        //         cloned.push(clone);
+        //     }
+        // }
+        // // 이벤트 리스너
+        // const handleMouse = bool => hover = bool;
+        // item.addEventListener("mouseenter", () => {handleMouse(true)});
+        // item.addEventListener("touchstart", () => {handleMouse(true)});
+        // item.addEventListener("mouseleave", () => {handleMouse(false)});
+        // item.addEventListener("touchend", () => {handleMouse(false)});
+        // window.addEventListener("resize", calculate);
+        // window.addEventListener("load", calculate);
+        // // 애니메이션
+        // const animate = () => {
+        //     // 가속
+        //     acc += 0.1;
+        //     if(hover){
+        //         acc -= 0.35;
+        //     }
+        //     // 최대값 제한걸기
+        //     acc = Math.min(13, Math.max(0, acc));
+        //     // 가속도 주기
+        //     speed += acc;
+        //     if(speed >= wordWidth) {
+        //         speed = 0;
+        //     }
+        //     // 텍스트 효과
+        //     item.style.transform = `translateX(${-speed}px) skewX(${-2 * acc}deg)`
+        //     //RaF
+        //     requestAnimationFrame(animate)
+        // }
+        // animate();
+
+
+        class Text {
+            constructor(obj){
+                this.wordWidth = 0;
+                this.width = 0;
+                this.cloned = [];
+                this.hover = false;
+                this.speed = 0;
+                this.acc = 0;
+                this.item = document.querySelector(".menu-item");
+                this.word = item.querySelector(".menu-word");
+                this.init();
+            }
+            init(){
+
+            }
+            binds(){
+                cloned.forEach(i => {
+                    i.parentNode.removeChild(i);
+                })
+                cloned = []
+                wordWidth = Math.ceil(word.clientWidth);
+                width = Math.ceil(window.innerWidth / wordWidth);
+
+                for (let i =0; i < width+1; i++){
+                    const clone = word.cloneNode(true);
+                    word.parentNode.appendChild(clone);
+                    cloned.push(clone);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
