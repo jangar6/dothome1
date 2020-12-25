@@ -1,5 +1,23 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
-body {height: 20000px; overflow: auto; overflow-x:hidden;}
+body {
+    height: 100%;
+    overflow: auto; overflow-x:hidden;
+    background: linear-gradient(
+        180deg,
+        #16224C 0%,
+        /* #001CA6 10%,
+        #B95393 20%,
+        #FF9473 30%,
+        rgba(239, 99, 122, 0.918) 60%,
+        rgb(174, 161, 202) 65%,
+        rgb(146, 188, 235) 70%,
+        rgb(218, 203, 223) 75%,
+        rgb(239, 99, 122) 80%,
+        rgb(3, 30, 166) 90%, */
+        #011627 100%
+    );
+    cursor: none;
+}
 em {font-style: normal;}
 .scroll {
     position: fixed; right: 10px; top: 10px;   
@@ -8,7 +26,31 @@ em {font-style: normal;}
     background: rgba(0,0,0,0.5);
     z-index: 10000000;
 }
+.cursor {
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+    background: #fff;
+    user-select: none;
+    pointer-events: none;
+    transition: transform .3s ease-in-out;
+}
+.cursor.active {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    user-select: none;
+    pointer-events: none;
 
+    background-image: url(../img/about01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 /* common */
 .fixed {
     position: fixed; 
@@ -53,9 +95,6 @@ img {
     width: 100vw;
     height: 100vh;
 }
-.bg01 {
-    background: linear-gradient(to bottom, #16224C 0%,  #001CA6 20%, #001CA6 40%, #B95393 100%);
-}
 .sec1-1 {
     font-family: 'Saol Display Regular';
     font-size: 12vw;
@@ -64,7 +103,7 @@ img {
     white-space : nowrap;
 }
 .sec1-2 {
-    width: 40vw;
+    width: 30%;
     position: absolute;
     right: 0;
 }
@@ -82,51 +121,154 @@ img {
     white-space: nowrap;
     font-size: 2.5vw;
 }
-.bg02 {
-    background: linear-gradient(to bottom, #001CA6 0%, #B95393 60%, #FF9473 100%);
-}
-.covers-title {
+
+.sec2-2 {
+    font-size: 2.8vw;
     font-weight: normal;
-}
-.date {
-    font-size: 2vw;
-    font-weight: normal;
-}
-.cover {
-    width: 20vw;
-    height: 72vh;
-    margin: 29px 0 0;
-    padding: 34px 20px 20px 20px;
-    border: solid 0.5vw #fff;
-    margin: 0 auto;
-    text-align: center;
-}
-.text {
-    font-size: 1.5vw;
-    transform: rotate(90deg);
     position: absolute;
-    right: 7%;
-    top: 54%;
-}
-.name {
-    font-size: 1.5vw;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    position: absolute;
-    left: 65%;
-    top: 37%;
+    left: 50%;
+    bottom: 100%;
     transform: translate(-50%, -50%);
 }
-.name::after {
+
+
+.cover {
+    width: 200%;
+    border: solid 0.4vw #fff;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 30% 80% 300% 50%;
+}
+.sec2-3 {
+    font-weight: normal;
+    font-size: 3vw;
+}
+.sec2-4 {
+    font-size: 2vw;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 11%;
+    top: 54%;
+}
+.sec2-5 {
+    font-size: 2vw;
+    position: absolute;
+    left: 61%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.sec2-5::after {
     content: '';
-    width: 0.3vw;
-    height: 29.1vh;
+    width: 7%;
+    height: 317%;
     position: absolute;
     left: 45%;
     top: 114%;
     background: #fff;
 }
-#section3 {}
+/* section3 */
+#section3 {
+    width: 100vw;
+    height: 1000vh;
+}
+.sec3-1 {
+    
+}
+.sec3-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    opacity: 70%;
+}
+.sec3-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 58%;
+    transform: translate(-50%, -50%);
+}
+.imgWrap {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw; height: 50vh;
+    z-index: 100;
+}
+.imgWrap .sec3-4 {
+    position: absolute;
+    left: 100%;
+    width: 60vw;
+}
+.imgWrap .sec3-5 {
+    position: absolute;
+    left: 100%;
+    width: 80vw;
+}
+/* button */
+.button {
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+}
+.button span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    opacity: 70%;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.button span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -9px 0 0 -11px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-style: 1px;
+    transform: rotate(-135deg);
+    box-sizing: border-box;
+}
+.button span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 0;
+    animation: effect 3s infinite;
+    box-sizing: border-box;
+}
+@keyframes effect {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 #section4 {}
 #section5 {}
 #section6 {}

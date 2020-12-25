@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/reset.css">
     
-    <!-- Web font -->
-    <link href="//db.onlinewebfonts.com/c/021bc4dec3aa02d937a51bdfdccc0f4d?family=Blacksword" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <!-- <div class="cursor"></div> -->
+    <div class="cursor"></div>
     <div class="scroll">0</div>
 
     <div id="contents">
@@ -34,23 +32,18 @@
             data-500 = "display:block; "
             data-800 = "display:none" 
         >
-            <div class="bg01"
-                data-0="width: 100vw; height: 100vw;"
-                data-500="top: 50%; width: 100vw; height: 100vw;"
-                data-800="opacity: 1; width: 100vw; height: 100vw;"
-            ></div>
-                <div
-                    data-0 = " opacity:1;"
-                    data-200 = " opacity:0;"
-                >
-                    <div class="sec1-1 fixed"
-                    data-0 = "display:block; top: 50%; opacity:1;"
-                    data-700 = "top: -100vh;"
+            <div
+                data-0 = " opacity:1;"
+                data-200 = " opacity:0;"
+            >
+                <div class="sec1-1 fixed"
+                data-0 = "display:block; top: 50%; opacity:1;"
+                data-700 = "top: -100%;"
 
                 >Record so far
                 </div>
                 <img class="sec1-2" src="img/moon.jpg" alt="달"
-                    data-0 = "display:block; top: 0vh;"
+                    data-0 = "display:block; top: 10%;"
                     data-500 = "top: -100%;"
                 >
             </div>
@@ -63,37 +56,58 @@
             data-2000 = "display:none" 
         >
             <div class="sec2-1 fixed"
-                data-0="top: 200%;"
+                data-0="top: 300%;"
+                data-300="top: 200%;"
                 data-700="top: 50%;"
-                data-1000="top: 50%;"
-                data-1600="top: -100%;"
-                data-1900="top: -200%;"
+                data-1000="top: -100%;"
             >
-                <div class="bg02"
-                    data-200=" width: 100vw; height: 100vw; opacity:0;"
-                    data-500=" width: 100vw; height: 100vw; opacity:0;"
-                    data-700="opacity: 1; width: 100vw; height: 100vw;"
-                ></div>
-                <h2 class="date fixed"
-                    data-700="top: 28%;"
-                >2020.07 - 2021.02</h2>
+                
                 <div class="cover fixed">
-                    <h3 class="covers-title center">포트폴리오</h3>
-                    <p class="text">web publisher portfolio</p>
-                    <p class="name">장아름</p>
+                    <h2 class="sec2-2">2020.07 - 2021.02</h2>
+                    <h3 class="sec2-3 center">포트폴리오</h3>
+                    <p class="sec2-4">web publisher portfolio</p>
+                    <p class="sec2-5">장아름</p>
                 </div>
             </div>
         </section>
         <!-- //section2 -->
-        <section id="section3"
+        <section id="section3 fixed"
             data-0 = "display:none" 
-            data-1600 = "display:block;" 
+            data-900 = "display:block;" 
             data-4000 = "display:none"
         >   
-            <div class="sec3-1">
-                About
+            <div class="sec3-1 fixed"
+                data-0="top: 200%;"
+                data-1400="top: 50%;"
+            >
+                <h1 class="sec3-2 fixed"
+                    data-2400="transform: translate(-50%,-50%) scale(1); opacity:1"
+                    data-3000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >About Me
+                </h1>
+                <img class="sec3-3 fixed" src="img/about01.jpg" alt="이미지"
+                    data-1400="display:none; opacity:0; width:100vw; height:100vh"
+                    data-1401="display:block; opacity:0;"
+                    data-1600="opacity:0.2;"
+                    data-1900="display:none; opacity:0;"
+                >
+                <div class="imgWrap">
+                    <img class="sec3-4 fixed" src="img/cloud_color02.jpg" alt="구름"
+                        data-1900="top: 300%; opacity:1"
+                        data-2100="top: 0%; transform: translate(-50%,-50%) scale(1);"
+                        data-2400="left: 135%;"
+                        data-3000="left: 800%; transform: translate(-50%,-50%) scale(10);"
+                    >
+                    <img class="sec3-5 fixed" src="img/cloud_color02.jpg" alt="구름"
+                        data-1900="top: 300%; opacity:1"
+                        data-2300="top: 140%; transform: translate(-50%,-50%) scale(1);"
+                        data-2400="left: -50%;"
+                        data-3000="left: -800%; transform: translate(-50%,-50%) scale(10)"
+                    >
+                </div>
+                <a class="button"><span></span>
+                </a>
             </div>
-
         </section>
         <!-- //section3 -->
         <section id="section4">
@@ -117,6 +131,7 @@
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
         var s = skrollr.init(); // 사용 셋팅
         $(window).scroll(function(){
@@ -124,25 +139,19 @@
             $(".scroll").text(parseInt(scrollTop)); // 스크롤 값 확인하기
         });
 
-        // 움직임 효과
-        // $(document).mousemove(function(e){
-        //     gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
-        // });
-
-        $("#section2").each(function(){
-            let about = $(this);
-            let aboutOffset = about.offset().top;
-	
-            $(window).scroll(function(){
-                let wScroll = $(this).scrollTop();
-                
-                if(wScroll > aboutOffset){
-                    $("#section2").addClass("on");
-                } else {
-                    $("#section2").removeClass("on");
-                }
-            });
+         // 움직임 효과
+        $(document).mousemove(function(e){
+            gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
         });
+
+
+        // 오버 효과
+        $(".sec3-3").hover(function(){
+            $(".cursor").addClass("active");
+        },function(){
+            $(".cursor").removeClass("active");
+        });
+
     </script>
 </body>
 </html>
