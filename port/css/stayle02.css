@@ -2,22 +2,23 @@
 body {
     height: 100%;
     overflow: auto; overflow-x:hidden;
-    background: linear-gradient(
-        180deg,
-        #16224C 0%,
-        /* #001CA6 10%,
-        #B95393 20%,
-        #FF9473 30%,
-        rgba(239, 99, 122, 0.918) 60%,
-        rgb(174, 161, 202) 65%,
-        rgb(146, 188, 235) 70%,
-        rgb(218, 203, 223) 75%,
-        rgb(239, 99, 122) 80%,
-        rgb(3, 30, 166) 90%, */
-        #011627 100%
-    );
     cursor: none;
 }
+.bg01{
+    background: linear-gradient(to bottom, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%);
+    width: 100vw;
+    height: 5000px;
+    position: relative;
+    z-index: -50000;
+}
+
+/* 
+
+rgb(146, 188, 235) 70%,
+rgb(218, 203, 223) 75%,
+rgb(239, 99, 122) 80%,
+rgb(3, 30, 166) 90%, */
+
 em {font-style: normal;}
 .scroll {
     position: fixed; right: 10px; top: 10px;   
@@ -35,7 +36,7 @@ em {font-style: normal;}
     background: #fff;
     user-select: none;
     pointer-events: none;
-    transition: transform .3s ease-in-out;
+    transition: active .4s ease-in-out;
 }
 .cursor.active {
     position: absolute;
@@ -69,7 +70,7 @@ img {
     z-index: 10000;
     position: fixed;
     left: 0; top: 0;
-    width: 20vw;
+    width: 9vw;
     height: 100vh;
     color: #fff;
 }
@@ -81,7 +82,8 @@ img {
 .nav {
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    left: 10%; top: 25%;
+    left: 23%;
+    top: 30%;
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 50vw;
     font-size: 1vw;
@@ -94,6 +96,7 @@ img {
 #section1 {
     width: 100vw;
     height: 100vh;
+    z-index: -5000;
 }
 .sec1-1 {
     font-family: 'Saol Display Regular';
@@ -174,15 +177,15 @@ img {
     width: 100vw;
     height: 1000vh;
 }
-.sec3-1 {
-    
-}
 .sec3-2 {
     font-family: 'Blacksword';
     color: #fff;
     white-space: nowrap;
     font-size: 12vw;
     font-weight: normal; 
+    
+}
+.sec3-2 > div {
     opacity: 70%;
 }
 .sec3-2::before {
@@ -192,6 +195,10 @@ img {
     position: absolute;
     left: 50%; top: 58%;
     transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+.sec3-3 {
+    z-index: 1000000;
 }
 .imgWrap {
     position: absolute; left: 50%; top: 50%;

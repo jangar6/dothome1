@@ -377,7 +377,7 @@
     <script>
        $("a[href^='#']").click(function(e){
             e.preventDefault();
-            let target = $($(this).attr("href")) // 클릭한 a링크에 #section들을 변수화 해서 선택자로 만듦
+            let target = $($(this).attr("href"))
             $("html,body").animate({ scrollTop : target.offset().top}, 600, "easeInOutQuint" );
        });
     </script>

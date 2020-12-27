@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,9 @@
                 <a href="#"><span>Contact</span></a>
             </div>
         </nav>
-        <section id="section1" class="fixed"
+        <div class="bg01"></div>
+        <!-- bg01 -->
+            <section id="section1" class="fixed"
             data-0 = "display:block;"
             data-500 = "display:block; "
             data-800 = "display:none" 
@@ -54,7 +56,12 @@
             data-0 = "display:none" 
             data-100 = "display:block;" 
             data-2000 = "display:none" 
-        >
+        >   <div class="bg01"
+                data-0="opacity: 0"
+                data-100="opacity: 1"
+            >
+
+            </div>
             <div class="sec2-1 fixed"
                 data-0="top: 300%;"
                 data-300="top: 200%;"
@@ -74,7 +81,7 @@
         <section id="section3 fixed"
             data-0 = "display:none" 
             data-900 = "display:block;" 
-            data-4000 = "display:none"
+            data-3600 = "display:none"
         >   
             <div class="sec3-1 fixed"
                 data-0="top: 200%;"
@@ -82,17 +89,19 @@
             >
                 <h1 class="sec3-2 fixed"
                     data-2400="transform: translate(-50%,-50%) scale(1); opacity:1"
-                    data-3000="transform: translate(-50%,-50%) scale(80); opacity:0"
-                >About Me
+                    data-3000="transform: translate(-50%,-50%) scale(40);"
+                    data-3600="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >
+                    <div>About Me</div>
                 </h1>
                 <img class="sec3-3 fixed" src="img/about01.jpg" alt="이미지"
                     data-1400="display:none; opacity:0; width:100vw; height:100vh"
-                    data-1401="display:block; opacity:0;"
+                    data-1401="display:block; z-index: 1000000"
                     data-1600="opacity:0.2;"
                     data-1900="display:none; opacity:0;"
                 >
                 <div class="imgWrap">
-                    <img class="sec3-4 fixed" src="img/cloud_color02.jpg" alt="구름"
+                    <img class="sec3-4 fixed" src="img/cloud_color03.jpg" alt="구름"
                         data-1900="top: 300%; opacity:1"
                         data-2100="top: 0%; transform: translate(-50%,-50%) scale(1);"
                         data-2400="left: 135%;"
@@ -105,11 +114,17 @@
                         data-3000="left: -800%; transform: translate(-50%,-50%) scale(10)"
                     >
                 </div>
-                <a class="button"><span></span>
-                </a>
             </div>
+            <a href="about-me2.html" class="button fixed" rel="noopner" aria-hidden="true"
+                data-0="top: 250%; display:block"
+                data-1400="top: 130%;"
+                data-2200="top: 130%; opacity:1;"
+                data-2500="opacity:0;"
+            ><span></span></a>
         </section>
         <!-- //section3 -->
+        
+        
         <section id="section4">
         </section>
         <!-- //section4 -->
@@ -127,7 +142,12 @@
         <!-- //section8 -->
     </div>
 
-
+    <!-- info -->
+    <div class="info">
+        <ul>
+            <li>scrollTop() : <span class="scrollTop">0</span>px</li>
+        </ul>
+    </div>
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
@@ -152,6 +172,13 @@
             $(".cursor").removeClass("active");
         });
 
+        
+       $("a[href^='#']").click(function(e){
+            e.preventDefault();
+            let target = $($(this).attr("href")) // 클릭한 a링크에 #section들을 변수화 해서 선택자로 만듦
+            $("html,body").animate({ scrollTop : target.offset().top});
+       });
+    
     </script>
 </body>
 </html>
