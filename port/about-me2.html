@@ -11,32 +11,93 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
+    
     <div class="cursor"></div>
-    <div id="about">
-        <div id="about-me">
+    <div class="scroll">0</div>
+
+    <!-- contents -->
+    <div id="contents" style="width: 100%; height: 100%; overflow-x: scroll;">
+        <div class="border"></div>
+        <nav>
+            <a href="index2.html" class="button fixed" rel="noopner" aria-hidden="true"><span></span></a>
+        </nav>
+        <!-- section1 -->
+        <section id="section1 fixed"
+            data-0 = "display:block;"
+            data-1000 = "display:none"
+        >
             <div class="mLeft">
-                <img class="me01" src="img/moon.jpg" alt="달">
-                <img class="me02" src="img/cloud_color.jpg" alt="구름">
+                <img class="me01 fixed" src="img/moon.jpg" alt="달"
+                    data-0="opacity:1;"
+                    data-1000="opacity:0;"
+                >
+                <img class="me02 fixed" src="img/cloud_color.jpg" alt="구름"
+                    data-0="left: 0%; opacity:1;"
+                    data-1000="opacity:0;"
+                >
             </div>
-            <div class="mRight">
+            <div class="mRight fixed"
+                data-0="opacity:1;"
+                data-1000="opacity:0;"
+            >
                 <img class="me03 " src="img/about02.jpg" alt="이미지">
-                <p class="me04">
+                <p class="me04 ">
                     안녕하세요, 항상 높은 곳을 올려다보는 장아름입니다.
                     위를 올려 보면서 정상을 향해 차근차근하다 보면 언젠가 
                     정상에 도착하게 되듯이 항상 노력하는 것을 멈추지 않고 
                     나아가는 웹 퍼블리셔가 되겠습니다.
                 </p>
             </div>
-        </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2 fixed"
+            data-0="display: none;"
+            data-1000="display: none;"
+            data-800="display: block;"
+        >
+            <div class="wrap">
+                <div class="text01">스킬</div>
+                <div class="circle">
+                    90%
+                </div>
+                <p>HTML</p>
+                <div class="circle">
+                    90%
+                </div>
+                <p>javascript</p>
+                <div class="circle">
+                    90%
+                </div>
+                <p>jQuery</p>
+                <div class="circle">
+                    90%
+                </div>
+                <p>CSS</p>
+                <div class="text02">6개월 동안 배운 능력이 100% 라는 수치는 거짓말이라 생각합니다. 
+                    하지만 100%에 근접할 수 있도록 틈틈이 복습하고 새로운 기술들도 공부하여 퍼블리셔 업무에 대한 저만의 전문성을 발전해 나가겠습니다.</div>
+            </div>
+        </section>
+        <!-- //section2 -->
     </div>
+    <!-- //contents -->
 
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
     <script>
-        var cursor = document.querySelector(".cursor");
-        window.addEventListener("mousemove", function(e){
-            gsap.to(cursor, {duration: 0.3, left: e.pageX, top: e.pageY});
+        var s = skrollr.init(); // 사용 셋팅
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(parseInt(scrollTop)); // 스크롤 값 확인하기
         });
+
+        // 움직임 효과
+        $(document).mousemove(function(e){
+            gsap.to(".cursor", {duration: 0.1, left: e.pageX, top: e.pageY});
+        });
+
+        
     </script>
 </body>
 </html>

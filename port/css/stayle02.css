@@ -1,24 +1,52 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body {
-    height: 100%;
     overflow: auto; overflow-x:hidden;
     cursor: none;
 }
+/* bg */
 .bg01{
-    background: linear-gradient(to bottom, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%);
+    background: linear-gradient(180deg, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%);
     width: 100vw;
     height: 5000px;
     position: relative;
     z-index: -50000;
 }
-
-/* 
-
-rgb(146, 188, 235) 70%,
-rgb(218, 203, 223) 75%,
-rgb(239, 99, 122) 80%,
-rgb(3, 30, 166) 90%, */
-
+.bg02{
+    background: linear-gradient(180deg, #B95393 0%, #EF637A 2%, rgb(146, 188, 235)  100%);
+    width: 100vw;
+    height: 5000px;
+    position: relative;
+    overflow: hidden;
+}
+.bg03 {
+    background: linear-gradient(180deg, rgb(218, 203, 223) 35%, rgb(146, 188, 235) 100%);
+    width: 100vw;
+    height: 5000px;
+    position: relative;
+    overflow: hidden;
+}
+.bg04 {
+    background: linear-gradient(180deg, rgb(146, 188, 235) 0%, #DACBDF 100%);
+    width: 100vw;
+    height: 5000px;
+    position: relative;
+    overflow: hidden;
+}
+.bg05 {
+    background: linear-gradient(180deg, rgb(178, 157, 197) 0%, rgb(239, 99, 122) 100%);
+    width: 100vw;
+    height: 5000px;
+    position: relative;
+    overflow: hidden;
+}
+.bg06 {
+    background: linear-gradient(180deg, rgb(239, 99, 122) 0%, #031DA6 59.2%, #000000 100%);
+    width: 100vw;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+/*  */
 em {font-style: normal;}
 .scroll {
     position: fixed; right: 10px; top: 10px;   
@@ -32,7 +60,7 @@ em {font-style: normal;}
     left: 0; top: 0;
     width: 20px; height: 20px;
     border-radius: 50%;
-    z-index: 1000;
+    z-index: 100000;
     background: #fff;
     user-select: none;
     pointer-events: none;
@@ -59,10 +87,6 @@ em {font-style: normal;}
     transform: translate(-50%, -50%);
     z-index: 1000;
 }
-img {
-    width: 100%; vertical-align: top;
-    object-fit: cover;
-}
 
 
 /* nav */
@@ -78,11 +102,12 @@ img {
     margin: 20px;
     font-family: 'Purple Purse', cursive;
     font-size: 1vw;
+    white-space: nowrap;
 }
 .nav {
     font-family: 'Roboto', sans-serif;
-    position: absolute;
-    left: 23%;
+    position: fixed;
+    left: 3%;
     top: 30%;
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 50vw;
@@ -110,6 +135,7 @@ img {
     position: absolute;
     right: 0;
 }
+
 /* section2 */
 #section2 {
     width: 100vw;
@@ -198,20 +224,22 @@ img {
     opacity: 70%;
 }
 .sec3-3 {
-    z-index: 1000000;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
-.imgWrap {
+.imgWrap01 {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     width: 50vw; height: 50vh;
     z-index: 100;
 }
-.imgWrap .sec3-4 {
+.imgWrap01 .sec3-4 {
     position: absolute;
     left: 100%;
     width: 60vw;
 }
-.imgWrap .sec3-5 {
+.imgWrap01 .sec3-5 {
     position: absolute;
     left: 100%;
     width: 80vw;
@@ -276,13 +304,170 @@ img {
         opacity: 0;
     }
 }
+/* section4 */
 #section4 {}
+.sec4-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+}
+.sec4-2 > div {
+    opacity: 70%;
+}
+.sec4-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 67%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+.sec4-3 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+.sec4-4 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+.sec4-5 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+/* section5 */
 #section5 {}
+.sec5-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+}
+.sec5-2 > div {
+    opacity: 70%;
+}
+.sec5-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 67%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+.sec5-3 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+.sec5-4 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+.sec5-5 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+/* section6 */
 #section6 {}
+.sec6-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+}
+.sec6-2 > div {
+    opacity: 70%;
+}
+.sec6-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 46%;
+    top: 61%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+.ani01 {width: 50vw; height: 50vh; opacity: 70%; display: block;}
+.ani02 {width: 50vw; height: 50vh; opacity: 70%;}
+.ani03 {width: 50vw; height: 50vh; opacity: 70%;}
+.ani04 {width: 50vw; height: 50vh; opacity: 70%;}
+.ani05 {width: 50vw; height: 50vh; opacity: 70%;}
+.ani06 {width: 50vw; height: 50vh; opacity: 70%;}
+
+
+/* section7 */
 #section7 {}
+.sec7-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+}
+.sec7-2 > div {
+    opacity: 70%;
+}
+.sec7-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 9vw;
+    position: absolute;
+    left: 46%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+
+/* section8 */
 #section8 {}
+.sec8-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+}
+.sec8-2 > div {
+    opacity: 70%;
+}
+.sec8-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 11vw;
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
 
-
-
-
+.sec8-3 {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 2vw;
+    color: #fff;
+    opacity: 80%;
+    line-height: 1.5;
+    left: 27%;
+    top: 78%;
+}
+em {
+    font-size: 1.5vw;
+    opacity: 80%;
+    padding-left: 62%;
+}
 

@@ -27,7 +27,11 @@
                 <a href="#"><span>Contact</span></a>
             </div>
         </nav>
-        <div class="bg01"></div>
+        <div class="bg01"
+            data-0="opacity:1;"
+            data-3600="opacity:1;"
+            data-3700="opacity:0"
+        ></div>
         <!-- bg01 -->
             <section id="section1" class="fixed"
             data-0 = "display:block;"
@@ -91,27 +95,30 @@
                     data-2400="transform: translate(-50%,-50%) scale(1); opacity:1"
                     data-3000="transform: translate(-50%,-50%) scale(40);"
                     data-3600="transform: translate(-50%,-50%) scale(80); opacity:0"
+                    data-3700="transform: translate(-50%,-50%) scale(1); opacity:0"
                 >
                     <div>About Me</div>
                 </h1>
                 <img class="sec3-3 fixed" src="img/about01.jpg" alt="이미지"
-                    data-1400="display:none; opacity:0; width:100vw; height:100vh"
-                    data-1401="display:block; z-index: 1000000"
-                    data-1600="opacity:0.2;"
+                    data-1400="display:none; opacity:0;"
+                    data-1401="display:block;"
+                    data-1600="opacity:0.2; z-index: 1000000"
                     data-1900="display:none; opacity:0;"
                 >
-                <div class="imgWrap">
+                <div class="imgWrap01">
                     <img class="sec3-4 fixed" src="img/cloud_color03.jpg" alt="구름"
                         data-1900="top: 300%; opacity:1"
                         data-2100="top: 0%; transform: translate(-50%,-50%) scale(1);"
                         data-2400="left: 135%;"
                         data-3000="left: 800%; transform: translate(-50%,-50%) scale(10);"
+                        data-3500="transform: translate(-50%,-50%) scale(1); opacity:0"
                     >
                     <img class="sec3-5 fixed" src="img/cloud_color02.jpg" alt="구름"
                         data-1900="top: 300%; opacity:1"
-                        data-2300="top: 140%; transform: translate(-50%,-50%) scale(1);"
+                        data-2100="top: 140%; transform: translate(-50%,-50%) scale(1);"
                         data-2400="left: -50%;"
                         data-3000="left: -800%; transform: translate(-50%,-50%) scale(10)"
+                        data-3500="transform: translate(-50%,-50%) scale(1); opacity:0"
                     >
                 </div>
             </div>
@@ -124,30 +131,222 @@
         </section>
         <!-- //section3 -->
         
-        
-        <section id="section4">
+        <section id="section4 fixed"
+            data-0 = "display:none" 
+            data-2000 = "display:block;" 
+        >
+            <div class="bg02 fixed"
+                data-0="opacity:0;"
+                data-3300="display:block; opacity:0; "
+                data-3500="display:block; opacity:1; "
+                data-3600="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-7000="opacity:1;"
+            ></div>
+            <div class="sec4-1"
+                data-0="display:none"
+                data-2000="display:block"
+            >
+                <h1 class="sec4-2 fixed"
+                    data-3000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-5500="transform: translate(-50%,-50%) scale(.5);"
+                    data-6500="transform: translate(-50%,-50%) scale(1);"
+                    data-8000="transform: translate(-50%,-50%) scale(50); opacity:0"
+                    data-9000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >
+                    <div>Coding Site</div>
+                </h1>
+            </div>
+                <img class="sec4-3 fixed" src="img/site01-1@2.jpg" alt="이미지"
+                    data-3200="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 30%;"
+                    data-3300="transform: translate(-50%,-50%) scale(.1); left: 40%; top: 40%; opacity: 40%;"
+                    data-3500="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; opacity: 50%;"
+                    data-4000="transform: translate(-50%,-50%) scale(.5); left: -100%; top: -100%; opacity: 70%;"
+                    data-5000="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%;"
+                >
+                <img class="sec4-4 fixed" src="img/site02-2@2.jpg" alt="이미지"
+                    data-3400="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%;"
+                    data-4500="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 100%; opacity: 50%;"
+                    data-5500="transform: translate(-50%,-50%) scale(.5); left: -50%; top: 200%; opacity: 70%;"
+                    data-6100="transform: translate(-50%,-50%) scale(1); left: -150%; top: 300%;"
+                >
+                <img class="sec4-5 fixed" src="img/site03-2@2.jpg" alt="이미지"
+                    data-3600="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%;"
+                    data-5500="transform: translate(-50%,-50%) scale(.3); left: 80%; top: 30%; opacity: 50%;"
+                    data-6500="transform: translate(-50%,-50%) scale(.5); left: 150%; top: -50%; opacity: 70%;"
+                    data-7900="transform: translate(-50%,-50%) scale(1); left: 250%; top: -250%;"
+                >
         </section>
         <!-- //section4 -->
-        <section id="section5">
+        <section id="section5"
+            data-0 = "display:none" 
+            data-6400 = "display:block;" 
+        >
+            <div class="bg03 fixed"
+                data-0="opacity:0;"
+                data-7000="display:block; opacity:0; "
+                data-7800="display:block; opacity:1; "
+                data-8300="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-25000="opacity:1;"
+            ></div>
+            <div class="sec5-1"
+                data-0="display:none"
+                data-6200="display:block"
+            >
+                <h1 class="sec5-2 fixed"
+                    data-7000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-8600="transform: translate(-50%,-50%) scale(.2);"
+                    data-9600="transform: translate(-50%,-50%) scale(.5); z-index:1000"
+                    data-14000="transform: translate(-50%,-50%) scale(1);"
+                    data-18000="transform: translate(-50%,-50%) scale(1.5);"
+                    data-21000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >
+                    <div>Script</div>
+                </h1>
+            </div>
+                <img class="sec5-3 fixed" src="img/script01-2@2.jpg" alt="이미지"
+                    data-7600="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 30%; z-index:1000"
+                    data-8600="transform: translate(-50%,-50%) scale(.1); left: 40%; top: 40%; opacity: 40%;"
+                    data-9600="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; opacity: 50%;"
+                    data-10600="transform: translate(-50%,-50%) scale(1); left: -50%; top: -50%; opacity: 70%; z-index:1500"
+                    data-11600="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%; opacity: 100%;"
+                >
+                <img class="sec5-4 fixed" src="img/script02-2@2.jpg" alt="이미지"
+                    data-9600="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%; z-index:1000"
+                    data-12600="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 80%; opacity: 50%;"
+                    data-13600="transform: translate(-50%,-50%) scale(1); left: -150%; top: 200%; opacity: 70%; z-index:1500"
+                    data-14600="transform: translate(-50%,-50%) scale(1); left: -200%; top: 300%; opacity: 100%;"
+                >
+                <img class="sec5-5 fixed" src="img/script03-2@2.jpg" alt="이미지"
+                    data-12600="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%; z-index:1000"
+                    data-13600="transform: translate(-50%,-50%) scale(.3); left: 80%; top: 30%; opacity: 50%;"
+                    data-14600="transform: translate(-50%,-50%) scale(1); left: 150%; top: -50%; opacity: 70%; z-index:1500"
+                    data-15600="transform: translate(-50%,-50%) scale(1); left: 250%; top: -250%; opacity: 100%;"
+                >
         </section>
         <!-- //section5 -->
-        <section id="section6">
+        <section id="section6"
+            data-0 = "display:none" 
+            data-16000 = "display:block;" 
+            data-40000 = "display:none"
+        >
+            <div class="bg04 fixed"
+                data-0="opacity:0;"
+                data-18000="display:block; opacity:0;"
+                data-19900="display:block; opacity:0;"
+                data-21000="display:block; opacity:1;"
+                data-25000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-28000="opacity:1;"
+            ></div>
+            <div class="sec6-1"
+                data-0="display:none"
+                data-16000="display:block"
+            >
+                <h1 class="sec6-2 fixed"
+                    data-18000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-21000="transform: translate(-50%,-50%) scale(.2);"
+                    data-25000="transform: translate(-50%,-50%) scale(.5);"
+                    data-29000="transform: translate(-50%,-50%) scale(1);"
+                    data-32000="transform: translate(-50%,-50%) scale(5);"
+                    data-38000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >
+                    <div>Animation</div>
+                </h1>
+            </div>
+            <div class="sec6-3 fixed">
+                <div class="ani01">
+                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar6621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"
+                        data-20600="transform: translate(-50%,-50%) scale(0); left:50%; top:50%; opacity: 30%; z-index:1000"
+                        data-21600="transform: translate(-50%,-50%) scale(.1); left: 40%; top: 40%; opacity: 50%;"
+                        data-22600="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; opacity: 50%; "
+                        data-23600="transform: translate(-50%,-50%) scale(.8); left: -50%; top: -50%; opacity: 70%; z-index:1500"
+                        data-24600="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%; opacity: 100%;"
+                    ></iframe>
+                </div>
+                <div class="ani02">
+                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar6621.dothome.co.kr/effect/portfolio/animation05.html" frameborder="0"
+                        data-21600="transform: translate(-50%,-50%) scale(0); left:50%; top:50%; opacity: 30%; z-index:1000"
+                        data-22600="transform: translate(-50%,-50%) scale(.1); left: 40%; top: 40%; opacity: 50%;"
+                        data-23600="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; opacity: 50%; "
+                        data-24600="transform: translate(-50%,-50%) scale(.8); left: -50%; top: -50%; opacity: 70%; z-index:1500"
+                        data-25600="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%; opacity: 100%;"
+                    ></iframe>
+                </div>
+            </div>
         </section>
         <!-- //section6 -->
-        <section id="section7">
+        <section id="section7"
+            data-0 = "display:none" 
+            data-31000 = "display:none;" 
+            data-33000 = "display:block;" 
+        >
+            <div class="bg05 fixed"
+                data-0="opacity:0;"
+                data-31000="display:block; opacity:0;"
+                data-33000="display:block; opacity:0;"
+                data-35000="display:block; opacity:1;"
+                data-39000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-40000="opacity:1;"
+            ></div>
+            <div class="sec7-1"
+                data-0="display:none"
+                data-35000="display:block"
+            >
+                <h1 class="sec7-2 fixed"
+                    data-38000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-39000="transform: translate(-50%,-50%) scale(.2);"
+                    data-40000="transform: translate(-50%,-50%) scale(.5);"
+                    data-41000="transform: translate(-50%,-50%) scale(1);"
+                    data-42000="transform: translate(-50%,-50%) scale(5);"
+                    data-43000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >
+                    <div>React</div>
+                </h1>
+            </div>
         </section>
         <!-- //section7 -->
-        <section id="section8">
+        <section id="section8"
+            data-0 = "display:none" 
+            data-42000 = "display:none;" 
+            data-43000 = "display:block;" 
+        >
+            <div class="bg06 fixed"
+                data-0="opacity:0;"
+                data-42000="display:block; opacity:0;"
+                data-44000="display:block; opacity:0;"
+                data-46000="display:block; opacity:1;"
+                data-48000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-50000="opacity:1;"
+            ></div>
+            <div class="sec8-1"
+                data-0="display:none"
+                data-40000="display:block"
+            >
+                <h1 class="sec8-2 fixed"
+                    data-41000="opacity:0; top: 10%"
+                    data-44000="opacity:.5; top: 30%"
+                    data-45000="opacity:1; top: 30%"
+                    data-46500="opacity:0; top: 10%"
+                >
+                    <div>Contact</div>
+                </h1>
+                <img class="sec8-2" src="img/moon.jpg" alt="달">
+                <p class="sec8-3 fixed"
+                    data-0="display:none;"
+                    data-42000="display:block;"
+                    data-45500="opacity:0; top:150%"
+                    data-46500="opacity:1; top: 78%"
+                >“혼자 꾸는 꿈은 그저 꿈에 지나지 않는다.<br>하지만 함께 꾸는 꿈은 현실이다.”<br>
+                    <em>-존 레논 / 오노 요코</em>
+                </p>
+                <ul>
+                    <li>jangar6621@gmail.com</li>
+                    <li>82_01 8266 0865</li>
+                </ul>
+            </div>
         </section>
         <!-- //section8 -->
     </div>
 
-    <!-- info -->
-    <div class="info">
-        <ul>
-            <li>scrollTop() : <span class="scrollTop">0</span>px</li>
-        </ul>
-    </div>
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
@@ -161,7 +360,7 @@
 
          // 움직임 효과
         $(document).mousemove(function(e){
-            gsap.to(".cursor", {duration: 0.4, left: e.pageX, top: e.pageY});
+            gsap.to(".cursor", {duration: 0.1, left: e.pageX, top: e.pageY});
         });
 
 
@@ -178,7 +377,7 @@
             let target = $($(this).attr("href")) // 클릭한 a링크에 #section들을 변수화 해서 선택자로 만듦
             $("html,body").animate({ scrollTop : target.offset().top});
        });
-    
+
     </script>
 </body>
 </html>

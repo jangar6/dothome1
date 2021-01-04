@@ -30,7 +30,7 @@
 <body>
     <div class="menu">
         <div class="menu-item">
-            <div class="menu-word">Areum-&nbsp;</div>
+            <div class="menu-word">Areum&nbsp;-&nbsp;</div>
         </div>
     </div>
 
@@ -84,28 +84,28 @@
         // window.addEventListener("load", calculate);
         // // 애니메이션
         // const animate = () => {
-        //     // 가속
-        //     acc += 0.1;
-        //     if(hover){
-        //         acc -= 0.35;
-        //     }
-        //     // 최대값 제한걸기
-        //     acc = Math.min(13, Math.max(0, acc));
-        //     // 가속도 주기
-        //     speed += acc;
-        //     if(speed >= wordWidth) {
-        //         speed = 0;
-        //     }
-        //     // 텍스트 효과
-        //     item.style.transform = `translateX(${-speed}px) skewX(${-2 * acc}deg)`
-        //     //RaF
-        //     requestAnimationFrame(animate)
+        // // 가속
+        // acc += 0.1;
+        // if(hover){
+        //     acc -= 0.35;
+        // }
+        // // 최대값 제한걸기
+        // acc = Math.min(13, Math.max(0, acc));
+        // // 가속도 주기
+        // speed += acc;
+        // if(speed >= wordWidth) {
+        //     speed = 0;
+        // }
+        // // 텍스트 효과
+        // item.style.transform = `translateX(${-speed}px) skewX(${-2 * acc}deg)`
+        // //RaF
+        // requestAnimationFrame(animate)
         // }
         // animate();
 
 
-        class Text {
-            constructor(obj){
+        class Loading {
+            constructor(){
                 this.wordWidth = 0;
                 this.width = 0;
                 this.cloned = [];
@@ -113,27 +113,58 @@
                 this.speed = 0;
                 this.acc = 0;
                 this.item = document.querySelector(".menu-item");
-                this.word = item.querySelector(".menu-word");
+                this.word = this.item.querySelector(".menu-word");
                 this.init();
             }
             init(){
-
+                this.binds();
+                this.animate();
+                this.handleMouse();
+                this.calculate();
             }
             binds(){
-                cloned.forEach(i => {
+                this.handleMouse = this.handleMouse.bind(this);
+                this.animate = this.animate.bind(this);
+                this.calculate = this.calculate.bind(this);
+            }
+            calculate(){
+                this.cloned.forEach(i => {
                     i.parentNode.removeChild(i);
                 })
-                cloned = []
-                wordWidth = Math.ceil(word.clientWidth);
-                width = Math.ceil(window.innerWidth / wordWidth);
-
-                for (let i =0; i < width+1; i++){
-                    const clone = word.cloneNode(true);
-                    word.parentNode.appendChild(clone);
-                    cloned.push(clone);
+                this.cloned = [];
+                this.wordWidth = Math.ceil(this.word.clientWidth);
+                this.width = Math.ceil(window.innerWidth / this.wordWidth);
+                for (let i =0; i < this.width+1; i++){
+                    const clone = this.word.cloneNode(true);
+                    this.word.parentNode.appendChild(clone);
+                    this.cloned.push(clone);
                 }
             }
+            handleMouse(bool){
+                this.hover = bool;
+                this.item.addEventListener("mouseenter", () => {this.handleMouse(true)});
+                this.item.addEventListener("touchstart", () => {this.handleMouse(true)});
+                this.item.addEventListener("mouseleave", () => {this.handleMouse(false)});
+                this.item.addEventListener("touchend", () => {this.handleMouse(false)});
+                window.addEventListener("resize", this.calculate);
+                window.addEventListener("load", this.calculate);
+            }
+            animate(){
+                this.acc += 0.1;
+                if(this.hover){
+                    this.acc -= 0.35;
+                }
+                this.acc = Math.min(13, Math.max(0, this.acc));
+                this.speed += this.acc;
+                if(this.speed >= this.wordWidth) {
+                    this.speed = 0;
+                }
+                this.item.style.transform = `translateX(${-this.speed}px) skewX(${-2 * this.acc}deg)`
+                requestAnimationFrame(this.animate)
+            }   
         }
+        new Loading();
+
     </script>
 </body>
 </html>
