@@ -400,7 +400,8 @@ em {font-style: normal;}
     transform: translate(-50%, -50%);
     opacity: 70%;
 }
-.ani01 {width: 50vw; height: 50vh; opacity: 70%; display: block;}
+iframe {width: 70vw; height: 70vh; opacity: 70%;}
+.ani01 {width: 50vw; height: 50vh; opacity: 70%;}
 .ani02 {width: 50vw; height: 50vh; opacity: 70%;}
 .ani03 {width: 50vw; height: 50vh; opacity: 70%;}
 .ani04 {width: 50vw; height: 50vh; opacity: 70%;}
