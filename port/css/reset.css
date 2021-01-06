@@ -11,3 +11,5 @@ ul,ol,dl,menu {list-style: none;}
 /* 폰트 스타일 초기화 */
 em {font-style: normal;} /* 이텔릭체 초기화 */
 
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공 할 때 */
+.ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
