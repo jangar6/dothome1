@@ -1,6 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body, html {
-    /* cursor: none; */
+    cursor: none;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,7 +8,7 @@ body, html {
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: auto; overflow-x:hidden;
+    overflow-x: hidden;
 }
 .cursor {
     position: absolute;
@@ -32,6 +32,8 @@ body, html {
     background: rgba(0,0,0,0.5);
     z-index: 10000000;
 }
+
+
 /* fix */
 .border {
     border: 5px solid #fff;
@@ -44,32 +46,33 @@ body, html {
 }
 .back {
     z-index: 100001;
-    top: 9%;
-    left: 8.5%;
+    top: 7%;
+    left: 8%;
 }
 .cta span {
     position: relative;
     font-size: 1.5vw;
     font-weight: 900;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
+    font-family: 'Chosunilbo_myungjo';
   }
 .cta {
     position: relative;
     margin: auto;
-    padding: 19px 22px;
+    padding: 1vw 2vw;
     transition: all 0.2s ease;
 }
 .cta:before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     display: block;
-    border-radius: 28px;
+    border-radius: 28vw;
     background: rgba(255, 171, 157, 0.5);
-    width: 56px;
-    height: 56px;
+    width: 30%;
+    height: 90%;
     transition: all 0.3s ease;
 }
 .cta svg {
@@ -94,6 +97,8 @@ body, html {
 .cta:active {
     transform: scale(0.96);
 }
+
+
 /* section1 */
 .mLeft {}
 .me01 {
@@ -197,7 +202,7 @@ body, html {
     word-break: keep-all;
     font-family: 'Chosunilbo_myungjo';
     cursor: none;
-    top: 80%;
+    top: 85%;
 }
 
 /* button */
@@ -212,7 +217,7 @@ button {
     line-height: 2;
     color: #fff;
     padding: .8em 1em;
-    border: 5px solid #fff;
+    border: 0.3vw solid #fff;
     border-radius: 100%;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
@@ -225,51 +230,43 @@ button {
     position: absolute;
     bottom: 3%;
     left: 50%;
-    background: rgb(140, 175, 192);
+    background: rgb(255, 255, 255);
     width: 200%;
     height: 200%;
-    margin-left: -150px;
-    margin-bottom: -301px;
+    margin-left: -99%;
+    margin-bottom: -250%;
     transform-origin: 50% 48%;
     border-radius: 43%;
-
-    transition-duration: 0.55s;
-    transition-property: margin-bottom;
-    transition-timing-function: ease;
+    transition: margin-bottom 0.55s ease;
 }
 .wave2 {
     opacity: .4;
     position: absolute;
     bottom: 3%;
     left: 50%;
-    background: rgb(140, 175, 192);
+    background: rgb(255, 255, 255);
     width: 200%;
     height: 200%;
-    margin-left: -150px;
-    margin-bottom: -301px;
+    margin-left: -99%;
+    margin-bottom: -250%;
     transform-origin: 50% 48%;
     border-radius: 43%;
-
-    transition-duration: 0.55s;
-    transition-property: margin-bottom;
-    transition-timing-function: ease;
+    transition: margin-bottom 0.55s ease;
 }
 .wave3 {
     opacity: .4;
     position: absolute;
     bottom: 3%;
     left: 50%;
-    background: rgb(140, 175, 192);
+    background: rgb(255, 255, 255);
     width: 200%;
     height: 200%;
-    margin-left: -150px;
-    margin-bottom: -301px;
+    margin-left: -99%;
+    margin-bottom: -250%;
     transform-origin: 50% 48%;
     border-radius: 43%;
 
-    transition-duration: 0.55s;
-    transition-property: margin-bottom;
-    transition-timing-function: ease;
+    transition: margin-bottom 0.55s ease;
 }
 button:hover {
     transform: scale(1.2);
