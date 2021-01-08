@@ -450,7 +450,7 @@ iframe {width: 70vw; height: 70vh; opacity: 70%;}
 .sec7-5 {width: 15%;}
 .sec7-6 {width: 30%;}
 .sec7-7 {width: 80%;}
-.sec7-9 {width: 100%;}
+.sec7-9 {width: 100%; display: block;}
 .sec7-11 {width: 80%;}
 
 .react {width: 50%;}
@@ -483,10 +483,10 @@ iframe {width: 70vw; height: 70vh; opacity: 70%;}
     color: #fff;
     font-family: 'Chosunilbo_myungjo';
     text-align: right;
-    position: fixed;
+    width: 38%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    left:78%; top: 18%;
+    left: 77%; top: 15%;
 }
 .box .btn1 {
     display: inline-block;
@@ -512,11 +512,9 @@ iframe {width: 70vw; height: 70vh; opacity: 70%;}
 }
 .box .text {
     margin-top: 2%;
-    width: 18vw;
     line-height: 1.5;
     font-size: 0.9vw;
     position: relative;
-    left: -3%; top: 0%;
 }
 .box .text::after {
     content: '';
@@ -529,7 +527,7 @@ iframe {width: 70vw; height: 70vh; opacity: 70%;}
 }
 
 
-/* section8 */
+/* 컨택트: section8 */
 #section8 {}
 .sec8-2 {
     font-family: 'Blacksword';
@@ -552,24 +550,22 @@ iframe {width: 70vw; height: 70vh; opacity: 70%;}
     transform: translate(-50%, -50%);
     opacity: 70%;
 }
-.sec8-3 {
-    width: 40%;
-}
-.sec8-4 {
-    font-family: 'Chosunilbo_myungjo';
-    font-size: 2vw;
-    color: #fff;
-    opacity: 80%;
+.sec8-3 {width: 40%;}
+.sec8-5 {width: 90%;}
+.desc {
     line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Chosunilbo_myungjo';
     left: 27%;
-    top: 78%;
 }
+.sec8-4 {font-size: 2vw;}
 em {
-    font-size: 1.5vw;
-    opacity: 80%;
-    padding-left: 62%;
+    font-size: 1.2vw;
+    padding-left: 65%;
+    white-space: nowrap;
 }
-
-.sec8-5 {
-    width: 90%;
+.sec8-6 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5vw;
+    padding-top: 10%;
 }

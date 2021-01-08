@@ -1,3 +1,4 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
 body, html {
     /* cursor: none; */
     margin: 0;
@@ -7,9 +8,8 @@ body, html {
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -ms-overflow-style: none;
+    overflow: auto; overflow-x:hidden;
 }
-::-webkit-scrollbar {display: none;}
 .cursor {
     position: absolute;
     left: 0; top: 0;
@@ -32,14 +32,7 @@ body, html {
     background: rgba(0,0,0,0.5);
     z-index: 10000000;
 }
-/* contents */
-#contents {
-    /* background-image: url(../img/star-bg.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: static;
-    z-index: -10; */
-}
+/* fix */
 .border {
     border: 5px solid #fff;
     padding-bottom: 50%;
@@ -49,6 +42,58 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: 1000;
 }
+.back {
+    z-index: 100001;
+    top: 9%;
+    left: 8.5%;
+}
+.cta span {
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+.cta svg {
+    position: relative;
+    margin-left: 1vw;
+    margin-bottom: 2%;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+.cta:hover:before {
+    width: 100%;
+    background: #ffab9d;
+}
+.cta:hover svg {
+    transform: translateX(0);
+}
+.cta:active {
+    transform: scale(0.96);
+}
 /* section1 */
 .mLeft {}
 .me01 {
@@ -57,7 +102,7 @@ body, html {
     z-index: 1;
 }
 .me02 {
-    width: 80vw;
+    width: 80%;
     left: 0%;
     z-index: 1;
 }
@@ -68,7 +113,7 @@ body, html {
 .me03 {
     width: 45%;
     opacity: 90%;
-    margin-left: 4.5%;
+    margin-left: 5%;
     margin-bottom: 2%;
 } 
 .me04 {
@@ -79,5 +124,170 @@ body, html {
     text-transform: uppercase;
     font-size: 2.2vw;
     text-align: right;
-    width: 50%;
+    width: 51%;
+    word-break: keep-all;
+}
+
+/* section2 */
+#section2 {}
+.wrap {
+    z-index: 10001;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90% !important;
+}
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10%;
+}
+.box01 {display: inline-block;}
+.box02 {display: inline-block;}
+.box03 {display: inline-block;}
+.box04 {display: inline-block;}
+.box05 {display: inline-block;}
+.box06 {display: inline-block;}
+.box07 {display: inline-block;}
+
+
+.desc span:nth-child(1) {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+    padding-top: 20%;
+    cursor: none;
+    display:block;
+    font-family: 'Chosunilbo_myungjo';
+}
+.desc span:nth-child(2) {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+    padding-top: 20%;
+    cursor: none;
+    display: none;
+    position: relative;
+    width: 100%;
+    font-family: 'Chosunilbo_myungjo';
+}
+.desc span:nth-child(2)::before {
+    content: '';
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    width: 0.5vw; height: 0.5vw;
+}
+.desc:hover span:nth-child(1) {display: none;}
+.desc:hover span:nth-child(2) {display: block;}
+.text1 {
+    width: 80% !important;
+    line-height: 144.5%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    font-size: 1.8vw;
+    text-align: center;
+    word-break: keep-all;
+    font-family: 'Chosunilbo_myungjo';
+    cursor: none;
+    top: 80%;
+}
+
+/* button */
+button {
+    width: 9vw;
+    height: 9vw;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Roboto';
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    padding: .8em 1em;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    background: rgba(255, 255, 255, .1);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10%;
+}
+.wave1 {
+    opacity: .4;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: rgb(140, 175, 192);
+    width: 200%;
+    height: 200%;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+
+    transition-duration: 0.55s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease;
+}
+.wave2 {
+    opacity: .4;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: rgb(140, 175, 192);
+    width: 200%;
+    height: 200%;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+
+    transition-duration: 0.55s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease;
+}
+.wave3 {
+    opacity: .4;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: rgb(140, 175, 192);
+    width: 200%;
+    height: 200%;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+
+    transition-duration: 0.55s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease;
+}
+button:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+button:hover .wave1 {
+    margin-bottom: -130%;
+    animation: rotate 2000ms infinite linear;
+}
+button:hover .wave2 {
+    margin-bottom: -140%;
+    animation: rotate 2000ms infinite linear;
+} 
+button:hover .wave3 {
+    margin-bottom: -150%;
+    animation: rotate 2000ms infinite linear;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
 }
