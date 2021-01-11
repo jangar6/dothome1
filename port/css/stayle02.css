@@ -4,14 +4,12 @@ body {
     cursor: none;
 }
 
-
 /* 배경색: bg */
 .bg01{
     background: linear-gradient(180deg, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%);
     width: 100vw;
     height: 5000px;
     position: relative;
-    z-index: -50000;
 }
 .bg02{
     background: linear-gradient(180deg, #B95393 0%, #EF637A 2%, rgb(146, 188, 235)  100%);
@@ -113,7 +111,7 @@ em {font-style: normal;}
 .nav {
     font-family: 'Roboto', sans-serif;
     position: fixed;
-    left: 2.5%;
+    left: 3%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
@@ -129,14 +127,13 @@ em {font-style: normal;}
 #section1 {
     width: 100vw;
     height: 100vh;
-    z-index: -5000;
 }
 .sec1-1 {
     font-family: 'Saol Display Regular';
     font-size: 12vw;
-    color: #fff;
+    color: rgba(255,255,255,0.9);
     letter-spacing: 0.03em;
-    white-space : nowrap;
+    white-space: nowrap;
 }
 .sec1-2 {
     width: 35%;
@@ -385,6 +382,11 @@ em {font-style: normal;}
     top: 100%;
 }
 .sec5-5 {
+    opacity: 70%;
+    left: 100%;
+    top: 100%;
+}
+.sec5-6 {
     opacity: 70%;
     left: 100%;
     top: 100%;
