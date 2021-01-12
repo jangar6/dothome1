@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <style>
+        body {
+            height: 5000px;
+            background:linear-gradient(180deg, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%)
+        }
+
+        .title {
+            position: fixed;
+            left: 50%; top: 50%;
+            font-family: 'Blacksword';
+            color: #fff;
+            font-size: 50px;
+            font-weight: normal;
+            transform-origin: center center;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .box1 {
+            position: fixed;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            width: 1000px;
+            transform-origin: center center;
+            background: #000;
+            transition: all 0.3s;
+        }
+        .box1 img {width: 100%;}
+        .box1 a:hover img {opacity: 0.4;}
+    </style>
+</head>
+<body>
+    <div id="section1">
+        <h2 class="title"
+            data-0 = "transform: translate(-50%, -50%) scale(1);"
+            data-4000 = "transform: translate(-50%, -50%) scale(10);">script</h2>
+        <div class="box1"
+            data-1000 = "transform: translate(-50%, -50%) scale(0);"
+            data-5000 = "transform: translate(-400%, -50%) scale(5);">
+            <a href="#"><img src="img/site03-1.jpg" alt="dd"></a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+</html>

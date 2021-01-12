@@ -6,9 +6,9 @@
     <title>A-REUM | PORTFOLIO</title>
 
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="./css/stayle02.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stayle02.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     
 </head>
 <body>
@@ -24,23 +24,21 @@
         <nav id="nav">
             <div class="logo">Jang A-Reum</div>
             <div class="nav">
-                <a href="#" aria-hidden="true" rel="noopner"><span>About</span></a>
-                <a href="#" aria-hidden="true" rel="noopner"><span>Site</span></a>
-                <a href="#"><span>Script</span></a>
-                <a href="#"><span>Animation</span></a>
-                <a href="#"><span>React</span></a>
-                <a href="#"><span>Contact</span></a>
+                <a href="#section3"><span>About</span></a>
+                <a href="#section4"><span>Site</span></a>
+                <a href="#section5"><span>Script</span></a>
+                <a href="#section6"><span>Animation</span></a>
+                <a href="#section7"><span>React</span></a>
+                <a href="#section8"><span>Contact</span></a>
             </div>
         </nav>
         <!-- //nav -->
-
 
         <div class="bg01"
             data-0="opacity:1;"
             data-3600="opacity:1;"
             data-3700="opacity:0"
         ></div>
-
 
         <section id="section1" class="fixed"
             data-0 = "display:block;"
@@ -51,19 +49,17 @@
                 data-0 = " opacity:1;"
                 data-200 = " opacity:0;"
             >
-                <div class="sec1-1 fixed"
+                <h2 class="sec1-1 fixed"
                     data-0 = "display:block; top: 50%; opacity:1;"
                     data-700 = "top: -100%;"
-                >Record so far
-                </div>
-                <img class="sec1-2" src="img/moon.jpg" alt="달"
+                >Record so far</h2>
+                <img class="sec1-2" src="./assets/img/moon.jpg" alt="달"
                     data-0 = "display:block; top: 10%;"
                     data-500 = "top: -100%;"
                 >
             </div>
         </section>
         <!-- //section1 -->
-
 
         <section id="section2 fixed"
             data-0 = "display:none" 
@@ -90,7 +86,6 @@
         </section>
         <!-- //section2 -->
 
-
         <section id="section3 fixed"
             data-0 = "display:none" 
             data-900 = "display:block;" 
@@ -106,40 +101,34 @@
                     data-3000="transform: translate(-50%,-50%) scale(40);"
                     data-3600="transform: translate(-50%,-50%) scale(80); opacity:0"
                     data-3700="transform: translate(-50%,-50%) scale(1); opacity:0"
-                >
-                    <div>About Me</div>
-                </h1>
-                <img class="sec3-3 fixed" src="img/about01.jpg" alt="이미지"
+                >About Me</h1>
+                <div class="sec3-3 fixed"
                     data-1400="display:none; opacity:0;"
-                    data-1401="display:block;"
-                    data-1600="opacity:0.2; z-index: 1000000"
+                    data-1401="display:block; z-index: 1000000"
+                    data-1600="opacity:0.2;"
                     data-1900="display:none; opacity:0;"
                 >
+                    <a href="about-me2.html"><img class="fixed" src="./assets/img/about01.jpg" alt="이미지"></a>
+                </div>
                 <div class="imgWrap01">
-                    <img class="sec3-4 fixed" src="img/cloud_color03.jpg" alt="구름"
+                    <img class="sec3-4 fixed" src="./assets/img/cloud_color03.jpg" alt="구름"
                         data-1900="top: 300%; opacity:1"
-                        data-2100="top: 0%; transform: translate(-50%,-50%) scale(1);"
+                        data-2100="top: 0%; transform: translate(-50%,-50%)"
                         data-2400="left: 135%;"
-                        data-3000="left: 800%; transform: translate(-50%,-50%) scale(10);"
-                        data-3500="transform: translate(-50%,-50%) scale(1); opacity:0"
+                        data-3000="left: 800%; transform: translate(-50%,-50%)"
+                        data-3500="transform: translate(-50%,-50%); opacity:0"
                     >
-                    <img class="sec3-5 fixed" src="img/cloud_color02.jpg" alt="구름"
+                    <img class="sec3-5 fixed" src="./assets/img/cloud_color02.jpg" alt="구름"
                         data-1900="top: 300%; opacity:1"
-                        data-2100="top: 140%; transform: translate(-50%,-50%) scale(1);"
+                        data-2100="top: 140%; transform: translate(-50%,-50%)"
                         data-2400="left: -50%;"
-                        data-3000="left: -800%; transform: translate(-50%,-50%) scale(10)"
-                        data-3500="transform: translate(-50%,-50%) scale(1); opacity:0"
+                        data-3000="left: -800%; transform: translate(-50%,-50%)"
+                        data-3500="transform: translate(-50%,-50%); opacity:0"
                     >
                 </div>
             </div>
-            <a href="about-me2.html" class="button fixed" rel="noopner" aria-hidden="true"
-                data-0="top: 250%; display:block"
-                data-1400="top: 130%; opacity:1;"
-                data-1700="top: 130%; opacity:0;"
-            ><span></span></a>
         </section>
         <!-- //section3 -->  
-        
         
         <section id="section4 fixed"
             data-0 = "display:none" 
@@ -148,11 +137,12 @@
         >
             <div class="bg02 fixed"
                 data-0="opacity:0;"
-                data-3300="display:block; opacity:0; "
-                data-3500="display:block; opacity:1; "
+                data-3300="display:block; opacity:0; z-index: 10"
+                data-3500="display:block; opacity:1;"
                 data-3600="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
                 data-7000="opacity:1;"
-                data-12000="opacity:0;"
+                data-13000="opacity:0;"
+                data-14000="display:none"
             ></div>
             <div class="sec4-1"
                 data-0="display:none"
@@ -162,91 +152,97 @@
                     data-3000="transform: translate(-50%,-50%) scale(0); opacity:1"
                     data-5500="transform: translate(-50%,-50%) scale(.5);"
                     data-9000="transform: translate(-50%,-50%) scale(1);"
-                    data-10000="transform: translate(-50%,-50%) scale(40);"
-                    data-12000="transform: translate(-50%,-50%) scale(80); opacity:0"
-                >
-                    <div>Coding Site</div>
-                </h1>
+                    data-12000="transform: translate(-50%,-50%) scale(40); opacity:1"
+                    data-13000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >Coding Site</h1>
             </div>
-                <img class="sec4-3 fixed" src="img/site01-1@2.jpg" alt="이미지"
-                    data-3000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%;"
-                    data-4000="transform: translate(-50%,-50%) scale(.1); left: 40%; top: 40%; opacity: 40%;"
-                    data-5000="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; opacity: 50%;"
-                    data-6000="transform: translate(-50%,-50%) scale(.5); left: -100%; top: -100%; opacity: 70%;"
-                    data-7000="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%;"
-                >
-                <img class="sec4-4 fixed" src="img/site02-2@2.jpg" alt="이미지"
-                    data-5000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%;"
-                    data-6000="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 100%; opacity: 50%;"
-                    data-7000="transform: translate(-50%,-50%) scale(.5); left: 0%; top: 200%; opacity: 70%;"
-                    data-8000="transform: translate(-50%,-50%) scale(.8); left: -150%; top: 300%;"
-                >
-                <img class="sec4-5 fixed" src="img/site03-2@2.jpg" alt="이미지"
-                    data-6000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%;"
-                    data-7000="transform: translate(-50%,-50%) scale(.2); left: 80%; top: 30%; opacity: 50%;"
-                    data-8000="transform: translate(-50%,-50%) scale(.4); left: 150%; top: -5%; opacity: 70%;"
-                    data-9000="transform: translate(-50%,-50%) scale(.8); left: 300%; top: -50%;"
-                >
+            <div class="sec4-3 fixed" 
+                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
+                data-5000="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; z-index: 1000; opacity:1"
+                data-6000="transform: translate(-50%,-50%) scale(.5); left: -100%; top: -100%"
+                data-7000="transform: translate(-50%,-50%) scale(.7); left: -150%; top: -270%;"
+            >
+                <a href="#"><img src="./assets/img//site01-1@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sec4-4 fixed" 
+                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
+                data-6000="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 100%; z-index: 1000; opacity:1"
+                data-7000="transform: translate(-50%,-50%) scale(.8); left: 0%; top: 200%;"
+                data-8000="transform: translate(-50%,-50%) scale(1); left: -150%; top: 300%;"
+            >
+                <a href="#"><img src="./assets/img//site02-2@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sec4-5 fixed" 
+                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
+                data-7000="transform: translate(-50%,-50%) scale(.3); left: 80%; top: 30%; z-index: 1000; opacity:1"
+                data-8000="transform: translate(-50%,-50%) scale(.8); left: 150%; top: -30%;"
+                data-9000="transform: translate(-50%,-50%) scale(1); left: 300%; top: -100%;"
+            >
+                <a href="#"><img src="./assets/img/site03-2@2.jpg" alt="이미지"></a>
+            </div>
         </section>
         <!-- //section4 -->
-
 
         <section id="section5"
             data-0 = "display:none" 
             data-6400 = "display:block;"
-            data-21000 = "display:none"  
+            data-25000 = "display:none"  
         >
             <div class="bg03 fixed"
-                data-0="opacity:0;"
-                data-9000="display:block; opacity:0; "
-                data-11000="display:block; opacity:1; "
-                data-12000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
-                data-25000="opacity:1;"
-                data-29500="opacity:0;"
+                data-0="opacity: 0; "
+                data-9000="opacity: 0;"
+                data-11000="opacity: 1;"
+                data-12000="transform: translate(-50%,-50%) scale(1); opacity: 1;"
+                data-24000="opacity: 1;"
+                data-25000="opacity: 0;"
             ></div>
             <div class="sec5-1"
                 data-0="display:none"
                 data-6200="display:block"
             >
                 <h1 class="sec5-2 fixed"
-                    data-10000="transform: translate(-50%,-50%) scale(0); opacity:1"
-                    data-11000="transform: translate(-50%,-50%) scale(.2); z-index:1000"
-                    data-12000="transform: translate(-50%,-50%) scale(.5);"
-                    data-18000="transform: translate(-50%,-50%) scale(1);"
-                    data-20000="transform: translate(-50%,-50%) scale(70); opacity:1"
-                    data-21000="transform: translate(-50%,-50%) scale(80); opacity:0"
-                >
-                    <div>Script</div>
-                </h1>
+                    data-11000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-12000="transform: translate(-50%,-50%) scale(.3);"
+                    data-13000="transform: translate(-50%,-50%) scale(.5);"
+                    data-19000="transform: translate(-50%,-50%) scale(1);"
+                    data-21000="transform: translate(-50%,-50%) scale(5);; opacity:1"
+                    data-22000="transform: translate(-50%,-50%) scale(70); opacity:0"
+                >Script</h1>
             </div>
-                <img class="sec5-3 fixed" src="img/script01-2@2.jpg" alt="이미지"
-                    data-11000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 30%; z-index:1000"
-                    data-12000="transform: translate(-50%,-50%) scale(.1); left: 70%; top: 40%; opacity: 40%;"
-                    data-13000="transform: translate(-50%,-50%) scale(.3); left: 90%; top: 20%; opacity: 50%;"
-                    data-14000="transform: translate(-50%,-50%) scale(.5); left: 130%; top: -50%; opacity: 70%; z-index:1500"
-                    data-15000="transform: translate(-50%,-50%) scale(1); left: 200%; top: -270%; opacity: 100%;"
-                >
-                <img class="sec5-4 fixed" src="img/script02-2@2.jpg" alt="이미지"
-                    data-12000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%; z-index:1000"
-                    data-14000="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 80%; opacity: 50%;"
-                    data-15000="transform: translate(-50%,-50%) scale(.5); left: 0%; top: 130%; opacity: 70%; z-index:1500"
-                    data-16000="transform: translate(-50%,-50%) scale(1); left: -150%; top: 200%; opacity: 100%;"
-                >
-                <img class="sec5-5 fixed" src="img/script03-2@2.jpg" alt="이미지"
-                    data-13000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%; z-index:1000"
-                    data-15000="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 30%; opacity: 50%;"
-                    data-16000="transform: translate(-50%,-50%) scale(.5); left: -50%; top: -10%; opacity: 70%; z-index:1500"
-                    data-17000="transform: translate(-50%,-50%) scale(1); left: -150%; top: -200%; opacity: 100%;"
-                >
-                <img class="sec5-6 fixed" src="img/script04-2@2.jpg" alt="이미지"
-                    data-14000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; opacity: 0%; z-index:1000"
-                    data-16000="transform: translate(-50%,-50%) scale(.3); left: 80%; top: 80%; opacity: 50%;"
-                    data-17000="transform: translate(-50%,-50%) scale(.5); left: 120%; top: 120%; opacity: 70%; z-index:1500"
-                    data-18000="transform: translate(-50%,-50%) scale(1); left: 180%; top: 200%; opacity: 100%;"
-                >
+            <div class="sec5-3 fixed"
+                data-11500="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 1000; opacity:0.1"
+                data-12500="transform: translate(-50%,-50%) scale(.2); left: 70%; top: 40%; z-index: 3000; opacity:1"
+                data-13500="transform: translate(-50%,-50%) scale(.5); left: 90%; top: 20%;"
+                data-14500="transform: translate(-50%,-50%) scale(.7); left: 130%; top: -100%;"
+            >
+                <a href="#"><img src="./assets/img/script01-2@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sec5-4 fixed"
+                data-11500="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 1000; opacity:0.1"
+                data-14500="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 80%; z-index: 3000; opacity:1"
+                data-15500="transform: translate(-50%,-50%) scale(.5); left: 0%; top: 100%;"
+                data-16500="transform: translate(-50%,-50%) scale(.7); left: -80%; top: 150%;"
+            >
+                <a href="#"><img src="./assets/img/script02-2@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sec5-5 fixed"
+                data-11500="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 1000; opacity:0.1"
+                data-16500="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 30%; z-index: 3000; opacity:1"
+                data-17500="transform: translate(-50%,-50%) scale(.5); left: 0%; top: -10%;"
+                data-18500="transform: translate(-50%,-50%) scale(.7); left: -50%; top: -130%;"
+            >
+                <a href="#"><img src="./assets/img/script03-2@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sec5-6 fixed"
+                data-11500="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 1000; opacity:0.1"
+                data-17500="transform: translate(-50%,-50%) scale(.3); left: 70%; top: 70%; z-index: 3000; opacity:1"
+                data-18500="transform: translate(-50%,-50%) scale(.6); left: 100%; top: 100%;"
+                data-19500="transform: translate(-50%,-50%) scale(.7); left: 150%; top: 150%;"
+            >
+                <a href="#"><img src="./assets/img/script04-2@2.jpg" alt="이미지"></a>
+            </div>
         </section>
         <!-- //section5 -->
-
 
         <section id="section6"
             data-0 = "display:none" 
@@ -255,87 +251,91 @@
         >
             <div class="bg04 fixed"
                 data-0="opacity:0;"
-                data-18000="display:block; opacity:0;"
-                data-19900="display:block; opacity:0;"
-                data-21000="display:block; opacity:1;"
+                data-21000="display:block; opacity:0;"
+                data-22000="display:block; opacity:1;"
                 data-25000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
                 data-28000="opacity:1;"
                 data-31000="opacity:0;"
             ></div>
             <div class="sec6-1"
                 data-0="display:none"
-                data-16000="display:block"
+                data-19000="display:block"
             >
                 <h1 class="sec6-2 fixed"
-                    data-18000="transform: translate(-50%,-50%) scale(0); opacity:1"
-                    data-21000="transform: translate(-50%,-50%) scale(.2);"
+                    data-20000="transform: translate(-50%,-50%) scale(0); opacity:1"
+                    data-23000="transform: translate(-50%,-50%) scale(.2);"
                     data-25000="transform: translate(-50%,-50%) scale(.5);"
-                    data-27000="transform: translate(-50%,-50%) scale(1);"
-                    data-28000="transform: translate(-50%,-50%) scale(5);"
-                    data-29000="transform: translate(-50%,-50%) scale(80); opacity:0"
-                >
-                    <div>Animation</div>
-                </h1>
+                    data-28000="transform: translate(-50%,-50%) scale(1);"
+                    data-29000="transform: translate(-50%,-50%) scale(5);"
+                    data-30000="transform: translate(-50%,-50%) scale(80); opacity:0"
+                >Animation</h1>
             </div>
-            <div class="sec6-3 fixed">
-                <div class="ani01">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"
-                        data-20600="transform: translate(-50%,-50%) scale(0); left:50%; top:50%; opacity: 30%; z-index:1000"
-                        data-21600="transform: translate(-50%,-50%) scale(.1); left: 30%; top: 40%; opacity: 50%;"
-                        data-22600="transform: translate(-50%,-50%) scale(.3); left: 0%; top: 20%; opacity: 50%; "
-                        data-23600="transform: translate(-50%,-50%) scale(.8); left: -150%; top: -50%; opacity: 70%; z-index:1500"
-                        data-24600="transform: translate(-50%,-50%) scale(1); left: -300%; top: -270%; opacity: 100%;"
-                    ></iframe>
-                </div>
-                <div class="ani02">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation05.html" frameborder="0"
-                        data-21000="transform: translate(-50%,-50%) scale(0); left:50%; top:50%; opacity: 30%; z-index:1000"
-                        data-22000="transform: translate(-50%,-50%) scale(.1); left: 10%; top: 60%; opacity: 50%;"
-                        data-23000="transform: translate(-50%,-50%) scale(.3); left: -100%; top: 100%; opacity: 50%; "
-                        data-24000="transform: translate(-50%,-50%) scale(.8); left: -250%; top: 150%; opacity: 70%; z-index:1500"
-                        data-25000="transform: translate(-50%,-50%) scale(1); left: -300%; top: 200%; opacity: 100%;"
-                    ></iframe>
-                </div>
-                <div class="ani03">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation06.html" frameborder="0"
-                        data-21600="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; opacity: 30%; z-index:1000"
-                        data-22600="transform: translate(-50%,-50%) scale(.1); left: 80%; top: 30%; opacity: 50%;"
-                        data-23600="transform: translate(-50%,-50%) scale(.3); left: 180%; top: 0%; opacity: 50%;"
-                        data-24600="transform: translate(-50%,-50%) scale(.8); left: 280%; top: -50%; opacity: 70%; z-index:1500"
-                        data-25600="transform: translate(-50%,-50%) scale(1); left: 380%; top: -150%; opacity: 100%;"
-                    ></iframe>
-                </div>
-                <div class="ani03">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation12.html" frameborder="0"
-                        data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; opacity: 30%; z-index:1000"
-                        data-23000="transform: translate(-50%,-50%) scale(.1); left: 90%; top: 70%; opacity: 50%;"
-                        data-24000="transform: translate(-50%,-50%) scale(.3); left: 160%; top: 100%; opacity: 50%;"
-                        data-25000="transform: translate(-50%,-50%) scale(.8); left: 200%; top: 150%; opacity: 70%; z-index:1500"
-                        data-26000="transform: translate(-50%,-50%) scale(1); left: 300%; top: 200%; opacity: 100%;"
-                    ></iframe>
-                </div>
-                <div class="ani04">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation09.html" frameborder="0"
-                        data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; opacity: 30%; z-index:1000"
-                        data-22600="transform: translate(-50%,-50%) scale(.1); left: 0%; top: 60%; opacity: 50%;"
-                        data-23600="transform: translate(-50%,-50%) scale(.3); left: -100%; top: 70%; opacity: 50%;"
-                        data-24600="transform: translate(-50%,-50%) scale(.8); left: -250%; top: 80%; opacity: 70%; z-index:1500"
-                        data-25600="transform: translate(-50%,-50%) scale(1); left: -400%; top: 90%; opacity: 100%;"
-                    ></iframe>
-                </div>
-                <div class="ani05">
-                    <iframe class="fixed" width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation08.html" frameborder="0"
-                        data-22600="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; opacity: 30%; z-index:1000"
-                        data-23600="transform: translate(-50%,-50%) scale(.1); left: 100%; top: 45%; opacity: 50%;"
-                        data-24600="transform: translate(-50%,-50%) scale(.3); left: 150%; top: 35%; opacity: 50%;"
-                        data-25600="transform: translate(-50%,-50%) scale(.8); left: 250%; top: 25%; opacity: 70%; z-index:1500"
-                        data-26600="transform: translate(-50%,-50%) scale(1); left: 500%; top: 0%; opacity: 100%;"
-                    ></iframe>
-                </div>
+            <div class="ani01 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; z-index: 1000; opacity:0.1"
+                data-23500="transform: translate(-50%,-50%) scale(.1); left: 30%; top: 30%; z-index: 3000; opacity:1"
+                data-24500="transform: translate(-50%,-50%) scale(.3); left: 0%; top: -10%;"
+                data-25500="transform: translate(-50%,-50%) scale(.8); left: -50%; top: -70%;"
+                data-26500="transform: translate(-50%,-50%) scale(1); left: -150%; top: -270%;"
+            >
+                <a href="#">
+                    <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"></iframe>
+                </a>
+            </div>
+            <div class="ani02 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left:50%; top:50%; z-index: 1000; opacity:0.1"
+                data-24000="transform: translate(-50%,-50%) scale(.1); left: 30%; top: 70%; z-index: 3000; opacity:1"
+                data-25000="transform: translate(-50%,-50%) scale(.3); left: 0%; top: 100%;"
+                data-26000="transform: translate(-50%,-50%) scale(.8); left: -50%; top: 130%;"
+                data-27000="transform: translate(-50%,-50%) scale(1); left: -150%; top: 180%;"
+            >
+                <a href="#">
+                    <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation05.html" frameborder="0"></iframe>
+                </a>
+            </div>
+            <div class="ani03 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; z-index: 1000; opacity:0.1"
+                data-24500="transform: translate(-50%,-50%) scale(.1); left: 80%; top: 20%; z-index: 3000; opacity:1"
+                data-25500="transform: translate(-50%,-50%) scale(.3); left: 130%; top: -10%;"
+                data-26500="transform: translate(-50%,-50%) scale(.8); left: 180%; top: -60%;"
+                data-27500="transform: translate(-50%,-50%) scale(1); left: 230%; top: -150%;"
+            >
+                <a href="#">
+                    <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation06.html" frameborder="0"></iframe>
+                </a>
+            </div>
+            <div class="ani04 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; z-index: 1000; opacity:0.1"
+                data-25000="transform: translate(-50%,-50%) scale(.1); left: 60%; top: 70%; z-index: 3000; opacity:1;"
+                data-26000="transform: translate(-50%,-50%) scale(.3); left: 70%; top: 100%;"
+                data-27000="transform: translate(-50%,-50%) scale(.8); left: 100%; top: 150%;"
+                data-28000="transform: translate(-50%,-50%) scale(1); left: 130%; top: 200%;"
+            >   
+                <a href="#">
+                    <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation12.html" frameborder="0"></iframe>
+                </a>
+            </div>
+            <div class="ani05 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; z-index: 1000; opacity:0.1"
+                data-25500="transform: translate(-50%,-50%) scale(.1); left: 30%; top: 60%; z-index: 3000; opacity:1"
+                data-26500="transform: translate(-50%,-50%) scale(.3); left: 0%; top: 70%;"
+                data-27500="transform: translate(-50%,-50%) scale(.8); left: -100%; top: 80%;"
+                data-28500="transform: translate(-50%,-50%) scale(1); left: -150%; top: 90%;"
+            >
+                <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation09.html" frameborder="0"></iframe>
+            </div>
+            <div class="ani06 fixed"
+                data-22000="transform: translate(-50%,-50%) scale(0); left: 50%; top:50%; z-index: 1000; opacity:0.1"
+                data-26000="transform: translate(-50%,-50%) scale(.1); left: 80%; top: 45%; z-index: 3000; opacity:1"
+                data-27000="transform: translate(-50%,-50%) scale(.3); left: 100%; top: 35%;"
+                data-28000="transform: translate(-50%,-50%) scale(.8); left: 150%; top: 25%;"
+                data-29000="transform: translate(-50%,-50%) scale(1); left: 200%; top: 0%;" 
+            >
+                <a href="#">
+                    <iframe width="100%" height="100%" scrolling="no" src="http://jangar621.dothome.co.kr/effect/portfolio/animation08.html" frameborder="0"></iframe>
+                </a>
             </div>
         </section>
         <!-- //section6 -->
-
 
         <section id="section7"
             data-0= "display:none" 
@@ -363,17 +363,15 @@
                     data-33500="transform: translate(-50%,-50%) scale(1);"
                     data-34500="left: 0%"
                     data-35500="left: -50%"
-                >
-                    <div>React</div>
-                </h1>
+                >React</h1>
             </div>
-            <img class="sec7-3 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-3 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-32000="top:-200%; left: 0%;"
                 data-33000="top:80%;"
                 data-33500="left: 0%"
                 data-35500="left: -150%"
             >
-            <img class="sec7-4 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-4 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-32000="top:-200%; left: 90%;"
                 data-33000="top: 10%;"
                 data-33500="left: 90%"
@@ -381,7 +379,7 @@
                 data-36500="left: 0%"
                 data-37500="left: -150%"
             >
-            <img class="sec7-5 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-5 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-32000="top:-200%; left: 70%;"
                 data-33000="top: 80%;"
                 data-33500="left: 70%"
@@ -389,14 +387,14 @@
                 data-35500="left: 0%"
                 data-36500="left: -150%"
             >
-            <img class="sec7-6 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-6 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-35500="left: 120%; top:70%"
                 data-37000="left: 10%;"
                 data-41000="left: 10%;"
                 data-42000="left: -30%;"
                 data-43000="left: -150%;"
             >
-            <img class="sec7-7 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-7 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-35500="left: 180%; top:20%"
                 data-37000="left: 90%;"
                 data-41000="left: 90%;"
@@ -413,13 +411,15 @@
                 data-43000="left: -100%"
             >
                 <div class="img-bg fixed"
-                    data-39000="display:none"
-                    data-39900="display:block"
+                    data-39000="opacity:0"
+                    data-39900="opacity:1"
                 ></div>
-                <img class="sec7-9" src="img/react@2.jpg" alt="리액트"
+                <div class="sec7-9"
                     data-37000="opacity:0;"
                     data-38000="opacity:1;"
                 >
+                    <img src="./assets/img/react@2.jpg" alt="리액트">
+                </div>
                 <h2 class="sec7-10">
                     <span class="fixed"
                         data-37500="opacity: 0; top: 0%"
@@ -435,14 +435,24 @@
                     >트</span>
                 </h2>
                 <ul class="box fixed"
-                    data-39000="display:none"
-                    data-39900="display:block"
+                    data-39000="opacity:0"
+                    data-39900="opacity:1"
                 >
                     <li class="btn1"><a href="#">SITE</a></li>
-                    <li class="btn2"><a href="#">FIGMA</a></li>
+                    <li class="btn2">FIGMA</li>
                     <p class="text">React는 사용자 인터페이스를 구축하기 위한 선언적이고 효율적이며 유연한 JavaScript 라이브러리입니다. “컴포넌트”라고 불리는 작고 고립된 코드의 파편을 이용하여 복잡한 UI를 구성하도록 돕습니다.</p>
                 </ul>
             </div>
+            <!-- figma -->
+            <div class="figmaWrap">
+                <div class="react_figma fixed">
+                    <a href="#" class="react_btn">
+                        <span></span>
+                    </a>
+                    <iframe style="border: 0" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F07W4bOpKj95hUNAnF8fBfy%2Freact%3Fscaling%3Dmin-zoom%26node-id%3D129%253A243" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- //figma -->
             <div class="sec7-1"
                 data-0="display:none"
                 data-29000="display:block"
@@ -454,26 +464,18 @@
                     data-45000="transform: translate(-50%,-50%) scale(5);"
                     data-46500="transform: translate(-50%,-50%) scale(80);"
                     data-47500="transform: translate(-50%,-50%) scale(80); opacity:0;"
-                >
-                    <div>React</div>
+                >React
                 </h1>
             </div>
-            <img class="sec7-11 fixed" src="img/cloud_color.jpg" alt="구름"
+            <img class="sec7-11 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
                 data-41000="left: 200%; top:90%;"
                 data-42000="left: 150%"
                 data-43000="left: 95%;"
                 data-45000="left: 250%;"
             >
-            <!-- <a href="react.html" class="button fixed" rel="noopner" aria-hidden="true"
-                data-31000="top: 250%; display:block; opacity:1;"
-                data-32000="top: 130%; opacity:1;"
-                data-35000="top: 130%; opacity:1;"
-                data-35500="opacity:0;"
-            ><span></span></a> -->
         </section>
         <!-- //section7 -->
 
-        
         <section id="section8"
             data-0 = "display:none" 
             data-47500 = "display:none;" 
@@ -495,23 +497,26 @@
                     data-48000="opacity:.5; top: 50%"
                     data-49000="opacity:1; top: 50%"
                     data-50000="opacity:0; top: 20%"
-                >
-                    <div>Contact</div>
-                </h1>
-                <img class="sec8-3 fixed" src="img/moon.jpg" alt="달"
+                >Contact</h1>
+                <div class="sec8-3 fixed"
                     data-0="display:none;"
                     data-49000="display:block;"
                     data-50000 = "top: 60%; left: 80%; opacity: 0;"
                     data-51000 = "top: 50%;"
                     data-52000 = "top: 30%; opacity: 1;"
                 >
-                <img class="sec8-5 fixed" src="img/cloud_color01.jpg" alt="구름"
+                    <img src="./assets/img/moon.jpg" alt="달">
+                </div>
+                <div class="sec8-5 fixed" 
                     data-0="display:none;"
                     data-49000="display:block;"
-                    data-50000 = "top: 52%; left: 150%;"
+                    data-50000 = "top: 52%; left: 150%; opacity:0;"
                     data-51000 = "top: 52%; left: 90%;"
-                    data-52000 = "top: 52%; left: 80%;"
+                    data-52000 = "top: 52%; left: 80%; opacity:1;"
                 >
+                    <img src=./assets/img/cloud_color01.jpg" alt="구름">
+                </div>
+                
                 <div class="desc fixed"
                     data-0="display:none;"
                     data-50500="display:block;"
@@ -532,6 +537,7 @@
         <!-- //section8 -->
     </div>
     <!-- //contents -->
+
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -556,15 +562,30 @@
         },function(){
             $(".cursor").removeClass("active");
         });
-       
 
-        $(document).ready(function(){
-            $("a[href^='#']").click(function(){
-                var offset = $("a[href^='#']").offset();
-                $('html').animate({scrollTop : offset.top}, 400);
-            });
+
+        // 클릭
+        $(".react_btn").on("click", function(){
+            $(".cursor").removeClass("on");
+            $(".react_figma").removeClass("on").css({"display":"none"});
         });
+        $(".btn2").on("click", function(){
+            $(".cursor").addClass("on");
+            $(".react_figma").addClass("on").css({"display":"block"});
+        });
+        
+        // $(document).ready(function(){
+        //     $("a[href^='#']").click(function(){
+        //         var offset = $("a[href^='#']").offset();
+        //         $('html').animate({scrollTop : offset.top}, 400);
+        //     });
+        // });
 
+        $("a[href^='#']").click(function(e){
+            e.preventDefault();
+            let target = $($(this).attr("href"))
+            $("html,body").animate({ scrollTop : target.offset().top}, 600, "easeInOutQuint" );
+       });
     </script>
 </body>
 </html>
