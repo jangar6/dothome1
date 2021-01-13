@@ -591,8 +591,7 @@
         // 이미지 클릭시 가운데로 이동
         $(".item").on("click", function(e){
             e.preventDefault();
-            $(this).addClass("popup").css({"left":"50%", "top":"50%", "z-index":"20000", "opacity": "1", "transition":"all 0.8s ease"});
-            $(this).addClass("popup").css("position","fixed");
+            $(this).addClass("popup").css({"left":"50%"},{"top":"50%"},{"z-index":"20000"},{"opacity": "1"},{"transition":"all 0.8s ease"});
         });
         $(window).scroll(function(){
             $(".item").removeClass("popup").css({"transition":"all 0.2s ease"});

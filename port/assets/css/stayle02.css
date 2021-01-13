@@ -108,7 +108,7 @@ em {font-style: normal;}
 .sec5-3 img,
 .sec5-4 img,
 .sec5-5 img,
-.sec5-6 img {width: 100%;}
+.sec5-6 img {width: 100%; transition: all 0.5s ease;}
 
 .sec4-3 a:hover img {opacity: 0.4; transition: all 0.5s ease;}
 .sec4-4 a:hover img {opacity: 0.4; transition: all 0.5s ease;}
@@ -612,19 +612,16 @@ em {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-678%,-111%);
     font-size: 9vw;
     opacity: 1;
     writing-mode: vertical-lr;
-    transition: all 0.3s;
+    height: 100vh;
 }
 .popup .wText03 span:nth-child(1) {
     display: block;
-    height: 100vh;
-
 }
 .popup .wText03 span:nth-child(2) {
     display: block;
     padding-left: 50px;
-    height: 100vh;
 }
