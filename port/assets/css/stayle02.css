@@ -100,9 +100,8 @@ em {font-style: normal;}
 .sec5-6 {
     width: 100vw;
     transform-origin: center center;
-    transition: all 0.3s;
+    transition: all 0.5s ease;
 }
-
 .sec4-3 img,
 .sec4-4 img,
 .sec4-5 img,
@@ -110,14 +109,6 @@ em {font-style: normal;}
 .sec5-4 img,
 .sec5-5 img,
 .sec5-6 img {width: 100%;}
-
-.sec4-3 a img {transition: all 0.5s ease;}
-.sec4-4 a img {transition: all 0.5s ease;}
-.sec4-5 a img {transition: all 0.5s ease;}
-.sec5-3 a img {transition: all 0.5s ease;}
-.sec5-4 a img {transition: all 0.5s ease;}
-.sec5-5 a img {transition: all 0.5s ease;}
-.sec5-6 a img {transition: all 0.5s ease;}
 
 .sec4-3 a:hover img {opacity: 0.4; transition: all 0.5s ease;}
 .sec4-4 a:hover img {opacity: 0.4; transition: all 0.5s ease;}
@@ -420,9 +411,8 @@ em {font-style: normal;}
 .sec7-5 {width: 15%; transition: all 0.3s;}
 .sec7-6 {width: 30%; transition: all 0.3s;}
 .sec7-7 {width: 80%; transition: all 0.3s;}
-.sec7-9 img {width: 100%; display: block;}
-.sec7-11 {width: 80%; transition: all 0.3s;}
-.react {width: 50%;}
+.sec7-9 img {width: 100%; display: block; transition: all 0.3s;}
+.react {width: 50%; transition: all 0.3s;}
 .img-bg {
     background: linear-gradient(270deg, rgba(133, 0, 22, 0.355) 0%, rgba(255, 255, 255, 0) 98.92%);
     width: 100%;
@@ -496,14 +486,14 @@ em {font-style: normal;}
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.9);
     padding: 1%;
+    transition: all 1s ease;
 }
 .react_figma.on {
     opacity: 1;
     z-index: 1000;
+    transition: all 1s ease;
 }
-
 /* react_btn */
-
 .react_figma .react_btn {
     position: absolute;
     top: 3%;
@@ -581,4 +571,60 @@ em {
     font-size: 1.5vw;
     padding-top: 10%;
     transition: all 0.3s;
+}
+
+/* 팝업: popup */
+.wText01,
+.wText02,
+.wText03 {
+    opacity: 0;
+    font-family: 'Chosunilbo_myungjo';
+    font-weight: normal;
+    position: fixed;
+    color: #fff;
+}
+
+.popup img {
+    width: 4000px;
+    position: fixed;
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
+    border: 10px solid #fff;
+}
+.popup a:hover img {opacity: 1;}
+.popup .wText01 {
+    font-size: 8vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    transition: all 0.3s;
+}
+.popup .wText02 {
+    font-size: 6vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    transition: all 0.3s;
+}
+.popup .wText03 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 9vw;
+    opacity: 1;
+    writing-mode: vertical-lr;
+    transition: all 0.3s;
+}
+.popup .wText03 span:nth-child(1) {
+    display: block;
+    height: 100vh;
+
+}
+.popup .wText03 span:nth-child(2) {
+    display: block;
+    padding-left: 50px;
+    height: 100vh;
 }
