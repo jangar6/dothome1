@@ -40,7 +40,7 @@
             data-3700="opacity:0"
         ></div>
 
-        <section id="section1" class="fixed"
+        <section id="section1"
             data-0 = "display:block;"
             data-500 = "display:block; "
             data-800 = "display:none" 
@@ -61,7 +61,7 @@
         </section>
         <!-- //section1 -->
 
-        <section id="section2 fixed"
+        <section id="section2"
             data-0 = "display:none" 
             data-100 = "display:block;" 
             data-2000 = "display:none" 
@@ -86,7 +86,7 @@
         </section>
         <!-- //section2 -->
 
-        <section id="section3 fixed"
+        <section id="section3"
             data-0 = "display:none" 
             data-900 = "display:block;" 
             data-3600 = "display:none"
@@ -130,7 +130,7 @@
         </section>
         <!-- //section3 -->  
         
-        <section id="section4 fixed"
+        <section id="section4"
             data-0 = "display:none" 
             data-2000 = "display:block;" 
             data-13000 = "display:none;" 
@@ -148,7 +148,7 @@
                 data-0="display:none"
                 data-2000="display:block"
             >
-                <h1 class="sec4-2 fixed"
+                <h1 class="sec4-2 fixed item"
                     data-3000="transform: translate(-50%,-50%) scale(0); opacity:1"
                     data-5500="transform: translate(-50%,-50%) scale(.5);"
                     data-9000="transform: translate(-50%,-50%) scale(1);"
@@ -156,35 +156,36 @@
                     data-13000="transform: translate(-50%,-50%) scale(80); opacity:0"
                 >Coding Site</h1>
             </div>
-            <div class="sec4-3 fixed item" 
-                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
-                data-5000="transform: translate(-50%,-50%) scale(.3); left: 20%; top: 20%; z-index: 1000; opacity:1"
-                data-6000="transform: translate(-50%,-50%) scale(.5); left: -100%; top: -100%"
-                data-7000="transform: translate(-50%,-50%) scale(.7); left: -150%; top: -270%;"
+            <div class="sec4-3 item" 
+                data-4000="transform: translate(-50%,-50%) scale(0); z-index: 100; opacity:0.8"
+                data-5000="transform: translate(-80%,-80%) scale(.3); z-index: 1000;"
+                data-6000="transform: translate(-130%, -130%) scale(.8);"
+                data-7000="transform: translate(-180%, -180%) scale(1);"
             >   
-                <a href="#">
-                    <img src="./assets/img//site01-1@2.jpg" alt="이미지">
-                    <!-- <h2 class="wText01">webstandard</h2>
-                    <p class="wText02">웹 표준이란, 웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어입니다.</p> -->
-                </a>
-                <h3 class="wText03">
-                    <span>웹 표준</span>
+                <a href="#"><img src="./assets/img/site01-1@2.jpg" alt="이미지"></a>
+            </div>
+            <div class="sPopup">
+                <img src="./assets/img/site01-1@2.jpg" alt="이미지">
+                <h2 class="sText01">
+                    <span>웹표준</span>
                     <span>사이트</span>
-                </h3>
+                </h2>
+                <h3 class="sText02">webstandard</h3>
+                <p class="sText03">웹 표준이란, 웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어입니다.</p>
             </div>
             <div class="sec4-4 fixed item" 
-                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
-                data-6000="transform: translate(-50%,-50%) scale(.3); left: 30%; top: 100%; z-index: 1000; opacity:1"
-                data-7000="transform: translate(-50%,-50%) scale(.8); left: 0%; top: 200%;"
-                data-8000="transform: translate(-50%,-50%) scale(1); left: -150%; top: 300%;"
+                data-4000="transform: translate(-50%,-50%) scale(0); z-index: 100; opacity:0.6"
+                data-6000="transform: translate(-60%,0%) scale(.3); z-index: 1000;"
+                data-7000="transform: translate(-70%,50%) scale(.8);"
+                data-8000="transform: translate(-80%,100%) scale(1);"
             >
                 <a href="#"><img src="./assets/img//site02-2@2.jpg" alt="이미지"></a>
             </div>
             <div class="sec4-5 fixed item" 
-                data-4000="transform: translate(-50%,-50%) scale(0); left: 50%; top: 50%; z-index: 100; opacity:0.1"
-                data-7000="transform: translate(-50%,-50%) scale(.3); left: 80%; top: 30%; z-index: 1000; opacity:1"
-                data-8000="transform: translate(-50%,-50%) scale(.8); left: 150%; top: -30%;"
-                data-9000="transform: translate(-50%,-50%) scale(1); left: 300%; top: -100%;"
+                data-4000="transform: translate(-50%,-50%) scale(0); z-index: 100; opacity:0.6"
+                data-7000="transform: translate(0%,-100%) scale(.3); z-index: 1000;"
+                data-8000="transform: translate(50%,-150%) scale(.8);"
+                data-9000="transform: translate(100%,-200%) scale(1);"
             >
                 <a href="#"><img src="./assets/img/site03-2@2.jpg" alt="이미지"></a>
             </div>
@@ -453,7 +454,8 @@
             </div>
             <!-- figma -->
             <div class="figmaWrap"
-                data-0="display:block;"
+                data-40000="display:none;"
+                data-40100="display:block;"
                 data-41000="display:none;"
             >
                 <div class="react_figma fixed">
@@ -564,10 +566,20 @@
             $(".scroll").text(parseInt(scrollTop));
         });
 
-         // 움직임 효과
+        // 움직임 효과
         $(document).mousemove(function(e){
             gsap.to(".cursor", {duration: 0.2, left: e.pageX - 10, top: e.pageY -10});
         });
+        
+        // let mouseCursor = document.querySelector(".cursor");
+        // let navLinks = document.querySelectorAll(".gnb li a");
+        // window.addEventListener("scroll", cursor);
+        // window.addEventListener("mousemove", cursor);
+        // function cursor(e) {
+        //     mouseCursor.style.left = e.pageX + "px";
+        //     mouseCursor.style.top = e.pageY - scrollY + "px";
+        // }
+
 
         // 오버 효과
         $(".sec3-3").hover(function(){
@@ -591,27 +603,13 @@
         // 이미지 클릭시 가운데로 이동
         $(".item").on("click", function(e){
             e.preventDefault();
-            $(this).addClass("popup").css({"left":"50%", "top":"50%", "z-index":"20000", "opacity": "1", "transition":"all 0.8s ease"});
+            $(".item").addClass("none").css({"opacity":"0","display":"none","transition":"display 1.5s ease"});
+            $(".wPopup").addClass("popup");
         });
-        $(window).scroll(function(){
-            $(".item").removeClass("popup").css({"transition":"all 0.2s ease"});
-        });
-
-
-
-        
-        // $(document).ready(function(){
-        //     $("a[href^='#']").click(function(){
-        //         var offset = $("a[href^='#']").offset();
-        //         $('html').animate({scrollTop : offset.top}, 400);
-        //     });
+        // $(window).scroll(function(){
+        //     $(".item").removeClass("popup").css({"transition":"all 0.2s ease"});
         // });
 
-        // $("a[href^='#']").click(function(e){
-        //    e.preventDefault();
-        //    let target = $($(this).attr("href"))
-        //    $("html,body").animate({ scrollTop : target.offset().top}, 600, "easeInOutQuint" );
-        // });
     </script>
 </body>
 </html>

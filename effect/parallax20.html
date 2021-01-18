@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARALLAX20</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            padding: 0; margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Sue Ellen Francisco', cursive;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .menu {
+            height: 100vh;
+            overflow: hidden;
+            cursor: grab;
+        }
+        .menu ul {
+            counter-reset: count;
+        }
+        .menu-item {
+            counter-increment: count;
+            position: absolute;
+            z-index: 1;
+            left: 0; top: 0;
+            width: 100%;
+            font-size: 120px;
+            line-height: 1.2;
+            padding: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .menu-item::before {
+            position: absolute;
+            left: 0;
+            content: "0" counter(count);
+            color: #862929;
+            transform: translateX(-10px) scale(0.4);
+            font-family: cursive;
+        }
+        .menu-item:nth-child(n+10)::before {
+            content: counter(count);
+        }
+
+        .scroll {
+            position: fixed;
+            left: 10px; top: 10px;
+            width: 50px; height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            z-index: 100;
+        }
+        .ball {
+            width: 100px; height: 100px;
+            background: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll">0</div>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-item"><a href="#">portfolio</a></li>
+            <li class="menu-item"><a href="#">webstandard</a></li>
+            <li class="menu-item"><a href="#">responsive</a></li>
+            <li class="menu-item"><a href="#">animation</a></li>
+            <li class="menu-item"><a href="#">javascript</a></li>
+            <li class="menu-item"><a href="#">react.js</a></li>
+            <li class="menu-item"><a href="#">musql</a></li>
+        </ul>
+    </div>
+    <!-- <div class="ball"></div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        const $menu = document.querySelector(".menu"),
+              $menuItem = document.querySelectorAll(".menu-item");
+
+        let menuHeight = $menu.clientHeight, // 전체의 높이
+            menuItemHeight = $menuItem[0].clientHeight, // 첫 번째 아이템의 갯수의 높이
+            wrapHeight = $menuItem.length * menuItemHeight, // 전체 아이템의 갯수 * 전체 높이
+            y = 0,
+            scrollY = 0;
+
+        // 선형 보간법
+        const lerp = (v0, v1, t) => {
+            return v0 * (1 -t) + v1 * t
+        }
+        const dispose = (scroll) => {
+            // 속성을 주기위해 set
+            gsap.set($menuItem, {
+                y: (index)=>{
+                    // y값을 각각 주기위해 index를 menuItemHeight에 곱함
+                    return index * menuItemHeight + scroll;
+                },
+                modifiers: {
+                    y: (y, target) => {
+                        const s = gsap.utils.wrap(-menuItemHeight, wrapHeight-menuItemHeight, parseFloat(y))
+                        return `${s}px`
+                    }
+                }
+            })
+        }
+        dispose(0);
+        
+        
+        const handleMouseWheel = (e) => {
+            scrollY -= e.deltaY
+
+            // deltaY: 아래로 스크롤 할 때 양수 값을 변환하고 위로 스크롤하면 음수 값을 반환함.
+        }
+        // 마우스 휠 값을 사용하여 컨트롤함
+        $menu.addEventListener("mousewheel", handleMouseWheel);
+
+
+        // 인자로 스크롤 값을 대입
+        const render = () => {
+            requestAnimationFrame(render);
+            
+            y = lerp(y, scrollY, .1)
+            dispose (y);
+            document.querySelector(".scroll").innerHTML = parseInt(pageYOffset);
+            //document.querySelector(".scroll").innerHTML = scrollY;
+        }
+        render();
+
+
+        // gsap.utils
+        const s1 = gsap.utils.random(0, 200, 10); //0~200까지 10의 배수로
+        // console.log(s1);
+
+        const s2 = gsap.utils.shuffle([1, 2, 3, 4, 5]);
+        // console.log(s2);
+        
+        // 5는 최솟값, 10이 최댓값일때 14의 변수가 있으면 10-14 하여 나온 값을 5에 더함
+        // 최대값을 초과하면 처음으로 돌아감(최소값 출력)
+        // 최대값보다 작으면 최대값이 출력됨
+        var s3 = gsap.utils.wrap(5, 10, 10); // 5
+        var s3 = gsap.utils.wrap(5, 10, 11); // 6
+        var s3 = gsap.utils.wrap(5, 10, 12); // 7
+        var s3 = gsap.utils.wrap(5, 10, 13); // 8
+        var s3 = gsap.utils.wrap(5, 10, 14); // 9
+        var s3 = gsap.utils.wrap(5, 10, 15); // 5
+        var s3 = gsap.utils.wrap(5, 10, 16); // 6
+        var s3 = gsap.utils.wrap(5, 10, 17); // 7
+        var s3 = gsap.utils.wrap(5, 10, 18); // 8
+        var s3 = gsap.utils.wrap(5, 10, 19); // 9
+        var s3 = gsap.utils.wrap(5, 10, 20); // 5
+        console.log(s3);
+
+        // gsap.defaults({duration:20, ease:"none"});
+        // gsap.to(".ball",{
+        //     x: 10000,
+        //     modifiers: {
+        //         x: (x, target) => {
+        //             var s = gsap.utils.wrapYoyo(0, window.innerWidth, parseFloat(x));
+        //             return `${s}px`
+        //         }
+        //     }
+        // });
+    </script>
+</body>
+</html>

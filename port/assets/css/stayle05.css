@@ -1,0 +1,283 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    overflow: auto; overflow-x:hidden;
+    cursor: none;
+}
+/* 배경색: bg */
+.bg01{
+    background: linear-gradient(180deg, #011627 0%, #001CA6 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.bg01-1 {
+    background: linear-gradient(180deg,#B95393 0%, #FF9473 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.bg01-2 {
+    background: linear-gradient(-180deg,#FF9473 0%, #B95393 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.bg02{
+    background: linear-gradient(180deg, rgba(239, 99, 122, 0.8) 1.29%, rgba(146, 187, 235, 0.8) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.bg03 {
+    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 1.29%, #82CAFF 96.23%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.bg04 {
+    background: linear-gradient(180deg, rgba(146, 187, 235, 0.955694) 0%, #DACBDF 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.bg05 {
+    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 0%, rgba(239, 99, 122, 0.71) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.bg06 {
+    background: linear-gradient(180deg, rgba(239, 99, 122, 0.726) 0%, #031DA6 60%, #000000 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 셋팅: setting */
+em {font-style: normal;}
+.scroll {
+    position: fixed; right: 10px; top: 10px;   
+    width: 50px; height: 50px; line-height: 50px;
+    text-align: center; color: #fff;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000000;
+}
+.cursor {
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    z-index: 99999999;
+    background: #fff;
+    user-select: none;
+    pointer-events: none;
+    transition: width .5s ease, height .5s ease, transform 0.5s ease;
+}
+.cursor.active {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    user-select: none;
+    pointer-events: none;
+    transition: width .5s ease, height .5s ease;
+
+    background-image: url(../img/about01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.cursor.on {
+    opacity: 1;
+    mix-blend-mode: difference;
+    transition: transform 0.5s ease;
+    transform: scale(3);
+}
+
+/* 공통: common */
+.fixed {
+    position: fixed; 
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec4-3,
+.sec4-4,
+.sec4-5,
+.sec5-3,
+.sec5-4,
+.sec5-5,
+.sec5-6 {
+    width: 100vw;
+    transform-origin: center center;
+    transition: all 0.3s ease;
+}
+.sec4-3 img,
+.sec4-4 img,
+.sec4-5 img,
+.sec5-3 img,
+.sec5-4 img,
+.sec5-5 img,
+.sec5-6 img {width: 100%; transition: all 0.3s ease;}
+
+.sec4-3 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec4-4 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec4-5 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec5-3 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec5-4 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec5-5 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+.sec5-6 a:hover img {opacity: 0.4; transition: all 0.3s ease;}
+
+/* 네비게이션: nav */
+#nav {
+    z-index: 99999;
+    position: fixed;
+    left: 0; top: 0;
+    width: 10%;
+    height: 100%;
+    color: #fff;
+}
+.logo {
+    margin: 20px;
+    font-family: 'Purple Purse', cursive;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+.nav {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    left: 3%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+}
+.nav a {
+    padding-right: 2%;
+}
+
+/* section1 */
+#section1 {
+}
+.sec1-1 {
+    font-family: 'Saol Display Regular';
+    font-size: 12vw;
+    color: #fff;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+.sec1-2 {
+    width: 35%;
+    position: absolute;
+    right: 0%;
+    transition: all 0.3s ease;
+}
+
+/* section2 */
+/* #section2 {
+    z-index: 0;
+}
+.sec2-1 {
+    font-family: 'Chosunilbo_myungjo';
+    line-height: 144.5%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 2.5vw;
+    transition: all 0.3s ease;
+}
+.sec2-2 {
+    font-size: 2.8vw;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, -50%);
+}
+.cover {
+    width: 200%;
+    border: solid 0.4vw #fff;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 30% 80% 300% 50%;
+}
+.sec2-3 {
+    font-weight: normal;
+    font-size: 3vw;
+}
+.sec2-4 {
+    font-size: 2vw;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 11%;
+    top: 54%;
+}
+.sec2-5 {
+    font-size: 2vw;
+    position: absolute;
+    left: 61%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.sec2-5::after {
+    content: '';
+    width: 7%;
+    height: 317%;
+    position: absolute;
+    left: 45%;
+    top: 114%;
+    background: #fff;
+} */
+
+/* 어바웃: section3 */
+/* #section3 {}
+.sec3-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    transition: all 0.3s ease;
+}
+.sec3-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 58%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.sec3-3 {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.imgWrap01 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw; height: 50vh;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+.imgWrap01 .sec3-4 {
+    position: absolute;
+    left: 100%;
+    width: 60vw;
+    transition: all 0.3s ease;
+}
+.imgWrap01 .sec3-5 {
+    position: absolute;
+    left: 100%;
+    width: 80vw;
+    transition: all 0.3s ease;
+} */
