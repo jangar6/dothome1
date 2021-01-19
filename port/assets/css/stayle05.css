@@ -15,7 +15,7 @@ body {
     height: 100vh;
 }
 .bg01-2 {
-    background: linear-gradient(-180deg,#FF9473 0%, #B95393 100%);
+    background: linear-gradient(-180deg,#FF9473 0%, rgba(239, 99, 122, 0.8) 100%);
     width: 100vw;
     height: 100vh;
 }
@@ -41,7 +41,7 @@ body {
     overflow: hidden;
 }
 .bg05 {
-    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 0%, rgba(239, 99, 122, 0.71) 100%);
+    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 0%, rgba(255, 148, 165, 0.71) 100%);
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -64,6 +64,7 @@ em {font-style: normal;}
     background: rgba(0,0,0,0.5);
     z-index: 10000000;
 }
+button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible; color: #fff;}
 .cursor {
     position: absolute;
     left: 0; top: 0;
@@ -132,7 +133,7 @@ em {font-style: normal;}
 
 /* 네비게이션: nav */
 #nav {
-    z-index: 99999;
+    z-index: 9999999;
     position: fixed;
     left: 0; top: 0;
     width: 10%;
@@ -161,6 +162,7 @@ em {font-style: normal;}
 
 /* section1 */
 #section1 {
+    height: 1000px;
 }
 .sec1-1 {
     font-family: 'Saol Display Regular';
@@ -179,8 +181,8 @@ em {font-style: normal;}
 }
 
 /* section2 */
-/* #section2 {
-    z-index: 0;
+#section2 {
+    height: 500px;
 }
 .sec2-1 {
     font-family: 'Chosunilbo_myungjo';
@@ -236,10 +238,12 @@ em {font-style: normal;}
     left: 45%;
     top: 114%;
     background: #fff;
-} */
+}
 
 /* 어바웃: section3 */
-/* #section3 {}
+#section3 {
+    height: 4000px;
+}
 .sec3-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -260,7 +264,6 @@ em {font-style: normal;}
 .sec3-3 {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
 }
 .imgWrap01 {
     position: absolute; left: 50%; top: 50%;
@@ -280,4 +283,676 @@ em {font-style: normal;}
     left: 100%;
     width: 80vw;
     transition: all 0.3s ease;
-} */
+}
+
+/* 코딩 사이트: section4 */
+#section4 {
+    height: 10000px;
+}
+.sec4-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    transition: all 0.3s ease;
+}
+.sec4-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 67%;
+    transform: translate(-50%, -50%);
+}
+.sec4-3 {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 1000px;
+    transform-origin: center center;
+    transition: all 0.3s ease;
+}
+.sec4-4 {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 1000px;
+    transform-origin: center center;
+    transition: all 0.3s ease;
+}
+.sec4-5 {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 1000px;
+    transform-origin: center center;
+    transition: all 0.3s ease;
+}
+
+/* 스크립트: section5 */
+#section5 {
+    height: 8500px;
+}
+.sec5-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 2000;
+    transition: all 0.3s ease;
+}
+.sec5-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 50%; top: 67%;
+    transform: translate(-50%, -50%);
+}
+
+/* 애니메이션: section6 */
+#section6 {
+    height: 9500px;
+}
+.sec6-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+    transition: all 0.3s ease;
+}
+.sec6-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 12vw;
+    position: absolute;
+    left: 46%;
+    top: 61%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.ani01,
+.ani02,
+.ani03,
+.ani04,
+.ani05,
+.ani06 {
+    width: 80vw;
+    height: 80vh;
+    transition: all 0.3s ease;
+}
+
+.ani01 a iframe,
+.ani02 a iframe,
+.ani03 a iframe,
+.ani04 a iframe,
+.ani05 a iframe,
+.ani06 a iframe {transition: all 0.5s ease;}
+
+.ani01 a:hover iframe,
+.ani02 a:hover iframe,
+.ani03 a:hover iframe,
+.ani04 a:hover iframe,
+.ani05 a:hover iframe,
+.ani06 a:hover iframe {opacity: 0.4; transition: all 0.5s ease;}
+
+/* 리액트: section7 */
+#section7 {
+    height: 15000px;
+}
+.sec7-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+    transition: all 0.3s ease;
+}
+.sec7-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 9vw;
+    position: absolute;
+    left: 46%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.sec7-3 {width: 70%; transition: all 0.3s ease;}
+.sec7-4 {width: 40%; transition: all 0.3s ease;}
+.sec7-5 {width: 15%; transition: all 0.3s ease;}
+.sec7-6 {width: 30%; transition: all 0.3s ease;}
+.sec7-7 {width: 80%; transition: all 0.3s ease;}
+.sec7-9 img {width: 100%; display: block; transition: all 0.3s ease;}
+.sec7-11 {transition: all 0.3s ease;}
+.react {width: 50%; transition: all 0.3s ease;}
+.img-bg {
+    background: linear-gradient(270deg, rgba(133, 0, 22, 0.355) 0%, rgba(255, 255, 255, 0) 98.92%);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+.sec7-10 {
+    writing-mode: vertical-rl;
+    color: #fff;
+    font-family: 'Chosunilbo_myungjo';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 2;
+}
+.sec7-10 span {left: -5%;}
+.box {
+    color: #fff;
+    font-family: 'Chosunilbo_myungjo';
+    text-align: right;
+    width: 38%;
+    transition: all 0.3s ease-in-out;
+    left: 77%; top: 15%;
+}
+.box .btn1 {
+    display: inline-block;
+    border: 1.4px solid #FFFFFF;
+    box-sizing: border-box;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    padding: 1.5% 6%;
+    font-size: 1.3vw;
+}
+.box .btn2 {
+    display: inline-block;
+    background: rgba(239, 99, 122, 0.71);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    padding: 2% 4%;
+    font-size: 1.3vw;
+    margin-left: 1%;
+}
+.box .text {
+    margin-top: 2%;
+    line-height: 1.5;
+    font-size: 0.9vw;
+    position: relative;
+}
+.box .text::after {
+    content: '';
+    width: 0.2vw;
+    height: 93%;
+    background: #fff;
+    position: absolute;
+    left: 102%;
+    top: 4%;
+}
+
+/* react figma */
+.react_figma {
+    opacity: 0;
+    width: 60%;
+    height: 80%;
+    z-index: -1000;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1%;
+}
+.react_figma.on {
+    opacity: 1;
+    z-index: 1000;
+}
+/* react_btn */
+.react_figma .react_btn {
+    position: absolute;
+    top: 3%;
+    left: 104%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    display: inline-block;
+    cursor: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s 0.15s ease;
+    overflow: hidden;
+}
+.react_figma .react_btn::before {
+	content: '';
+	width: 20px; height: 2px;
+	background: #fff;
+	position: absolute; left: 50%;; top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+    transition: all .33s ease-in-out;
+	z-index: 10;
+}
+.react_figma .react_btn::after {
+	content: '';
+	width: 2px; height: 20px;
+	background: #fff;
+	position: absolute; left: 50%; top: 50%;;
+	transform: translate(-50%, -50%) rotate(225deg);
+    transition: all .33s ease-in-out;
+}
+
+
+/* 컨택트: section8 */
+#section8 {}
+.sec8-2 {
+    font-family: 'Blacksword';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: normal; 
+    z-index: 40000;
+    transition: all 0.3s ease;
+}
+.sec8-2::before {
+    content: '[';
+    color: #fff;
+    font-size: 11vw;
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.sec8-3 {width: 40vw; transition: all 0.3s ease;}
+.sec8-5 {width: 70vw; transition: all 0.3s ease;}
+.sec8-3 img {width: 100%; transition: all 0.3s ease;}
+.sec8-5 img {width: 100%; transition: all 0.3s ease;}
+.desc {
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Chosunilbo_myungjo';
+    left: 27%;
+    transition: all 0.3s ease;
+}
+.sec8-4 {font-size: 2vw; transition: all 0.3s ease;}
+em {
+    font-size: 1.2vw;
+    padding-left: 65%;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.sec8-6 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5vw;
+    padding-top: 10%;
+    transition: all 0.3s ease;
+}
+
+/* 팝업: popup */
+.scPopup1,
+.scPopup2,
+.scPopup3,
+.scPopup4,
+.sPopup1,
+.sPopup2,
+.sPopup3 {
+    opacity: 0;
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Chosunilbo_myungjo';
+    font-weight: normal;
+    margin-left: 5%;
+    transition: all 0.5s ease;
+}
+.scPopup1 img,
+.scPopup2 img,
+.scPopup3 img,
+.scPopup4 img,
+.sPopup1 img,
+.sPopup2 img,
+.sPopup3 img {
+    width: 60vw;
+    border: 5px solid #fff;
+    display: block;
+}
+.scPopup1 .scText01,
+.scPopup2 .scText01,
+.scPopup3 .scText01,
+.scPopup4 .scText01 {
+    position: absolute;
+    left: -8%;
+    top: 0%;
+    letter-spacing: 10px;
+    font-weight: normal;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+}
+.sPopup1 .sText01,
+.sPopup2 .sText01,
+.sPopup3 .sText01 {
+    font-weight: normal;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+}
+.sPopup1 .sText01::before,
+.sPopup2 .sText01::before,
+.sPopup3 .sText01::before {
+    content: '';
+    width: 0.2%;
+    height: 48%;
+    background: #fff;
+    position: absolute;
+    left: -9%;
+    top: 0%;
+}
+.sPopup1 .sText01 span:nth-child(1),
+.sPopup2 .sText01 span:nth-child(1),
+.sPopup3 .sText01 span:nth-child(1) {
+    position: absolute;
+    left: -15%;
+    top: 0%;
+    letter-spacing: 10px;
+}
+.sPopup1 .sText01 span:nth-child(2),
+.sPopup2 .sText01 span:nth-child(2),
+.sPopup3 .sText01 span:nth-child(2) {
+    position: absolute;
+    left: -7.5%;
+    top: 25%;
+    letter-spacing: 8px;
+}
+.scPopup1 .scText02,
+.scPopup2 .scText02,
+.scPopup3 .scText02,
+.scPopup4 .scText02,
+.sPopup1 .sText02,
+.sPopup2 .sText02,
+.sPopup3 .sText02 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 2.5vw;
+    padding: 2% 0%;
+}
+.scPopup1 .scText03,
+.scPopup2 .scText03,
+.scPopup3 .scText03,
+.scPopup4 .scText03,
+.sPopup1 .sText03,
+.sPopup2 .sText03,
+.sPopup3 .sText03 {
+    font-weight: normal;
+    text-align: right;
+    font-size: 1.3vw;
+    word-break: keep-all;
+    line-height: 1.4;
+    width: 60%;
+    margin-left: 40%;
+}
+/* 닫기 버튼 */
+.scPopup1 .scPopup_btn,
+.scPopup2 .scPopup_btn,
+.scPopup3 .scPopup_btn,
+.scPopup4 .scPopup_btn,
+.sPopup1 .sPopup_btn,
+.sPopup2 .sPopup_btn,
+.sPopup3 .sPopup_btn {
+    position: absolute;
+    top: 3%;
+    left: 104%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    display: inline-block;
+    cursor: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s 0.15s ease;
+    overflow: hidden;
+}
+.scPopup1 .scPopup_btn::before,
+.scPopup2 .scPopup_btn::before,
+.scPopup3 .scPopup_btn::before,
+.scPopup4 .scPopup_btn::before,
+.sPopup1 .sPopup_btn::before,
+.sPopup2 .sPopup_btn::before,
+.sPopup3 .sPopup_btn::before {
+	content: '';
+	width: 20px; height: 2px;
+	background: #fff;
+	position: absolute; left: 50%;; top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.2s ease-in-out;
+	z-index: 10;
+}
+.scPopup1 .scPopup_btn::after,
+.scPopup2 .scPopup_btn::after,
+.scPopup3 .scPopup_btn::after,
+.scPopup4 .scPopup_btn::after,
+.sPopup1 .sPopup_btn::after,
+.sPopup2 .sPopup_btn::after,
+.sPopup3 .sPopup_btn::after {
+	content: '';
+	width: 2px; height: 20px;
+	background: #fff;
+	position: absolute; left: 50%; top: 50%;;
+	transform: translate(-50%, -50%) rotate(225deg);
+    transition: all 0.2s ease-in-out;
+}
+.scPopup1.popup,
+.scPopup2.popup,
+.scPopup3.popup,
+.scPopup4.popup,
+.sPopup1.popup,
+.sPopup2.popup,
+.sPopup3.popup {
+    opacity: 1;
+    z-index: 2000;
+    cursor: none;
+    transition: cursor 0.3s;
+}
+
+/* 이미지 마우스 오버 */
+.s-bg1 {
+    background: linear-gradient(105.97deg, rgba(254, 255, 189, 0.610958) 0%, rgba(231, 168, 148, 0.7) 100%);
+    width: 99%;
+    height: 75%;
+    position: fixed;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
+    opacity: 0;
+    overflow: hidden;
+}
+.s-bg2 {
+    background: linear-gradient(105.97deg, rgba(254, 255, 189, 0.610958) 0%, rgba(231, 168, 148, 0.7) 100%);
+    width: 99%;
+    height: 78.5%;
+    position: fixed;
+    left: 50%;
+    top: 39.5%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
+    opacity: 0;
+    overflow: hidden;
+}
+.sc-bg1 {
+    background: linear-gradient(105.97deg, rgba(70, 100, 255, 0.7) 0%, rgba(146, 187, 235, 0.668986) 100%);
+    width: 99%;
+    height: 72%;
+    position: fixed;
+    left: 50%;
+    top: 36.5%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
+    opacity: 0;
+    overflow: hidden;
+}
+.sc-bg2 {
+    background: linear-gradient(105.97deg, rgba(70, 100, 255, 0.7) 0%, rgba(146, 187, 235, 0.668986) 100%);
+    width: 99%;
+    height: 78%;
+    position: fixed;
+    left: 50%;
+    top: 39.5%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
+    opacity: 0;
+    overflow: hidden;
+}
+.sc-bg3 {
+    background: linear-gradient(105.97deg, rgba(70, 100, 255, 0.7) 0%, rgba(146, 187, 235, 0.668986) 100%);
+    width: 99%;
+    height: 75%;
+    position: fixed;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
+    /* opacity: 0; */
+    overflow: hidden;
+}
+.sc-bg1 .scView1,
+.sc-bg1 .scView2,
+.sc-bg2 .scView3,
+.sc-bg3 .scView4 {
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+.s-bg2 .view3 {
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.s-bg1 .view2,
+.s-bg1 .view1 {
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    position: fixed;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+}
+.s-bg2 .view3-2,
+.s-bg1 .view2-2,
+.s-bg1 .view1-2{
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.sc-bg1 .scView1::before,
+.sc-bg1 .scView2::before,
+.sc-bg2 .scView3::before,
+.sc-bg3 .scView4::before {
+    content: '';
+    position: absolute;
+    left: 312%;
+    top: -231%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 239%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg1 .view1::before,
+.s-bg1 .view2::before {
+    content: '';
+    position: absolute;
+    left: 315%;
+    top: -330%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 239%;
+    height: 5%;
+    background: #fff;
+}
+.sc-bg1 .scView1::after,
+.sc-bg1 .scView2::after,
+.sc-bg2 .scView3::after,
+.sc-bg3 .scView4::after {
+    content: '';
+    position: absolute;
+    left: -195%;
+    top: 355%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 261%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg1 .view1::after,
+.s-bg1 .view2::after {
+    content: '';
+    position: absolute;
+    left: -205%;
+    top: 225%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 261%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg2 .view3::before {
+    content: '';
+    position: absolute;
+    left: 290%;
+    top: -330%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 239%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg2 .view3::after {
+    content: '';
+    position: absolute;
+    left: -210%;
+    top: 350%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 261%;
+    height: 5%;
+    background: #fff;
+}
+
+.sc-bg1:hover,
+.sc-bg2:hover,
+.sc-bg3:hover,
+.s-bg2:hover,
+.s-bg1:hover {
+    opacity: 1;
+}
+

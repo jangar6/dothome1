@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-REUM | PORTFOLIO</title>
 
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="./assets/css/stayle05.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stayle05.css">
     
 </head>
 <body>
@@ -42,7 +41,6 @@
                 <div class="bg01 fixed"
                     data-0="opacity:1;"
                     data-500="opacity:1;"
-                    data-600="opacity:0;"
                 ></div>
                 <h2 class="sec1-1 fixed"
                     data-0 = "display:block; top: 50%; opacity:1;"
@@ -57,19 +55,15 @@
         <!-- //section1 -->
 
         <section id="section2">
+            <div class="bg01-1 fixed"
+                data-0="opacity:0;"
+                data-400="opacity:1;"
+            ></div>
             <div class="sec2-1 fixed">
-                <div class="bg01-1 fixed"
-                    data-0="opacity:0;"
-                    data-400="opacity:0;"
-                    data-500="opacity:1;"
-                ></div>
                 <div class="cover fixed"
-                
-                data-0="top: 300%; opacity:0"
-                data-300="top: 200%;"
-                data-700="top: 50%;"
-                data-1000="top: -100%;"
-            
+                    data-0="opacity:0; transform: translate(-50%, 200%); transition: all 0.3s ease;"
+                    data-500=" opacity:1; transform: translate(-50%, 0%)"
+                    data-1000=" opacity:1; transform: translate(-50%, -200%)"
                 >
                     <h2 class="sec2-2">2020.07 - 2021.02</h2>
                     <h3 class="sec2-3 center">포트폴리오</h3>
@@ -79,6 +73,603 @@
             </div>
         </section>
         <!-- //section2 -->
+
+        <section id="section3">   
+            <div class="bg01-2 fixed"
+                data-800="opacity:0;"
+                data-1000="opacity:1;"
+            ></div>
+            <div class="sec3-1 fixed"
+                data-0="top: 200%; display:block"
+                data-1400="top: 50%;"
+                data-3600 = "display:none"
+            >
+                <h1 class="sec3-2 fixed"
+                    data-2400="transform: translate(-50%,-50%) scale(1); opacity:1"
+                    data-3000="transform: translate(-50%,-50%) scale(40);"
+                    data-3600="transform: translate(-50%,-50%) scale(80); opacity:0"
+                    data-3700="transform: translate(-50%,-50%) scale(1); opacity:0"
+                    data-10700="z-index: -9999999"
+                >About Me</h1>
+                <div class="sec3-3 fixed"
+                    data-1400="display:none; opacity:0; z-index: 999999"
+                    data-1500="display:block;"
+                    data-1600="display:block; opacity:0.2; z-index: 999999"
+                    data-1900="display:none; opacity:0; z-index: 0"
+                >
+                    <a href="about-me2.html"><img class="fixed" src="./assets/img/about01.jpg" alt="이미지"></a>
+                </div>
+                <div class="imgWrap01">
+                    <img class="sec3-4 fixed" src="./assets/img/cloud_color03.jpg" alt="구름"
+                        data-1900="top: 300%; opacity:1"
+                        data-2100="top: 0%; transform: translate(-50%,-50%)"
+                        data-2400="left: 135%;"
+                        data-3000="left: 800%; transform: translate(-50%,-50%)"
+                        data-3500="transform: translate(-50%,-50%); opacity:0"
+                    >
+                    <img class="sec3-5 fixed" src="./assets/img/cloud_color02.jpg" alt="구름"
+                        data-1900="top: 300%; opacity:1"
+                        data-2100="top: 140%; transform: translate(-50%,-50%)"
+                        data-2400="left: -50%;"
+                        data-3000="left: -800%; transform: translate(-50%,-50%)"
+                        data-3500="transform: translate(-50%,-50%); opacity:0"
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4"
+            data-0="z-index: -9999999"
+            data-1800="z-index: 0"
+            data-4000="z-index: 1000"
+        >
+            <div class="bg02 fixed"
+                data-0="opacity:0; z-index: -9999999 "
+                data-3300="display:block; opacity:0; z-index: 100"
+                data-3500="display:block; opacity:1;"
+                data-3600="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-10000="opacity:1;"
+                data-13000="opacity:0;"
+                data-14000="display:none"
+            ></div>
+            <div class="sec4-1"
+                data-0="display:none"
+                data-2000="display:block"
+            >
+                <h1 class="sec4-2 fixed title"
+                    data-3000="transform: translate(-50%,-50%) scale(0); opacity:1; z-index: 100"
+                    data-5500="transform: translate(-50%,-50%) scale(.5);"
+                    data-9000="transform: translate(-50%,-50%) scale(1);"
+                    data-11000="transform: translate(-50%,-50%) scale(40); opacity:1"
+                    data-12000="transform: translate(-50%,-50%) scale(80); opacity:0;"
+                    data-12700="z-index: -9999999"
+                >Coding Site</h1>
+            </div>
+            <div class="sec4-3 item1 codingSite" 
+                data-4000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                data-5000="transform: translate(-80%,-80%) scale(.3); z-index: 3000;"
+                data-6000="transform: translate(-130%, -130%) scale(.8);"
+                data-7000="transform: translate(-200%, -200%) scale(1);"
+            >   
+                <a href="#"><img src="./assets/img/site01-1@2.jpg" alt="이미지"></a>
+            </div>
+            <!-- sPopup -->
+            <div class="sPopupWrap"
+                data-0="display:none"
+                data-3000="display:block"
+            >
+                <div class="sPopup1">
+                    <a href="#" class="sPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="sPopup-figure">
+                        <div class="s-bg1">
+                            <a class="view1" href="https://jangar6.github.io/dothome1/wabstandard/index.html" target="_blank">Site view</a>
+                            <a class="view1-2" href="https://www.figma.com/proto/dbTCG5iz0VENlr3GOF88Xc/%EC%9B%B9%ED%91%9C%EC%A4%80%EC%82%AC%EC%9D%B4%ED%8A%B8%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8?node-id=26%3A38&viewport=-242%2C-13%2C0.17786407470703125&scaling=contain" target="_blank">more view</a>
+                        </div>
+                        <img class="imgSite" src="./assets/img/site01-1@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="sText01">
+                                <span>웹표준</span>
+                                <span>사이트</span>
+                            </h2>
+                            <h3 class="sText02">webstandard</h3>
+                            <p class="sText03">웹접근성지침서2.0을 바탕으로 사이트를 제작하였습니다.
+                                웹 표준에 필요한 인식의 용이성, 운용의 용이성, 이해의 용이성,
+                                견고성을 바탕으로 코딩을 하였습니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="sec4-4 fixed item2 codingSite" 
+                    data-4000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.6"
+                    data-6000="transform: translate(-60%,0%) scale(.3); z-index: 3000;"
+                    data-7000="transform: translate(-70%,50%) scale(.8);"
+                    data-8000="transform: translate(-80%,100%) scale(1);"
+                >
+                    <a href="#"><img src="./assets/img/site02-2@2.jpg" alt="이미지"></a>
+                </div>
+                
+                <div class="sPopup2">
+                    <a href="#" class="sPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="sPopup-figure">
+                        <div class="s-bg1">
+                            <a class="view2" href="https://jangar6.github.io/dothome1/respansive/index.html" target="_blank">Site view</a>
+                            <a class="view2-2" href="https://www.figma.com/proto/sF9gxICGlPHgKOOjsZLrmm/Responsive?node-id=1%3A3&viewport=420%2C186%2C0.08078055083751678&scaling=scale-down" target="_blank">more view</a>
+                        </div>
+                        <img src="./assets/img/site02-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="sText01">
+                                <span>반응형</span>
+                                <span>사이트</span>
+                            </h2>
+                            <h3 class="sText02">responsive</h3>
+                            <p class="sText03">반응형 디자인이란 접속한 기기에서 화면이 맞도록 자동적으로 변합니다.
+                                미디어 쿼리를 사용하여 모든 디바이스에서 자연스럽게 나오도록 사이트를 제작하였습니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="sec4-5 fixed item3 codingSite" 
+                    data-4000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.6"
+                    data-7000="transform: translate(0%,-100%) scale(.3); z-index: 3000;"
+                    data-8000="transform: translate(50%,-150%) scale(.8);"
+                    data-9000="transform: translate(100%,-200%) scale(1);"
+                >
+                    <a href="#"><img src="./assets/img/site03-2@2.jpg" alt="이미지"></a>
+                </div>
+
+                <div class="sPopup3">
+                    <a href="#" class="sPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="sPopup-figure">
+                        <div class="s-bg2">
+                            <a class="view3" href="https://jangar6.github.io/dothome1/megabox/index.html" target="_blank">Site view</a>
+                        </div>
+                        <img src="./assets/img/site03-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="sText01">
+                                <span>기업형</span>
+                                <span>사이트</span>
+                            </h2>
+                            <h3 class="sText02">mega box</h3>
+                            <p class="sText03">기업에서 많이 사용하는 사이트 UI/UX를 바탕으로 제작하였습니다.
+                                슬라이드, 라이트 박스, API등 다양한 기법을 활용하였습니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- //sPopup -->
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5"
+            data-0="z-index: -9999999"
+            data-1800="z-index: 0"
+            data-4000="z-index: 1000"
+            data-20000="z-index: -9999999"
+        >
+            <div class="bg03 fixed"
+                data-0="opacity: 0; z-index: -9999999"
+                data-10000="opacity: 0; z-index: 1000"
+                data-11000="opacity: 1;"
+                data-12000="transform: translate(-50%,-50%) scale(1); opacity: 1;"
+                data-24000="opacity: 1;"
+                data-25000="opacity: 0;"
+            ></div>
+            <div class="sec5-1">
+                <h1 class="sec5-2 fixed title"
+                    data-11000="transform: translate(-50%,-50%) scale(0); opacity:1; z-index: 1000"
+                    data-12000="transform: translate(-50%,-50%) scale(.1);"
+                    data-13000="transform: translate(-50%,-50%) scale(.3);"
+                    data-18000="transform: translate(-50%,-50%) scale(1);"
+                    data-19000="transform: translate(-50%,-50%) scale(30); opacity:1"
+                    data-20000="transform: translate(-50%,-50%)scale(70); opacity:0; z-index: 1000"
+                    data-20700="z-index: -9999999"
+                >Script</h1>
+            </div>
+            <div class="sec5-3 fixed scitem1 codingSite"
+                data-12000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                data-14000="transform: translate(-80%,-80%) scale(.3); z-index: 3000;"
+                data-15000="transform: translate(-130%, -130%) scale(.8);"
+                data-16000="transform: translate(-180%, -180%) scale(1);"
+            >
+                <a href="#"><img src="./assets/img/script01-2@2.jpg" alt="이미지"></a>
+            </div>
+            <!-- scPopup -->
+            <div class="scPopupWrap"
+                data-0="display:none"
+                data-10000="display:block"
+            >
+                <div class="scPopup1">
+                    <a href="#" class="scPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="scPopup-figure">
+                        <div class="sc-bg1">
+                            <a class="scView1"  href="https://jangar6.github.io/dothome1/effect/parallax01-jquery.html" target="_blank">Site view</a>
+                        </div>
+                        <img src="./assets/img/script01-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="scText01">패랠랙스</h2>
+                            <h3 class="scText02">parallax</h3>
+                            <p class="scText03">parallax는 시차라는 뜻으로 천문학에서 사용하는 용어입니다. 
+                                즉 멀리 있는 물체는 천천히 움직이고, 가까이 있는 물체는 빨리 움직이는 현상을 의미합니다. 
+                                이 현상을 이용하여 스크롤 했을 때 인상적인 디자인을 스크립트로 작업하였습니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="sec5-4 fixed scitem2 codingSite"
+                    data-12000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-15000="transform: translate(0%,0%) scale(.3); z-index: 3000;"
+                    data-16000="transform: translate(50%,50%) scale(.8);"
+                    data-17000="transform: translate(130%,130%) scale(.1);"
+                >
+                    <a href="#"><img src="./assets/img/script02-2@2.jpg" alt="이미지"></a>
+                </div>
+                <div class="scPopup2">
+                    <a href="#" class="scPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="scPopup-figure">
+                        <div class="sc-bg1">
+                            <a class="scView2"  href="https://jangar6.github.io/dothome1/effect/mouseEffect01-jquery.html" target="_blank">Site view</a>
+                        </div>
+                        <img src="./assets/img/script02-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="scText01">마우스이펙트</h2>
+                            <h3 class="scText02">mouse effect</h3>
+                            <p class="scText03">마우스 커서를 움직이면 다양한 효과가 나타나도록 작업하였습니다. 
+                                마우스 오버하면 커서의 모양이 바뀌거나, 버튼을 눌러 마우스의 블랜드 효과를 보거나, 
+                                이미지가 마우스 커서의 위치에 따라 움직이거나 3d효과를 보이기도 합니다.!</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="sec5-5 fixed scitem3 codingSite"
+                    data-12000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-16000="transform: translate(-80%,0%) scale(.3); z-index: 3000;"
+                    data-17000="transform: translate(-130%,50%) scale(.8);"
+                    data-18000="transform: translate(-170%,100%) scale(1);"
+                >
+                    <a href="#"><img src="./assets/img/script03-2@2.jpg" alt="이미지"></a>
+                </div>
+                <div class="scPopup3">
+                    <a href="#" class="scPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="scPopup-figure">
+                        <div class="sc-bg2">
+                            <a class="scView3" href="https://jangar6.github.io/dothome1/effect/sliderEffect01-jquery.html" target="_blank">Site view</a>
+                        </div>
+                        <img src="./assets/img/script03-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="scText01">슬라이드이펙트</h2>
+                            <h3 class="scText02">slider effect</h3>
+                            <p class="scText03">플러그인을 사용하지 않고 작업한 슬라이드 스크립트 입니다.
+                                가로나 세로로 자동으로 이미지가 넘어가거나 수동으로 넘어갑니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="sec5-6 fixed scitem4 codingSite"
+                    data-12000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-17000="transform: translate(0%,-80%) scale(.3); z-index: 3000;"
+                    data-18000="transform: translate(50%,-110%) scale(.8);"
+                    data-19000="transform: translate(100%,-140%) scale(1); "
+                >
+                    <a href="#"><img src="./assets/img/script04-2@2.jpg" alt="이미지"></a>
+                </div>
+                <div class="scPopup4">
+                    <a href="#" class="scPopup_btn">
+                        <span></span>
+                    </a>
+                    <figure class="scPopup-figure">
+                        <div class="sc-bg3">
+                            <a class="scView4"  href="https://jangar6.github.io/dothome1/effect/quizEffect01-jquery.html" target="_blank">Site view</a>
+                        </div>
+                        <img src="./assets/img/script04-2@2.jpg" alt="이미지">
+                        <figcaption>
+                            <h2 class="scText01">퀴즈이펙트</h2>
+                            <h3 class="scText02">quiz effect</h3>
+                            <p class="scText03">주관식, 객관식의 문제를 적용하였습니다.
+                                한 문항도 있으며 다문항도 있는 Quiz 스크립트를 Javascript, jQuery로 작업하였습니다.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- //scPopup -->
+        </section>
+        <!-- //section5 -->
+
+        <section id="section6"
+            data-0="z-index: -9999999"
+            data-1800="z-index: 0"
+            data-4000="z-index: 1000"
+            data-30700="z-index: -9999999"
+        >
+            <div class="bg04 fixed"
+                data-0="opacity:0; z-index: -9999999"
+                data-21000="display:block; opacity:0; z-index: 1000"
+                data-22000="display:block; opacity:1;"
+                data-25000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-30000="opacity:1;"
+                data-31000="opacity:0;"
+            ></div>
+            <div class="sec6-1"
+                data-0="display:none"
+                data-19000="display:block"
+            >
+                <h1 class="sec6-2 fixed"
+                    data-20000="transform: translate(-50%,-50%) scale(0); opacity:1; z-index: 1000"
+                    data-23000="transform: translate(-50%,-50%) scale(.2);"
+                    data-25000="transform: translate(-50%,-50%) scale(.5);"
+                    data-28000="transform: translate(-50%,-50%) scale(1);"
+                    data-29000="transform: translate(-50%,-50%) scale(5);"
+                    data-30000="transform: translate(-50%,-50%) scale(80); opacity:0; z-index: 1000"
+                    data-30700="z-index: -9999999"
+                >Animation</h1>
+            </div>
+            <div class="aniWrap"
+                data-0 = "display: none" 
+                data-19000 = "display: block"
+                data-31000 = "display: none" 
+            >
+                <div class="ani01 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-22000="transform: translate(-80%,-80%) scale(.3); z-index: 3000;"
+                    data-23000="transform: translate(-130%, -130%) scale(.8);"
+                    data-24000="transform: translate(-180%, -180%) scale(.8);"
+                >
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"></iframe>
+                </div>
+                <div class="ani02 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-23000="transform: translate(0%,-30%) scale(.3); z-index: 3000;"
+                    data-24000="transform: translate(50%,-10%) scale(.8);"
+                    data-25000="transform: translate(100%,0%) scale(.8);"
+                >
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation05.html" frameborder="0"></iframe>
+                </div>
+                <div class="ani03 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-24000="transform: translate(-60%,0%) scale(.3); z-index: 3000;"
+                    data-25000="transform: translate(-70%,50%) scale(.8);"
+                    data-26000="transform: translate(-80%,100%) scale(.8);"
+                >
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation06.html" frameborder="0"></iframe>
+                </div>
+                <div class="ani04 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-25000="transform: translate(0%,-100%) scale(.3); z-index: 3000;"
+                    data-26000="transform: translate(50%,-150%) scale(.8);"
+                    data-27000="transform: translate(150%,-200%) scale(.8);"
+                >   
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation12.html" frameborder="0"></iframe>
+                </div>
+                <div class="ani05 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-26000="transform: translate(-100%,-30%) scale(.3); z-index: 3000;"
+                    data-27000="transform: translate(-150%,0%) scale(.8);"
+                    data-28000="transform: translate(-200%,50%) scale(.8);"
+                >
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation09.html" frameborder="0"></iframe>
+                </div>
+                <div class="ani06 fixed"
+                    data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
+                    data-27000="transform: translate(0%,-50%) scale(.3); z-index: 3000;"
+                    data-28000="transform: translate(50%,-50%) scale(.8);"
+                    data-29000="transform: translate(100%,-50%) scale(.8);"
+                >
+                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation08.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- //section6 -->
+
+        <section id="section7"
+            data-0="z-index: -9999999"
+            data-1800="z-index: 0"
+            data-4000="z-index: 1000"
+        >
+            <div class="bg05 fixed"
+                data-0="opacity:0; z-index: -9999999"
+                data-28900="display:block; opacity:0; z-index: 1000"
+                data-29000="opacity:0;"
+                data-30000="opacity:1;"
+                data-49000="opacity:1;"
+                data-50000="opacity:0;"
+            ></div>
+            <div class="sec7-1"
+                data-0="display:none"
+                data-29000="display:block"
+            >
+                <h1 class="sec7-2 fixed"
+                    data-29000="transform: translate(-50%,-50%) scale(0); left: 50%; opacity:1; z-index: 1000"
+                    data-30000="transform: translate(-50%,-50%) scale(.2);"
+                    data-31000="transform: translate(-50%,-50%) scale(.5);"
+                    data-32000="transform: translate(-50%,-50%) scale(1);"
+                    data-33500="transform: translate(-50%,-50%) scale(1);"
+                    data-34500="left: 0%"
+                    data-35500="left: -50%"
+                >React</h1>
+            </div>
+            <img class="sec7-3 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-32000="top:-200%; left: 0%; z-index: 1000"
+                data-33000="top:80%;"
+                data-33500="left: 0%"
+                data-35500="left: -150%"
+            >
+            <img class="sec7-4 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-32000="top:-200%; left: 90%; z-index: 1000"
+                data-33000="top: 10%;"
+                data-33500="left: 90%"
+                data-35500="left: 50%"
+                data-36500="left: 0%"
+                data-37500="left: -150%"
+            >
+            <img class="sec7-5 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-32000="top:-200%; left: 70%; z-index: 1000"
+                data-33000="top: 80%;"
+                data-33500="left: 70%"
+                data-34500="left: 20%"
+                data-35500="left: 0%"
+                data-36500="left: -150%"
+            >
+            <img class="sec7-6 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-35500="left: 120%; top:70%; z-index: 1000"
+                data-37000="left: 10%;"
+                data-41000="left: 10%;"
+                data-42000="left: -30%;"
+                data-43000="left: -150%;"
+            >
+            <img class="sec7-7 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-35500="left: 180%; top:20%; z-index: 1000"
+                data-37000="left: 90%;"
+                data-41000="left: 90%;"
+                data-42000="left: 50%;"
+                data-43000="left: 0%;"
+                data-44000="left: -100%;"
+            >
+            <div class="react fixed"
+                data-36000="display:none; z-index: 1000"
+                data-36999="display:block;"
+                data-37000="left: 50%;"
+                data-41000="left: 50%;"
+                data-42000="left: 0%;"
+                data-43000="left: -100%;"
+            >
+                <div class="img-bg fixed"
+                    data-38999="opacity:0; z-index: 1000"
+                    data-39000="opacity:1;"
+                ></div>
+                <div class="sec7-9"
+                    data-37000="opacity:0; z-index: 1000"
+                    data-38000="opacity:1;"
+                >
+                    <img src="./assets/img/react@2.jpg" alt="리액트">
+                </div>
+                <h2 class="sec7-10">
+                    <span class="fixed"
+                        data-37500="opacity: 0; top: 0%"
+                        data-38000="opacity: 1; top: 5%"
+                    >리</span>
+                    <span class="fixed"
+                        data-38000="opacity: 0; top: 10%"
+                        data-38500="opacity: 1; top: 15%"
+                    >액</span>
+                    <span class="fixed"
+                        data-38500="opacity: 0; top: 20%"
+                        data-39000="opacity: 1; top: 25%"
+                    >트</span>
+                </h2>
+                <ul class="box fixed"
+                    data-38999="opacity:0; z-index: 1000"
+                    data-39000="opacity:1"
+                >
+                    <li class="btn1"><a href="#">SITE</a></li>
+                    <li class="btn2">FIGMA</li>
+                    <p class="text">React는 사용자 인터페이스를 구축하기 위한 선언적이고 효율적이며 유연한 JavaScript 라이브러리입니다. “컴포넌트”라고 불리는 작고 고립된 코드의 파편을 이용하여 복잡한 UI를 구성하도록 돕습니다.</p>
+                </ul>
+            </div>
+            <!-- figma -->
+            <div class="figmaWrap"
+                data-38000="display:none; z-index: 1000"
+                data-39000="display:block;"
+                data-41000="display:none;"
+            >
+                <div class="react_figma fixed">
+                    <a href="#" class="react_btn">
+                        <span></span>
+                    </a>
+                    <iframe style="border: 0" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F07W4bOpKj95hUNAnF8fBfy%2Freact%3Fscaling%3Dmin-zoom%26node-id%3D129%253A243" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- //figma -->
+            <div class="sec7-1"
+                data-0="display:none; z-index: 1000"
+                data-29000="display:block"
+            >
+                <h1 class="sec7-2 fixed"
+                    data-42000="transform: translate(-50%,-50%) scale(1); left: 150%; opacity:1; z-index: 1000"
+                    data-43000="transform: translate(-50%,-50%) scale(1); left: 50%;"
+                    data-44000="transform: translate(-50%,-50%) scale(3);"
+                    data-45000="transform: translate(-50%,-50%) scale(5);"
+                    data-46500="transform: translate(-50%,-50%) scale(80);"
+                    data-47500="transform: translate(-50%,-50%) scale(80); opacity:0;"
+                >React
+                </h1>
+            </div>
+            <img class="sec7-11 fixed" src="./assets/img/cloud_color.jpg" alt="구름"
+                data-41000="left: 200%; top:90%; z-index: 1000"
+                data-42000="left: 150%"
+                data-43000="left: 95%;"
+                data-45000="left: 250%;"
+            >
+        </section>
+        <!-- //section7 -->
+
+        <section id="section8"
+            data-0="z-index: -9999999"
+            data-1800="z-index: 0"
+            data-4000="z-index: 1000"
+        >
+            <div class="bg06 fixed"
+                data-0="opacity:0; z-index: -9999999"
+                data-48000="display:block; opacity:0; z-index: 1000"
+                data-51000="display:block; opacity:1;"
+                data-52000="display:block; opacity:1; transform: translate(-50%,-50%) scale(1);"
+                data-52500="opacity:1;"
+            ></div>
+            <div class="sec8-1"
+                data-0="display:none"
+                data-47000="display:block"
+            >
+                <h1 class="sec8-2 fixed"
+                    data-47700="opacity:0; top: 20% z-index: 1000"
+                    data-48000="opacity:.5; top: 50%"
+                    data-49000="opacity:1; top: 50%"
+                    data-50000="opacity:0; top: 20%"
+                >Contact</h1>
+                <div class="sec8-3 fixed"
+                    data-0="display:none; z-index: 1000"
+                    data-49000="display:block;"
+                    data-50000 = "top: 60%; left: 80%; opacity: 0;"
+                    data-51000 = "top: 50%;"
+                    data-52000 = "top: 30%; opacity: 1;"
+                >
+                    <img src="./assets/img/moon.jpg" alt="달">
+                </div>
+                <div class="sec8-5 fixed" 
+                    data-0="display:none; z-index: 1000"
+                    data-49000="display:block;"
+                    data-50000 = "top: 52%; left: 150%; opacity:0;"
+                    data-51000 = "top: 52%; left: 90%;"
+                    data-52000 = "top: 52%; left: 80%; opacity:1;"
+                >
+                    <img src="./assets/img/cloud_color01.jpg" alt="구름">
+                </div>
+                
+                <div class="desc fixed"
+                    data-0="display:none; z-index: 1000"
+                    data-50500="display:block;"
+                    data-51500="opacity:0; top:150%"
+                    data-52500="opacity:1; top: 80%"
+                >
+                    <p class="sec8-4">“혼자 꾸는 꿈은 그저 꿈에 지나지 않는다.<br>하지만 함께 꾸는 꿈은 현실이다.”<br>
+                        <em>-존 레논 / 오노 요코-</em>
+                    </p>
+                    <ul class="sec8-6">
+                        <li>jangar6621@gmail.com</li>
+                        <li>82_01 8266 0865</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- //section8 -->
     <!-- //contents -->
 
 
@@ -99,6 +690,25 @@
         // 마우스 커서
         $(document).mousemove(function(e){
             gsap.to(".cursor", {duration: 0.2, left: e.pageX - 10, top: e.pageY -10});
+        });
+        
+        // 오버 효과
+        $(".sec3-3").hover(function(){
+            $(".cursor").addClass("active");
+        },function(){
+            $(".cursor").removeClass("active");
+        });
+
+        // 리액트 피그마 클릭 
+        $(".react_btn").on("click", function(e){
+            e.preventDefault();
+            $(".cursor").removeClass("on");
+            $(".react_figma").removeClass("on").css({"display":"none"});
+        });
+        $(".btn2").on("click", function(e){
+            e.preventDefault();
+            $(".cursor").addClass("on");
+            $(".react_figma").addClass("on").css({"display":"block"});
         });
 
         // 코딩 사이트 이미지 클릭
@@ -126,12 +736,43 @@
                 $(".title").show();
             });
 
-            $(document).ready(function(e) {
-                e.preventDefault();
+            $(document).ready(function() {
                 $(".view"+i).attr({"target" : "_blank"});
-            })
+            });
+            $(document).ready(function() {
+                $(".view"+i+"-2").attr({"target" : "_blank"});
+            });
         }
 
-        </script>
+        // 스크립트 이미지 클릭
+        for(let i = 1; i <= 4; i++){
+            $(".scitem"+i).click(function(e){
+                e.preventDefault();
+                $("html,body").css({"overflow": "hidden"});
+                $("html,body").on("scroll touchmove mousewheel", function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                });
+                $(".scPopup"+i).addClass("popup");
+                $(".cursor").addClass("on");
+                $(".codingSite").css({"opacity":"0","display":"none","transition":"opacity 1.5s ease"});
+                $(".title").hide();
+            });
+            $(".scPopup_btn").click(function(e){
+                e.preventDefault();
+                $("html,body").css({"overflow": "auto","overflow-x":"hidden"});
+                $(".scPopup"+i).removeClass("popup");
+                $(".cursor").removeClass("on");
+                $(".codingSite").css({"opacity":"1","display":"block","transition":"opacity 1.5s ease"});
+                $(".title").show();
+            });
+            $(document).ready(function() {
+                $(".scView"+i).attr({"target" : "_blank"});
+            });
+        }
+
+
+    </script>
 </body>
 </html>
