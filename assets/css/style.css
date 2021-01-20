@@ -2042,7 +2042,10 @@
 .control {}
 .control h3 {margin-top:30px;}
 
-
+/* figma */
+#figma {text-transform: uppercase; margin: 0; padding: 0; font-size: 30px;}
+.figma {display: block; color: #000;}
+.figma:hover {color: #f47cc3;}
 
 
 
