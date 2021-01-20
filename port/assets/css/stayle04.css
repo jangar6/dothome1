@@ -242,7 +242,7 @@ button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:v
 
 /* 어바웃: section3 */
 #section3 {
-    height: 4000px;
+    height: 3500px;
 }
 .sec3-2 {
     font-family: 'Blacksword';
@@ -354,7 +354,7 @@ button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:v
 
 /* 애니메이션: section6 */
 #section6 {
-    height: 9500px;
+    height: 10000px;
 }
 .sec6-2 {
     font-family: 'Blacksword';
@@ -955,4 +955,3 @@ em {
 .s-bg1:hover {
     opacity: 1;
 }
-
