@@ -818,7 +818,7 @@ em {
     transform: translate(-50%, -50%);
     display: block;
     transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
-    /* opacity: 0; */
+    opacity: 0;
     overflow: hidden;
 }
 .sc-bg1 .scView1,
@@ -888,7 +888,7 @@ em {
     left: 312%;
     top: -231%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 239%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -899,7 +899,7 @@ em {
     left: 315%;
     top: -330%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 239%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -912,7 +912,7 @@ em {
     left: -195%;
     top: 355%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 261%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -923,7 +923,7 @@ em {
     left: -205%;
     top: 225%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 261%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -933,7 +933,7 @@ em {
     left: 290%;
     top: -330%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 239%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -954,4 +954,32 @@ em {
 .s-bg2:hover,
 .s-bg1:hover {
     opacity: 1;
+}
+
+/* 로딩: Loading */
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+body.active {
+    height: auto;
+    overflow: auto;
+}
+.progress {
+    position: fixed;
+    left: 0; top: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.progress-text {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    color: rgb(188, 234, 255);
+}
+.progress-text::after {
+    content: '%';
 }

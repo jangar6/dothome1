@@ -7,10 +7,14 @@
 
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/stayle05.css">
+    <link rel="stylesheet" href="./assets/css/stayle06.css">
     
 </head>
 <body>
+    <div class="progress">
+        <span class="progress-text">0</span>
+    </div>
+    <!-- //progress -->
 
     <div class="cursor"></div>
     <!-- //cursor -->
@@ -368,7 +372,7 @@
                     </a>
                     <figure class="scPopup-figure">
                         <div class="sc-bg3">
-                            <a class="scView4"  href="https://jangar6.github.io/dothome1/effect/quizEffect01-jquery.html" target="_blank">Site view</a>
+                            <a class="scView4" href="https://jangar6.github.io/dothome1/effect/quizEffect01-jquery.html" target="_blank">Site view</a>
                         </div>
                         <img src="./assets/img/script04-2@2.jpg" alt="이미지">
                         <figcaption>
@@ -423,7 +427,7 @@
                     data-23000="transform: translate(-130%, -130%) scale(.8);"
                     data-24000="transform: translate(-180%, -180%) scale(.8);"
                 >
-                    <iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"></iframe>
+                    <a class="ani-codepen1" href="https://codepen.io/jangar6/pen/LYRxgpy" target="_blank"><iframe scrolling="no" width="100%" height="100%" src="http://jangar621.dothome.co.kr/effect/portfolio/animation02.html" frameborder="0"></iframe></a>
                 </div>
                 <div class="ani02 fixed"
                     data-21000="transform: translate(-50%,-50%) scale(0); z-index: 1000; opacity:0.8"
@@ -666,7 +670,6 @@
                         <li>82_01 8266 0865</li>
                     </ul>
                 </div>
-
             </div>
         </section>
         <!-- //section8 -->
@@ -677,102 +680,137 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="http://flairgale.cafe24.com/para/js/imagesloaded.pkgd.min.js"></script>
     <script>
-        // 사용 셋팅
-        var s = skrollr.init();
-
-        // 스크롤 값 확인하기
-        $(window).scroll(function(){
-            let scrollTop = $(window).scrollTop();
-            $(".scroll").text(parseInt(scrollTop));
-        });
-
-        // 마우스 커서
-        $(document).mousemove(function(e){
-            gsap.to(".cursor", {duration: 0.2, left: e.pageX - 10, top: e.pageY -10});
-        });
-        
-        // 오버 효과
-        $(".sec3-3").hover(function(){
-            $(".cursor").addClass("active");
-        },function(){
-            $(".cursor").removeClass("active");
-        });
-
-        // 리액트 피그마 클릭 
-        $(".react_btn").on("click", function(e){
-            e.preventDefault();
-            $(".cursor").removeClass("on");
-            $(".react_figma").removeClass("on").css({"display":"none"});
-        });
-        $(".btn2").on("click", function(e){
-            e.preventDefault();
-            $(".cursor").addClass("on");
-            $(".react_figma").addClass("on").css({"display":"block"});
-        });
-
-        // 코딩 사이트 이미지 클릭
-        for(let i = 1; i <= 4; i++){
-            $(".item"+i).click(function(e){
-                e.preventDefault();
-                $("html, body").css({"overflow": "hidden"});
-                $("html, body").on("scroll touchmove mousewheel", function(event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    return false;
-                });
-                $(".sPopup"+i).addClass("popup").css("z-index","10000");
-                $(".cursor").addClass("on");
-                $(".codingSite").css({"opacity":"0","display":"none","transition":"opacity 1.5s ease"});
-                $(".title").hide();
+        function loading() {
+            let $progress = $(".progress"),
+                $progressText = $(".progress-text");
+            let imgLoad = imagesLoaded("body"),
+                imgTotal = imgLoad.images.length,
+                imgLoaded = 0,
+                imgCurrent = 0,
+                progressTimer = setInterval(updateProgress, 1000/60);
+            imgLoad.on("progress", function () {
+                imgLoaded++;
             });
-            $(".sPopup_btn").click(function(e){
-                e.preventDefault();
-                $("html, body").css({"overflow": "auto","overflow-x":"hidden"});
-                $("html, body").off("scroll touchmove mousewheel");
-                $(".sPopup"+i).removeClass("popup").css("z-index","1000");
-                $(".cursor").removeClass("on");
-                $(".codingSite").css({"opacity":"1","display":"block","transition":"all 1.5s ease"});
-                $(".title").show();
-            });
+            function updateProgress(){
+                let target = ( imgLoaded/imgTotal ) * 100;
+                imgCurrent += (target - imgCurrent) * 0.1;
+                $progressText.text( parseInt(imgCurrent) );
 
-            $(document).ready(function() {
-                $(".view"+i).attr({"target" : "_blank"});
-            });
-            $(document).ready(function() {
-                $(".view"+i+"-2").attr({"target" : "_blank"});
-            });
+                if( imgCurrent >= 100 ){
+                    clearInterval(progressTimer);
+
+                    $("body").addClass("active");
+                    gsap.to($progress, {
+                        duration: 3,
+                        top:"-110%",
+                        ease:"power4.out"
+                    });
+
+                    // 메인 애니메이션
+                    
+                    // 사용 셋팅
+                    var s = skrollr.init();
+
+                    // 스크롤 값 확인하기
+                    $(window).scroll(function(){
+                        let scrollTop = $(window).scrollTop();
+                        $(".scroll").text(parseInt(scrollTop));
+                    });
+
+                    // 마우스 커서
+                    $(document).mousemove(function(e){
+                        gsap.to(".cursor", {duration: 0.2, left: e.pageX - 10, top: e.pageY -10});
+                    });
+
+                    // 오버 효과
+                    $(".sec3-3").hover(function(){
+                        $(".cursor").addClass("active");
+                    },function(){
+                        $(".cursor").removeClass("active");
+                    });
+
+                    // 리액트 피그마 클릭 
+                    $(".react_btn").on("click", function(e){
+                        e.preventDefault();
+                        $(".cursor").removeClass("on");
+                        $(".react_figma").removeClass("on").css({"display":"none"});
+                    });
+                    $(".btn2").on("click", function(e){
+                        e.preventDefault();
+                        $(".cursor").addClass("on");
+                        $(".react_figma").addClass("on").css({"display":"block"});
+                    });
+
+                    // 코딩 사이트 이미지 클릭
+                    for(let i = 1; i <= 4; i++){
+                        $(".item"+i).click(function(e){
+                            e.preventDefault();
+                            $("html, body").css({"overflow": "hidden"});
+                            $("html, body").on("scroll touchmove mousewheel", function(event) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                return false;
+                            });
+                            $(".sPopup"+i).addClass("popup").css("z-index","10000");
+                            $(".cursor").addClass("on");
+                            $(".codingSite").css({"opacity":"0","display":"none","transition":"opacity 1.5s ease"});
+                            $(".title").hide();
+                        });
+                        $(".sPopup_btn").click(function(e){
+                            e.preventDefault();
+                            $("html, body").css({"overflow": "auto","overflow-x":"hidden"});
+                            $("html, body").off("scroll touchmove mousewheel");
+                            $(".sPopup"+i).removeClass("popup").css("z-index","1000");
+                            $(".cursor").removeClass("on");
+                            $(".codingSite").css({"opacity":"1","display":"block","transition":"all 1.5s ease"});
+                            $(".title").show();
+                        });
+
+                        $(document).ready(function() {
+                            $(".view"+i).attr({"target" : "_blank"});
+                        });
+                        $(document).ready(function() {
+                            $(".view"+i+"-2").attr({"target" : "_blank"});
+                        });
+                    }
+
+                    // 스크립트 이미지 클릭
+                    for(let i = 1; i <= 4; i++){
+                        $(".scitem"+i).click(function(e){
+                            e.preventDefault();
+                            $("html,body").css({"overflow": "hidden"});
+                            $("html,body").on("scroll touchmove mousewheel", function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                return false;
+                            });
+                            $(".scPopup"+i).addClass("popup");
+                            $(".cursor").addClass("on");
+                            $(".codingSite").css({"opacity":"0","display":"none","transition":"opacity 1.5s ease"});
+                            $(".title").hide();
+                        });
+                        $(".scPopup_btn").click(function(e){
+                            e.preventDefault();
+                            $("html,body").css({"overflow": "auto","overflow-x":"hidden"});
+                            $(".scPopup"+i).removeClass("popup");
+                            $(".cursor").removeClass("on");
+                            $(".codingSite").css({"opacity":"1","display":"block","transition":"opacity 1.5s ease"});
+                            $(".title").show();
+                        });
+                        $(document).ready(function() {
+                            $(".scView"+i).attr({"target" : "_blank"});
+                        });
+                    }
+                }
+
+                if( imgCurrent > 99 ){
+                    imgCurrent = 100;
+                }
+            }
         }
-
-        // 스크립트 이미지 클릭
-        for(let i = 1; i <= 4; i++){
-            $(".scitem"+i).click(function(e){
-                e.preventDefault();
-                $("html,body").css({"overflow": "hidden"});
-                $("html,body").on("scroll touchmove mousewheel", function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false;
-                });
-                $(".scPopup"+i).addClass("popup");
-                $(".cursor").addClass("on");
-                $(".codingSite").css({"opacity":"0","display":"none","transition":"opacity 1.5s ease"});
-                $(".title").hide();
-            });
-            $(".scPopup_btn").click(function(e){
-                e.preventDefault();
-                $("html,body").css({"overflow": "auto","overflow-x":"hidden"});
-                $(".scPopup"+i).removeClass("popup");
-                $(".cursor").removeClass("on");
-                $(".codingSite").css({"opacity":"1","display":"block","transition":"opacity 1.5s ease"});
-                $(".title").show();
-            });
-            $(document).ready(function() {
-                $(".scView"+i).attr({"target" : "_blank"});
-            });
-        }
-
-
+        loading();
     </script>
 </body>
 </html>

@@ -5,36 +5,45 @@ body {
 }
 /* 배경색: bg */
 .bg01{
-    background: linear-gradient(180deg, #011627 0%, #001CA6 10%, #B95393 30%, #FF9473 50%, #B95393 100%);
+    background: linear-gradient(180deg, #011627 0%, #001CA6 100%);
     width: 100vw;
-    height: 500vh;
-    position: relative;
+    height: 100vh;
+}
+.bg01-1 {
+    background: linear-gradient(180deg,#B95393 0%, #FF9473 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.bg01-2 {
+    background: linear-gradient(-180deg,#FF9473 0%, rgba(239, 99, 122, 0.8) 100%);
+    width: 100vw;
+    height: 100vh;
 }
 .bg02{
     background: linear-gradient(180deg, rgba(239, 99, 122, 0.8) 1.29%, rgba(146, 187, 235, 0.8) 100%);
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .bg03 {
     background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 1.29%, #82CAFF 96.23%);
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .bg04 {
     background: linear-gradient(180deg, rgba(146, 187, 235, 0.955694) 0%, #DACBDF 100%);
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .bg05 {
-    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 0%, rgba(239, 99, 122, 0.71) 100%);
+    background: linear-gradient(180deg, rgba(178, 157, 197, 0.872798) 0%, rgba(255, 148, 165, 0.71) 100%);
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -55,6 +64,7 @@ em {font-style: normal;}
     background: rgba(0,0,0,0.5);
     z-index: 10000000;
 }
+button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible; color: #fff;}
 .cursor {
     position: absolute;
     left: 0; top: 0;
@@ -90,7 +100,6 @@ em {font-style: normal;}
 
 /* 공통: common */
 .fixed {
-    z-index: 1000;
     position: fixed; 
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
@@ -124,7 +133,7 @@ em {font-style: normal;}
 
 /* 네비게이션: nav */
 #nav {
-    z-index: 99999;
+    z-index: 9999999;
     position: fixed;
     left: 0; top: 0;
     width: 10%;
@@ -152,7 +161,9 @@ em {font-style: normal;}
 }
 
 /* section1 */
-#section1 {}
+#section1 {
+    height: 1000px;
+}
 .sec1-1 {
     font-family: 'Saol Display Regular';
     font-size: 12vw;
@@ -171,6 +182,7 @@ em {font-style: normal;}
 
 /* section2 */
 #section2 {
+    height: 500px;
 }
 .sec2-1 {
     font-family: 'Chosunilbo_myungjo';
@@ -229,7 +241,9 @@ em {font-style: normal;}
 }
 
 /* 어바웃: section3 */
-#section3 {}
+#section3 {
+    height: 3500px;
+}
 .sec3-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -250,7 +264,6 @@ em {font-style: normal;}
 .sec3-3 {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
 }
 .imgWrap01 {
     position: absolute; left: 50%; top: 50%;
@@ -273,7 +286,9 @@ em {font-style: normal;}
 }
 
 /* 코딩 사이트: section4 */
-#section4 {}
+#section4 {
+    height: 10000px;
+}
 .sec4-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -315,9 +330,10 @@ em {font-style: normal;}
     transition: all 0.3s ease;
 }
 
-
 /* 스크립트: section5 */
-#section5 {}
+#section5 {
+    height: 8500px;
+}
 .sec5-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -337,7 +353,9 @@ em {font-style: normal;}
 }
 
 /* 애니메이션: section6 */
-#section6 {}
+#section6 {
+    height: 10000px;
+}
 .sec6-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -363,9 +381,8 @@ em {font-style: normal;}
 .ani04,
 .ani05,
 .ani06 {
-    width: 100vw;
-    height: 100vh;
-    transform-origin: center center;
+    width: 80vw;
+    height: 80vh;
     transition: all 0.3s ease;
 }
 
@@ -384,7 +401,9 @@ em {font-style: normal;}
 .ani06 a:hover iframe {opacity: 0.4; transition: all 0.5s ease;}
 
 /* 리액트: section7 */
-#section7 {}
+#section7 {
+    height: 15000px;
+}
 .sec7-2 {
     font-family: 'Blacksword';
     color: #fff;
@@ -799,7 +818,7 @@ em {
     transform: translate(-50%, -50%);
     display: block;
     transition: all 0.5s cubic-bezier(0.64, -0.15, 0.29, 0.88);
-    /* opacity: 0; */
+    opacity: 0;
     overflow: hidden;
 }
 .sc-bg1 .scView1,
@@ -819,7 +838,20 @@ em {
     top: 50%;
     transform: translate(-50%, -50%);
 } 
-.s-bg2 .view3,
+.s-bg2 .view3 {
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 2vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'S-CoreDream-5Medium';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .s-bg1 .view2,
 .s-bg1 .view1 {
     font-size: 2vw;
@@ -856,19 +888,18 @@ em {
     left: 312%;
     top: -231%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 239%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
-.s-bg2 .view3::before,
 .s-bg1 .view1::before,
 .s-bg1 .view2::before {
     content: '';
     position: absolute;
-    left: 312%;
-    top: -329%;
+    left: 315%;
+    top: -330%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 239%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
@@ -878,29 +909,77 @@ em {
 .sc-bg3 .scView4::after {
     content: '';
     position: absolute;
-    left: -196%;
-    top: 356%;
+    left: -195%;
+    top: 355%;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 261%;
+    width: 300%;
     height: 5%;
     background: #fff;
 }
-.s-bg2 .view3::after, 
 .s-bg1 .view1::after,
 .s-bg1 .view2::after {
     content: '';
     position: absolute;
-    left: -206%;
-    top: 223%;
+    left: -205%;
+    top: 225%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 300%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg2 .view3::before {
+    content: '';
+    position: absolute;
+    left: 290%;
+    top: -330%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 300%;
+    height: 5%;
+    background: #fff;
+}
+.s-bg2 .view3::after {
+    content: '';
+    position: absolute;
+    left: -210%;
+    top: 350%;
     transform: translate(-50%, -50%) rotate(45deg);
     width: 261%;
     height: 5%;
     background: #fff;
 }
+
 .sc-bg1:hover,
 .sc-bg2:hover,
 .sc-bg3:hover,
 .s-bg2:hover,
 .s-bg1:hover {
     opacity: 1;
+}
+
+/* 로딩: Loading */
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+body.active {
+    height: auto;
+    overflow: auto;
+}
+.progress {
+    position: fixed;
+    left: 0; top: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.progress-text {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    color: rgb(188, 234, 255);
+}
+.progress-text::after {
+    content: '%';
 }
