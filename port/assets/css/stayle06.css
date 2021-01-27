@@ -160,6 +160,7 @@ button {border:0; padding:0; background:transparent; cursor:pointer; *overflow:v
     padding-right: 2%;
 }
 
+
 /* section1 */
 #section1 {
     height: 1000px;
@@ -964,6 +965,7 @@ body {
 body.active {
     height: auto;
     overflow: auto;
+    overflow-x: hidden;
 }
 .progress {
     position: fixed;
@@ -971,15 +973,89 @@ body.active {
     z-index: 99999999;
     width: 100%;
     height: 100vh;
+}
+.splash-bg {
+    position: fixed;
+    left: 0; top: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #001CA6 0%, #011627 100%);
+    background-repeat: repeat-y;
+    animation: splash 3s 1s ease;
+    animation-fill-mode: forwards;
+}
+
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+    z-index: 99999999;
+}
+
+#loader:after {
+    content: '';
+    position: fixed;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -170px;
+    width: 3px;
+    background: #fff;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    height: 200px;
+    z-index: 99999999;
+}
+
+#loader:before {
+    content: '';
+    position: fixed;
+    left: 50%;
+    margin-left: 8px;
+    bottom: -190px;
+    width: 3px;
     background: #000;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
+    height: 200px;
+    z-index: 99999999;
 }
-.progress-text {
+
+#splash .anim {
+    height: 100%;
     position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 6vw;
-    color: rgb(188, 234, 255);
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%,100%);
+    transition: animation 3s linear;
+    animation: loader 5s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 99999999;
 }
-.progress-text::after {
-    content: '%';
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%,110%);
+    }
+    30% {
+        transform: translate(-50%,50%);
+    }
+    60% {
+        transform: translate(-50%,20%);
+    }
+    100% {
+        transform: translate(-50%,0%);
+    }
+}
+
+@keyframes splash {
+    0% {
+        transform: translate(0%,0%);
+    }
+    50% {
+        transform: translate(0%,0%);
+    }
+    100% {
+        transform: translate(0%,-100%);
+    }
 }
