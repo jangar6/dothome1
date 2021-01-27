@@ -982,7 +982,7 @@ body.active {
     height: 100vh;
     background: linear-gradient(180deg, #001CA6 0%, #011627 100%);
     background-repeat: repeat-y;
-    animation: splash 3s 1s ease;
+    animation: splash 3s 0.2s ease;
     animation-fill-mode: forwards;
 }
 
@@ -1014,8 +1014,8 @@ body.active {
     margin-left: 8px;
     bottom: -190px;
     width: 3px;
-    background: #000;
-    background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
+    background: #fff;
+    background: linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(0,0,0,0) 100%);
     height: 200px;
     z-index: 99999999;
 }
